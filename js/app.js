@@ -249,7 +249,7 @@ function createCard(p) {
     ${desc ? `<span class="discount-badge">${escHtml(String(desc))}%</span>` : ''}
     <div class="card-img-wrap">
       <span class="img-placeholder">${CONFIG.imgPlaceholder}</span>
-      ${img ? `<img class="card-img" data-src="${escHtml(img)}" alt="${escHtml(name)}" loading="lazy" />` : ''}
+      ${img ? `<img class="card-img" data-src="img/${escHtml(img)}" alt="${escHtml(name)}" loading="lazy" />` : ''}
     </div>
     <div class="card-body">
       <span class="card-sku">${escHtml(sku)}</span>
@@ -331,7 +331,7 @@ function showModal(p) {
     <div class="modal-inner">
       <div class="modal-img-wrap">
         ${img
-          ? `<img class="modal-img" src="${escHtml(img)}" alt="${escHtml(name)}" />`
+          ? `<img class="modal-img" src="img/${escHtml(img)}" alt="${escHtml(name)}" />`
           : `<div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:64px">${CONFIG.imgPlaceholder}</div>`
         }
       </div>
