@@ -1,0 +1,33 @@
+name: Generar Catalogo JSON
+
+on:
+  push:
+    paths:
+      - 'data/catalogo.csv'
+
+jobs:
+  convertir:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Descargar repositorio
+        uses: actions/checkout@v4
+
+      - name: Instalar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Ejecutar convertidor
+        run: python scripts/csv_to_json.py
+
+      - name: Guardar cambios
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "actions@github.com"
+
+          git add productos.json
+
+          git diff --cached --quiet || git commit -m "Actualizar productos.json"
+
+          git push
