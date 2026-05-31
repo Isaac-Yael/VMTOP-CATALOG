@@ -283,7 +283,11 @@ function createCard(p) {
   const imgEl = card.querySelector('.card-img');
   if (imgEl) {
     imgObserver.observe(imgEl);
-    imgEl.addEventListener('load', () => imgEl.classList.add('loaded'));
+    imgEl.addEventListener('load', () => {
+      imgEl.classList.add('loaded');
+      const ph = imgEl.closest('.card-img-wrap').querySelector('.img-placeholder');
+      if (ph) ph.style.display = 'none';
+    });
     imgEl.addEventListener('error', () => { imgEl.style.display = 'none'; });
   }
 
