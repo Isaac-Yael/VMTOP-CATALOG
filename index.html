@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Catálogo de productos VMTOP – precios públicos, mayoreo y distribución" />
+  <title>Catálogo VMTOP</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════ HEADER ═══════════════════════════ -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <span class="brand-logo">VM</span>
+        <span class="brand-name">TOP</span>
+        <span class="brand-sub">Catálogo Mayoreo</span>
+      </div>
+      <div class="header-controls">
+        <div class="search-wrapper">
+          <svg class="icon-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+          </svg>
+          <input
+            type="search"
+            id="searchInput"
+            class="search-input"
+            placeholder="Buscar por SKU o nombre…"
+            autocomplete="off"
+            spellcheck="false"
+          />
+          <button class="search-clear" id="searchClear" aria-label="Limpiar búsqueda" hidden>✕</button>
+        </div>
+        <div class="header-stats">
+          <span id="productCount">0</span> productos
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════ MAIN ════════════════════════════ -->
+  <main class="main-layout">
+
+    <!-- SIDEBAR: filtros -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <h2 class="sidebar-title">Categorías</h2>
+        <button class="sidebar-reset" id="clearCategory">Todas</button>
+      </div>
+      <ul class="category-list" id="categoryList"></ul>
+    </aside>
+
+    <!-- CONTENT -->
+    <section class="content">
+
+      <!-- Toolbar -->
+      <div class="toolbar">
+        <button class="btn-filter-toggle" id="filterToggle" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
+            <line x1="4" y1="6" x2="20" y2="6"/><line x1="8" y1="12" x2="16" y2="12"/><line x1="11" y1="18" x2="13" y2="18"/>
+          </svg>
+          Filtros
+        </button>
+
+        <div class="active-filters" id="activeFilters"></div>
+
+        <div class="toolbar-right">
+          <label class="sort-label" for="sortSelect">Ordenar:</label>
+          <select id="sortSelect" class="sort-select">
+            <option value="default">Sin orden</option>
+            <option value="name_asc">Nombre A–Z</option>
+            <option value="name_desc">Nombre Z–A</option>
+            <option value="price_asc">Precio ↑</option>
+            <option value="price_desc">Precio ↓</option>
+            <option value="sku_asc">SKU ↑</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Grid de productos -->
+      <div class="product-grid" id="productGrid" role="list" aria-live="polite"></div>
+
+      <!-- Estado vacío -->
+      <div class="empty-state" id="emptyState" hidden>
+        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5" width="64" height="64">
+          <circle cx="28" cy="28" r="18"/><line x1="42" y1="42" x2="56" y2="56"/>
+          <line x1="20" y1="28" x2="36" y2="28"/><line x1="28" y1="20" x2="28" y2="36"/>
+        </svg>
+        <p>No se encontraron productos.</p>
+        <button class="btn-secondary" id="resetSearch">Limpiar filtros</button>
+      </div>
+
+      <!-- Sentinel para infinite scroll -->
+      <div id="scrollSentinel" style="height:1px;"></div>
+
+      <!-- Loader -->
+      <div class="loader" id="loader" hidden>
+        <span class="spinner"></span> Cargando…
+      </div>
+
+    </section>
+  </main>
+
+  <!-- ═══════════════════════════ MODAL ════════════════════════════ -->
+  <div class="modal-overlay" id="modalOverlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+    <div class="modal-card">
+      <button class="modal-close" id="modalClose" aria-label="Cerrar">✕</button>
+      <div class="modal-content" id="modalContent"></div>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
