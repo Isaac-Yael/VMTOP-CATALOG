@@ -312,6 +312,8 @@ body {
   padding: 8px;
   transition: opacity .3s, transform .3s;
   opacity: 0;
+  position: relative;
+  z-index: 1;
 }
 .card-img.loaded { opacity: 1; }
 .card-img:hover { transform: scale(1.05); }
