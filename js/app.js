@@ -283,11 +283,14 @@ function createCard(p) {
   const imgEl = card.querySelector('.card-img');
   if (imgEl) {
     imgObserver.observe(imgEl);
-    imgEl.addEventListener('load', () => {
+    const revealImg = () => {
       imgEl.classList.add('loaded');
       const ph = imgEl.closest('.card-img-wrap').querySelector('.img-placeholder');
       if (ph) ph.style.display = 'none';
-    });
+    };
+    imgEl.addEventListener('load', revealImg);
+    // Imagen ya cacheada: complete es true antes de que load dispare
+    if (imgEl.complete && imgEl.naturalWidth) revealImg();
     imgEl.addEventListener('error', () => { imgEl.style.display = 'none'; });
   }
 
