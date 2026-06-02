@@ -309,7 +309,7 @@ function createCard(p) {
   const sku    = getField(p, 'sku', 'SKU') ?? '';
   const name   = getField(p, 'nombre', 'Nombre', 'NOMBRE') ?? 'Sin nombre';
   const cat    = getField(p, 'categoria', 'Categoria', 'CATEGORIA') ?? 'Sin categoría';
-  const img    = getField(p, 'imagen', 'Imagen', 'IMAGEN', 'image', 'img') ?? '';
+  const img    = (getField(p, 'imagen', 'Imagen', 'IMAGEN', 'image', 'img') ?? '').toLowerCase();
   const pPub   = getField(p, 'precio_publico', 'PrecioPublico', 'precio_público', 'Precio Público');
   const pMay   = getField(p, 'precio_mayoreo', 'PrecioMayoreo', 'Precio Mayoreo');
   const pDist  = getField(p, 'precio_distribuidor', 'PrecioDistribuidor', 'Precio Distribuidor');
@@ -410,7 +410,7 @@ function showModal(p) {
   const sku    = getField(p, 'sku', 'SKU') ?? '';
   const name   = getField(p, 'nombre', 'Nombre', 'NOMBRE') ?? 'Sin nombre';
   const cat    = getField(p, 'categoria', 'Categoria', 'CATEGORIA') ?? 'Sin categoría';
-  const img    = getField(p, 'imagen', 'Imagen', 'IMAGEN', 'image', 'img') ?? '';
+  const img    = (getField(p, 'imagen', 'Imagen', 'IMAGEN', 'image', 'img') ?? '').toLowerCase();
   const pPub   = getField(p, 'precio_publico', 'PrecioPublico', 'precio_público', 'Precio Público');
   const pMay   = getField(p, 'precio_mayoreo', 'PrecioMayoreo', 'Precio Mayoreo');
   const pDist  = getField(p, 'precio_distribuidor', 'PrecioDistribuidor', 'Precio Distribuidor');
@@ -648,11 +648,11 @@ function calcCartPricing() {
 function addToCart(p) {
   const sku    = getField(p, 'sku', 'SKU') ?? 'SIN-SKU';
   const name   = getField(p, 'nombre', 'Nombre', 'NOMBRE') ?? 'Producto';
-  const img    = getField(p, 'imagen', 'Imagen', 'IMAGEN', 'image', 'img') ?? '';
-  const pMay   = getField(p, 'precio_mayoreo', 'PrecioMayoreo', 'Precio Mayoreo') ?? 0;
-  const pDist  = getField(p, 'precio_distribuidor', 'PrecioDistribuidor', 'Precio Distribuidor') ?? 0;
-  const pCaja  = getField(p, 'precio_caja', 'PrecioCaja', 'Precio Caja') ?? 0;
-  const piezas = getField(p, 'piezas_caja', 'PiezasCaja', 'Piezas por Caja', 'piezas') ?? 0;
+  const img    = (getField(p, 'imagen', 'Imagen', 'IMAGEN', 'image', 'img') ?? '').toLowerCase();
+  const pMay   = getField(p, 'precio_mayoreo',       'PrecioMayoreo',      'Precio Mayoreo')      ?? 0;
+  const pDist  = getField(p, 'precio_distribuidor',  'PrecioDistribuidor', 'Precio Distribuidor') ?? 0;
+  const pCaja  = getField(p, 'precio_caja',          'PrecioCaja',         'Precio Caja')         ?? 0;
+  const piezas = getField(p, 'piezas_caja',          'PiezasCaja',         'Piezas por Caja', 'piezas') ?? 0;
 
   if (cart[sku]) {
     cart[sku].qty += 1;
@@ -732,7 +732,7 @@ function renderCart() {
     div.className = 'cart-item';
     div.innerHTML = `
       ${item.imagen
-        ? `<img class="cart-item-img" src="img/${escHtml(item.imagen)}" alt="${escHtml(item.nombre)}" />`
+        ? `<img class="cart-item-img" src="img/${escHtml(item.imagen.toLowerCase())}" alt="${escHtml(item.nombre)}" />`
         : `<div class="cart-item-img-placeholder">📦</div>`}
       <div class="cart-item-info">
         <span class="cart-item-sku">${escHtml(item.sku)}</span>
@@ -846,7 +846,7 @@ function openQtyPopup(p) {
   qtyPopupProduct = p;
   const sku    = getField(p, 'sku', 'SKU') ?? '';
   const name   = getField(p, 'nombre', 'Nombre', 'NOMBRE') ?? '';
-  const img    = getField(p, 'imagen', 'Imagen', 'IMAGEN', 'image', 'img') ?? '';
+  const img    = (getField(p, 'imagen', 'Imagen', 'IMAGEN', 'image', 'img') ?? '').toLowerCase();
   const pMay   = getField(p, 'precio_mayoreo', 'PrecioMayoreo', 'Precio Mayoreo');
   const piezas = parseInt(getField(p, 'piezas_caja', 'PiezasCaja', 'Piezas por Caja', 'piezas') ?? 0);
 
@@ -951,6 +951,79 @@ hamburgerBtn?.addEventListener('click', () => {
 });
 mobileMenuClose?.addEventListener('click', closeMobileMenu);
 mobileMenuBackdrop?.addEventListener('click', closeMobileMenu);
+
+/* ─── Pago en línea (WooCommerce) ────────────────────────────────── */
+const WC_URL      = 'https://vmtop.mx';
+const WC_CHECKOUT = 'https://vmtop.mx/checkout';
+
+async function pagarEnLinea() {
+  const entries = Object.values(cart);
+  if (!entries.length) return;
+
+  const nameInput = $('customerName');
+  const name = nameInput.value.trim();
+  if (!name) {
+    nameInput.classList.add('error');
+    nameInput.focus();
+    nameInput.placeholder = 'Por favor escribe tu nombre';
+    return;
+  }
+  nameInput.classList.remove('error');
+
+  const btnPagar = $('btnPayOnline');
+  btnPagar.disabled = true;
+  btnPagar.textContent = '⏳ Procesando...';
+
+  const { priced, grandTotal } = calcCartPricing();
+
+  // Construir líneas del pedido con el precio ya calculado
+  const lineItems = priced.map(item => ({
+    sku:       item.sku.toUpperCase(),
+    quantity:  item.qty,
+    // Precio unitario calculado según tier activo
+    subtotal:  (item.unitPrice * item.qty).toFixed(2),
+    total:     (item.unitPrice * item.qty).toFixed(2),
+  }));
+
+  // Nota del pedido con detalle de precios
+  const tierName = priced[0]?.tier === 'dist' ? 'Distribuidor' : 'Mayoreo';
+  const nota = `Pedido desde Catálogo VMTOP | Cliente: ${name} | Nivel de precio: ${tierName} | Total: $${grandTotal.toFixed(2)}`;
+
+  try {
+    const res = await fetch(`${WC_URL}/wp-json/wc/v3/orders`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        status:           'pending',
+        customer_note:    nota,
+        billing: {
+          first_name: name.split(' ')[0] || name,
+          last_name:  name.split(' ').slice(1).join(' ') || '',
+        },
+        line_items: lineItems,
+        meta_data: [
+          { key: '_catalogo_vmtop',   value: 'true' },
+          { key: '_nivel_precio',     value: tierName },
+          { key: '_total_calculado',  value: grandTotal.toFixed(2) },
+        ],
+      }),
+    });
+
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const order = await res.json();
+
+    // Redirigir al checkout de WooCommerce con el pedido creado
+    window.location.href = `${WC_CHECKOUT}?order-pay=${order.id}&pay_for_order=true&key=${order.order_key}`;
+
+  } catch (e) {
+    console.error(e);
+    btnPagar.disabled = false;
+    btnPagar.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg> Pagar en línea (PayPal / Tarjeta / OXXO)`;
+    alert('Hubo un error al conectar con la tienda. Por favor intenta de nuevo o usa WhatsApp.');
+  }
+}
+
+$('btnPayOnline')?.addEventListener('click', pagarEnLinea);
 
 /* ─── Arranque ───────────────────────────────────────────────────── */
 loadData();
