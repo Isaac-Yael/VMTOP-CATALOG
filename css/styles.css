@@ -69,6 +69,12 @@ body {
 
 .header-controls { display: flex; align-items: center; gap: 10px; flex: 1; }
 
+/* Desktop: búsqueda flexible, acciones a la derecha */
+@media (min-width: 769px) {
+  .search-wrapper  { flex: 1; max-width: 620px; }
+  .header-actions  { margin-left: auto; }
+}
+
 .search-wrapper {
   position: relative;
   flex: 1;

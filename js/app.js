@@ -915,7 +915,10 @@ QTY_DOM.overlay.addEventListener('click', closeQtyPopup);
 
 /* ─── PDF ────────────────────────────────────────────────────────── */
 function downloadPDF() {
-  window.open('print.html', '_blank');
+  const a = document.createElement('a');
+  a.href     = 'pdf/catalogo.pdf';
+  a.download = 'catalogo.pdf';
+  a.click();
 }
 const btnPdf       = $('btnPdf');
 const btnPdfMobile = $('btnPdfMobile');
