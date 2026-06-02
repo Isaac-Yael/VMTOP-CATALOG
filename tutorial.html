@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cómo comprar – VMTOP</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    /* ── Estilos exclusivos del tutorial ── */
+    .tut-wrap {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 40px 20px 80px;
+    }
+
+    /* Hero */
+    .tut-hero {
+      text-align: center;
+      padding: 48px 20px 40px;
+      border-bottom: 1px solid var(--clr-border);
+      margin-bottom: 48px;
+    }
+    .tut-hero-icon { font-size: 52px; margin-bottom: 16px; }
+    .tut-hero h1 {
+      font-size: clamp(24px, 5vw, 36px);
+      font-weight: 800;
+      color: var(--clr-text);
+      line-height: 1.2;
+      margin-bottom: 12px;
+    }
+    .tut-hero h1 span { color: var(--clr-accent); }
+    .tut-hero p {
+      font-size: 16px;
+      color: var(--clr-text-muted);
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    /* Secciones */
+    .tut-section { margin-bottom: 52px; }
+    .tut-section-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 20px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--clr-border);
+    }
+    .tut-section-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      flex-shrink: 0;
+    }
+    .icon-blue  { background: rgba(59,130,246,.15); }
+    .icon-amber { background: rgba(245,158,11,.15); }
+    .icon-green { background: rgba(34,197,94,.15); }
+    .icon-sky   { background: rgba(147,197,253,.15); }
+    .icon-red   { background: rgba(220,38,38,.15); }
+
+    .tut-section-title {
+      font-size: 20px;
+      font-weight: 800;
+      color: var(--clr-text);
+    }
+
+    /* Pasos */
+    .tut-steps { display: flex; flex-direction: column; gap: 14px; }
+    .tut-step {
+      display: grid;
+      grid-template-columns: 36px 1fr;
+      gap: 14px;
+      align-items: start;
+    }
+    .tut-step-num {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: var(--clr-accent2);
+      color: #fff;
+      font-size: 15px;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .tut-step-body h3 {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--clr-text);
+      margin-bottom: 4px;
+    }
+    .tut-step-body p {
+      font-size: 14px;
+      color: var(--clr-text-muted);
+      line-height: 1.6;
+    }
+    .tut-step-body p strong { color: var(--clr-text); }
+
+    /* Tabla de precios */
+    .price-table { display: flex; flex-direction: column; gap: 10px; }
+    .price-tier-card {
+      background: var(--clr-surface2);
+      border: 1px solid var(--clr-border);
+      border-radius: var(--radius-md);
+      padding: 16px 18px;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 12px 16px;
+      align-items: start;
+    }
+    .price-tier-badge {
+      font-size: 12px;
+      font-weight: 800;
+      padding: 4px 12px;
+      border-radius: 99px;
+      white-space: nowrap;
+      align-self: center;
+    }
+    .badge-public  { background: rgba(255,255,255,.08); color: var(--clr-text-muted); text-decoration: line-through; }
+    .badge-mayoreo { background: rgba(245,158,11,.15);  color: var(--clr-accent); }
+    .badge-dist    { background: rgba(34,197,94,.12);   color: #22c55e; }
+    .badge-caja    { background: rgba(147,197,253,.12); color: #93c5fd; }
+    .price-tier-info h4 { font-size: 14px; font-weight: 700; color: var(--clr-text); margin-bottom: 4px; }
+    .price-tier-info p  { font-size: 13px; color: var(--clr-text-muted); line-height: 1.55; }
+    .price-tier-info p strong { color: var(--clr-text); }
+
+    /* Tip box */
+    .tut-tip {
+      background: rgba(59,130,246,.08);
+      border: 1px solid rgba(59,130,246,.25);
+      border-radius: var(--radius-md);
+      padding: 14px 18px;
+      font-size: 14px;
+      color: var(--clr-text-muted);
+      line-height: 1.6;
+    }
+    .tut-tip strong { color: #93c5fd; }
+
+    /* FAQ */
+    .faq-list { display: flex; flex-direction: column; gap: 12px; }
+    .faq-item {
+      background: var(--clr-surface2);
+      border: 1px solid var(--clr-border);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+    }
+    .faq-q {
+      width: 100%;
+      background: none;
+      border: none;
+      color: var(--clr-text);
+      font-size: 14px;
+      font-weight: 700;
+      text-align: left;
+      padding: 16px 18px;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      transition: background var(--transition);
+    }
+    .faq-q:hover { background: rgba(255,255,255,.04); }
+    .faq-q svg { flex-shrink: 0; transition: transform .2s; }
+    .faq-item.open .faq-q svg { transform: rotate(180deg); }
+    .faq-a {
+      font-size: 14px;
+      color: var(--clr-text-muted);
+      line-height: 1.65;
+      padding: 0 18px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height .3s ease, padding .3s ease;
+    }
+    .faq-item.open .faq-a {
+      max-height: 300px;
+      padding: 0 18px 16px;
+    }
+
+    /* CTA final */
+    .tut-cta {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 14px;
+      text-align: center;
+      padding: 40px 20px;
+      background: var(--clr-surface);
+      border: 1px solid var(--clr-border);
+      border-radius: var(--radius-lg);
+    }
+    .tut-cta p { font-size: 15px; color: var(--clr-text-muted); }
+    .cta-btns { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
+
+    .btn-back-catalog {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--clr-accent2);
+      border: none;
+      border-radius: var(--radius-sm);
+      color: #fff;
+      font-size: 14px;
+      font-weight: 700;
+      padding: 13px 24px;
+      text-decoration: none;
+      transition: background var(--transition);
+    }
+    .btn-back-catalog:hover { background: #2563eb; }
+
+    .btn-agent {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: #25D366;
+      border: none;
+      border-radius: var(--radius-sm);
+      color: #fff;
+      font-size: 14px;
+      font-weight: 700;
+      padding: 13px 24px;
+      text-decoration: none;
+      transition: background var(--transition);
+      box-shadow: 0 4px 14px rgba(37,211,102,.3);
+    }
+    .btn-agent:hover { background: #1ebe5d; }
+
+    /* Sticky nav superior */
+    .tut-nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 14px 20px;
+      background: var(--clr-surface);
+      border-bottom: 1px solid var(--clr-border);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    .tut-nav-brand { display: flex; align-items: center; gap: 8px; }
+    .tut-nav-brand img { height: 32px; }
+    .tut-nav-brand span { font-size: 13px; color: var(--clr-text-muted); }
+
+    @media (max-width: 560px) {
+      .tut-wrap { padding: 24px 16px 60px; }
+      .price-tier-card { grid-template-columns: 1fr; }
+      .cta-btns { flex-direction: column; width: 100%; }
+      .btn-back-catalog, .btn-agent { justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="tut-nav">
+    <div class="tut-nav-brand">
+      <img src="img/logo.webp" alt="VMTOP" onerror="this.style.display='none';document.querySelector('.tut-nav-fallback').style.display='flex'" />
+      <span class="tut-nav-fallback" style="display:none;font-weight:900;font-size:20px;color:#f59e0b">VM<span style="color:#e2e8f0">TOP</span></span>
+      <span>· Guía de compra</span>
+    </div>
+    <div style="display:flex;gap:10px;">
+      <a href="index.html" class="btn-back-catalog" style="padding:8px 16px;font-size:13px;">
+        ← Ir al catálogo
+      </a>
+      <a href="https://wa.me/525568850885" target="_blank" class="btn-agent" style="padding:8px 16px;font-size:13px;">
+        💬 Hablar con agente
+      </a>
+    </div>
+  </nav>
+
+  <div class="tut-wrap">
+
+    <!-- Hero -->
+    <div class="tut-hero">
+      <div class="tut-hero-icon">🛒</div>
+      <h1>¿Cómo hacer un pedido en <span>VMTOP</span>?</h1>
+      <p>Aquí te explicamos todo lo que necesitas saber para comprar al mayoreo de forma rápida y sencilla.</p>
+    </div>
+
+    <!-- Paso a paso -->
+    <section class="tut-section">
+      <div class="tut-section-header">
+        <div class="tut-section-icon icon-blue">📋</div>
+        <h2 class="tut-section-title">Paso a paso: cómo realizar tu pedido</h2>
+      </div>
+      <div class="tut-steps">
+        <div class="tut-step">
+          <div class="tut-step-num">1</div>
+          <div class="tut-step-body">
+            <h3>Busca el producto que necesitas</h3>
+            <p>Usa la <strong>barra de búsqueda</strong> en la parte superior para buscar por nombre o SKU. También puedes usar los filtros laterales para navegar por <strong>categoría</strong> o filtrar por <strong>rango de precio de caja</strong>.</p>
+          </div>
+        </div>
+        <div class="tut-step">
+          <div class="tut-step-num">2</div>
+          <div class="tut-step-body">
+            <h3>Revisa los precios de cada producto</h3>
+            <p>Cada tarjeta muestra cuatro niveles de precio: <strong>Público</strong> (referencia), <strong>Mayoreo</strong>, <strong>Distribuidor</strong> y <strong>Caja</strong>. El precio que aplica a tu pedido se calcula automáticamente según la cantidad que agregues. Más adelante te explicamos cómo funcionan.</p>
+          </div>
+        </div>
+        <div class="tut-step">
+          <div class="tut-step-num">3</div>
+          <div class="tut-step-body">
+            <h3>Agrega productos al carrito</h3>
+            <p>Presiona el botón <strong>"Agregar al carrito"</strong> en cualquier tarjeta. Se abrirá una ventana donde puedes escribir la cantidad exacta de piezas que quieres o usar el botón <strong>"Agregar caja completa"</strong> para agregar el número exacto de piezas de una caja.</p>
+          </div>
+        </div>
+        <div class="tut-step">
+          <div class="tut-step-num">4</div>
+          <div class="tut-step-body">
+            <h3>Revisa tu carrito</h3>
+            <p>Toca el ícono del carrito 🛒 en la esquina superior derecha. Ahí puedes ver todos tus productos, ajustar cantidades con los botones <strong>+ / −</strong> y ver el total de tu pedido en tiempo real.</p>
+          </div>
+        </div>
+        <div class="tut-step">
+          <div class="tut-step-num">5</div>
+          <div class="tut-step-body">
+            <h3>Escribe tu nombre y envía tu pedido</h3>
+            <p>Antes de enviar, escribe tu <strong>nombre completo</strong> en el campo que aparece en el carrito. Luego presiona <strong>"Enviar pedido por WhatsApp"</strong>. Se abrirá WhatsApp con un mensaje ya redactado con todos tus productos y precios. Solo tienes que enviarlo.</p>
+          </div>
+        </div>
+        <div class="tut-step">
+          <div class="tut-step-num">6</div>
+          <div class="tut-step-body">
+            <h3>Espera la confirmación</h3>
+            <p>Un agente de VMTOP revisará tu pedido y te confirmará disponibilidad, método de pago y envío. Normalmente respondemos en minutos durante horario de atención.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Precios -->
+    <section class="tut-section">
+      <div class="tut-section-header">
+        <div class="tut-section-icon icon-amber">💰</div>
+        <h2 class="tut-section-title">Cómo funcionan los precios</h2>
+      </div>
+      <div class="price-table">
+        <div class="price-tier-card">
+          <span class="price-tier-badge badge-public">PÚBLICO</span>
+          <div class="price-tier-info">
+            <h4>Precio Público (referencia)</h4>
+            <p>Es el precio de venta al consumidor final en tiendas. Aparece <strong>tachado</strong> en las tarjetas porque en VMTOP siempre vas a obtener un precio mejor. Solo sirve como referencia del ahorro que obtienes.</p>
+          </div>
+        </div>
+        <div class="price-tier-card">
+          <span class="price-tier-badge badge-mayoreo">MAYOREO</span>
+          <div class="price-tier-info">
+            <h4>Precio Mayoreo — el precio base</h4>
+            <p>Es el precio que aplica <strong>siempre por defecto</strong> a todos tus productos. Desde el primer artículo que agregas ya estás comprando a precio mayoreo.</p>
+          </div>
+        </div>
+        <div class="price-tier-card">
+          <span class="price-tier-badge badge-dist">DISTRIBUIDOR</span>
+          <div class="price-tier-info">
+            <h4>Precio Distribuidor — pedidos mayores a $5,999</h4>
+            <p>Cuando el total de tu pedido (sumando todos los productos a precio mayoreo) supera <strong>$5,999 MXN</strong>, todos tus productos cambian automáticamente al precio distribuidor. Si bajas del umbral al quitar productos, los precios regresan a mayoreo.</p>
+          </div>
+        </div>
+        <div class="price-tier-card">
+          <span class="price-tier-badge badge-caja">CAJA</span>
+          <div class="price-tier-info">
+            <h4>Precio Caja — por producto individual</h4>
+            <p>Cada producto tiene un número de piezas por caja. Cuando agregas <strong>esa cantidad o más</strong> de un mismo producto, ese artículo en específico cambia al precio de caja — que es el más económico por unidad. Esto aplica producto por producto, independientemente del total del pedido.</p>
+          </div>
+        </div>
+      </div>
+      <br/>
+      <div class="tut-tip">
+        <strong>💡 Tip:</strong> Los precios se recalculan automáticamente en tiempo real mientras agregas o quitas productos del carrito. Verás el nivel de precio activo justo arriba de tu lista de productos.
+      </div>
+    </section>
+
+    <!-- Carrito -->
+    <section class="tut-section">
+      <div class="tut-section-header">
+        <div class="tut-section-icon icon-green">🛒</div>
+        <h2 class="tut-section-title">El carrito y tu pedido</h2>
+      </div>
+      <div class="tut-steps">
+        <div class="tut-step">
+          <div class="tut-step-num">→</div>
+          <div class="tut-step-body">
+            <h3>Tu carrito se guarda automáticamente</h3>
+            <p>Si cierras la página o el navegador, tu carrito <strong>no se pierde</strong>. Al regresar encontrarás todos tus productos tal como los dejaste, en el mismo dispositivo y navegador.</p>
+          </div>
+        </div>
+        <div class="tut-step">
+          <div class="tut-step-num">→</div>
+          <div class="tut-step-body">
+            <h3>Puedes hacer tu pedido en partes</h3>
+            <p>No tienes que agregar todo de una vez. Puedes ir navegando el catálogo, agregar productos poco a poco y enviar tu pedido cuando tengas todo lo que necesitas.</p>
+          </div>
+        </div>
+        <div class="tut-step">
+          <div class="tut-step-num">→</div>
+          <div class="tut-step-body">
+            <h3>Ajusta cantidades desde el carrito</h3>
+            <p>Dentro del carrito puedes subir o bajar la cantidad de cada producto usando los botones <strong>+</strong> y <strong>−</strong>. Los precios y el total se actualizan al instante.</p>
+          </div>
+        </div>
+        <div class="tut-step">
+          <div class="tut-step-num">→</div>
+          <div class="tut-step-body">
+            <h3>El mensaje de WhatsApp ya viene listo</h3>
+            <p>Al presionar "Enviar pedido", se genera automáticamente un mensaje con todos tus productos, cantidades, precios individuales y el total. Solo tienes que mandarlo sin necesidad de escribir nada más.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="tut-section">
+      <div class="tut-section-header">
+        <div class="tut-section-icon icon-sky">❓</div>
+        <h2 class="tut-section-title">Preguntas frecuentes</h2>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-q">
+            ¿Hay un pedido mínimo?
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-a">No hay un mínimo fijo. Puedes hacer pedidos desde una pieza. Sin embargo, recuerda que a mayor volumen, mejor precio: superando $5,999 accedes al precio distribuidor y comprando caja completa obtienes el precio más bajo por unidad.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">
+            ¿Cómo sé cuántas piezas trae una caja?
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-a">En cada tarjeta de producto, la fila de "Caja" muestra entre paréntesis la cantidad de piezas. Por ejemplo "Caja (12 pzas)" significa que una caja contiene 12 unidades. Al hacer clic en "Agregar al carrito" también verás un botón de acceso rápido para agregar la caja completa.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">
+            ¿El precio distribuidor aplica a todos los productos o solo a algunos?
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-a">Cuando tu pedido supera $5,999, el precio distribuidor aplica a todos los productos de tu carrito que no estén ya en precio de caja. Los productos que ya alcanzaron precio de caja mantienen ese precio (que generalmente es aún mejor).</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">
+            ¿Puedo comprar desde otro dispositivo y que mi carrito esté ahí?
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-a">El carrito se guarda en el almacenamiento local de tu navegador, por lo que está disponible solo en el mismo dispositivo y navegador donde hiciste tu pedido. Si cambias de dispositivo, necesitarás agregar los productos nuevamente.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">
+            ¿Cómo se confirma y procesa mi pedido?
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-a">Al enviar tu pedido por WhatsApp, un agente de VMTOP lo recibe directamente. Te confirmará disponibilidad de stock, método de pago y detalles de envío o recolección. El pedido queda registrado una vez que el agente confirma por ese mismo chat.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">
+            ¿Qué pasa si un producto no tiene imagen?
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-a">Algunos productos pueden mostrar un ícono 📦 en lugar de fotografía. Esto no afecta el pedido — el SKU, nombre y precios siguen siendo correctos. Puedes contactar a un agente si necesitas ver una imagen del producto antes de pedirlo.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA final -->
+    <div class="tut-cta">
+      <div style="font-size:40px">🚀</div>
+      <p>¿Listo para hacer tu pedido?</p>
+      <div class="cta-btns">
+        <a href="index.html" class="btn-back-catalog">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
+            <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/>
+          </svg>
+          Ir al catálogo
+        </a>
+        <a href="https://wa.me/525568850885?text=Hola%2C%20necesito%20ayuda%20con%20un%20pedido%20en%20el%20cat%C3%A1logo%20VMTOP" target="_blank" class="btn-agent">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+            <path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.558 4.121 1.529 5.855L.057 23.428a.75.75 0 00.921.921l5.573-1.472A11.943 11.943 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.71 9.71 0 01-4.953-1.355l-.355-.212-3.684.972.987-3.585-.232-.369A9.718 9.718 0 012.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/>
+          </svg>
+          Hablar con un agente
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    // FAQ accordion
+    document.querySelectorAll('.faq-q').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.closest('.faq-item');
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+        if (!isOpen) item.classList.add('open');
+      });
+    });
+  </script>
+</body>
+</html>

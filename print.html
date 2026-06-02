@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Catálogo VMTOP – Imprimir / PDF</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --blue:   #0D2139;
+      --accent: #f59e0b;
+      --text:   #1a1a2e;
+      --muted:  #555;
+      --border: #dde3ec;
+      --green:  #15803d;
+      --sky:    #1d4ed8;
+    }
+
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      background: #fff;
+      color: var(--text);
+      font-size: 11px;
+    }
+
+    /* ── Barra de herramientas (no se imprime) ── */
+    .print-toolbar {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      background: var(--blue);
+      color: #fff;
+      padding: 12px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      z-index: 100;
+      box-shadow: 0 2px 8px rgba(0,0,0,.3);
+    }
+    .print-toolbar p { font-size: 13px; opacity: .8; }
+    .print-toolbar-btns { display: flex; gap: 8px; }
+    .btn-print {
+      background: var(--accent);
+      border: none;
+      border-radius: 6px;
+      color: #000;
+      font-size: 13px;
+      font-weight: 700;
+      padding: 8px 18px;
+      cursor: pointer;
+    }
+    .btn-close {
+      background: rgba(255,255,255,.15);
+      border: 1px solid rgba(255,255,255,.25);
+      border-radius: 6px;
+      color: #fff;
+      font-size: 13px;
+      font-weight: 600;
+      padding: 8px 16px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    /* ── Contenido imprimible ── */
+    .print-wrap { padding: 70px 20px 40px; }
+
+    .catalog-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 20px;
+      background: var(--blue);
+      color: #fff;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+    .catalog-header img { height: 36px; }
+    .catalog-header-text h1 { font-size: 18px; font-weight: 800; }
+    .catalog-header-text p  { font-size: 11px; opacity: .7; margin-top: 2px; }
+    .catalog-date { font-size: 11px; opacity: .6; text-align: right; }
+
+    /* Grid */
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+    }
+
+    .product-card {
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+    .card-img {
+      width: 100%;
+      aspect-ratio: 1/1;
+      object-fit: contain;
+      background: #f8f9fa;
+      padding: 6px;
+      display: block;
+    }
+    .card-body { padding: 8px; }
+    .card-sku  { font-size: 9px; color: var(--muted); font-family: monospace; margin-bottom: 2px; }
+    .card-name { font-size: 10px; font-weight: 700; line-height: 1.3; margin-bottom: 4px; min-height: 26px; }
+    .card-cat  {
+      display: inline-block;
+      background: #e8f1fd;
+      color: #1d4ed8;
+      font-size: 8px;
+      font-weight: 700;
+      text-transform: uppercase;
+      border-radius: 3px;
+      padding: 1px 5px;
+      margin-bottom: 6px;
+    }
+    .card-disc {
+      display: inline-block;
+      background: #fee2e2;
+      color: #dc2626;
+      font-size: 8px;
+      font-weight: 700;
+      border-radius: 3px;
+      padding: 1px 5px;
+      margin-left: 3px;
+    }
+    .prices { display: flex; flex-direction: column; gap: 2px; }
+    .price-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 9.5px;
+      padding: 2px 4px;
+      border-radius: 3px;
+    }
+    .price-row.pub  { background: #f5f5f5; }
+    .price-row.may  { background: #fef9ec; }
+    .price-row.dist { background: #f0fdf4; }
+    .price-row.caja { background: #eff6ff; }
+    .price-row .lbl { color: var(--muted); }
+    .price-row .val { font-weight: 700; }
+    .price-row.pub  .val { color: var(--muted); text-decoration: line-through; }
+    .price-row.may  .val { color: #b45309; }
+    .price-row.dist .val { color: var(--green); }
+    .price-row.caja .val { color: var(--sky); }
+
+    /* Estado de carga */
+    .loading-state {
+      text-align: center;
+      padding: 60px 20px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    /* ── Print media ── */
+    @media print {
+      .print-toolbar { display: none !important; }
+      .print-wrap { padding: 0; }
+      body { font-size: 10px; }
+      .product-grid { grid-template-columns: repeat(4, 1fr); gap: 6px; }
+      @page { margin: 12mm; size: A4; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="print-toolbar">
+    <p>📄 Vista de impresión — Usa "Guardar como PDF" en el diálogo de impresión para descargar.</p>
+    <div class="print-toolbar-btns">
+      <button class="btn-print" onclick="window.print()">🖨 Imprimir / Guardar PDF</button>
+      <a href="index.html" class="btn-close">← Volver</a>
+    </div>
+  </div>
+
+  <div class="print-wrap">
+    <div class="catalog-header">
+      <img src="img/logo.webp" alt="VMTOP" onerror="this.style.display='none'" />
+      <div class="catalog-header-text">
+        <h1>Catálogo de Productos al Mayoreo</h1>
+        <p>Precios sujetos a cambio sin previo aviso · Vigencia según disponibilidad</p>
+      </div>
+      <div class="catalog-date" id="catalogDate"></div>
+    </div>
+
+    <div id="printGrid" class="product-grid">
+      <div class="loading-state">⏳ Cargando productos…</div>
+    </div>
+  </div>
+
+  <script>
+    // Fecha
+    const now = new Date();
+    document.getElementById('catalogDate').innerHTML =
+      now.toLocaleDateString('es-MX', { day:'2-digit', month:'long', year:'numeric' });
+
+    const fmt = (n) => {
+      const num = parseFloat(n);
+      if (isNaN(num)) return '—';
+      return '$' + num.toLocaleString('es-MX', { minimumFractionDigits: 2 });
+    };
+
+    fetch('productos.json')
+      .then(r => r.json())
+      .then(data => {
+        const prods = Array.isArray(data) ? data : (data.productos ?? []);
+        const grid  = document.getElementById('printGrid');
+        grid.innerHTML = '';
+
+        prods.forEach(p => {
+          const get = (...keys) => { for (const k of keys) if (p[k] != null && p[k] !== '') return p[k]; return null; };
+          const sku    = get('sku','SKU') ?? '';
+          const name   = get('nombre','Nombre','NOMBRE') ?? '';
+          const cat    = get('categoria','Categoria','CATEGORIA') ?? '';
+          const img    = get('imagen','Imagen','IMAGEN','image','img') ?? '';
+          const pPub   = get('precio_publico','PrecioPublico','Precio Público');
+          const pMay   = get('precio_mayoreo','PrecioMayoreo','Precio Mayoreo');
+          const pDist  = get('precio_distribuidor','PrecioDistribuidor','Precio Distribuidor');
+          const pCaja  = get('precio_caja','PrecioCaja','Precio Caja');
+          const piezas = get('piezas_caja','PiezasCaja','Piezas por Caja','piezas');
+          const desc   = get('descuento','Descuento');
+
+          const card = document.createElement('div');
+          card.className = 'product-card';
+          card.innerHTML = `
+            ${img ? `<img class="card-img" src="img/${img}" alt="${name}" />` : ''}
+            <div class="card-body">
+              <div class="card-sku">${sku}</div>
+              <div class="card-name">${name}</div>
+              <div>
+                <span class="card-cat">${cat}</span>
+                ${desc ? `<span class="card-disc">-${desc}%</span>` : ''}
+              </div>
+              <div class="prices">
+                <div class="price-row pub"><span class="lbl">Público</span><span class="val">${fmt(pPub)}</span></div>
+                <div class="price-row may"><span class="lbl">Mayoreo</span><span class="val">${fmt(pMay)}</span></div>
+                <div class="price-row dist"><span class="lbl">Distribuidor</span><span class="val">${fmt(pDist)}</span></div>
+                <div class="price-row caja"><span class="lbl">Caja${piezas ? ` (${piezas} pzas)` : ''}</span><span class="val">${fmt(pCaja)}</span></div>
+              </div>
+            </div>`;
+          grid.appendChild(card);
+        });
+      })
+      .catch(() => {
+        document.getElementById('printGrid').innerHTML =
+          '<div class="loading-state">Error al cargar productos.json</div>';
+      });
+  </script>
+</body>
+</html>
