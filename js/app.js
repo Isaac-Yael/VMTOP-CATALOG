@@ -952,8 +952,8 @@ hamburgerBtn?.addEventListener('click', () => {
 mobileMenuClose?.addEventListener('click', closeMobileMenu);
 mobileMenuBackdrop?.addEventListener('click', closeMobileMenu);
 
-/* ─── Pago en línea (WooCommerce) ────────────────────────────────── */
-const WC_URL      = 'https://vmtop.mx';
+/* ─── Pago en línea (WooCommerce vía proxy PHP) ──────────────────── */
+const WC_PROXY    = 'https://vmtop.mx/crear-pedido.php';
 const WC_CHECKOUT = 'https://vmtop.mx/checkout';
 
 async function pagarEnLinea() {
@@ -976,35 +976,32 @@ async function pagarEnLinea() {
 
   const { priced, grandTotal } = calcCartPricing();
 
-  // Construir líneas del pedido con el precio ya calculado
   const lineItems = priced.map(item => ({
-    sku:       item.sku.toUpperCase(),
-    quantity:  item.qty,
-    // Precio unitario calculado según tier activo
-    subtotal:  (item.unitPrice * item.qty).toFixed(2),
-    total:     (item.unitPrice * item.qty).toFixed(2),
+    sku:      item.sku.toUpperCase(),
+    quantity: item.qty,
+    subtotal: (item.unitPrice * item.qty).toFixed(2),
+    total:    (item.unitPrice * item.qty).toFixed(2),
   }));
 
-  // Nota del pedido con detalle de precios
   const tierName = priced[0]?.tier === 'dist' ? 'Distribuidor' : 'Mayoreo';
   const nota = `Pedido desde Catálogo VMTOP | Cliente: ${name} | Nivel de precio: ${tierName} | Total: $${grandTotal.toFixed(2)}`;
 
   try {
-    const res = await fetch(`${WC_URL}/wp-json/wc/v3/orders`, {
+    const res = await fetch(WC_PROXY, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        status:           'pending',
-        customer_note:    nota,
+        status:        'pending',
+        customer_note: nota,
         billing: {
           first_name: name.split(' ')[0] || name,
           last_name:  name.split(' ').slice(1).join(' ') || '',
         },
         line_items: lineItems,
         meta_data: [
-          { key: '_catalogo_vmtop',   value: 'true' },
-          { key: '_nivel_precio',     value: tierName },
-          { key: '_total_calculado',  value: grandTotal.toFixed(2) },
+          { key: '_catalogo_vmtop',  value: 'true' },
+          { key: '_nivel_precio',    value: tierName },
+          { key: '_total_calculado', value: grandTotal.toFixed(2) },
         ],
       }),
     });
@@ -1012,7 +1009,8 @@ async function pagarEnLinea() {
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const order = await res.json();
 
-    // Redirigir al checkout de WooCommerce con el pedido creado
+    if (!order.id) throw new Error('Sin ID de pedido');
+
     window.location.href = `${WC_CHECKOUT}?order-pay=${order.id}&pay_for_order=true&key=${order.order_key}`;
 
   } catch (e) {
