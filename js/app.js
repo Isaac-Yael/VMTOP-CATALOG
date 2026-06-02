@@ -954,7 +954,7 @@ mobileMenuBackdrop?.addEventListener('click', closeMobileMenu);
 
 /* ─── Pago en línea (WooCommerce vía proxy PHP) ──────────────────── */
 const WC_PROXY    = 'https://vmtop.mx/crear-pedido.php';
-const WC_CHECKOUT = 'https://vmtop.mx/checkout';
+const WC_CHECKOUT = 'https://vmtop.mx/pagar-2';
 
 async function pagarEnLinea() {
   const entries = Object.values(cart);
