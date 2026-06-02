@@ -1,5 +1,4 @@
 SKU,NOMBRE,@IMAGEN,Publico,Mayoreo,Distribuidor,Caja,PZAS,Categoría,Descuento
-MEA001,Escritorio Blanco De Altura,mea001.jpg,"$2,991.00","$2,393.00","$2,111.00","$1,994.00",1,1HORA,0%
 GAR135A-800,Paquete de 4 Pilas Alcalinas AAA,gar135a-800.jpg,$12.00,$10.00,$9.00,$8.00,200,1HORA,0%
 CAB150N,Cable Tipo C 1.5 Metros 2.1A Negro,cab150n.jpg,$20.00,$16.00,$14.00,$13.00,300,1HORA,0%
 PJ098N,Soporte Para Celular,pj098n.jpg,$25.00,$20.00,$18.00,$17.00,300,1HORA,0%
@@ -741,45 +740,45 @@ KC-U2L128-7LP,Memoria Kingston Usb 128gb DTXM Exodia 3.2 Morado,kc-u2l128-7lp.jp
 UR350-128G,Memoria Adata Usb 128GB UR350 3.2,ur350-128g.jpg,$200.00,$175.00,$170.00,$165.00,100,Memorias / USB,0%
 HS-USB-E327C-256G-U3,Memoria HIKSEMI USB 256gb E327C Dual Tipo A-C,hs-usb-e327c-256g-u3.jpg,$345.00,$315.00,$310.00,$305.00,100,Memorias / USB,0%
 FAN-A001,Mini Ventilador con Humidificador,fan-a001.jpg,$119.00,$73.00,$73.00,$73.00,40,Oferta,20%
-FAN-MINI03,Ventilador Portátil Recargable,fan-mini03.jpg,$32.00,$21.00,$21.00,$21.00,144,Oferta,0%
-FAN-MINI08,Ventilador Portátil Recargable,fan-mini08.jpg,$32.00,$21.00,$21.00,$21.00,144,Oferta,0%
-FAN-MINI09,Ventilador Portátil Recargable,fan-mini09.jpg,$32.00,$21.00,$21.00,$21.00,144,Oferta,0%
-FAN-MINI10,Ventilador Portátil Recargable,fan-mini10.jpg,$32.00,$21.00,$21.00,$21.00,144,Oferta,0%
-FAN-MINI12,Ventilador Portátil Recargable,fan-mini12.jpg,$32.00,$21.00,$21.00,$21.00,144,Oferta,0%
-FAN-MINI13,Ventilador Portátil Recargable,fan-mini13.jpg,$32.00,$21.00,$21.00,$21.00,144,Oferta,0%
-FAN-MINI22,Ventilador Portátil Recargable,fan-mini22.jpg,$33.00,$22.00,$22.00,$22.00,120,Oferta,0%
-FAN-MINI17,Ventilador Portátil Recargable,fan-mini17.jpg,$33.00,$22.00,$22.00,$22.00,144,Oferta,0%
-FAN-MINI18,Ventilador Portátil Recargable,fan-mini18.jpg,$33.00,$22.00,$22.00,$22.00,144,Oferta,0%
-FAN-MINI05,Ventilador Portátil Recargable,fan-mini05.jpg,$35.00,$23.00,$23.00,$23.00,144,Oferta,0%
-FAN-MINI06,Ventilador Portátil Recargable,fan-mini06.jpg,$35.00,$23.00,$23.00,$23.00,144,Oferta,0%
-FAN-MINI19,Ventilador Portátil Recargable,fan-mini19.jpg,$35.00,$23.00,$23.00,$23.00,144,Oferta,0%
-FAN-MINI20,Ventilador Portátil Recargable,fan-mini20.jpg,$35.00,$23.00,$23.00,$23.00,144,Oferta,0%
-FAN-Q103,Ventilador Portátil Recargable,fan-q103.jpg,$35.00,$23.00,$23.00,$23.00,144,Oferta,0%
-FAN-Q104,Ventilador Portátil Recargable,fan-q104.jpg,$35.00,$23.00,$23.00,$23.00,144,Oferta,0%
-FAN-Q105,Ventilador Portátil Recargable,fan-q105.jpg,$35.00,$23.00,$23.00,$23.00,144,Oferta,0%
-FAN-Q117,Ventilador,fan-q117.jpg,$37.00,$24.00,$24.00,$24.00,144,Oferta,0%
-FAN-Q118,Ventilador,fan-q118.jpg,$37.00,$24.00,$24.00,$24.00,144,Oferta,0%
-FAN-MINI23,Ventilador Portátil Recargable,fan-mini23.jpg,$37.00,$24.00,$24.00,$24.00,144,Oferta,0%
-FAN-MINI24,Ventilador Portátil Recargable,fan-mini24.jpg,$37.00,$24.00,$24.00,$24.00,144,Oferta,0%
-FAN-MINI25,Ventilador Portátil Recargable,fan-mini25.jpg,$37.00,$24.00,$24.00,$24.00,144,Oferta,0%
-FAN-MINI26,Ventilador Portátil Recargable,fan-mini26.jpg,$37.00,$24.00,$24.00,$24.00,144,Oferta,0%
-FAN-MINI27,Ventilador Portátil Recargable,fan-mini27.jpg,$37.00,$24.00,$24.00,$24.00,144,Oferta,0%
-FAN-MINI28,Ventilador Portátil Recargable,fan-mini28.jpg,$37.00,$24.00,$24.00,$24.00,144,Oferta,0%
-FAN-Q106,Ventilador Portátil Recargable,fan-q106.jpg,$37.00,$24.00,$24.00,$24.00,144,Oferta,0%
-FAN-Q107,Ventilador Portátil Recargable,fan-q107.jpg,$37.00,$24.00,$24.00,$24.00,150,Oferta,0%
-FAN-MINI21,Ventilador Portátil Recargable,fan-mini21.jpg,$38.00,$26.00,$26.00,$26.00,144,Oferta,0%
-FAN-Q116,Ventilador Usb,fan-q116.jpg,$40.00,$27.00,$27.00,$27.00,144,Oferta,0%
-FAN-MINI04,Ventilador Portátil Recargable,fan-mini04.jpg,$40.00,$27.00,$27.00,$27.00,144,Oferta,0%
-FAN-MINI11,Ventilador Portátil Recargable,fan-mini11.jpg,$40.00,$27.00,$27.00,$27.00,144,Oferta,0%
-FAN-Q114,Ventilador,fan-q114.jpg,$43.00,$29.00,$29.00,$29.00,120,Oferta,0%
-FAN-Q108,Ventilador Portátil Recargable,fan-q108.jpg,$43.00,$29.00,$29.00,$29.00,120,Oferta,0%
-FAN-Q110,Ventilador Portátil Recargable,fan-q110.jpg,$43.00,$29.00,$29.00,$29.00,120,Oferta,0%
-FAN-Q109,Ventilador Portátil Recargable,fan-q109.jpg,$43.00,$29.00,$29.00,$29.00,144,Oferta,0%
-FAN-Q115,Ventilador Usb,fan-q115.jpg,$50.00,$33.00,$33.00,$33.00,120,Oferta,0%
-FAN-Q113,Ventilador Usb,fan-q113.jpg,$52.00,$34.00,$34.00,$34.00,120,Oferta,0%
-FAN-Q111,Ventilador Portátil Recargable,fan-q111.jpg,$52.00,$34.00,$34.00,$34.00,120,Oferta,0%
-FAN-Q112,Ventilador Portátil Recargable,fan-q112.jpg,$52.00,$34.00,$34.00,$34.00,120,Oferta,0%
-FAN-MINI16,Ventilador Portátil Recargable,fan-mini16.jpg,$70.00,$47.00,$47.00,$47.00,96,Oferta,0%
+FAN-MINI03,Ventilador Portátil Recargable,fan-mini03.jpg,$32.00,$21.00,$21.00,$21.00,144,Oferta,20%
+FAN-MINI08,Ventilador Portátil Recargable,fan-mini08.jpg,$32.00,$21.00,$21.00,$21.00,144,Oferta,20%
+FAN-MINI09,Ventilador Portátil Recargable,fan-mini09.jpg,$32.00,$21.00,$21.00,$21.00,144,Oferta,20%
+FAN-MINI10,Ventilador Portátil Recargable,fan-mini10.jpg,$32.00,$21.00,$21.00,$21.00,144,Oferta,20%
+FAN-MINI12,Ventilador Portátil Recargable,fan-mini12.jpg,$32.00,$21.00,$21.00,$21.00,144,Oferta,20%
+FAN-MINI13,Ventilador Portátil Recargable,fan-mini13.jpg,$32.00,$21.00,$21.00,$21.00,144,Oferta,20%
+FAN-MINI22,Ventilador Portátil Recargable,fan-mini22.jpg,$33.00,$22.00,$22.00,$22.00,120,Oferta,20%
+FAN-MINI17,Ventilador Portátil Recargable,fan-mini17.jpg,$33.00,$22.00,$22.00,$22.00,144,Oferta,20%
+FAN-MINI18,Ventilador Portátil Recargable,fan-mini18.jpg,$33.00,$22.00,$22.00,$22.00,144,Oferta,20%
+FAN-MINI05,Ventilador Portátil Recargable,fan-mini05.jpg,$35.00,$23.00,$23.00,$23.00,144,Oferta,20%
+FAN-MINI06,Ventilador Portátil Recargable,fan-mini06.jpg,$35.00,$23.00,$23.00,$23.00,144,Oferta,20%
+FAN-MINI19,Ventilador Portátil Recargable,fan-mini19.jpg,$35.00,$23.00,$23.00,$23.00,144,Oferta,20%
+FAN-MINI20,Ventilador Portátil Recargable,fan-mini20.jpg,$35.00,$23.00,$23.00,$23.00,144,Oferta,20%
+FAN-Q103,Ventilador Portátil Recargable,fan-q103.jpg,$35.00,$23.00,$23.00,$23.00,144,Oferta,20%
+FAN-Q104,Ventilador Portátil Recargable,fan-q104.jpg,$35.00,$23.00,$23.00,$23.00,144,Oferta,20%
+FAN-Q105,Ventilador Portátil Recargable,fan-q105.jpg,$35.00,$23.00,$23.00,$23.00,144,Oferta,20%
+FAN-Q117,Ventilador,fan-q117.jpg,$37.00,$24.00,$24.00,$24.00,144,Oferta,20%
+FAN-Q118,Ventilador,fan-q118.jpg,$37.00,$24.00,$24.00,$24.00,144,Oferta,20%
+FAN-MINI23,Ventilador Portátil Recargable,fan-mini23.jpg,$37.00,$24.00,$24.00,$24.00,144,Oferta,20%
+FAN-MINI24,Ventilador Portátil Recargable,fan-mini24.jpg,$37.00,$24.00,$24.00,$24.00,144,Oferta,20%
+FAN-MINI25,Ventilador Portátil Recargable,fan-mini25.jpg,$37.00,$24.00,$24.00,$24.00,144,Oferta,20%
+FAN-MINI26,Ventilador Portátil Recargable,fan-mini26.jpg,$37.00,$24.00,$24.00,$24.00,144,Oferta,20%
+FAN-MINI27,Ventilador Portátil Recargable,fan-mini27.jpg,$37.00,$24.00,$24.00,$24.00,144,Oferta,20%
+FAN-MINI28,Ventilador Portátil Recargable,fan-mini28.jpg,$37.00,$24.00,$24.00,$24.00,144,Oferta,20%
+FAN-Q106,Ventilador Portátil Recargable,fan-q106.jpg,$37.00,$24.00,$24.00,$24.00,144,Oferta,20%
+FAN-Q107,Ventilador Portátil Recargable,fan-q107.jpg,$37.00,$24.00,$24.00,$24.00,150,Oferta,20%
+FAN-MINI21,Ventilador Portátil Recargable,fan-mini21.jpg,$38.00,$26.00,$26.00,$26.00,144,Oferta,20%
+FAN-Q116,Ventilador Usb,fan-q116.jpg,$40.00,$27.00,$27.00,$27.00,144,Oferta,20%
+FAN-MINI04,Ventilador Portátil Recargable,fan-mini04.jpg,$40.00,$27.00,$27.00,$27.00,144,Oferta,20%
+FAN-MINI11,Ventilador Portátil Recargable,fan-mini11.jpg,$40.00,$27.00,$27.00,$27.00,144,Oferta,20%
+FAN-Q114,Ventilador,fan-q114.jpg,$43.00,$29.00,$29.00,$29.00,120,Oferta,20%
+FAN-Q108,Ventilador Portátil Recargable,fan-q108.jpg,$43.00,$29.00,$29.00,$29.00,120,Oferta,20%
+FAN-Q110,Ventilador Portátil Recargable,fan-q110.jpg,$43.00,$29.00,$29.00,$29.00,120,Oferta,20%
+FAN-Q109,Ventilador Portátil Recargable,fan-q109.jpg,$43.00,$29.00,$29.00,$29.00,144,Oferta,20%
+FAN-Q115,Ventilador Usb,fan-q115.jpg,$50.00,$33.00,$33.00,$33.00,120,Oferta,20%
+FAN-Q113,Ventilador Usb,fan-q113.jpg,$52.00,$34.00,$34.00,$34.00,120,Oferta,20%
+FAN-Q111,Ventilador Portátil Recargable,fan-q111.jpg,$52.00,$34.00,$34.00,$34.00,120,Oferta,20%
+FAN-Q112,Ventilador Portátil Recargable,fan-q112.jpg,$52.00,$34.00,$34.00,$34.00,120,Oferta,20%
+FAN-MINI16,Ventilador Portátil Recargable,fan-mini16.jpg,$70.00,$47.00,$47.00,$47.00,96,Oferta,20%
 XB-5519,Power Bank,xb-5519.jpg,$60.00,$58.00,$55.00,$52.00,100,Power Banks,20%
 XB-5536,(XB-5536) Power Banks,xb-5536.jpg,$60.00,$58.00,$55.00,$52.00,100,Power Banks,20%
 XB-5531,Power Bank Con Indicador,xb-5531.jpg,$60.00,$58.00,$55.00,$52.00,100,Power Banks,20%
