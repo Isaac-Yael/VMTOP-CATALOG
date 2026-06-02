@@ -626,8 +626,8 @@ function calcCartPricing() {
     let unitPrice, tier;
 
     if (piezas && item.qty >= piezas && pCaja) {
-      // Precio por unidad efectivo al comprar caja completa
-      unitPrice = pCaja / piezas;
+      // precio_caja ya es el precio unitario al comprar caja completa
+      unitPrice = pCaja;
       tier = 'caja';
     } else if (distActive && pDist) {
       unitPrice = pDist;
@@ -922,24 +922,32 @@ const btnPdfMobile = $('btnPdfMobile');
 if (btnPdf)       btnPdf.addEventListener('click', downloadPDF);
 if (btnPdfMobile) btnPdfMobile.addEventListener('click', downloadPDF);
 
-/* ─── Hamburguesa ────────────────────────────────────────────────── */
-const hamburgerBtn = $('hamburgerBtn');
-const mobileMenu   = $('mobileMenu');
+/* ─── Menú móvil (panel lateral) ────────────────────────────────── */
+const hamburgerBtn       = $('hamburgerBtn');
+const mobileMenuPanel    = $('mobileMenu');
+const mobileMenuBackdrop = $('mobileMenuBackdrop');
+const mobileMenuClose    = $('mobileMenuClose');
+
+function openMobileMenu() {
+  mobileMenuPanel.classList.add('open');
+  mobileMenuBackdrop.classList.add('visible');
+  hamburgerBtn.classList.add('open');
+  hamburgerBtn.setAttribute('aria-expanded', 'true');
+  document.body.style.overflow = 'hidden';
+}
+function closeMobileMenu() {
+  mobileMenuPanel.classList.remove('open');
+  mobileMenuBackdrop.classList.remove('visible');
+  hamburgerBtn.classList.remove('open');
+  hamburgerBtn.setAttribute('aria-expanded', 'false');
+  document.body.style.overflow = '';
+}
 
 hamburgerBtn?.addEventListener('click', () => {
-  const isOpen = mobileMenu.classList.toggle('open');
-  hamburgerBtn.classList.toggle('open', isOpen);
-  hamburgerBtn.setAttribute('aria-expanded', isOpen);
+  mobileMenuPanel.classList.contains('open') ? closeMobileMenu() : openMobileMenu();
 });
-
-// Cerrar menú al hacer click fuera
-document.addEventListener('click', (e) => {
-  if (!hamburgerBtn?.contains(e.target) && !mobileMenu?.contains(e.target)) {
-    mobileMenu?.classList.remove('open');
-    hamburgerBtn?.classList.remove('open');
-    hamburgerBtn?.setAttribute('aria-expanded', 'false');
-  }
-});
+mobileMenuClose?.addEventListener('click', closeMobileMenu);
+mobileMenuBackdrop?.addEventListener('click', closeMobileMenu);
 
 /* ─── Arranque ───────────────────────────────────────────────────── */
 loadData();
