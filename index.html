@@ -185,9 +185,20 @@
           <span>Productos</span><span id="cartTotalItems">0 artículos</span>
         </div>
       </div>
-      <div class="cart-name-wrap">
-        <label class="cart-name-label" for="customerName">Tu nombre completo</label>
-        <input type="text" id="customerName" class="cart-name-input" placeholder="Ej. María González" autocomplete="name" />
+      <div class="cart-form">
+        <div class="cart-form-title">Tus datos</div>
+        <div class="cart-name-wrap">
+          <label class="cart-name-label" for="customerName">Nombre completo</label>
+          <input type="text" id="customerName" class="cart-name-input" placeholder="Ej. María González" autocomplete="name" />
+        </div>
+        <div class="cart-name-wrap">
+          <label class="cart-name-label" for="customerEmail">Correo electrónico</label>
+          <input type="email" id="customerEmail" class="cart-name-input" placeholder="Ej. maria@email.com" autocomplete="email" />
+        </div>
+        <div class="cart-name-wrap">
+          <label class="cart-name-label" for="customerPhone">Teléfono</label>
+          <input type="tel" id="customerPhone" class="cart-name-input" placeholder="Ej. 55 1234 5678" autocomplete="tel" />
+        </div>
       </div>
       <div class="cart-pay-label">¿Cómo deseas pagar?</div>
       <button class="btn-pay-online" id="btnPayOnline">

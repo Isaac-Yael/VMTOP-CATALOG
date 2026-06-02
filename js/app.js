@@ -791,8 +791,12 @@ function sendWhatsApp() {
   const entries = Object.values(cart);
   if (!entries.length) return;
 
-  const nameInput = $('customerName');
-  const name = nameInput.value.trim();
+  const nameInput  = $('customerName');
+  const emailInput = $('customerEmail');
+  const phoneInput = $('customerPhone');
+  const name  = nameInput.value.trim();
+  const email = emailInput?.value.trim() || '';
+  const phone = phoneInput?.value.trim() || '';
 
   if (!name) {
     nameInput.classList.add('error');
@@ -809,7 +813,8 @@ function sendWhatsApp() {
     `• ${i.sku} — ${i.nombre} x${i.qty} (${TIER_LABEL[i.tier]}: ${fmtShort(i.lineTotal)})`
   ).join('\n');
 
-  const msg = `¡Hola! Mi nombre es ${name} y quiero realizar el siguiente pedido (precio ${tierName}):\n\n${lines}\n\nTotal: ${fmtShort(grandTotal)}\n\nQuedo en espera de confirmación. 😊`;
+  const contacto = [email && `Email: ${email}`, phone && `Tel: ${phone}`].filter(Boolean).join(' | ');
+  const msg = `¡Hola! Mi nombre es ${name}${contacto ? ` (${contacto})` : ''} y quiero realizar el siguiente pedido (precio ${tierName}):\n\n${lines}\n\nTotal: ${fmtShort(grandTotal)}\n\nQuedo en espera de confirmación. 😊`;
   const url = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(msg)}`;
   window.open(url, '_blank');
 }
@@ -960,15 +965,21 @@ async function pagarEnLinea() {
   const entries = Object.values(cart);
   if (!entries.length) return;
 
-  const nameInput = $('customerName');
-  const name = nameInput.value.trim();
-  if (!name) {
-    nameInput.classList.add('error');
-    nameInput.focus();
-    nameInput.placeholder = 'Por favor escribe tu nombre';
-    return;
-  }
-  nameInput.classList.remove('error');
+  const nameInput  = $('customerName');
+  const emailInput = $('customerEmail');
+  const phoneInput = $('customerPhone');
+  const name  = nameInput.value.trim();
+  const email = emailInput.value.trim();
+  const phone = phoneInput.value.trim();
+
+  let valid = true;
+  if (!name)  { nameInput.classList.add('error');  nameInput.focus();  valid = false; }
+  else nameInput.classList.remove('error');
+  if (!email) { emailInput.classList.add('error'); if (valid) emailInput.focus(); valid = false; }
+  else emailInput.classList.remove('error');
+  if (!phone) { phoneInput.classList.add('error'); if (valid) phoneInput.focus(); valid = false; }
+  else phoneInput.classList.remove('error');
+  if (!valid) return;
 
   const btnPagar = $('btnPayOnline');
   btnPagar.disabled = true;
@@ -996,6 +1007,8 @@ async function pagarEnLinea() {
         billing: {
           first_name: name.split(' ')[0] || name,
           last_name:  name.split(' ').slice(1).join(' ') || '',
+          email:      email,
+          phone:      phone,
         },
         line_items: lineItems,
         meta_data: [
