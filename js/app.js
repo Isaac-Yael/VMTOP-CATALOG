@@ -1011,7 +1011,7 @@ async function pagarEnLinea() {
 
     if (!order.id) throw new Error('Sin ID de pedido');
 
-    window.location.href = `${WC_CHECKOUT}?order-pay=${order.id}&pay_for_order=true&key=${order.order_key}`;
+    window.location.href = `${WC_CHECKOUT}/order-pay/${order.id}/?pay_for_order=true&key=${order.order_key}`;
 
   } catch (e) {
     console.error(e);
