@@ -15,7 +15,7 @@
   --clr-accent:      #f59e0b;       /* amarillo mayoreo */
   --clr-accent2:     #3b82f6;       /* azul acción */
   --clr-text:        #e2e8f0;
-  --clr-text-muted:  #8892a4;
+  --clr-text-muted:  #b0bccf;
   --clr-success:     #22c55e;
   --clr-tag-bg:      #1e3a5f;
   --clr-tag-text:    #93c5fd;
@@ -32,7 +32,7 @@
   --transition: .18s ease;
 }
 
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; overflow-x: hidden; }
 
 body {
   font-family: var(--font-sans);
@@ -41,6 +41,7 @@ body {
   font-size: 14px;
   line-height: 1.5;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 /* ─── Header ────────────────────────────────────────────────────── */
@@ -503,6 +504,112 @@ body {
 .price-row.caja    .price-value { color: #93c5fd; }
 
 
+/* ─── Header actions (desktop) ───────────────────────────────────── */
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.btn-how-to-buy {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255,255,255,.1);
+  border: 1px solid rgba(255,255,255,.18);
+  border-radius: var(--radius-sm);
+  color: var(--clr-text);
+  font-size: 13px;
+  font-weight: 600;
+  padding: 0 14px;
+  height: 42px;
+  white-space: nowrap;
+  text-decoration: none;
+  flex-shrink: 0;
+  transition: background var(--transition);
+}
+.btn-how-to-buy:hover { background: rgba(255,255,255,.2); }
+
+.btn-pdf {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--clr-accent);
+  border: none;
+  border-radius: var(--radius-sm);
+  color: #000;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 0 14px;
+  height: 42px;
+  white-space: nowrap;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: background var(--transition);
+}
+.btn-pdf:hover { background: #e08c00; }
+
+/* ─── Hamburguesa (solo móvil) ───────────────────────────────────── */
+.hamburger-btn {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  background: rgba(255,255,255,.1);
+  border: 1px solid rgba(255,255,255,.18);
+  border-radius: var(--radius-sm);
+  width: 42px;
+  height: 42px;
+  padding: 10px;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: background var(--transition);
+}
+.hamburger-btn:hover { background: rgba(255,255,255,.2); }
+.hamburger-btn span {
+  display: block;
+  height: 2px;
+  background: var(--clr-text);
+  border-radius: 2px;
+  transition: transform .2s, opacity .2s;
+}
+.hamburger-btn.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.hamburger-btn.open span:nth-child(2) { opacity: 0; }
+.hamburger-btn.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+/* ─── Menú móvil desplegable ─────────────────────────────────────── */
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  background: var(--clr-surface);
+  border-top: 1px solid var(--clr-border);
+  border-bottom: 1px solid var(--clr-border);
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height .25s ease;
+}
+.mobile-menu.open { max-height: 200px; }
+.mobile-menu-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 20px;
+  color: var(--clr-text);
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  background: none;
+  border: none;
+  border-bottom: 1px solid var(--clr-border);
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  transition: background var(--transition);
+}
+.mobile-menu-item:last-child { border-bottom: none; }
+.mobile-menu-item:hover { background: var(--clr-surface2); }
+
 /* ─── Cart button (header) ───────────────────────────────────────── */
 .cart-btn {
   position: relative;
@@ -522,20 +629,21 @@ body {
 .cart-btn:hover { background: rgba(255,255,255,.18); }
 .cart-count {
   position: absolute;
-  top: -6px;
-  right: -6px;
+  top: -8px;
+  right: -8px;
   background: var(--clr-accent);
   color: #000;
-  font-size: 10px;
+  font-size: 9px;
   font-weight: 800;
   border-radius: 99px;
-  min-width: 18px;
-  height: 18px;
+  min-width: 20px;
+  height: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 4px;
+  padding: 0 5px;
   line-height: 1;
+  white-space: nowrap;
 }
 
 /* ─── Cart panel ─────────────────────────────────────────────────── */
@@ -1006,11 +1114,56 @@ body {
   .modal-img-wrap { max-width: 220px; margin: 0 auto; }
 }
 
+@media (max-width: 768px) {
+  .header-actions { display: none; }
+  .hamburger-btn  { display: flex; }
+  .mobile-menu    { display: flex; }
+}
+
 @media (max-width: 560px) {
-  .header-inner { height: 52px; gap: 10px; }
+  .header-inner { height: 52px; gap: 8px; padding: 0 12px; }
   .brand-sub { display: none; }
   .product-grid { grid-template-columns: repeat(auto-fill, minmax(155px, 1fr)); gap: 10px; }
   .card-body { padding: 8px 10px; }
+}
+
+/* ─── Z Fold 4 y pantallas muy estrechas (≤320px) ────────────────── */
+@media (max-width: 320px) {
+  /* Header */
+  .header-inner { padding: 0 10px; gap: 8px; height: 50px; }
+  .brand-img { height: 28px; }
+  .search-input { font-size: 13px; padding: 8px 30px 8px 30px; }
+
+  /* Grid de tarjetas: 1 columna */
+  .product-grid { grid-template-columns: 1fr; gap: 8px; }
+
+  /* Modal: sin padding lateral excesivo */
+  .modal-overlay { padding: 8px; }
+  .modal-card { border-radius: var(--radius-md); max-height: 95vh; }
+  .modal-content { padding: 12px; }
+  .modal-inner { gap: 10px; }
+  .modal-img-wrap { max-width: 120px; }
+  .modal-name { font-size: 14px; }
+  .modal-price-row { padding: 5px 8px; }
+  .modal-price-row .price-value { font-size: 13px; }
+
+  /* Filas de precio: evitar desbordamiento */
+  .price-row { padding: 3px 4px; }
+  .price-label { font-size: 10px; }
+  .price-value { font-size: 11px; }
+
+  /* Carrito panel: ancho completo */
+  .cart-panel { width: 100vw; }
+  .cart-item { grid-template-columns: 44px 1fr auto; gap: 6px; padding: 8px; }
+  .cart-item-img, .cart-item-img-placeholder { width: 44px; height: 44px; }
+
+  /* Qty popup: reducir padding */
+  .qty-popup { width: calc(100vw - 20px); }
+  .qty-popup-product { padding: 10px 14px; gap: 8px; }
+  .qty-popup-body { padding: 12px 14px; }
+  .qty-popup-footer { padding: 0 14px 16px; gap: 8px; }
+  .qty-popup-btn { width: 42px; height: 42px; font-size: 18px; }
+  .qty-popup-input { font-size: 18px; }
 }
 
 /* Sidebar overlay (móvil) */
