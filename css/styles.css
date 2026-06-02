@@ -903,9 +903,59 @@ body {
   margin-right: 3px;
 }
 
-.cart-form { display: flex; flex-direction: column; gap: 10px; background: var(--clr-surface2); border: 1px solid var(--clr-border); border-radius: var(--radius-md); padding: 12px; }
-.cart-form-title { font-size: 11px; font-weight: 700; color: var(--clr-text-muted); text-transform: uppercase; letter-spacing: .05em; }
 .cart-name-wrap { display: flex; flex-direction: column; gap: 5px; }
+
+/* ─── Checkout popup ─────────────────────────────────────────────── */
+.checkout-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.65);
+  backdrop-filter: blur(4px);
+  z-index: 230;
+}
+.checkout-overlay.visible { display: block; }
+
+.checkout-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -48%) scale(.96);
+  opacity: 0;
+  width: 460px;
+  max-width: calc(100vw - 24px);
+  max-height: 90vh;
+  overflow-y: auto;
+  background: var(--clr-surface);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius-lg);
+  z-index: 240;
+  box-shadow: 0 24px 60px rgba(0,0,0,.6);
+  transition: transform .22s cubic-bezier(.32,1,.32,1), opacity .22s ease;
+  pointer-events: none;
+}
+.checkout-popup.open {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+  pointer-events: all;
+}
+.checkout-popup-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 20px 14px;
+  border-bottom: 1px solid var(--clr-border);
+}
+.checkout-popup-title { font-size: 16px; font-weight: 700; }
+.checkout-popup-body { padding: 18px 20px; display: flex; flex-direction: column; gap: 14px; }
+.checkout-field-group { display: flex; flex-direction: column; gap: 5px; }
+.checkout-field-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.checkout-note { font-size: 11px; color: var(--clr-text-muted); }
+.checkout-popup-footer {
+  display: flex;
+  gap: 10px;
+  padding: 0 20px 20px;
+}
 .cart-name-label { font-size: 11px; font-weight: 700; color: var(--clr-text-muted); text-transform: uppercase; letter-spacing: .05em; }
 .cart-name-input {
   background: var(--clr-bg);

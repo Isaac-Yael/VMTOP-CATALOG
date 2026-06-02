@@ -957,35 +957,58 @@ hamburgerBtn?.addEventListener('click', () => {
 mobileMenuClose?.addEventListener('click', closeMobileMenu);
 mobileMenuBackdrop?.addEventListener('click', closeMobileMenu);
 
-/* ─── Pago en línea (WooCommerce vía proxy PHP) ──────────────────── */
+/* ─── Checkout popup ─────────────────────────────────────────────── */
 const WC_PROXY    = 'https://vmtop.mx/crear-pedido.php';
 const WC_CHECKOUT = 'https://vmtop.mx/pagar-2';
 
-async function pagarEnLinea() {
-  const entries = Object.values(cart);
-  if (!entries.length) return;
+const checkoutOverlay = $('checkoutOverlay');
+const checkoutPopup   = $('checkoutPopup');
 
-  const nameInput  = $('customerName');
-  const emailInput = $('customerEmail');
-  const phoneInput = $('customerPhone');
-  const name  = nameInput.value.trim();
-  const email = emailInput.value.trim();
-  const phone = phoneInput.value.trim();
+function openCheckoutPopup() {
+  if (!Object.keys(cart).length) return;
+  checkoutPopup.hidden = false;
+  requestAnimationFrame(() => {
+    checkoutOverlay.classList.add('visible');
+    checkoutPopup.classList.add('open');
+  });
+  $('customerName')?.focus();
+}
+
+function closeCheckoutPopup() {
+  checkoutOverlay.classList.remove('visible');
+  checkoutPopup.classList.remove('open');
+  setTimeout(() => { checkoutPopup.hidden = true; }, 240);
+}
+
+async function procesarPago() {
+  const nameInput    = $('customerName');
+  const emailInput   = $('customerEmail');
+  const phoneInput   = $('customerPhone');
+  const addressInput = $('customerAddress');
+  const cityInput    = $('customerCity');
+  const zipInput     = $('customerZip');
+
+  const name    = nameInput.value.trim();
+  const email   = emailInput.value.trim();
+  const phone   = phoneInput.value.trim();
+  const address = addressInput?.value.trim() || '';
+  const city    = cityInput?.value.trim()    || '';
+  const zip     = zipInput?.value.trim()     || '';
 
   let valid = true;
-  if (!name)  { nameInput.classList.add('error');  nameInput.focus();  valid = false; }
-  else nameInput.classList.remove('error');
-  if (!email) { emailInput.classList.add('error'); if (valid) emailInput.focus(); valid = false; }
-  else emailInput.classList.remove('error');
-  if (!phone) { phoneInput.classList.add('error'); if (valid) phoneInput.focus(); valid = false; }
-  else phoneInput.classList.remove('error');
+  [{ el: nameInput, val: name }, { el: emailInput, val: email }, { el: phoneInput, val: phone }]
+    .forEach(({ el, val }) => {
+      if (!val) { el.classList.add('error'); if (valid) { el.focus(); valid = false; } }
+      else el.classList.remove('error');
+    });
   if (!valid) return;
 
-  const btnPagar = $('btnPayOnline');
-  btnPagar.disabled = true;
-  btnPagar.textContent = '⏳ Procesando...';
+  const confirmBtn = $('checkoutPopupConfirm');
+  confirmBtn.disabled = true;
+  confirmBtn.textContent = '⏳ Procesando...';
 
   const { priced, grandTotal } = calcCartPricing();
+  const tierName = priced[0]?.tier === 'dist' ? 'Distribuidor' : 'Mayoreo';
 
   const lineItems = priced.map(item => ({
     sku:      item.sku.toUpperCase(),
@@ -994,21 +1017,22 @@ async function pagarEnLinea() {
     total:    (item.unitPrice * item.qty).toFixed(2),
   }));
 
-  const tierName = priced[0]?.tier === 'dist' ? 'Distribuidor' : 'Mayoreo';
-  const nota = `Pedido desde Catálogo VMTOP | Cliente: ${name} | Nivel de precio: ${tierName} | Total: $${grandTotal.toFixed(2)}`;
-
   try {
     const res = await fetch(WC_PROXY, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
         status:        'pending',
-        customer_note: nota,
+        customer_note: `Catálogo VMTOP | Precio: ${tierName} | Total: $${grandTotal.toFixed(2)}`,
         billing: {
           first_name: name.split(' ')[0] || name,
           last_name:  name.split(' ').slice(1).join(' ') || '',
-          email:      email,
-          phone:      phone,
+          email, phone,
+          address_1: address,
+          city,
+          postcode:  zip,
+          country:   'MX',
+          state:     '',
         },
         line_items: lineItems,
         meta_data: [
@@ -1021,20 +1045,23 @@ async function pagarEnLinea() {
 
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const order = await res.json();
-
     if (!order.id) throw new Error('Sin ID de pedido');
 
     window.location.href = `${WC_CHECKOUT}/order-pay/${order.id}/?pay_for_order=true&key=${order.order_key}`;
 
   } catch (e) {
     console.error(e);
-    btnPagar.disabled = false;
-    btnPagar.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg> Pagar en línea (PayPal / Tarjeta / OXXO)`;
-    alert('Hubo un error al conectar con la tienda. Por favor intenta de nuevo o usa WhatsApp.');
+    confirmBtn.disabled = false;
+    confirmBtn.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg> Proceder al pago`;
+    alert('Hubo un error. Por favor intenta de nuevo o usa WhatsApp.');
   }
 }
 
-$('btnPayOnline')?.addEventListener('click', pagarEnLinea);
+$('btnPayOnline')?.addEventListener('click', openCheckoutPopup);
+$('checkoutPopupClose')?.addEventListener('click', closeCheckoutPopup);
+$('checkoutPopupCancel')?.addEventListener('click', closeCheckoutPopup);
+$('checkoutOverlay')?.addEventListener('click', closeCheckoutPopup);
+$('checkoutPopupConfirm')?.addEventListener('click', procesarPago);
 
 /* ─── Arranque ───────────────────────────────────────────────────── */
 loadData();
