@@ -35,7 +35,7 @@ const DOM = {
   grid:          $('productGrid'),
   searchInput:   $('searchInput'),
   searchClear:   $('searchClear'),
-  productCount:  $('productCount'),
+  productCount:  null,
   categoryList:  $('categoryList'),
   clearCategory: $('clearCategory'),
   sortSelect:    $('sortSelect'),
@@ -258,7 +258,7 @@ function applySort() {
 }
 
 function updateCountAndFilters() {
-  DOM.productCount.textContent = STATE.filtered.length.toLocaleString();
+  if (DOM.productCount) DOM.productCount.textContent = STATE.filtered.length.toLocaleString();
   DOM.emptyState.hidden = STATE.filtered.length > 0;
 
   // Chips de filtros activos
@@ -687,10 +687,18 @@ function clearCart() {
   updateCartCount();
 }
 
+function formatCartBadge(total) {
+  if (total === 0) return '';
+  if (total >= 10000) return '$' + Math.round(total / 1000) + 'k';
+  if (total >= 1000)  return '$' + (total / 1000).toFixed(1).replace('.0', '') + 'k';
+  return '$' + Math.round(total);
+}
+
 function updateCartCount() {
-  const total = Object.values(cart).reduce((s, i) => s + i.qty, 0);
-  CART_DOM.count.textContent = total;
-  CART_DOM.count.hidden = total === 0;
+  const { grandTotal } = calcCartPricing();
+  const isEmpty = Object.keys(cart).length === 0;
+  CART_DOM.count.hidden = isEmpty;
+  if (!isEmpty) CART_DOM.count.textContent = formatCartBadge(grandTotal);
 }
 
 const TIER_LABEL = { mayoreo: 'Mayoreo', dist: 'Distribuidor', caja: 'Precio Caja' };
@@ -904,6 +912,34 @@ QTY_DOM.plus.addEventListener('click', () => {
 QTY_DOM.cancel.addEventListener('click',  closeQtyPopup);
 QTY_DOM.confirm.addEventListener('click', confirmQtyPopup);
 QTY_DOM.overlay.addEventListener('click', closeQtyPopup);
+
+/* ─── PDF ────────────────────────────────────────────────────────── */
+function downloadPDF() {
+  window.open('print.html', '_blank');
+}
+const btnPdf       = $('btnPdf');
+const btnPdfMobile = $('btnPdfMobile');
+if (btnPdf)       btnPdf.addEventListener('click', downloadPDF);
+if (btnPdfMobile) btnPdfMobile.addEventListener('click', downloadPDF);
+
+/* ─── Hamburguesa ────────────────────────────────────────────────── */
+const hamburgerBtn = $('hamburgerBtn');
+const mobileMenu   = $('mobileMenu');
+
+hamburgerBtn?.addEventListener('click', () => {
+  const isOpen = mobileMenu.classList.toggle('open');
+  hamburgerBtn.classList.toggle('open', isOpen);
+  hamburgerBtn.setAttribute('aria-expanded', isOpen);
+});
+
+// Cerrar menú al hacer click fuera
+document.addEventListener('click', (e) => {
+  if (!hamburgerBtn?.contains(e.target) && !mobileMenu?.contains(e.target)) {
+    mobileMenu?.classList.remove('open');
+    hamburgerBtn?.classList.remove('open');
+    hamburgerBtn?.setAttribute('aria-expanded', 'false');
+  }
+});
 
 /* ─── Arranque ───────────────────────────────────────────────────── */
 loadData();
