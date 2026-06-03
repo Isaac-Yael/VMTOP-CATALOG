@@ -469,6 +469,7 @@ function showModal(p) {
 
   DOM.modalOverlay.hidden = false;
   document.body.style.overflow = 'hidden';
+  document.body.classList.add('modal-open');
   DOM.modalClose.focus();
 
   // Controles de cantidad en el modal
@@ -496,6 +497,7 @@ function showModal(p) {
 function closeModal() {
   DOM.modalOverlay.hidden = true;
   document.body.style.overflow = '';
+  document.body.classList.remove('modal-open');
 }
 
 /* ─── Sidebar móvil ──────────────────────────────────────────────── */
@@ -848,6 +850,7 @@ let qtyPopupProduct = null; // producto actual en el popup
 function isMobile() { return window.innerWidth <= 768; }
 
 function openQtyPopup(p) {
+  document.body.classList.add('qty-popup-open');
   qtyPopupProduct = p;
   const sku    = getField(p, 'sku', 'SKU') ?? '';
   const name   = getField(p, 'nombre', 'Nombre', 'NOMBRE') ?? '';
@@ -890,6 +893,7 @@ function openQtyPopup(p) {
 function closeQtyPopup() {
   QTY_DOM.overlay.classList.remove('visible');
   QTY_DOM.popup.classList.remove('open');
+  document.body.classList.remove('qty-popup-open');
   setTimeout(() => { QTY_DOM.popup.hidden = true; qtyPopupProduct = null; }, 280);
 }
 

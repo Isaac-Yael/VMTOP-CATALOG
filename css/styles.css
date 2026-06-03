@@ -32,7 +32,7 @@
   --transition: .18s ease;
 }
 
-html { scroll-behavior: smooth; overflow-x: hidden; }
+html { scroll-behavior: smooth; }
 
 body {
   font-family: var(--font-sans);
@@ -41,7 +41,6 @@ body {
   font-size: 14px;
   line-height: 1.5;
   min-height: 100vh;
-  overflow-x: hidden;
   padding-top: 60px;
 }
 
@@ -137,6 +136,7 @@ body {
   grid-template-columns: 220px 1fr;
   gap: 16px;
   align-items: start;
+  overflow-x: clip;
 }
 
 /* ─── Sidebar ────────────────────────────────────────────────────── */
@@ -405,8 +405,8 @@ body {
     aspect-ratio: 4 / 3;
   }
   .banner-slide img {
-    width: 166.67%;
-    margin-left: -33.33%;
+    width: 125%;
+    margin-left: -12.5%;
     height: 100%;
     object-fit: cover;
   }
@@ -1614,21 +1614,28 @@ body {
 }
 .fab:hover { transform: scale(1.1); }
 
-/* Botón volver arriba — inferior izquierda */
+/* Botón volver arriba — inferior derecha */
 .fab-top {
   bottom: 88px;
-  left: 18px;
+  right: 18px;
   background: var(--clr-surface);
   color: var(--clr-text);
   border: 1px solid var(--clr-border);
 }
 .fab-top[hidden] { display: none; }
 
-/* WhatsApp — inferior izquierda, debajo del botón arriba */
+/* WhatsApp — inferior derecha */
 .fab-whatsapp {
   bottom: 28px;
-  left: 18px;
+  right: 18px;
   background: #25d366;
   color: #fff;
 }
 .fab-whatsapp:hover { background: #1ebe5d; }
+
+/* Ocultar FABs cuando hay popup/modal abierto */
+.modal-open .fab,
+.qty-popup-open .fab {
+  opacity: 0;
+  pointer-events: none;
+}
