@@ -1102,5 +1102,15 @@ $('checkoutPopupConfirm')?.addEventListener('click', procesarPago);
   startAuto();
 })();
 
+/* ─── Botón volver arriba ────────────────────────────────────────── */
+(function () {
+  const btn = document.getElementById('fabTop');
+  if (!btn) return;
+  window.addEventListener('scroll', () => {
+    btn.hidden = window.scrollY < 300;
+  }, { passive: true });
+  btn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+})();
+
 /* ─── Arranque ───────────────────────────────────────────────────── */
 loadData();
