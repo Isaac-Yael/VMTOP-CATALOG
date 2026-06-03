@@ -1081,7 +1081,7 @@ $('checkoutPopupConfirm')?.addEventListener('click', procesarPago);
   }
 
   function startAuto() {
-    timer = setInterval(() => goTo(current + 1), 8000);
+    timer = setInterval(() => goTo(current + 1), 4000);
   }
 
   function resetAuto() {
@@ -1095,6 +1095,9 @@ $('checkoutPopupConfirm')?.addEventListener('click', procesarPago);
       resetAuto();
     });
   });
+
+  document.getElementById('bannerPrev')?.addEventListener('click', () => { goTo(current - 1); resetAuto(); });
+  document.getElementById('bannerNext')?.addEventListener('click', () => { goTo(current + 1); resetAuto(); });
 
   startAuto();
 })();

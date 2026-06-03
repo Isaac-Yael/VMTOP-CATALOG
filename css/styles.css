@@ -343,6 +343,30 @@ body {
   display: block;
   object-fit: cover;
 }
+.banner-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  background: rgba(0,0,0,0.35);
+  border: none;
+  color: #fff;
+  font-size: 32px;
+  line-height: 1;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background .2s;
+  padding: 0;
+}
+.banner-arrow:hover { background: rgba(0,0,0,0.6); }
+.banner-arrow-prev { left: 10px; }
+.banner-arrow-next { right: 10px; }
+
 .banner-dots {
   position: absolute;
   bottom: 10px;
@@ -489,6 +513,7 @@ body {
   background: var(--clr-surface2);
   overflow: hidden;
   position: relative;
+  border-radius: 8px;
 }
 .card-img {
   width: 100%;
