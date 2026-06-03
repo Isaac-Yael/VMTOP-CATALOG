@@ -329,17 +329,23 @@ body {
 .banner-track {
   position: relative;
   width: 100%;
+  aspect-ratio: 16 / 5;
+  overflow: hidden;
 }
 .banner-slide {
-  display: none;
-  width: 100%;
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity .6s ease;
+  pointer-events: none;
 }
 .banner-slide.active {
-  display: block;
+  opacity: 1;
+  pointer-events: auto;
 }
 .banner-slide img {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
   object-fit: cover;
 }
@@ -392,13 +398,14 @@ body {
 }
 
 @media (max-width: 768px) {
-  .banner-slide {
-    overflow: hidden;
+  .banner-track {
+    aspect-ratio: 4 / 3;
   }
   .banner-slide img {
     width: 166.67%;
     margin-left: -33.33%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
   }
 }
 
