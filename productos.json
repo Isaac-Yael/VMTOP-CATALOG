@@ -1,5 +1,449 @@
 [
   {
+    "sku": "VA370R",
+    "nombre": "Bocina Bluetooth Portátil Color Rojo 5W",
+    "imagen": "va370r.jpg",
+    "precio_publico": 50.0,
+    "precio_mayoreo": 33.0,
+    "precio_distribuidor": 30.0,
+    "precio_caja": 28.0,
+    "piezas_caja": 80,
+    "categoria": "Bocinas / 3\"",
+    "descuento": 0.0
+  },
+  {
+    "sku": "TL4080N19B",
+    "nombre": "Soporte De Tv 40\"- 80\"",
+    "imagen": "tl4080n19b.jpg",
+    "precio_publico": 140.0,
+    "precio_mayoreo": 93.0,
+    "precio_distribuidor": 82.0,
+    "precio_caja": 77.0,
+    "piezas_caja": 10,
+    "categoria": "Hogar / Soportes para TV",
+    "descuento": 0.0
+  },
+  {
+    "sku": "JXQ-1800",
+    "nombre": "Regleta Multicontacto de 6 Entradas con Interruptor de Encendido",
+    "imagen": "jxq-1800.jpg",
+    "precio_publico": 40.0,
+    "precio_mayoreo": 30.0,
+    "precio_distribuidor": 27.0,
+    "precio_caja": 25.0,
+    "piezas_caja": 60,
+    "categoria": "Hogar / Otros",
+    "descuento": 0.0
+  },
+  {
+    "sku": "JC-13",
+    "nombre": "Mini Tripie Con Soporte",
+    "imagen": "jc-13.jpg",
+    "precio_publico": 140.0,
+    "precio_mayoreo": 95.0,
+    "precio_distribuidor": 88.0,
+    "precio_caja": 83.0,
+    "piezas_caja": 100,
+    "categoria": "Soportes para Celular",
+    "descuento": 0.0
+  },
+  {
+    "sku": "DP-10143",
+    "nombre": "Proyector Bluetooth Diseño de Astronauta",
+    "imagen": "dp-10143",
+    "precio_publico": 191.0,
+    "precio_mayoreo": 175.0,
+    "precio_distribuidor": 160.0,
+    "precio_caja": 150.0,
+    "piezas_caja": 24,
+    "categoria": "Iluminación / Reflectores",
+    "descuento": 0.0
+  },
+  {
+    "sku": "BH-21290",
+    "nombre": "Candado para Bicicletas",
+    "imagen": "bh-21290.jpg",
+    "precio_publico": 29.0,
+    "precio_mayoreo": 23.0,
+    "precio_distribuidor": 21.0,
+    "precio_caja": 20.0,
+    "piezas_caja": 100,
+    "categoria": "Seguridad",
+    "descuento": 0.0
+  },
+  {
+    "sku": "BH-21277",
+    "nombre": "Banda de Resistencia para Yoga",
+    "imagen": "bh-21277.jpg",
+    "precio_publico": 25.0,
+    "precio_mayoreo": 20.0,
+    "precio_distribuidor": 17.0,
+    "precio_caja": 16.0,
+    "piezas_caja": 200,
+    "categoria": "Salud y Belleza",
+    "descuento": 0.0
+  },
+  {
+    "sku": "BH-21238",
+    "nombre": "Bolsa de Compras Extensible con Ruedas",
+    "imagen": "bh-21238.jpg",
+    "precio_publico": 59.0,
+    "precio_mayoreo": 47.0,
+    "precio_distribuidor": 41.0,
+    "precio_caja": 39.0,
+    "piezas_caja": 50,
+    "categoria": "Hogar",
+    "descuento": 0.0
+  },
+  {
+    "sku": "BH-21201",
+    "nombre": "Zapatero",
+    "imagen": "bh-21201.jpg",
+    "precio_publico": 51.0,
+    "precio_mayoreo": 41.0,
+    "precio_distribuidor": 36.0,
+    "precio_caja": 34.0,
+    "piezas_caja": 60,
+    "categoria": "Hogar / Muebles",
+    "descuento": 0.0
+  },
+  {
+    "sku": "AIRPODS PRO 2 NIKE",
+    "nombre": "Airpods Pro 2da Gen + Llavero Nike",
+    "imagen": "airpods pro 2 nike.jpg",
+    "precio_publico": 125.0,
+    "precio_mayoreo": 100.0,
+    "precio_distribuidor": 88.0,
+    "precio_caja": 83.0,
+    "piezas_caja": 100,
+    "categoria": "Renombre / Audífonos",
+    "descuento": 0.0
+  },
+  {
+    "sku": "MR-900",
+    "nombre": "Cinturon Calido Del Palacio",
+    "imagen": "mr-900.jpg",
+    "precio_publico": 92.0,
+    "precio_mayoreo": 73.0,
+    "precio_distribuidor": 65.0,
+    "precio_caja": 62.0,
+    "piezas_caja": 100,
+    "categoria": "Salud y Belleza / Masajeadores",
+    "descuento": 0.0
+  },
+  {
+    "sku": "EKQ-30402",
+    "nombre": "Cámara Dual - Vigilancia A2",
+    "imagen": "ekq-30402.jpg",
+    "precio_publico": 736.0,
+    "precio_mayoreo": 540.0,
+    "precio_distribuidor": 476.0,
+    "precio_caja": 450.0,
+    "piezas_caja": 24,
+    "categoria": "Seguridad / Cámaras de Seguridas",
+    "descuento": 0.0
+  },
+  {
+    "sku": "TR-6005",
+    "nombre": "Audifono Bluetooth 6S Pro",
+    "imagen": "tr-6005.jpg",
+    "precio_publico": 82.0,
+    "precio_mayoreo": 60.0,
+    "precio_distribuidor": 53.0,
+    "precio_caja": 50.0,
+    "piezas_caja": 100,
+    "categoria": "Audífonos / Bluetooth",
+    "descuento": 0.0
+  },
+  {
+    "sku": "TB-6324",
+    "nombre": "Smart Watch Ft50",
+    "imagen": "tb-6324.jpg",
+    "precio_publico": 90.0,
+    "precio_mayoreo": 66.0,
+    "precio_distribuidor": 58.0,
+    "precio_caja": 55.0,
+    "piezas_caja": 100,
+    "categoria": "Smartwatch",
+    "descuento": 0.0
+  },
+  {
+    "sku": "FR-9513",
+    "nombre": "Audifonos Bluetooth + Funda y Llavero del futbol",
+    "imagen": "fr-9513.jpg",
+    "precio_publico": 130.0,
+    "precio_mayoreo": 96.0,
+    "precio_distribuidor": 85.0,
+    "precio_caja": 80.0,
+    "piezas_caja": 100,
+    "categoria": "Renombre / Audífonos / Alámbricos",
+    "descuento": 0.0
+  },
+  {
+    "sku": "JB-8812",
+    "nombre": "JB-8812",
+    "imagen": "jb-8812.jpg",
+    "precio_publico": 82.0,
+    "precio_mayoreo": 62.0,
+    "precio_distribuidor": 55.0,
+    "precio_caja": 50.0,
+    "piezas_caja": 100,
+    "categoria": "Renombre / Bocinas",
+    "descuento": 0.0
+  },
+  {
+    "sku": "JXQ-1403",
+    "nombre": "Extension 5 Metros",
+    "imagen": "jxq-1403.jpg",
+    "precio_publico": 42.0,
+    "precio_mayoreo": 32.0,
+    "precio_distribuidor": 28.0,
+    "precio_caja": 26.0,
+    "piezas_caja": 80,
+    "categoria": "Hogar",
+    "descuento": 0.0
+  },
+  {
+    "sku": "JXQ-1402",
+    "nombre": "Extensión de 3 Metros Uso Rudo",
+    "imagen": "jxq-1402.jpg",
+    "precio_publico": 32.0,
+    "precio_mayoreo": 22.0,
+    "precio_distribuidor": 20.0,
+    "precio_caja": 19.0,
+    "piezas_caja": 100,
+    "categoria": "Hogar",
+    "descuento": 0.0
+  },
+  {
+    "sku": "JXQ-1401",
+    "nombre": "Extensión de 2 Metros Uso Rudo",
+    "imagen": "jxq-1401.jpg",
+    "precio_publico": 27.0,
+    "precio_mayoreo": 20.0,
+    "precio_distribuidor": 17.0,
+    "precio_caja": 16.0,
+    "piezas_caja": 120,
+    "categoria": "Hogar",
+    "descuento": 0.0
+  },
+  {
+    "sku": "ACC-20201",
+    "nombre": "Transmisor Bluetooth",
+    "imagen": "acc-20201.jpg",
+    "precio_publico": 43.0,
+    "precio_mayoreo": 31.0,
+    "precio_distribuidor": 28.0,
+    "precio_caja": 26.0,
+    "piezas_caja": 200,
+    "categoria": "Transmisores",
+    "descuento": 0.0
+  },
+  {
+    "sku": "ACC-24110",
+    "nombre": "Transmisor 3.5 para Auto",
+    "imagen": "acc-24110.jpg",
+    "precio_publico": 25.0,
+    "precio_mayoreo": 18.0,
+    "precio_distribuidor": 16.0,
+    "precio_caja": 15.0,
+    "piezas_caja": 500,
+    "categoria": "Transmisores",
+    "descuento": 0.0
+  },
+  {
+    "sku": "HDM-9406",
+    "nombre": "Cable HDMI a HDMI de 20 Metros",
+    "imagen": "hdm-9406.jpg",
+    "precio_publico": 163.0,
+    "precio_mayoreo": 120.0,
+    "precio_distribuidor": 106.0,
+    "precio_caja": 100.0,
+    "piezas_caja": 30,
+    "categoria": "Cables / HDM",
+    "descuento": 0.0
+  },
+  {
+    "sku": "HDM-9404",
+    "nombre": "Cable HDMI a HDMI de 10 Metros",
+    "imagen": "hdm-9404.jpg",
+    "precio_publico": 82.0,
+    "precio_mayoreo": 60.0,
+    "precio_distribuidor": 53.0,
+    "precio_caja": 50.0,
+    "piezas_caja": 50,
+    "categoria": "Cables / HDMI",
+    "descuento": 0.0
+  },
+  {
+    "sku": "HDM-9403",
+    "nombre": "Cable HDMI 5 Metros",
+    "imagen": "hdm-9403.jpg",
+    "precio_publico": 45.0,
+    "precio_mayoreo": 32.0,
+    "precio_distribuidor": 29.0,
+    "precio_caja": 27.0,
+    "piezas_caja": 100,
+    "categoria": "Cables / HDMI",
+    "descuento": 0.0
+  },
+  {
+    "sku": "EKQ-80602",
+    "nombre": "Par de Radios Walkie Talkie",
+    "imagen": "ekq-80602.jpg",
+    "precio_publico": 441.0,
+    "precio_mayoreo": 324.0,
+    "precio_distribuidor": 285.0,
+    "precio_caja": 270.0,
+    "piezas_caja": 30,
+    "categoria": "Seguridad / Cámaras de Seguridas",
+    "descuento": 0.0
+  },
+  {
+    "sku": "TB-6318",
+    "nombre": "Smartwatch T800 Ultra",
+    "imagen": "tb-6318.jpg",
+    "precio_publico": 115.0,
+    "precio_mayoreo": 85.0,
+    "precio_distribuidor": 75.0,
+    "precio_caja": 70.0,
+    "piezas_caja": 100,
+    "categoria": "Smartwatch",
+    "descuento": 0.0
+  },
+  {
+    "sku": "AZJ-80504",
+    "nombre": "Soporte de Moto para Celular",
+    "imagen": "azj-80504.jpg",
+    "precio_publico": 98.0,
+    "precio_mayoreo": 73.0,
+    "precio_distribuidor": 65.0,
+    "precio_caja": 62.0,
+    "piezas_caja": 50,
+    "categoria": "Soportes para Celular / Bici",
+    "descuento": 0.0
+  },
+  {
+    "sku": "AZJ-80503",
+    "nombre": "Soporte Para Bicicleta",
+    "imagen": "azj-80503.jpg",
+    "precio_publico": 98.0,
+    "precio_mayoreo": 73.0,
+    "precio_distribuidor": 67.0,
+    "precio_caja": 62.0,
+    "piezas_caja": 50,
+    "categoria": "Soportes para Celular / Bici",
+    "descuento": 0.0
+  },
+  {
+    "sku": "AZJ-80502",
+    "nombre": "Soporte con Diseño de Sombrilla para Motocicleta",
+    "imagen": "azj-80502.jpg",
+    "precio_publico": 100.0,
+    "precio_mayoreo": 68.0,
+    "precio_distribuidor": 58.0,
+    "precio_caja": 55.0,
+    "piezas_caja": 100,
+    "categoria": "Soportes para Celular / Moto",
+    "descuento": 0.0
+  },
+  {
+    "sku": "AZJ-80501",
+    "nombre": "Soporte con Diseño de Sombrilla para Bicicleta",
+    "imagen": "azj-80501.jpg",
+    "precio_publico": 90.0,
+    "precio_mayoreo": 68.0,
+    "precio_distribuidor": 58.0,
+    "precio_caja": 55.0,
+    "piezas_caja": 100,
+    "categoria": "Soportes para Celular / Moto",
+    "descuento": 0.0
+  },
+  {
+    "sku": "TR-6010",
+    "nombre": "Audífonos Bluetooth con Estuche de Carga",
+    "imagen": "tr-6010.jpg",
+    "precio_publico": 58.0,
+    "precio_mayoreo": 42.0,
+    "precio_distribuidor": 38.0,
+    "precio_caja": 35.0,
+    "piezas_caja": 100,
+    "categoria": "Audífonos / Bluetooth",
+    "descuento": 0.0
+  },
+  {
+    "sku": "TR-6009",
+    "nombre": "Audífonos Bluetooth con Estuche de Carga",
+    "imagen": "tr-6009.jpg",
+    "precio_publico": 58.0,
+    "precio_mayoreo": 42.0,
+    "precio_distribuidor": 37.0,
+    "precio_caja": 35.0,
+    "piezas_caja": 100,
+    "categoria": "Audífonos / Bluetooth",
+    "descuento": 0.0
+  },
+  {
+    "sku": "XR-3158",
+    "nombre": "Audifonos Alambricos Jack 3.5mm",
+    "imagen": "xr-3158.jpg",
+    "precio_publico": 7.0,
+    "precio_mayoreo": 5.0,
+    "precio_distribuidor": 4.5,
+    "precio_caja": 4.0,
+    "piezas_caja": 500,
+    "categoria": "Audífonos / Alámbricos",
+    "descuento": 0.0
+  },
+  {
+    "sku": "ATC-24002",
+    "nombre": "Cargador para Moto",
+    "imagen": "atc-24002.jpg",
+    "precio_publico": 62.0,
+    "precio_mayoreo": 45.0,
+    "precio_distribuidor": 40.0,
+    "precio_caja": 38.0,
+    "piezas_caja": 100,
+    "categoria": "Cargadores",
+    "descuento": 0.0
+  },
+  {
+    "sku": "ATC-24001",
+    "nombre": "Cargador Para Moto",
+    "imagen": "atc-24001.jpg",
+    "precio_publico": 36.0,
+    "precio_mayoreo": 27.0,
+    "precio_distribuidor": 24.0,
+    "precio_caja": 22.0,
+    "piezas_caja": 100,
+    "categoria": "Cargadores",
+    "descuento": 0.0
+  },
+  {
+    "sku": "JXQ-1404",
+    "nombre": "Extension 10 Metros Uso Rudo",
+    "imagen": "jxq-1404.jpg",
+    "precio_publico": 100.0,
+    "precio_mayoreo": 60.0,
+    "precio_distribuidor": 55.0,
+    "precio_caja": 46.0,
+    "piezas_caja": 50,
+    "categoria": "Hogar",
+    "descuento": 0.0
+  },
+  {
+    "sku": "SJ-2502",
+    "nombre": "Candado para Moto de 50mm",
+    "imagen": "sj-2502.jpg",
+    "precio_publico": 46.0,
+    "precio_mayoreo": 34.0,
+    "precio_distribuidor": 30.0,
+    "precio_caja": 28.0,
+    "piezas_caja": 96,
+    "categoria": "Hogar",
+    "descuento": 0.0
+  },
+  {
     "sku": "GAR135A-800",
     "nombre": "Paquete de 4 Pilas Alcalinas AAA",
     "imagen": "gar135a-800.jpg",
@@ -44,7 +488,7 @@
     "precio_distribuidor": 126.0,
     "precio_caja": 119.0,
     "piezas_caja": 100,
-    "categoria": "1HORA / Audífonos",
+    "categoria": "1HORA",
     "descuento": 0.0
   },
   {
@@ -56,7 +500,7 @@
     "precio_distribuidor": 16.0,
     "precio_caja": 15.5,
     "piezas_caja": 300,
-    "categoria": "1HORA / Cables",
+    "categoria": "1HORA",
     "descuento": 20.0
   },
   {
@@ -68,7 +512,7 @@
     "precio_distribuidor": 28.0,
     "precio_caja": 26.5,
     "piezas_caja": 300,
-    "categoria": "1HORA / Cables",
+    "categoria": "1HORA",
     "descuento": 0.0
   },
   {
@@ -80,7 +524,7 @@
     "precio_distribuidor": 13.0,
     "precio_caja": 12.5,
     "piezas_caja": 300,
-    "categoria": "1HORA / Cables",
+    "categoria": "1HORA",
     "descuento": 0.0
   },
   {
@@ -92,7 +536,7 @@
     "precio_distribuidor": 10.0,
     "precio_caja": 9.5,
     "piezas_caja": 200,
-    "categoria": "1HORA / Cables",
+    "categoria": "1HORA",
     "descuento": 0.0
   },
   {
@@ -104,7 +548,7 @@
     "precio_distribuidor": 10.0,
     "precio_caja": 9.5,
     "piezas_caja": 300,
-    "categoria": "1HORA / Cables",
+    "categoria": "1HORA",
     "descuento": 0.0
   },
   {
@@ -116,7 +560,7 @@
     "precio_distribuidor": 7.0,
     "precio_caja": 6.5,
     "piezas_caja": 400,
-    "categoria": "1HORA / Cables",
+    "categoria": "1HORA",
     "descuento": 0.0
   },
   {
@@ -128,7 +572,7 @@
     "precio_distribuidor": 26.0,
     "precio_caja": 25.0,
     "piezas_caja": 200,
-    "categoria": "1HORA / Cargadores",
+    "categoria": "1HORA",
     "descuento": 0.0
   },
   {
@@ -140,7 +584,7 @@
     "precio_distribuidor": 13.0,
     "precio_caja": 12.0,
     "piezas_caja": 200,
-    "categoria": "1HORA / Cargadores",
+    "categoria": "1HORA",
     "descuento": 0.0
   },
   {
@@ -152,7 +596,7 @@
     "precio_distribuidor": 26.0,
     "precio_caja": 25.0,
     "piezas_caja": 200,
-    "categoria": "1HORA / Cargadores",
+    "categoria": "1HORA",
     "descuento": 0.0
   },
   {
@@ -164,7 +608,7 @@
     "precio_distribuidor": 67.0,
     "precio_caja": 63.0,
     "piezas_caja": 200,
-    "categoria": "1HORA / Cargadores",
+    "categoria": "1HORA",
     "descuento": 0.0
   },
   {
@@ -332,7 +776,7 @@
     "precio_distribuidor": 19.5,
     "precio_caja": 18.0,
     "piezas_caja": 200,
-    "categoria": "Audífonos / Alámbricos",
+    "categoria": "Audífonos",
     "descuento": 20.0
   },
   {
@@ -344,7 +788,7 @@
     "precio_distribuidor": 7.0,
     "precio_caja": 5.5,
     "piezas_caja": 1000,
-    "categoria": "Audífonos / Alámbricos",
+    "categoria": "Audífonos",
     "descuento": 0.0
   },
   {
@@ -356,7 +800,7 @@
     "precio_distribuidor": 8.0,
     "precio_caja": 7.5,
     "piezas_caja": 400,
-    "categoria": "Audífonos / Alámbricos",
+    "categoria": "Audífonos",
     "descuento": 0.0
   },
   {
@@ -368,7 +812,7 @@
     "precio_distribuidor": 10.5,
     "precio_caja": 10.0,
     "piezas_caja": 500,
-    "categoria": "Audífonos / Alámbricos",
+    "categoria": "Audífonos",
     "descuento": 0.0
   },
   {
@@ -380,19 +824,19 @@
     "precio_distribuidor": 6.5,
     "precio_caja": 6.0,
     "piezas_caja": 600,
-    "categoria": "Audífonos / Alámbricos",
+    "categoria": "Audífonos",
     "descuento": 0.0
   },
   {
     "sku": "XR-3115",
     "nombre": "Audifonos Alambricos",
     "imagen": "xr-3115.jpg",
-    "precio_publico": 8.0,
+    "precio_publico": 9.0,
     "precio_mayoreo": 7.0,
     "precio_distribuidor": 6.0,
     "precio_caja": 5.5,
     "piezas_caja": 500,
-    "categoria": "Audífonos / Alámbricos",
+    "categoria": "Audífonos",
     "descuento": 0.0
   },
   {
@@ -404,7 +848,7 @@
     "precio_distribuidor": 6.0,
     "precio_caja": 5.5,
     "piezas_caja": 500,
-    "categoria": "Audífonos / Alámbricos",
+    "categoria": "Audífonos",
     "descuento": 0.0
   },
   {
@@ -416,7 +860,7 @@
     "precio_distribuidor": 7.0,
     "precio_caja": 5.5,
     "piezas_caja": 1000,
-    "categoria": "Audífonos / Alámbricos",
+    "categoria": "Audífonos",
     "descuento": 0.0
   },
   {
@@ -428,7 +872,7 @@
     "precio_distribuidor": 10.0,
     "precio_caja": 9.0,
     "piezas_caja": 200,
-    "categoria": "Audífonos / Alámbricos",
+    "categoria": "Audífonos",
     "descuento": 0.0
   },
   {
@@ -440,7 +884,7 @@
     "precio_distribuidor": 10.0,
     "precio_caja": 9.0,
     "piezas_caja": 500,
-    "categoria": "Audífonos / Alámbricos",
+    "categoria": "Audífonos",
     "descuento": 0.0
   },
   {
@@ -452,7 +896,7 @@
     "precio_distribuidor": 10.0,
     "precio_caja": 9.0,
     "piezas_caja": 500,
-    "categoria": "Audífonos / Alámbricos",
+    "categoria": "Audífonos",
     "descuento": 0.0
   },
   {
@@ -464,7 +908,7 @@
     "precio_distribuidor": 11.0,
     "precio_caja": 10.0,
     "piezas_caja": 500,
-    "categoria": "Audífonos / Alámbricos",
+    "categoria": "Audífonos",
     "descuento": 0.0
   },
   {
@@ -476,7 +920,7 @@
     "precio_distribuidor": 11.0,
     "precio_caja": 10.0,
     "piezas_caja": 1000,
-    "categoria": "Audífonos / Alámbricos",
+    "categoria": "Audífonos",
     "descuento": 0.0
   },
   {
@@ -488,7 +932,7 @@
     "precio_distribuidor": 21.0,
     "precio_caja": 20.0,
     "piezas_caja": 300,
-    "categoria": "Audífonos / Alámbricos",
+    "categoria": "Audífonos",
     "descuento": 0.0
   },
   {
@@ -500,7 +944,7 @@
     "precio_distribuidor": 21.0,
     "precio_caja": 20.0,
     "piezas_caja": 300,
-    "categoria": "Audífonos / Alámbricos",
+    "categoria": "Audífonos",
     "descuento": 0.0
   },
   {
@@ -512,7 +956,7 @@
     "precio_distribuidor": 37.0,
     "precio_caja": 35.0,
     "piezas_caja": 100,
-    "categoria": "Audífonos / Bluetooth",
+    "categoria": "Audífonos",
     "descuento": 0.0
   },
   {
@@ -524,7 +968,7 @@
     "precio_distribuidor": 44.0,
     "precio_caja": 42.0,
     "piezas_caja": 100,
-    "categoria": "Audífonos / Bluetooth",
+    "categoria": "Audífonos",
     "descuento": 0.0
   },
   {
@@ -879,7 +1323,7 @@
     "sku": "XM-7130",
     "nombre": "Bocina de Baño",
     "imagen": "xm-7130.jpg",
-    "precio_publico": 45.0,
+    "precio_publico": 50.0,
     "precio_mayoreo": 39.0,
     "precio_distribuidor": 36.0,
     "precio_caja": 34.0,
@@ -1623,10 +2067,10 @@
     "sku": "GTS-1742",
     "nombre": "Bocina De Diseño",
     "imagen": "gts-1742.jpg",
-    "precio_publico": 92.0,
-    "precio_mayoreo": 73.0,
-    "precio_distribuidor": 65.0,
-    "precio_caja": 61.0,
+    "precio_publico": 97.0,
+    "precio_mayoreo": 78.0,
+    "precio_distribuidor": 70.0,
+    "precio_caja": 66.0,
     "piezas_caja": 80,
     "categoria": "Bocinas",
     "descuento": 0.0
@@ -2583,10 +3027,10 @@
     "sku": "GTS-1271",
     "nombre": "Bocina De 3\"",
     "imagen": "gts-1271.jpg",
-    "precio_publico": 60.0,
-    "precio_mayoreo": 48.0,
-    "precio_distribuidor": 42.0,
-    "precio_caja": 40.0,
+    "precio_publico": 63.0,
+    "precio_mayoreo": 51.0,
+    "precio_distribuidor": 45.0,
+    "precio_caja": 43.0,
     "piezas_caja": 60,
     "categoria": "Bocinas / 3\"",
     "descuento": 0.0
@@ -3063,7 +3507,7 @@
     "sku": "XM-7121",
     "nombre": "Mini Bocina Diseño Hongo",
     "imagen": "xm-7121.jpg",
-    "precio_publico": 45.0,
+    "precio_publico": 52.0,
     "precio_mayoreo": 40.0,
     "precio_distribuidor": 34.0,
     "precio_caja": 32.0,
@@ -11727,10 +12171,10 @@
     "sku": "TB-6316",
     "nombre": "Smartwatch T500",
     "imagen": "tb-6316.jpg",
-    "precio_publico": 95.0,
-    "precio_mayoreo": 76.0,
-    "precio_distribuidor": 67.0,
-    "precio_caja": 64.0,
+    "precio_publico": 82.0,
+    "precio_mayoreo": 60.0,
+    "precio_distribuidor": 53.0,
+    "precio_caja": 50.0,
     "piezas_caja": 100,
     "categoria": "Smartwatch",
     "descuento": 0.0
@@ -12435,10 +12879,10 @@
     "sku": "XO-8301",
     "nombre": "Transmisor Bluetooth de Coche",
     "imagen": "xo-8301.jpg",
-    "precio_publico": 57.0,
+    "precio_publico": 62.0,
     "precio_mayoreo": 46.0,
     "precio_distribuidor": 42.0,
-    "precio_caja": 40.0,
+    "precio_caja": 38.0,
     "piezas_caja": 200,
     "categoria": "Transmisores",
     "descuento": 0.0
