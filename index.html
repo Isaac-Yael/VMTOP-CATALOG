@@ -129,6 +129,26 @@
     <!-- CONTENT -->
     <section class="content">
 
+      <!-- ══════════════════════ BANNER SLIDER ═══════════════════════ -->
+      <div class="banner-slider" id="bannerSlider" aria-label="Promociones">
+        <div class="banner-track" id="bannerTrack">
+          <div class="banner-slide active">
+            <img src="banner/banner_1.jpg" alt="Promoción 1" loading="eager" />
+          </div>
+          <div class="banner-slide">
+            <img src="banner/banner_2.jpg" alt="Promoción 2" loading="lazy" />
+          </div>
+          <div class="banner-slide">
+            <img src="banner/banner_3.jpg" alt="Promoción 3" loading="lazy" />
+          </div>
+        </div>
+        <div class="banner-dots" id="bannerDots">
+          <button class="banner-dot active" data-index="0" aria-label="Banner 1"></button>
+          <button class="banner-dot" data-index="1" aria-label="Banner 2"></button>
+          <button class="banner-dot" data-index="2" aria-label="Banner 3"></button>
+        </div>
+      </div>
+
       <!-- Toolbar -->
       <div class="toolbar">
         <button class="btn-filter-toggle" id="filterToggle" aria-expanded="false">

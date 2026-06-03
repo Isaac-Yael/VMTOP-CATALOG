@@ -317,6 +317,67 @@ body {
   margin: 14px 0;
 }
 
+/* ─── Banner Slider ──────────────────────────────────────────────── */
+.banner-slider {
+  position: relative;
+  width: 100%;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  margin-bottom: 16px;
+  background: var(--clr-surface);
+}
+.banner-track {
+  position: relative;
+  width: 100%;
+}
+.banner-slide {
+  display: none;
+  width: 100%;
+}
+.banner-slide.active {
+  display: block;
+}
+.banner-slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+.banner-dots {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 7px;
+  z-index: 2;
+}
+.banner-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255,255,255,0.5);
+  cursor: pointer;
+  padding: 0;
+  transition: background .3s, transform .3s;
+}
+.banner-dot.active {
+  background: #fff;
+  transform: scale(1.3);
+}
+
+@media (max-width: 768px) {
+  .banner-slide {
+    overflow: hidden;
+  }
+  .banner-slide img {
+    width: 166.67%;
+    margin-left: -33.33%;
+    height: auto;
+  }
+}
+
 /* ─── Toolbar ────────────────────────────────────────────────────── */
 .toolbar {
   display: flex;

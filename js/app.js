@@ -1063,5 +1063,41 @@ $('checkoutPopupCancel')?.addEventListener('click', closeCheckoutPopup);
 $('checkoutOverlay')?.addEventListener('click', closeCheckoutPopup);
 $('checkoutPopupConfirm')?.addEventListener('click', procesarPago);
 
+/* ─── Banner Slider ──────────────────────────────────────────────── */
+(function () {
+  const slides = document.querySelectorAll('.banner-slide');
+  const dots   = document.querySelectorAll('.banner-dot');
+  if (!slides.length) return;
+
+  let current = 0;
+  let timer   = null;
+
+  function goTo(index) {
+    slides[current].classList.remove('active');
+    dots[current].classList.remove('active');
+    current = (index + slides.length) % slides.length;
+    slides[current].classList.add('active');
+    dots[current].classList.add('active');
+  }
+
+  function startAuto() {
+    timer = setInterval(() => goTo(current + 1), 8000);
+  }
+
+  function resetAuto() {
+    clearInterval(timer);
+    startAuto();
+  }
+
+  dots.forEach(dot => {
+    dot.addEventListener('click', () => {
+      goTo(parseInt(dot.dataset.index));
+      resetAuto();
+    });
+  });
+
+  startAuto();
+})();
+
 /* ─── Arranque ───────────────────────────────────────────────────── */
 loadData();
