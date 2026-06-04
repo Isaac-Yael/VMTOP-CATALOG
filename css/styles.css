@@ -402,11 +402,11 @@ body {
 
 @media (max-width: 768px) {
   .banner-track {
-    aspect-ratio: auto;
+    aspect-ratio: 16 / 5;
   }
   .banner-slide img {
     width: 100%;
-    height: auto;
+    height: 100%;
     margin-left: 0;
     object-fit: contain;
   }
