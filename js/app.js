@@ -819,6 +819,7 @@ function sendWhatsApp() {
   const msg = `¡Hola! Mi nombre es ${name}${contacto ? ` (${contacto})` : ''} y quiero realizar el siguiente pedido (precio ${tierName}):\n\n${lines}\n\nTotal: ${fmtShort(grandTotal)}\n\nQuedo en espera de confirmación. 😊`;
   const url = `https://api.whatsapp.com/send?phone=${WA_NUMBER}&text=${encodeURIComponent(msg)}`;
   closeCheckoutPopup();
+  clearCart();
   window.open(url, '_blank');
 }
 
@@ -1055,6 +1056,7 @@ async function procesarPago() {
     const order = await res.json();
     if (!order.id) throw new Error('Sin ID de pedido');
 
+    clearCart();
     window.location.href = `${WC_CHECKOUT}/order-pay/${order.id}/?pay_for_order=true&key=${order.order_key}`;
 
   } catch (e) {
