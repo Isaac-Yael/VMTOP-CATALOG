@@ -818,6 +818,7 @@ function sendWhatsApp() {
   const contacto = [email && `Email: ${email}`, phone && `Tel: ${phone}`].filter(Boolean).join(' | ');
   const msg = `¡Hola! Mi nombre es ${name}${contacto ? ` (${contacto})` : ''} y quiero realizar el siguiente pedido (precio ${tierName}):\n\n${lines}\n\nTotal: ${fmtShort(grandTotal)}\n\nQuedo en espera de confirmación. 😊`;
   const url = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(msg)}`;
+  closeCheckoutPopup();
   window.open(url, '_blank');
 }
 
@@ -968,8 +969,11 @@ const WC_CHECKOUT = 'https://vmtop.mx/pagar-2';
 const checkoutOverlay = $('checkoutOverlay');
 const checkoutPopup   = $('checkoutPopup');
 
-function openCheckoutPopup() {
+let checkoutMode = 'online'; // 'online' | 'whatsapp'
+
+function openCheckoutPopup(mode = 'online') {
   if (!Object.keys(cart).length) return;
+  checkoutMode = mode;
   checkoutPopup.hidden = false;
   requestAnimationFrame(() => {
     checkoutOverlay.classList.add('visible');
@@ -1061,11 +1065,16 @@ async function procesarPago() {
   }
 }
 
-$('btnPayOnline')?.addEventListener('click', openCheckoutPopup);
+$('btnPayOnline')?.addEventListener('click', () => openCheckoutPopup('online'));
+CART_DOM.whatsapp?.removeEventListener('click', sendWhatsApp);
+CART_DOM.whatsapp?.addEventListener('click', () => openCheckoutPopup('whatsapp'));
 $('checkoutPopupClose')?.addEventListener('click', closeCheckoutPopup);
 $('checkoutPopupCancel')?.addEventListener('click', closeCheckoutPopup);
 $('checkoutOverlay')?.addEventListener('click', closeCheckoutPopup);
-$('checkoutPopupConfirm')?.addEventListener('click', procesarPago);
+$('checkoutPopupConfirm')?.addEventListener('click', () => {
+  if (checkoutMode === 'whatsapp') sendWhatsApp();
+  else procesarPago();
+});
 
 /* ─── Banner Slider ──────────────────────────────────────────────── */
 (function () {
