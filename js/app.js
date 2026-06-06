@@ -57,6 +57,8 @@ const DOM = {
 };
 
 /* ─── Utilidades ─────────────────────────────────────────────────── */
+// Parsea precios aunque vengan con comas como separador de miles ("1,350.00" → 1350)
+const parsePrice = (n) => parseFloat(String(n ?? 0).replace(/,/g, '')) || 0;
 const fmt = (n) => {
   const num = parseFloat(n);
   if (isNaN(num)) return '—';
@@ -147,7 +149,7 @@ function selectCategory(cat) {
 /* ─── Filtro de precio ───────────────────────────────────────────── */
 function initPriceFilter() {
   const prices = STATE.all
-    .map(p => parseFloat(getField(p, 'precio_caja', 'PrecioCaja', 'Precio Caja') ?? 0))
+    .map(p => parsePrice(getField(p, 'precio_caja', 'PrecioCaja', 'Precio Caja')))
     .filter(n => !isNaN(n) && n > 0);
 
   if (!prices.length) return;
@@ -220,7 +222,7 @@ function applyFilters() {
     const sku  = normalize(p.sku ?? p.SKU ?? '');
     const name = normalize(p.nombre ?? p.Nombre ?? p.NOMBRE ?? '');
     const pcat = p.categoria ?? p.Categoria ?? p.CATEGORIA ?? '';
-    const pcaja = parseFloat(getField(p, 'precio_caja', 'PrecioCaja', 'Precio Caja') ?? 0);
+    const pcaja = parsePrice(getField(p, 'precio_caja', 'PrecioCaja', 'Precio Caja'));
 
     const matchQ    = !q || sku.includes(q) || name.includes(q);
     const matchCat  = !cat || pcat === cat;
@@ -243,8 +245,8 @@ function applySort() {
     const nameB = (b.nombre ?? b.Nombre ?? '').toLowerCase();
     const skuA  = (a.sku ?? a.SKU ?? '').toLowerCase();
     const skuB  = (b.sku ?? b.SKU ?? '').toLowerCase();
-    const pA    = parseFloat(a.precio_publico ?? a.PrecioPublico ?? 0);
-    const pB    = parseFloat(b.precio_publico ?? b.PrecioPublico ?? 0);
+    const pA    = parsePrice(a.precio_publico ?? a.PrecioPublico);
+    const pB    = parsePrice(b.precio_publico ?? b.PrecioPublico);
 
     switch (s) {
       case 'name_asc':   return nameA.localeCompare(nameB);
@@ -613,16 +615,16 @@ function calcCartPricing() {
 
   // Total a precio mayoreo → determina si aplica distribuidor
   const totalMayoreo = entries.reduce((sum, item) => {
-    return sum + item.qty * (parseFloat(item.precio_mayoreo) || 0);
+    return sum + item.qty * parsePrice(item.precio_mayoreo);
   }, 0);
 
   const distActive = totalMayoreo >= DIST_THRESHOLD;
   let grandTotal = 0;
 
   const priced = entries.map(item => {
-    const pMay   = parseFloat(item.precio_mayoreo)    || 0;
-    const pDist  = parseFloat(item.precio_distribuidor) || 0;
-    const pCaja  = parseFloat(item.precio_caja)       || 0;
+    const pMay   = parsePrice(item.precio_mayoreo);
+    const pDist  = parsePrice(item.precio_distribuidor);
+    const pCaja  = parsePrice(item.precio_caja);
     const piezas = parseInt(item.piezas_caja)         || 0;
 
     let unitPrice, tier;
