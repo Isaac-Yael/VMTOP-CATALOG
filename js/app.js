@@ -769,7 +769,20 @@ function renderCart() {
     totalEl.className = 'cart-grand-total';
     CART_DOM.footer.querySelector('.cart-summary').appendChild(totalEl);
   }
-  totalEl.innerHTML = `<span>Total</span><span>${fmtShort(grandTotal)}</span>`;
+  // Fila de envío (solo pago en línea)
+  let shippingEl = CART_DOM.footer.querySelector('.cart-shipping-row');
+  if (!shippingEl) {
+    shippingEl = document.createElement('div');
+    shippingEl.className = 'cart-summary-row cart-shipping-row';
+    CART_DOM.footer.querySelector('.cart-summary').insertBefore(shippingEl, totalEl);
+  }
+  const shippingCost = calcShipping(grandTotal);
+  shippingEl.innerHTML = shippingCost === 0
+    ? `<span>Envío</span><span style="color:var(--clr-success);font-weight:700;">¡Gratis!</span>`
+    : `<span>Envío</span><span>${fmtShort(shippingCost)}</span>`;
+
+  const totalConEnvio = grandTotal + shippingCost;
+  totalEl.innerHTML = `<span>Total</span><span>${fmtShort(totalConEnvio)}</span>`;
 
   // Listeners
   CART_DOM.items.querySelectorAll('.qty-btn').forEach(btn => {
@@ -1019,7 +1032,9 @@ async function procesarPago() {
   confirmBtn.textContent = '⏳ Procesando...';
 
   const { priced, grandTotal } = calcCartPricing();
-  const tierName = priced[0]?.tier === 'dist' ? 'Distribuidor' : 'Mayoreo';
+  const tierName    = priced[0]?.tier === 'dist' ? 'Distribuidor' : 'Mayoreo';
+  const shippingCost = calcShipping(grandTotal);
+  const totalConEnvio = grandTotal + shippingCost;
 
   const lineItems = priced.map(item => ({
     sku:      item.sku.toUpperCase(),
@@ -1028,13 +1043,19 @@ async function procesarPago() {
     total:    (item.unitPrice * item.qty).toFixed(2),
   }));
 
+  const shippingLines = shippingCost > 0 ? [{
+    method_title: 'Envío Estafeta',
+    method_id:    'flat_rate',
+    total:        shippingCost.toFixed(2),
+  }] : [];
+
   try {
     const res = await fetch(WC_PROXY, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
         status:        'pending',
-        customer_note: `Catálogo VMTOP | Precio: ${tierName} | Total: $${grandTotal.toFixed(2)}`,
+        customer_note: `Catálogo VMTOP | Precio: ${tierName} | Total: $${totalConEnvio.toFixed(2)}`,
         billing: {
           first_name: name.split(' ')[0] || name,
           last_name:  name.split(' ').slice(1).join(' ') || '',
@@ -1045,11 +1066,12 @@ async function procesarPago() {
           country:   'MX',
           state:     '',
         },
-        line_items: lineItems,
+        line_items:     lineItems,
+        shipping_lines: shippingLines,
         meta_data: [
           { key: '_catalogo_vmtop',  value: 'true' },
           { key: '_nivel_precio',    value: tierName },
-          { key: '_total_calculado', value: grandTotal.toFixed(2) },
+          { key: '_total_calculado', value: totalConEnvio.toFixed(2) },
         ],
       }),
     });
@@ -1118,6 +1140,14 @@ $('checkoutPopupConfirm')?.addEventListener('click', () => {
 
   startAuto();
 })();
+
+/* ─── Envío ──────────────────────────────────────────────────────── */
+const SHIPPING_THRESHOLD = 2499;
+const SHIPPING_COST      = 185;
+
+function calcShipping(grandTotal) {
+  return grandTotal >= SHIPPING_THRESHOLD ? 0 : SHIPPING_COST;
+}
 
 /* ─── Botón volver arriba ────────────────────────────────────────── */
 (function () {
