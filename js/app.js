@@ -16,6 +16,11 @@ const CONFIG = {
   currencyLocale:'es-MX',
 };
 
+/* ─── Envío ──────────────────────────────────────────────────────── */
+const SHIPPING_THRESHOLD = 2499;
+const SHIPPING_COST      = 185;
+function calcShipping(total) { return total >= SHIPPING_THRESHOLD ? 0 : SHIPPING_COST; }
+
 /* ─── Estado global ──────────────────────────────────────────────── */
 const STATE = {
   all:            [],   // todos los productos originales
@@ -1140,14 +1145,6 @@ $('checkoutPopupConfirm')?.addEventListener('click', () => {
 
   startAuto();
 })();
-
-/* ─── Envío ──────────────────────────────────────────────────────── */
-const SHIPPING_THRESHOLD = 2499;
-const SHIPPING_COST      = 185;
-
-function calcShipping(grandTotal) {
-  return grandTotal >= SHIPPING_THRESHOLD ? 0 : SHIPPING_COST;
-}
 
 /* ─── Botón volver arriba ────────────────────────────────────────── */
 (function () {
