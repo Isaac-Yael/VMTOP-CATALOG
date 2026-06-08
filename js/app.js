@@ -1025,7 +1025,7 @@ async function procesarPago() {
   const zip     = zipInput?.value.trim()     || '';
 
   let valid = true;
-  [{ el: nameInput, val: name }, { el: emailInput, val: email }, { el: phoneInput, val: phone }]
+  [{ el: nameInput, val: name }, { el: emailInput, val: email }, { el: phoneInput, val: phone }, { el: cityInput, val: city }]
     .forEach(({ el, val }) => {
       if (!val) { el.classList.add('error'); if (valid) { el.focus(); valid = false; } }
       else el.classList.remove('error');
