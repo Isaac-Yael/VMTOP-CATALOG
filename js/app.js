@@ -1071,6 +1071,15 @@ async function procesarPago() {
           country:   'MX',
           state:     '',
         },
+        shipping: {
+          first_name: name.split(' ')[0] || name,
+          last_name:  name.split(' ').slice(1).join(' ') || '',
+          address_1: address,
+          city,
+          postcode:  zip,
+          country:   'MX',
+          state:     '',
+        },
         line_items:     lineItems,
         shipping_lines: shippingLines,
         meta_data: [
