@@ -1095,7 +1095,10 @@ async function procesarPago() {
     if (!order.id) throw new Error('Sin ID de pedido');
 
     clearCart();
-    window.location.href = `${WC_CHECKOUT}/order-pay/${order.id}/?pay_for_order=true&key=${order.order_key}`;
+    closeCheckoutPopup();
+
+    const msgOnline = `Hola, acabo de realizar un pedido en vmtop.mx y quisiera confirmar existencias para proceder al pago. Mi nombre es ${name}.`;
+    window.open(`https://api.whatsapp.com/send?phone=525578484532&text=${encodeURIComponent(msgOnline)}`, '_blank');
 
   } catch (e) {
     console.error(e);
