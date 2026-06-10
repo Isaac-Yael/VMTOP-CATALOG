@@ -65,7 +65,7 @@ const DOM = {
 // Parsea precios aunque vengan con comas como separador de miles ("1,350.00" → 1350)
 const parsePrice = (n) => parseFloat(String(n ?? 0).replace(/,/g, '')) || 0;
 const fmt = (n) => {
-  const num = parseFloat(n);
+  const num = parseFloat(String(n ?? '').replace(/,/g, ''));
   if (isNaN(num)) return '—';
   return num.toLocaleString(CONFIG.currencyLocale, {
     style: 'currency',
@@ -89,7 +89,7 @@ const normalize = (s) => String(s ?? '').toLowerCase().normalize('NFD').replace(
 
 /* ─── Formateador de precio sin símbolo para tarjeta compacta ────── */
 const fmtShort = (n) => {
-  const num = parseFloat(n);
+  const num = parseFloat(String(n ?? '').replace(/,/g, ''));
   if (isNaN(num)) return '—';
   return '$' + num.toLocaleString(CONFIG.currencyLocale, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 };
