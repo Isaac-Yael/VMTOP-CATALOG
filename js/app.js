@@ -585,7 +585,7 @@ DOM.resetSearch.addEventListener('click', () => {
 
 /* ─── Carrito ────────────────────────────────────────────────────── */
 const CART_KEY    = 'vmtop_cart';
-const WA_NUMBER   = '525568850885';
+const WA_NUMBER   = '525578472699';
 
 const CART_DOM = {
   btn:       $('cartBtn'),
