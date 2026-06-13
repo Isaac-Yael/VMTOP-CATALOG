@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Catálogo de productos VMTOP – precios públicos, mayoreo y distribución" />
   <title>VMTOP</title>
-  <link rel="stylesheet" href="css/styles.css?v=20260608e" />
+  <link rel="stylesheet" href="css/styles.css?v=20260613a" />
 </head>
 <body>
 
@@ -326,7 +326,7 @@
       </div>
       <p class="checkout-note">* Campos obligatorios</p>
     </div>
-    <div class="checkout-popup-footer">
+    <div class="checkout-popup-footer" id="checkoutFooterNormal">
       <button class="btn-popup-cancel" id="checkoutPopupCancel">Cancelar</button>
       <button class="btn-popup-confirm" id="checkoutPopupConfirm">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16">
@@ -334,6 +334,14 @@
         </svg>
         Proceder al pago
       </button>
+    </div>
+    <!-- ── Sección PayPal (se muestra al validar el formulario) ── -->
+    <div class="paypal-section" id="paypalSection" hidden>
+      <div class="paypal-total-row">
+        Total a pagar: <strong id="paypalTotalDisplay"></strong>
+      </div>
+      <div id="paypal-button-container"></div>
+      <button class="btn-paypal-back" id="paypalBackBtn">← Editar mis datos</button>
     </div>
   </div>
 
@@ -351,6 +359,6 @@
     </svg>
   </a>
 
-  <script src="js/app.js?v=20260608e"></script>
+  <script src="js/app.js?v=20260613a"></script>
 </body>
 </html>

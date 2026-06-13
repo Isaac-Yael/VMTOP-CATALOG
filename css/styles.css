@@ -1590,6 +1590,46 @@ body {
 }
 .btn-popup-confirm:hover { background: #2563eb; }
 
+/* ─── Sección PayPal ─────────────────────────────────────────────── */
+.paypal-section {
+  padding: 16px 20px 20px;
+  border-top: 1px solid var(--clr-border);
+}
+
+.paypal-total-row {
+  font-size: .9rem;
+  color: var(--clr-text-muted);
+  margin-bottom: 14px;
+  text-align: center;
+}
+
+.paypal-total-row strong {
+  color: var(--clr-text);
+  font-size: 1.1rem;
+}
+
+#paypal-button-container {
+  min-height: 48px;
+}
+
+.btn-paypal-back {
+  display: block;
+  width: 100%;
+  margin-top: 12px;
+  padding: 8px;
+  background: none;
+  border: none;
+  color: var(--clr-text-muted);
+  font-size: .85rem;
+  cursor: pointer;
+  text-align: center;
+  transition: color .15s;
+}
+
+.btn-paypal-back:hover {
+  color: var(--clr-text);
+}
+
 /* ─── Scrollbar ──────────────────────────────────────────────────── */
 ::-webkit-scrollbar { width: 6px; height: 6px; }
 ::-webkit-scrollbar-track { background: transparent; }

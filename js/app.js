@@ -985,16 +985,22 @@ mobileMenuBackdrop?.addEventListener('click', closeMobileMenu);
 
 /* ─── Checkout popup ─────────────────────────────────────────────── */
 const WC_PROXY    = 'https://vmtop.mx/crear-pedido.php';
-const WC_CHECKOUT = 'https://vmtop.mx/pagar-2';
+const PP_CREATE   = 'https://vmtop.mx/paypal-create-order.php';
+const PP_CAPTURE  = 'https://vmtop.mx/paypal-capture-order.php';
+/* ⚠️ Reemplaza con tu Client ID LIVE de PayPal (panel.paypal.com → Apps) */
+const PP_CLIENT_ID = 'BAAbBL15yk9Eur-y5AW9O48tpwryAGS6TvPahyOXo3L9t20IXyluYPHO5CWTSjPw70GL3LOQbQfAkJBO2U';
 
 const checkoutOverlay = $('checkoutOverlay');
 const checkoutPopup   = $('checkoutPopup');
 
-let checkoutMode = 'online'; // 'online' | 'whatsapp'
+let checkoutMode          = 'online'; // 'online' | 'whatsapp'
+let paypalButtonsRendered = false;
 
+/* ── Abrir / cerrar popup ─────────────────────────────────────────── */
 function openCheckoutPopup(mode = 'online') {
   if (!Object.keys(cart).length) return;
   checkoutMode = mode;
+  resetToFormStep();           // siempre vuelve al paso del formulario
   checkoutPopup.hidden = false;
   requestAnimationFrame(() => {
     checkoutOverlay.classList.add('visible');
@@ -1009,35 +1015,56 @@ function closeCheckoutPopup() {
   setTimeout(() => { checkoutPopup.hidden = true; }, 240);
 }
 
-async function procesarPago() {
-  const nameInput    = $('customerName');
-  const emailInput   = $('customerEmail');
-  const phoneInput   = $('customerPhone');
-  const addressInput = $('customerAddress');
-  const cityInput    = $('customerCity');
-  const zipInput     = $('customerZip');
+/* ── Pasos del popup ─────────────────────────────────────────────── */
+function resetToFormStep() {
+  $('checkoutFooterNormal').hidden = false;
+  $('paypalSection').hidden        = true;
+  const btn = $('checkoutPopupConfirm');
+  btn.disabled = false;
+  btn.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16">
+    <rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/>
+  </svg> Proceder al pago`;
+}
 
-  const name    = nameInput.value.trim();
-  const email   = emailInput.value.trim();
-  const phone   = phoneInput.value.trim();
-  const address = addressInput?.value.trim() || '';
-  const city    = cityInput?.value.trim()    || '';
-  const zip     = zipInput?.value.trim()     || '';
+function showPayPalStep(totalStr) {
+  $('checkoutFooterNormal').hidden = true;
+  $('paypalSection').hidden        = false;
+  $('paypalTotalDisplay').textContent = `$${totalStr} MXN`;
+}
 
+/* ── Validar formulario ──────────────────────────────────────────── */
+function validateCheckoutForm() {
+  const fields = [
+    { el: $('customerName'),  val: $('customerName')?.value.trim()  },
+    { el: $('customerEmail'), val: $('customerEmail')?.value.trim() },
+    { el: $('customerPhone'), val: $('customerPhone')?.value.trim() },
+    { el: $('customerCity'),  val: $('customerCity')?.value.trim()  },
+  ];
   let valid = true;
-  [{ el: nameInput, val: name }, { el: emailInput, val: email }, { el: phoneInput, val: phone }, { el: cityInput, val: city }]
-    .forEach(({ el, val }) => {
-      if (!val) { el.classList.add('error'); if (valid) { el.focus(); valid = false; } }
-      else el.classList.remove('error');
-    });
-  if (!valid) return;
+  fields.forEach(({ el, val }) => {
+    if (!el) return;
+    if (!val) { el.classList.add('error'); if (valid) { el.focus(); valid = false; } }
+    else el.classList.remove('error');
+  });
+  return valid;
+}
 
-  const confirmBtn = $('checkoutPopupConfirm');
-  confirmBtn.disabled = true;
-  confirmBtn.textContent = '⏳ Procesando...';
+function getFormData() {
+  return {
+    name:    $('customerName')?.value.trim()    || '',
+    email:   $('customerEmail')?.value.trim()   || '',
+    phone:   $('customerPhone')?.value.trim()   || '',
+    address: $('customerAddress')?.value.trim() || '',
+    city:    $('customerCity')?.value.trim()    || '',
+    zip:     $('customerZip')?.value.trim()     || '',
+  };
+}
 
+/* ── Crear pedido en WooCommerce ─────────────────────────────────── */
+async function createWCOrder(status, captureId, formData) {
+  const { name, email, phone, address, city, zip } = formData;
   const { priced, grandTotal } = calcCartPricing();
-  const tierName    = priced[0]?.tier === 'dist' ? 'Distribuidor' : 'Mayoreo';
+  const tierName     = priced[0]?.tier === 'dist' ? 'Distribuidor' : 'Mayoreo';
   const shippingCost = calcShipping(grandTotal);
   const totalConEnvio = grandTotal + shippingCost;
 
@@ -1054,69 +1081,152 @@ async function procesarPago() {
     total:        shippingCost.toFixed(2),
   }] : [];
 
+  const meta = [
+    { key: '_catalogo_vmtop',  value: 'true' },
+    { key: '_nivel_precio',    value: tierName },
+    { key: '_total_calculado', value: totalConEnvio.toFixed(2) },
+  ];
+  if (captureId) meta.push({ key: '_paypal_capture_id', value: captureId });
+
+  const nameParts = name.split(' ');
+  const billing = {
+    first_name: nameParts[0] || name,
+    last_name:  nameParts.slice(1).join(' ') || '',
+    email, phone,
+    address_1: address,
+    city, postcode: zip,
+    country: 'MX', state: '',
+  };
+
+  const res = await fetch(WC_PROXY, {
+    method:  'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      status,
+      customer_note: `Catálogo VMTOP | PayPal: ${captureId || '-'} | Precio: ${tierName} | Total: $${totalConEnvio.toFixed(2)}`,
+      billing,
+      shipping: { ...billing, email: undefined, phone: undefined },
+      line_items:     lineItems,
+      shipping_lines: shippingLines,
+      meta_data:      meta,
+    }),
+  });
+  return res.ok ? res.json() : null;
+}
+
+/* ── Cargar SDK de PayPal dinámicamente ──────────────────────────── */
+function loadPayPalSDK() {
+  return new Promise((resolve, reject) => {
+    if (window.paypal) { resolve(); return; }
+    const s = document.createElement('script');
+    s.src = `https://www.paypal.com/sdk/js?client-id=${PP_CLIENT_ID}&currency=MXN&locale=es_MX&components=buttons&disable-funding=credit,paylater,venmo`;
+    s.onload  = resolve;
+    s.onerror = reject;
+    document.head.appendChild(s);
+  });
+}
+
+/* ── Inicializar botones PayPal (solo la primera vez) ────────────── */
+async function initPayPalButtons() {
+  await loadPayPalSDK();
+  if (paypalButtonsRendered) return;
+
+  paypal.Buttons({
+    style: {
+      layout: 'vertical',
+      color:  'gold',
+      shape:  'rect',
+      label:  'pay',
+      height: 48,
+    },
+
+    /* 1. Crear orden en PayPal via PHP */
+    createOrder: async () => {
+      const { grandTotal } = calcCartPricing();
+      const total = (grandTotal + calcShipping(grandTotal)).toFixed(2);
+      const res  = await fetch(PP_CREATE, {
+        method:  'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body:    JSON.stringify({ amount: total }),
+      });
+      const data = await res.json();
+      if (data.error) throw new Error(data.error);
+      return data.id;
+    },
+
+    /* 2. Capturar pago aprobado y crear pedido en WooCommerce */
+    onApprove: async (data) => {
+      try {
+        // Capturar en PayPal
+        const capRes = await fetch(PP_CAPTURE, {
+          method:  'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body:    JSON.stringify({ orderID: data.orderID }),
+        });
+        const capData = await capRes.json();
+        if (!capData.success) throw new Error('Captura fallida');
+
+        // Crear pedido en WooCommerce con estado "processing"
+        const formData = getFormData();
+        await createWCOrder('processing', capData.captureId, formData);
+
+        // Limpiar y confirmar
+        clearCart();
+        closeCheckoutPopup();
+        alert(`✅ ¡Pago recibido! Tu pedido ha sido confirmado.\nRecibirás un correo en ${formData.email}.\n\nID de confirmación: ${capData.captureId}`);
+
+      } catch (e) {
+        console.error('PayPal onApprove error:', e);
+        alert('Hubo un error al confirmar tu pago. Contacta a soporte con tu ID de orden: ' + data.orderID);
+      }
+    },
+
+    onCancel: () => {
+      /* Usuario canceló en la ventana de PayPal — no hace nada, permanece en el popup */
+    },
+
+    onError: (err) => {
+      console.error('PayPal SDK error:', err);
+      alert('Error al conectar con PayPal. Por favor intenta de nuevo o elige otro método.');
+    },
+
+  }).render('#paypal-button-container');
+
+  paypalButtonsRendered = true;
+}
+
+/* ── Mostrar botones PayPal al validar formulario ────────────────── */
+async function proceedToPayPal() {
+  if (!validateCheckoutForm()) return;
+
+  const btn = $('checkoutPopupConfirm');
+  btn.disabled    = true;
+  btn.textContent = '⏳ Cargando...';
+
   try {
-    const res = await fetch(WC_PROXY, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        status:        'pending',
-        customer_note: `Catálogo VMTOP | Precio: ${tierName} | Total: $${totalConEnvio.toFixed(2)}`,
-        billing: {
-          first_name: name.split(' ')[0] || name,
-          last_name:  name.split(' ').slice(1).join(' ') || '',
-          email, phone,
-          address_1: address,
-          city,
-          postcode:  zip,
-          country:   'MX',
-          state:     '',
-        },
-        shipping: {
-          first_name: name.split(' ')[0] || name,
-          last_name:  name.split(' ').slice(1).join(' ') || '',
-          address_1: address,
-          city,
-          postcode:  zip,
-          country:   'MX',
-          state:     '',
-        },
-        line_items:     lineItems,
-        shipping_lines: shippingLines,
-        meta_data: [
-          { key: '_catalogo_vmtop',  value: 'true' },
-          { key: '_nivel_precio',    value: tierName },
-          { key: '_total_calculado', value: totalConEnvio.toFixed(2) },
-        ],
-      }),
-    });
-
-    if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    const order = await res.json();
-    if (!order.id) throw new Error('Sin ID de pedido');
-
-    clearCart();
-    closeCheckoutPopup();
-
-    const msgOnline = `Hola, acabo de realizar un pedido en vmtop.mx y quisiera confirmar existencias para proceder al pago. Mi nombre es ${name}.`;
-    window.open(`https://api.whatsapp.com/send?phone=525578484532&text=${encodeURIComponent(msgOnline)}`, '_blank');
-
+    const { grandTotal } = calcCartPricing();
+    const total = (grandTotal + calcShipping(grandTotal)).toFixed(2);
+    await initPayPalButtons();
+    showPayPalStep(Number(total).toLocaleString('es-MX', { minimumFractionDigits: 2 }));
   } catch (e) {
     console.error(e);
-    confirmBtn.disabled = false;
-    confirmBtn.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg> Proceder al pago`;
-    alert('Hubo un error. Por favor intenta de nuevo o usa WhatsApp.');
+    btn.disabled    = false;
+    btn.textContent = 'Proceder al pago';
+    alert('No se pudo cargar PayPal. Verifica tu conexión e intenta de nuevo.');
   }
 }
 
+/* ── Event listeners ─────────────────────────────────────────────── */
 $('btnPayOnline')?.addEventListener('click', () => openCheckoutPopup('online'));
 CART_DOM.whatsapp?.removeEventListener('click', sendWhatsApp);
 CART_DOM.whatsapp?.addEventListener('click', () => openCheckoutPopup('whatsapp'));
 $('checkoutPopupClose')?.addEventListener('click', closeCheckoutPopup);
 $('checkoutPopupCancel')?.addEventListener('click', closeCheckoutPopup);
 $('checkoutOverlay')?.addEventListener('click', closeCheckoutPopup);
+$('paypalBackBtn')?.addEventListener('click', resetToFormStep);
 $('checkoutPopupConfirm')?.addEventListener('click', () => {
   if (checkoutMode === 'whatsapp') sendWhatsApp();
-  else procesarPago();
+  else proceedToPayPal();
 });
 
 /* ─── Banner Slider ──────────────────────────────────────────────── */
