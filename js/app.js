@@ -1162,29 +1162,43 @@ async function initPayPalButtons() {
 
     /* 2. Capturar pago aprobado y crear pedido en WooCommerce */
     onApprove: async (data) => {
+      let captureId = null;
       try {
-        // Capturar en PayPal
+        // Paso 1: Capturar pago en PayPal
         const capRes = await fetch(PP_CAPTURE, {
           method:  'POST',
           headers: { 'Content-Type': 'application/json' },
           body:    JSON.stringify({ orderID: data.orderID }),
         });
         const capData = await capRes.json();
-        console.error('PayPal capture response:', JSON.stringify(capData));
         if (!capData.success) throw new Error(JSON.stringify(capData));
+        captureId = capData.captureId;
 
-        // Crear pedido en WooCommerce con estado "processing"
+        // Paso 2: Crear pedido en WooCommerce (no crítico para el usuario)
         const formData = getFormData();
-        await createWCOrder('processing', capData.captureId, formData);
+        try {
+          await createWCOrder('processing', captureId, formData);
+        } catch (wcErr) {
+          // El pago ya fue procesado — solo registrar el error internamente
+          console.error('WC order creation failed (pago capturado OK):', captureId, wcErr);
+        }
 
-        // Limpiar y confirmar
+        // Paso 3: Confirmar éxito al usuario
         clearCart();
         closeCheckoutPopup();
-        alert(`✅ ¡Pago recibido! Tu pedido ha sido confirmado.\nRecibirás un correo en ${formData.email}.\n\nID de confirmación: ${capData.captureId}`);
+        alert(`✅ ¡Pago recibido! Tu pedido ha sido confirmado.\nRecibirás un correo en ${formData.email}.\n\nID de confirmación: ${captureId}`);
 
       } catch (e) {
         console.error('PayPal onApprove error:', e);
-        alert('Hubo un error al confirmar tu pago. Contacta a soporte con tu ID de orden: ' + data.orderID);
+        if (captureId) {
+          // El pago SÍ fue cobrado pero falló algo después — no decirle que hubo error de pago
+          clearCart();
+          closeCheckoutPopup();
+          alert(`✅ ¡Pago procesado exitosamente!\nID de confirmación: ${captureId}\n\nGuarda este ID y envíanos mensaje por WhatsApp para confirmar tu entrega.`);
+        } else {
+          // El cobro NO se realizó
+          alert('No se pudo procesar el pago. No se realizó ningún cargo.\n\nPor favor intenta de nuevo o contáctanos por WhatsApp.');
+        }
       }
     },
 
