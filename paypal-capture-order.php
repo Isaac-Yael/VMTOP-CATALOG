@@ -8,7 +8,7 @@
  */
 
 /* ─── CORS ──────────────────────────────────────────────────────── */
-$allowed = ['https://tienda-mayoreo.vmtop.mx', 'https://tienda.vmtop.mx'];
+$allowed = ['https://vmtop.com.mx', 'https://www.vmtop.com.mx', 'https://tienda-mayoreo.vmtop.mx', 'https://mayoreo.vmtop.mx'];
 $origin  = $_SERVER['HTTP_ORIGIN'] ?? '';
 if (in_array($origin, $allowed)) {
     header("Access-Control-Allow-Origin: $origin");
