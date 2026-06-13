@@ -1019,6 +1019,10 @@ function closeCheckoutPopup() {
 function resetToFormStep() {
   $('checkoutFooterNormal').hidden = false;
   $('paypalSection').hidden        = true;
+  // Limpiar botones PayPal para que se re-rendericen con el total actual
+  const container = $('paypal-button-container');
+  if (container) container.innerHTML = '';
+  paypalButtonsRendered = false;
   const btn = $('checkoutPopupConfirm');
   btn.disabled = false;
   btn.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16">
