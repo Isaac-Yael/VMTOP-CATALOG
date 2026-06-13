@@ -7,6 +7,18 @@
  * Devuelve: { "success": true, "captureId": "..." }
  */
 
+/* ─── Capturar errores PHP y devolverlos como JSON ──────────────── */
+set_error_handler(function($errno, $errstr, $errfile, $errline) {
+    http_response_code(500);
+    echo json_encode(['error' => "PHP Error [$errno]: $errstr en $errfile línea $errline"]);
+    exit;
+});
+set_exception_handler(function($e) {
+    http_response_code(500);
+    echo json_encode(['error' => 'Excepción: ' . $e->getMessage() . ' en ' . $e->getFile() . ':' . $e->getLine()]);
+    exit;
+});
+
 /* ─── CORS ──────────────────────────────────────────────────────── */
 $allowed = ['https://vmtop.com.mx', 'https://www.vmtop.com.mx', 'https://tienda-mayoreo.vmtop.mx', 'https://mayoreo.vmtop.mx'];
 $origin  = $_SERVER['HTTP_ORIGIN'] ?? '';

@@ -1073,10 +1073,12 @@ async function createWCOrder(status, captureId, formData) {
   const totalConEnvio = grandTotal + shippingCost;
 
   const lineItems = priced.map(item => ({
+    name:     item.name || item.sku.toUpperCase(),
     sku:      item.sku.toUpperCase(),
     quantity: item.qty,
     subtotal: (item.unitPrice * item.qty).toFixed(2),
     total:    (item.unitPrice * item.qty).toFixed(2),
+    price:    item.unitPrice.toFixed(2),
   }));
 
   const shippingLines = shippingCost > 0 ? [{
