@@ -1168,7 +1168,8 @@ async function initPayPalButtons() {
           body:    JSON.stringify({ orderID: data.orderID }),
         });
         const capData = await capRes.json();
-        if (!capData.success) throw new Error('Captura fallida');
+        console.error('PayPal capture response:', JSON.stringify(capData));
+        if (!capData.success) throw new Error(JSON.stringify(capData));
 
         // Crear pedido en WooCommerce con estado "processing"
         const formData = getFormData();
