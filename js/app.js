@@ -878,7 +878,8 @@ const QTY_DOM = {
   confirm:  $('qtyPopupConfirm'),
 };
 
-let qtyPopupProduct = null; // producto actual en el popup
+let qtyPopupProduct   = null; // producto actual en el popup
+let qtyPopupInventario = -1;  // límite de inventario del popup abierto (-1 = sin límite)
 
 function isMobile() { return window.innerWidth <= 768; }
 
@@ -892,11 +893,14 @@ function openQtyPopup(p) {
   const piezas     = parseInt(getField(p, 'piezas_caja', 'PiezasCaja', 'Piezas por Caja', 'piezas') ?? 0);
   const inventario = parseInt(getField(p, 'inventario', 'Inventario', 'INVENTARIO') ?? -1);
 
+  // Guardar límite de inventario en variable de módulo (no depender del DOM)
+  qtyPopupInventario = inventario;
+
   // Qty actual en carrito (si ya existe)
   const existing = cart[sku];
-  QTY_DOM.input.value = existing ? existing.qty : 1;
+  const initQty  = existing ? Math.min(existing.qty, inventario >= 0 ? inventario : Infinity) : 1;
+  QTY_DOM.input.value = initQty;
   QTY_DOM.input.min   = 1;
-  QTY_DOM.input.max   = inventario >= 0 ? inventario : '';
 
   // Badge de stock
   const stockBadge = inventario > 0
@@ -959,30 +963,20 @@ function confirmQtyPopup() {
   openCart();
 }
 
-// Helper: obtener el límite de inventario del input activo
-function getInvMax() {
-  const raw = QTY_DOM.input.max;
-  if (raw === '' || raw === undefined) return -1;
-  const n = parseInt(raw);
-  return isNaN(n) ? -1 : n;
-}
-
 // Controles +/-
 QTY_DOM.minus.addEventListener('click', () => {
   QTY_DOM.input.value = Math.max(1, (parseInt(QTY_DOM.input.value) || 1) - 1);
 });
 QTY_DOM.plus.addEventListener('click', () => {
-  const inv    = getInvMax();
   const newVal = (parseInt(QTY_DOM.input.value) || 1) + 1;
-  QTY_DOM.input.value = (inv >= 0) ? Math.min(newVal, inv) : newVal;
+  QTY_DOM.input.value = qtyPopupInventario >= 0 ? Math.min(newVal, qtyPopupInventario) : newVal;
 });
 // Bloquear escritura manual mayor al inventario
 QTY_DOM.input.addEventListener('input', () => {
-  const inv = getInvMax();
-  if (inv < 0) return;
-  const val = parseInt(QTY_DOM.input.value) || 1;
-  if (val > inv) QTY_DOM.input.value = inv;
-  if (val < 1)  QTY_DOM.input.value = 1;
+  if (qtyPopupInventario < 0) return;
+  const val = parseInt(QTY_DOM.input.value);
+  if (isNaN(val) || val < 1)  { QTY_DOM.input.value = 1; return; }
+  if (val > qtyPopupInventario) QTY_DOM.input.value = qtyPopupInventario;
 });
 QTY_DOM.cancel.addEventListener('click',  closeQtyPopup);
 QTY_DOM.confirm.addEventListener('click', confirmQtyPopup);
