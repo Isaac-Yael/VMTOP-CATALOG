@@ -429,8 +429,9 @@ function showModal(p) {
   const pMay   = getField(p, 'precio_mayoreo', 'PrecioMayoreo', 'Precio Mayoreo');
   const pDist  = getField(p, 'precio_distribuidor', 'PrecioDistribuidor', 'Precio Distribuidor');
   const pCaja  = getField(p, 'precio_caja', 'PrecioCaja', 'Precio Caja');
-  const piezas = getField(p, 'piezas_caja', 'PiezasCaja', 'Piezas por Caja', 'piezas');
-  const desc   = getField(p, 'descuento', 'Descuento');
+  const piezas     = getField(p, 'piezas_caja', 'PiezasCaja', 'Piezas por Caja', 'piezas');
+  const desc       = getField(p, 'descuento', 'Descuento');
+  const inventario = parseInt(getField(p, 'inventario', 'Inventario', 'INVENTARIO') ?? -1);
 
   DOM.modalContent.innerHTML = `
     <div class="modal-inner">
@@ -488,17 +489,27 @@ function showModal(p) {
 
   // Controles de cantidad en el modal
   const modalQtyInput = $('modalQtyInput');
+  const modalCap = (val) => inventario >= 0 ? Math.min(val, inventario) : val;
+
   $('modalQtyMinus').addEventListener('click', () => {
     modalQtyInput.value = Math.max(1, (parseInt(modalQtyInput.value) || 1) - 1);
   });
   $('modalQtyPlus').addEventListener('click', () => {
-    modalQtyInput.value = (parseInt(modalQtyInput.value) || 1) + 1;
+    modalQtyInput.value = modalCap((parseInt(modalQtyInput.value) || 1) + 1);
+  });
+  modalQtyInput.addEventListener('input', () => {
+    if (inventario < 0) return;
+    const val = parseInt(modalQtyInput.value);
+    if (isNaN(val) || val < 1)    { modalQtyInput.value = 1; return; }
+    if (val > inventario) modalQtyInput.value = inventario;
   });
   if (piezas) {
-    $('modalBtnCaja').addEventListener('click', () => { modalQtyInput.value = piezas; });
+    const cajaCap = inventario >= 0 ? Math.min(piezas, inventario) : piezas;
+    $('modalBtnCaja').addEventListener('click', () => { modalQtyInput.value = cajaCap; });
   }
   $('modalBtnAddCart').addEventListener('click', () => {
-    const qty = Math.max(1, parseInt(modalQtyInput.value) || 1);
+    let qty = Math.max(1, parseInt(modalQtyInput.value) || 1);
+    if (inventario >= 0) qty = Math.min(qty, inventario);
     addToCart(p);
     const sku2 = getField(p, 'sku', 'SKU') ?? 'SIN-SKU';
     if (cart[sku2]) cart[sku2].qty = qty;
