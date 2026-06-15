@@ -313,16 +313,18 @@ function getField(p, ...keys) {
 }
 
 function createCard(p) {
-  const sku    = getField(p, 'sku', 'SKU') ?? '';
-  const name   = getField(p, 'nombre', 'Nombre', 'NOMBRE') ?? 'Sin nombre';
-  const cat    = getField(p, 'categoria', 'Categoria', 'CATEGORIA') ?? 'Sin categoría';
-  const img    = (getField(p, 'imagen', 'Imagen', 'IMAGEN', 'image', 'img') ?? '').toLowerCase();
-  const pPub   = getField(p, 'precio_publico', 'PrecioPublico', 'precio_público', 'Precio Público');
-  const pMay   = getField(p, 'precio_mayoreo', 'PrecioMayoreo', 'Precio Mayoreo');
-  const pDist  = getField(p, 'precio_distribuidor', 'PrecioDistribuidor', 'Precio Distribuidor');
-  const pCaja  = getField(p, 'precio_caja', 'PrecioCaja', 'Precio Caja');
-  const piezas = getField(p, 'piezas_caja', 'PiezasCaja', 'Piezas por Caja', 'piezas');
-  const desc   = getField(p, 'descuento', 'Descuento');
+  const sku       = getField(p, 'sku', 'SKU') ?? '';
+  const name      = getField(p, 'nombre', 'Nombre', 'NOMBRE') ?? 'Sin nombre';
+  const cat       = getField(p, 'categoria', 'Categoria', 'CATEGORIA') ?? 'Sin categoría';
+  const img       = (getField(p, 'imagen', 'Imagen', 'IMAGEN', 'image', 'img') ?? '').toLowerCase();
+  const pPub      = getField(p, 'precio_publico', 'PrecioPublico', 'precio_público', 'Precio Público');
+  const pMay      = getField(p, 'precio_mayoreo', 'PrecioMayoreo', 'Precio Mayoreo');
+  const pDist     = getField(p, 'precio_distribuidor', 'PrecioDistribuidor', 'Precio Distribuidor');
+  const pCaja     = getField(p, 'precio_caja', 'PrecioCaja', 'Precio Caja');
+  const piezas    = getField(p, 'piezas_caja', 'PiezasCaja', 'Piezas por Caja', 'piezas');
+  const desc      = getField(p, 'descuento', 'Descuento');
+  const inventario = parseInt(getField(p, 'inventario', 'Inventario', 'INVENTARIO') ?? -1);
+  const sinStock  = inventario === 0;
 
   const card = document.createElement('article');
   card.className = 'product-card';
@@ -337,7 +339,7 @@ function createCard(p) {
       ${img ? `<img class="card-img" data-src="img/${escHtml(img)}" alt="${escHtml(name)}" loading="lazy" />` : ''}
     </div>
     <div class="card-body">
-      <span class="card-sku">${escHtml(sku)}</span>
+      <span class="card-sku">${escHtml(sku)}${inventario >= 0 ? `<span class="card-stock${sinStock ? ' card-stock--out' : ''}">${sinStock ? 'Sin stock' : `${inventario} pzas`}</span>` : ''}</span>
       <span class="card-name">${escHtml(name)}</span>
       <span class="card-category">${escHtml(cat)}</span>
       <div class="card-prices">
@@ -378,11 +380,16 @@ function createCard(p) {
   // Botón agregar al carrito
   const addBtn = document.createElement('button');
   addBtn.className = 'btn-add-cart';
-  addBtn.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg> Agregar al carrito`;
-  addBtn.addEventListener('click', (e) => {
-    e.stopPropagation();
-    openQtyPopup(p);
-  });
+  if (sinStock) {
+    addBtn.innerHTML = 'Sin stock';
+    addBtn.disabled  = true;
+  } else {
+    addBtn.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg> Agregar al carrito`;
+    addBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      openQtyPopup(p);
+    });
+  }
   card.appendChild(addBtn);
 
   // Click → modal
@@ -957,7 +964,9 @@ QTY_DOM.minus.addEventListener('click', () => {
   QTY_DOM.input.value = Math.max(1, (parseInt(QTY_DOM.input.value) || 1) - 1);
 });
 QTY_DOM.plus.addEventListener('click', () => {
-  QTY_DOM.input.value = (parseInt(QTY_DOM.input.value) || 1) + 1;
+  const inv    = parseInt(QTY_DOM.input.max) || -1;
+  const newVal = (parseInt(QTY_DOM.input.value) || 1) + 1;
+  QTY_DOM.input.value = (inv >= 0) ? Math.min(newVal, inv) : newVal;
 });
 QTY_DOM.cancel.addEventListener('click',  closeQtyPopup);
 QTY_DOM.confirm.addEventListener('click', confirmQtyPopup);

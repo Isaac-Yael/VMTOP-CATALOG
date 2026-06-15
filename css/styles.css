@@ -558,6 +558,23 @@ body {
   font-size: 11px;
   color: var(--clr-text-muted);
   letter-spacing: .04em;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.card-stock {
+  font-family: var(--font-sans);
+  font-size: 10px;
+  font-weight: 600;
+  color: #16a34a;
+  background: #dcfce7;
+  border-radius: 4px;
+  padding: 1px 5px;
+  letter-spacing: 0;
+}
+.card-stock--out {
+  color: #dc2626;
+  background: #fee2e2;
 }
 .card-name {
   font-size: 13px;
