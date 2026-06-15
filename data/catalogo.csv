@@ -1,4 +1,4 @@
- ,NOMBRE,@IMAGEN,Publico,Mayoreo,Distribuidor,Caja,PZAS,Categoría,Descuento,Inventario
+SKU,NOMBRE,@IMAGEN,Publico,Mayoreo,Distribuidor,Caja,PZAS,Categoría,Descuento,Inventario
 JSL-3120,(JSL-3120) Pistola De Masaje Relajante,jsl-3120.jpg,$135.00,$110.00,$101.00,$94.00,40,Salud y Belleza / Masajeadores,0%,18.00
 TO-1321,(TO-1321) Consola de Videojuegos M15 ,to-1321.jpg,$425.00,$312.00,$275.00,$260.00,40,Entretenimiento / Consolas Retro,0%,18.00
 TL4080N19B,"(TL4080N19B) Soporte De Tv 40""- 80""",tl4080n19b.jpg,$140.00,$93.00,$82.00,$77.00,10,Hogar / Soportes para TV,0%,19.00

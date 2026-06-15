@@ -1,6 +1,6 @@
 [
   {
-    "sku": "",
+    "sku": "JSL-3120",
     "nombre": "(JSL-3120) Pistola De Masaje Relajante",
     "imagen": "jsl-3120.jpg",
     "precio_publico": 135.0,
@@ -13,7 +13,7 @@
     "inventario": 18
   },
   {
-    "sku": "",
+    "sku": "TO-1321",
     "nombre": "(TO-1321) Consola de Videojuegos M15",
     "imagen": "to-1321.jpg",
     "precio_publico": 425.0,
@@ -26,7 +26,7 @@
     "inventario": 18
   },
   {
-    "sku": "",
+    "sku": "TL4080N19B",
     "nombre": "(TL4080N19B) Soporte De Tv 40\"- 80\"",
     "imagen": "tl4080n19b.jpg",
     "precio_publico": 140.0,
@@ -39,7 +39,7 @@
     "inventario": 19
   },
   {
-    "sku": "",
+    "sku": "EM152",
     "nombre": "(EM152) Lámpara Solar para Exterior de 60W",
     "imagen": "em152.jpg",
     "precio_publico": 330.0,
@@ -52,7 +52,7 @@
     "inventario": 20
   },
   {
-    "sku": "",
+    "sku": "CH-J2117",
     "nombre": "(CH-J2117) Bocina De Diseño Bluetooth Portátil",
     "imagen": "ch-j2117.jpg",
     "precio_publico": 60.0,
@@ -65,7 +65,7 @@
     "inventario": 21
   },
   {
-    "sku": "",
+    "sku": "CFL-1101",
     "nombre": "(CFL-1101) Licuadora Portatil Recargable",
     "imagen": "cfl-1101.jpg",
     "precio_publico": 100.0,
@@ -78,7 +78,7 @@
     "inventario": 22
   },
   {
-    "sku": "",
+    "sku": "K-626",
     "nombre": "(K-626) Utensilios Para Cocina 5 Pzas",
     "imagen": "k-626.jpg",
     "precio_publico": 85.0,
@@ -91,7 +91,7 @@
     "inventario": 35
   },
   {
-    "sku": "",
+    "sku": "ZN-1642",
     "nombre": "(ZN-1642) Kit de SmartWatch",
     "imagen": "zn-1642.jpg",
     "precio_publico": 376.0,
@@ -104,7 +104,7 @@
     "inventario": 47
   },
   {
-    "sku": "",
+    "sku": "CFJ-110",
     "nombre": "(CFJ-110) Secadora de Cabello Plegable de 1200W",
     "imagen": "cfj-110.jpg",
     "precio_publico": 160.0,
@@ -117,7 +117,7 @@
     "inventario": 49
   },
   {
-    "sku": "",
+    "sku": "HVV-00210",
     "nombre": "(HVV-00210) Aro de Luz Blanca de 10 Pulgadas TAJA",
     "imagen": "hvv-00210.jpg",
     "precio_publico": 90.0,
@@ -130,7 +130,7 @@
     "inventario": 49
   },
   {
-    "sku": "",
+    "sku": "HVV-00251",
     "nombre": "(HVV-00251) Aro de Luz RGB 12 Pulgadas TAJA",
     "imagen": "hvv-00251.jpg",
     "precio_publico": 147.0,
@@ -143,7 +143,7 @@
     "inventario": 51
   },
   {
-    "sku": "",
+    "sku": "CAB164N",
     "nombre": "(CAB164N) Cable Tipo C 1 Metro 2.1A Negro",
     "imagen": "cab164n.jpg",
     "precio_publico": 14.0,
@@ -156,7 +156,7 @@
     "inventario": 62
   },
   {
-    "sku": "",
+    "sku": "YTY-303",
     "nombre": "(YTY-303) Sombrilla 95 cm",
     "imagen": "yty-303.jpg",
     "precio_publico": 60.0,
@@ -169,7 +169,7 @@
     "inventario": 64
   },
   {
-    "sku": "",
+    "sku": "TR-6030",
     "nombre": "(TR-6030) Audífonos Bluetooth con Estuche de Carga",
     "imagen": "tr-6030.jpg",
     "precio_publico": 125.0,
@@ -182,7 +182,7 @@
     "inventario": 71
   },
   {
-    "sku": "",
+    "sku": "TWS-7304",
     "nombre": "(TWS-7304) Audífonos Bluetooth con Estuche LED",
     "imagen": "tws-7304.jpg",
     "precio_publico": 75.0,
@@ -195,7 +195,7 @@
     "inventario": 74
   },
   {
-    "sku": "",
+    "sku": "BATERIA MGSF 5000 mAh",
     "nombre": "(BATERIA MGSF 5000 mAh) Bateria magsafe 5000 mAh",
     "imagen": "bateria mgsf 5000 mah.jpg",
     "precio_publico": 130.0,
@@ -208,7 +208,7 @@
     "inventario": 75
   },
   {
-    "sku": "",
+    "sku": "TR-6003",
     "nombre": "(TR-6003) Audífonos Bluetooth Colores",
     "imagen": "tr-6003.jpg",
     "precio_publico": 60.0,
@@ -221,7 +221,7 @@
     "inventario": 89
   },
   {
-    "sku": "",
+    "sku": "XZ-6217",
     "nombre": "Soporte de Celular para Retrovisor",
     "imagen": "xz-6217.jpg",
     "precio_publico": 46.0,
@@ -234,7 +234,7 @@
     "inventario": 89
   },
   {
-    "sku": "",
+    "sku": "BATERIA MGSF 10,000 MAH",
     "nombre": "(BATERIA MGSF 10,000 MAH) Bateria Magsafe 10,000 mAh",
     "imagen": "bateria mgsf 10,000 mah.jpg",
     "precio_publico": 170.0,
@@ -247,7 +247,7 @@
     "inventario": 92
   },
   {
-    "sku": "",
+    "sku": "TO-2001",
     "nombre": "(TO-2001) Kit Carga Y Juega Compatible Con Xbox 360",
     "imagen": "to-2001.jpg",
     "precio_publico": 90.0,
@@ -260,7 +260,7 @@
     "inventario": 92
   },
   {
-    "sku": "",
+    "sku": "TXD-13",
     "nombre": "(TXD-13) Rastrillos con Cabeza Movible, Triple Hoja y Banda Lubricante",
     "imagen": "txd-13.jpg",
     "precio_publico": 30.0,
@@ -273,7 +273,7 @@
     "inventario": 94
   },
   {
-    "sku": "",
+    "sku": "K-628",
     "nombre": "(K-628) Afilador de Cuchillos para Cocina",
     "imagen": "k-628.jpg",
     "precio_publico": 30.0,
@@ -286,7 +286,7 @@
     "inventario": 140
   },
   {
-    "sku": "",
+    "sku": "COMBO 14 PM",
     "nombre": "(COMBO 14 PM) Combo Tipo IP 14 Promax 20W",
     "imagen": "combo 14 pm.jpg",
     "precio_publico": 46.0,
@@ -299,7 +299,7 @@
     "inventario": 156
   },
   {
-    "sku": "",
+    "sku": "GAR135A-800",
     "nombre": "(GAR135A-800) Paquete de 4 Pilas Alcalinas AAA",
     "imagen": "gar135a-800.jpg",
     "precio_publico": 12.0,
@@ -312,7 +312,7 @@
     "inventario": 163
   },
   {
-    "sku": "",
+    "sku": "XZ-6215",
     "nombre": "(XZ-6215) Soporte Para Celular De Auto",
     "imagen": "xz-6215.jpg",
     "precio_publico": 33.0,
@@ -325,7 +325,7 @@
     "inventario": 186
   },
   {
-    "sku": "",
+    "sku": "GJ-307-5M",
     "nombre": "(GJ-307-5M) Flexómetro Lankay 5m",
     "imagen": "gj-307-5m.jpg",
     "precio_publico": 20.0,
@@ -338,7 +338,7 @@
     "inventario": 190
   },
   {
-    "sku": "",
+    "sku": "FA028",
     "nombre": "(FA028) Dispensador de agua recargable",
     "imagen": "fa028.jpg",
     "precio_publico": 56.0,
@@ -351,7 +351,7 @@
     "inventario": 198
   },
   {
-    "sku": "",
+    "sku": "MR-135",
     "nombre": "(MR-135) Máquina Rasuradora Portátil",
     "imagen": "mr-135.jpg",
     "precio_publico": 110.0,
@@ -364,7 +364,7 @@
     "inventario": 198
   },
   {
-    "sku": "",
+    "sku": "CAB150N",
     "nombre": "(CAB150N) Cable Tipo C 1.5 Metros 2.1A Negro",
     "imagen": "cab150n.jpg",
     "precio_publico": 20.0,
@@ -377,7 +377,7 @@
     "inventario": 269
   },
   {
-    "sku": "",
+    "sku": "TB-6803",
     "nombre": "Reloj Watch 8 Pro Max",
     "imagen": "tb-6803.jpg",
     "precio_publico": 180.0,
@@ -390,7 +390,7 @@
     "inventario": 37
   },
   {
-    "sku": "",
+    "sku": "TR-6022",
     "nombre": "Audifono Bt",
     "imagen": "tr-6022.jpg",
     "precio_publico": 82.0,
@@ -403,7 +403,7 @@
     "inventario": 38
   },
   {
-    "sku": "",
+    "sku": "S75W30",
     "nombre": "Foco LED 30W Luz Fría",
     "imagen": "s75w30.jpg",
     "precio_publico": 42.0,
@@ -416,7 +416,7 @@
     "inventario": 60
   },
   {
-    "sku": "",
+    "sku": "LV22W21",
     "nombre": "Lampara Con Ventilador De Techo",
     "imagen": "lv22w21.jpg",
     "precio_publico": 138.0,
@@ -429,7 +429,7 @@
     "inventario": 56
   },
   {
-    "sku": "",
+    "sku": "TR-6018",
     "nombre": "Audifonos Inalámbricos con Pantalla",
     "imagen": "tr-6018.jpg",
     "precio_publico": 65.0,
@@ -442,7 +442,7 @@
     "inventario": 61
   },
   {
-    "sku": "",
+    "sku": "TXD-26",
     "nombre": "Rastrillo con 11 Repuestos Triple Hoja",
     "imagen": "txd-26.jpg",
     "precio_publico": 40.0,
@@ -455,7 +455,7 @@
     "inventario": 54
   },
   {
-    "sku": "",
+    "sku": "K-703",
     "nombre": "Juego De Cuchillos y Utensilios",
     "imagen": "k-703.jpg",
     "precio_publico": 32.0,
@@ -468,7 +468,7 @@
     "inventario": 13
   },
   {
-    "sku": "",
+    "sku": "ZN-1622",
     "nombre": "SmartWatch T800 Ultra",
     "imagen": "zn-1622.jpg",
     "precio_publico": 130.0,
@@ -481,7 +481,7 @@
     "inventario": 61
   },
   {
-    "sku": "",
+    "sku": "MR-935",
     "nombre": "Masajeador Multifuncional Corporal",
     "imagen": "mr-935.jpg",
     "precio_publico": 140.0,
@@ -494,7 +494,7 @@
     "inventario": 58
   },
   {
-    "sku": "",
+    "sku": "TXD-17",
     "nombre": "Rastrillo con 6 Repuestos Triple Hoja y Mango Ergonómico",
     "imagen": "txd-17.jpg",
     "precio_publico": 30.0,
@@ -507,7 +507,7 @@
     "inventario": 98
   },
   {
-    "sku": "",
+    "sku": "P9PROMAX",
     "nombre": "Diadema Bluetooth P9 Promax",
     "imagen": "p9promax.jpg",
     "precio_publico": 130.0,
@@ -520,7 +520,7 @@
     "inventario": 124
   },
   {
-    "sku": "",
+    "sku": "LV67W12",
     "nombre": "Ventilador de Techo con Lámpara 28w",
     "imagen": "lv67w12.jpg",
     "precio_publico": 75.0,
@@ -533,7 +533,7 @@
     "inventario": 47
   },
   {
-    "sku": "",
+    "sku": "S58W30",
     "nombre": "Foco LED 30W 6500k 60Hz",
     "imagen": "s58w30.jpg",
     "precio_publico": 49.0,
@@ -546,7 +546,7 @@
     "inventario": 42
   },
   {
-    "sku": "",
+    "sku": "XCQ-3501",
     "nombre": "Mini Aspiradora",
     "imagen": "xcq-3501.jpg",
     "precio_publico": 65.0,
@@ -559,7 +559,7 @@
     "inventario": 28
   },
   {
-    "sku": "",
+    "sku": "FS-018",
     "nombre": "Ventilador Usb",
     "imagen": "fs-018.jpg",
     "precio_publico": 28.0,
@@ -572,7 +572,7 @@
     "inventario": 6
   },
   {
-    "sku": "",
+    "sku": "FS-021",
     "nombre": "Ventilador Usb",
     "imagen": "fs-021.jpg",
     "precio_publico": 31.0,
@@ -585,7 +585,7 @@
     "inventario": 9
   },
   {
-    "sku": "",
+    "sku": "FS-1105",
     "nombre": "Mini Ventilador Recargable",
     "imagen": "fs-1105.jpg",
     "precio_publico": 37.0,
@@ -598,7 +598,7 @@
     "inventario": 323
   },
   {
-    "sku": "",
+    "sku": "FS-4013",
     "nombre": "Ventilador Diseño",
     "imagen": "fs-4013.jpg",
     "precio_publico": 43.0,
@@ -611,7 +611,7 @@
     "inventario": 823
   },
   {
-    "sku": "",
+    "sku": "FS-0227",
     "nombre": "Ventilador Diseño Casa",
     "imagen": "fs-0227.jpg",
     "precio_publico": 45.0,
@@ -624,7 +624,7 @@
     "inventario": 151
   },
   {
-    "sku": "",
+    "sku": "FS-0210",
     "nombre": "Ventilador Recargable",
     "imagen": "fs-0210.jpg",
     "precio_publico": 48.0,
@@ -637,7 +637,7 @@
     "inventario": 158
   },
   {
-    "sku": "",
+    "sku": "FS-4014",
     "nombre": "Ventilador Diseño",
     "imagen": "fs-4014.jpg",
     "precio_publico": 50.0,
@@ -650,7 +650,7 @@
     "inventario": 54
   },
   {
-    "sku": "",
+    "sku": "FS-4016",
     "nombre": "Ventilador Usb Portátil Mini Ventilador De Mano",
     "imagen": "fs-4016.jpg",
     "precio_publico": 57.0,
@@ -663,7 +663,7 @@
     "inventario": 6
   },
   {
-    "sku": "",
+    "sku": "FS-037",
     "nombre": "Ventilador",
     "imagen": "fs-037.jpg",
     "precio_publico": 70.0,
@@ -676,7 +676,7 @@
     "inventario": 90
   },
   {
-    "sku": "",
+    "sku": "FS-0222",
     "nombre": "Ventilador Diseño Astronauta",
     "imagen": "fs-0222.jpg",
     "precio_publico": 72.0,
@@ -689,7 +689,7 @@
     "inventario": 47
   },
   {
-    "sku": "",
+    "sku": "FS-0228",
     "nombre": "Ventilador Diseño",
     "imagen": "fs-0228.jpg",
     "precio_publico": 72.0,
@@ -702,7 +702,7 @@
     "inventario": 112
   },
   {
-    "sku": "",
+    "sku": "FS-1122",
     "nombre": "Ventilador Metálico",
     "imagen": "fs-1122.jpg",
     "precio_publico": 73.0,
@@ -715,7 +715,7 @@
     "inventario": 5
   },
   {
-    "sku": "",
+    "sku": "FS-1123",
     "nombre": "Ventilador Diseño",
     "imagen": "fs-1123.jpg",
     "precio_publico": 81.0,
@@ -728,7 +728,7 @@
     "inventario": 312
   },
   {
-    "sku": "",
+    "sku": "FS-0216",
     "nombre": "Ventilador Recargable",
     "imagen": "fs-0216.jpg",
     "precio_publico": 87.0,
@@ -741,7 +741,7 @@
     "inventario": 510
   },
   {
-    "sku": "",
+    "sku": "FS-0213",
     "nombre": "Ventilador Recargable",
     "imagen": "fs-0213.jpg",
     "precio_publico": 90.0,
@@ -754,7 +754,7 @@
     "inventario": 90
   },
   {
-    "sku": "",
+    "sku": "FS-4407",
     "nombre": "Ventilador Recargable",
     "imagen": "fs-4407.jpg",
     "precio_publico": 100.0,
@@ -767,7 +767,7 @@
     "inventario": 76
   },
   {
-    "sku": "",
+    "sku": "MVP-1012",
     "nombre": "Ventilador Portatil Con Bandeja Para Agua O Aromatizante Mitzu",
     "imagen": "mvp-1012.jpg",
     "precio_publico": 117.0,
@@ -780,7 +780,7 @@
     "inventario": 589
   },
   {
-    "sku": "",
+    "sku": "FS-0251",
     "nombre": "Mini Aire Acondicionado",
     "imagen": "fs-0251.jpg",
     "precio_publico": 135.0,
@@ -793,7 +793,7 @@
     "inventario": 49
   },
   {
-    "sku": "",
+    "sku": "AIRS25W07",
     "nombre": "Ventilador de Piso Solar de 12\"",
     "imagen": "airs25w07.jpg",
     "precio_publico": 1120.0,
@@ -806,7 +806,7 @@
     "inventario": 4
   },
   {
-    "sku": "",
+    "sku": "ACC-20201",
     "nombre": "Transmisor Bluetooth",
     "imagen": "acc-20201.jpg",
     "precio_publico": 43.0,
@@ -819,7 +819,7 @@
     "inventario": 180
   },
   {
-    "sku": "",
+    "sku": "ACC-24110",
     "nombre": "Transmisor 3.5 para Auto",
     "imagen": "acc-24110.jpg",
     "precio_publico": 25.0,
@@ -832,7 +832,7 @@
     "inventario": 366
   },
   {
-    "sku": "",
+    "sku": "ACC-20104",
     "nombre": "Transmisor para Auto Bluetooth",
     "imagen": "acc-20104.jpg",
     "precio_publico": 63.0,
@@ -845,7 +845,7 @@
     "inventario": 42
   },
   {
-    "sku": "",
+    "sku": "ACC-20302",
     "nombre": "Transmisor de Auto Multientradas",
     "imagen": "acc-20302.jpg",
     "precio_publico": 65.0,
@@ -858,7 +858,7 @@
     "inventario": 66
   },
   {
-    "sku": "",
+    "sku": "XO-8301",
     "nombre": "Transmisor Bluetooth de Coche",
     "imagen": "xo-8301.jpg",
     "precio_publico": 62.0,
@@ -871,7 +871,7 @@
     "inventario": 195
   },
   {
-    "sku": "",
+    "sku": "XO-8150",
     "nombre": "Transmisor Bt",
     "imagen": "xo-8150.jpg",
     "precio_publico": 39.0,
@@ -884,7 +884,7 @@
     "inventario": 29
   },
   {
-    "sku": "",
+    "sku": "ACC-20500",
     "nombre": "Transmisor para Auto Bluetooth",
     "imagen": "acc-20500.jpg",
     "precio_publico": 98.0,
@@ -897,7 +897,7 @@
     "inventario": 186
   },
   {
-    "sku": "",
+    "sku": "ACC-20101",
     "nombre": "Transmisor para Auto BT",
     "imagen": "acc-20101.jpg",
     "precio_publico": 113.0,
@@ -910,7 +910,7 @@
     "inventario": 64
   },
   {
-    "sku": "",
+    "sku": "ACC-20102",
     "nombre": "Transmisor para Auto Bluetooth",
     "imagen": "acc-20102.jpg",
     "precio_publico": 113.0,
@@ -923,7 +923,7 @@
     "inventario": 37
   },
   {
-    "sku": "",
+    "sku": "YSK-012",
     "nombre": "Llavero de Zapatos de Tacón",
     "imagen": "ysk-012.jpg",
     "precio_publico": 4.0,
@@ -936,7 +936,7 @@
     "inventario": 1308
   },
   {
-    "sku": "",
+    "sku": "XQ-201",
     "nombre": "Rosa Eterna Decorada de Espuma Artificial con Aroma",
     "imagen": "xq-201.jpg",
     "precio_publico": 8.0,
@@ -949,7 +949,7 @@
     "inventario": 320
   },
   {
-    "sku": "",
+    "sku": "XQ-232",
     "nombre": "Rosa Eterna con Detalle de Oso y Corazón",
     "imagen": "xq-232.jpg",
     "precio_publico": 8.0,
@@ -962,7 +962,7 @@
     "inventario": 594
   },
   {
-    "sku": "",
+    "sku": "XQ-233",
     "nombre": "Rosa Eterna con Detalle de Oso Corazón",
     "imagen": "xq-233.jpg",
     "precio_publico": 9.0,
@@ -975,7 +975,7 @@
     "inventario": 1057
   },
   {
-    "sku": "",
+    "sku": "XQ-S175",
     "nombre": "Bolsa de Regalo San Valentín de Papel Diseño Surtido",
     "imagen": "xq-s175.jpg",
     "precio_publico": 10.0,
@@ -988,7 +988,7 @@
     "inventario": 416
   },
   {
-    "sku": "",
+    "sku": "XQ-253",
     "nombre": "Rosa Eterna para Regalo",
     "imagen": "xq-253.jpg",
     "precio_publico": 16.0,
@@ -1001,7 +1001,7 @@
     "inventario": 433
   },
   {
-    "sku": "",
+    "sku": "XQ-237",
     "nombre": "Flor Eterna con Corazón de Unicel para Regalo",
     "imagen": "xq-237.jpg",
     "precio_publico": 18.0,
@@ -1014,7 +1014,7 @@
     "inventario": 295
   },
   {
-    "sku": "",
+    "sku": "XQ-252",
     "nombre": "Ramo de Rosas Eternas para Regalo",
     "imagen": "xq-252.jpg",
     "precio_publico": 23.0,
@@ -1027,7 +1027,7 @@
     "inventario": 328
   },
   {
-    "sku": "",
+    "sku": "XQ-257",
     "nombre": "Cajita de Aluminio con Rosa Eterna y Collar",
     "imagen": "xq-257.jpg",
     "precio_publico": 24.0,
@@ -1040,7 +1040,7 @@
     "inventario": 349
   },
   {
-    "sku": "",
+    "sku": "XQ-251",
     "nombre": "Ramo de Rosas Eternas para Regalo",
     "imagen": "xq-251.jpg",
     "precio_publico": 26.0,
@@ -1053,7 +1053,7 @@
     "inventario": 383
   },
   {
-    "sku": "",
+    "sku": "XQ-605",
     "nombre": "Caja de Regalo con Oso de Peluche",
     "imagen": "xq-605.jpg",
     "precio_publico": 27.0,
@@ -1066,7 +1066,7 @@
     "inventario": 89
   },
   {
-    "sku": "",
+    "sku": "QRJ-03",
     "nombre": "Globo con Rosa y Tira LED",
     "imagen": "qrj-03.jpg",
     "precio_publico": 28.0,
@@ -1079,7 +1079,7 @@
     "inventario": 151
   },
   {
-    "sku": "",
+    "sku": "XQ-606",
     "nombre": "Caja de Regalo de Rosas",
     "imagen": "xq-606.jpg",
     "precio_publico": 33.0,
@@ -1092,7 +1092,7 @@
     "inventario": 134
   },
   {
-    "sku": "",
+    "sku": "XQ-611",
     "nombre": "Cajita de Regalo con Pulsera y Rosas",
     "imagen": "xq-611.jpg",
     "precio_publico": 42.0,
@@ -1105,7 +1105,7 @@
     "inventario": 7
   },
   {
-    "sku": "",
+    "sku": "XQ-607",
     "nombre": "Cajita de Regalo con Ramo y Osito",
     "imagen": "xq-607.jpg",
     "precio_publico": 58.0,
@@ -1118,7 +1118,7 @@
     "inventario": 113
   },
   {
-    "sku": "",
+    "sku": "XQ-213",
     "nombre": "Caja de Regalo en Forma de corazón con Cadena y Aretes con 10 Rosas",
     "imagen": "xq-213.jpg",
     "precio_publico": 58.0,
@@ -1131,7 +1131,7 @@
     "inventario": 67
   },
   {
-    "sku": "",
+    "sku": "XQ-260",
     "nombre": "Alhajero con Rosa Eterna y Collar para Regalo",
     "imagen": "xq-260.jpg",
     "precio_publico": 90.0,
@@ -1144,7 +1144,7 @@
     "inventario": 61
   },
   {
-    "sku": "",
+    "sku": "XQ-609",
     "nombre": "Cápsula con Luz LED y Figura de Parejas",
     "imagen": "xq-609.jpg",
     "precio_publico": 97.0,
@@ -1157,7 +1157,7 @@
     "inventario": 65
   },
   {
-    "sku": "",
+    "sku": "JC-13",
     "nombre": "Mini Tripie Con Soporte",
     "imagen": "jc-13.jpg",
     "precio_publico": 140.0,
@@ -1170,7 +1170,7 @@
     "inventario": 75
   },
   {
-    "sku": "",
+    "sku": "SOP-1077",
     "nombre": "(SOP-1077) Soporte Metálico Giratorio para Celular",
     "imagen": "sop-1077.jpg",
     "precio_publico": 91.0,
@@ -1183,7 +1183,7 @@
     "inventario": 21
   },
   {
-    "sku": "",
+    "sku": "SOP-1078",
     "nombre": "Soporte Ajustable para Celular",
     "imagen": "sop-1078.jpg",
     "precio_publico": 46.0,
@@ -1196,7 +1196,7 @@
     "inventario": 84
   },
   {
-    "sku": "",
+    "sku": "SOP-1082",
     "nombre": "Soporte Metálico Giratorio para Celular",
     "imagen": "sop-1082.jpg",
     "precio_publico": 40.0,
@@ -1209,7 +1209,7 @@
     "inventario": 1
   },
   {
-    "sku": "",
+    "sku": "SOP-1083",
     "nombre": "Soporte Giratorio Metálico para Celular",
     "imagen": "sop-1083.jpg",
     "precio_publico": 40.0,
@@ -1222,7 +1222,7 @@
     "inventario": 93
   },
   {
-    "sku": "",
+    "sku": "SOP-1070",
     "nombre": "Soporte Plegable Magnético para Telefono",
     "imagen": "sop-1070.jpg",
     "precio_publico": 35.0,
@@ -1235,7 +1235,7 @@
     "inventario": 6
   },
   {
-    "sku": "",
+    "sku": "XZ-6140",
     "nombre": "Soporte de Escritorio para Celular",
     "imagen": "xz-6140.jpg",
     "precio_publico": 20.0,
@@ -1248,7 +1248,7 @@
     "inventario": 7
   },
   {
-    "sku": "",
+    "sku": "JC-23",
     "nombre": "Soporte De Selfie",
     "imagen": "jc-23.jpg",
     "precio_publico": 158.0,
@@ -1261,7 +1261,7 @@
     "inventario": 6
   },
   {
-    "sku": "",
+    "sku": "SOP-1079",
     "nombre": "Soporte Magnético de Auto para Celular",
     "imagen": "sop-1079.jpg",
     "precio_publico": 33.0,
@@ -1274,7 +1274,7 @@
     "inventario": 117
   },
   {
-    "sku": "",
+    "sku": "XZ-6223",
     "nombre": "Soporte para Celular respaldo de Auto",
     "imagen": "xz-6223.jpg",
     "precio_publico": 15.0,
@@ -1287,7 +1287,7 @@
     "inventario": 105
   },
   {
-    "sku": "",
+    "sku": "XZ-6206",
     "nombre": "Soporte Magnético para Auto",
     "imagen": "xz-6206.jpg",
     "precio_publico": 20.0,
@@ -1300,7 +1300,7 @@
     "inventario": 58
   },
   {
-    "sku": "",
+    "sku": "BT-1001",
     "nombre": "Soporte De Iman",
     "imagen": "bt-1001.jpg",
     "precio_publico": 30.0,
@@ -1313,7 +1313,7 @@
     "inventario": 56
   },
   {
-    "sku": "",
+    "sku": "XZ-6218",
     "nombre": "Soporte de Celular para Carro",
     "imagen": "xz-6218.jpg",
     "precio_publico": 30.0,
@@ -1326,7 +1326,7 @@
     "inventario": 118
   },
   {
-    "sku": "",
+    "sku": "BT-1010",
     "nombre": "Soporte Para Botellas",
     "imagen": "bt-1010.jpg",
     "precio_publico": 37.0,
@@ -1339,7 +1339,7 @@
     "inventario": 50
   },
   {
-    "sku": "",
+    "sku": "SOP-1060",
     "nombre": "Soporte Para Celular",
     "imagen": "sop-1060.jpg",
     "precio_publico": 48.0,
@@ -1352,7 +1352,7 @@
     "inventario": 28
   },
   {
-    "sku": "",
+    "sku": "JC-35",
     "nombre": "Palo De Selfie",
     "imagen": "jc-35.jpg",
     "precio_publico": 115.0,
@@ -1365,7 +1365,7 @@
     "inventario": 38
   },
   {
-    "sku": "",
+    "sku": "AZJ-80504",
     "nombre": "Soporte de Moto para Celular",
     "imagen": "azj-80504.jpg",
     "precio_publico": 98.0,
@@ -1378,7 +1378,7 @@
     "inventario": 47
   },
   {
-    "sku": "",
+    "sku": "AZJ-80503",
     "nombre": "Soporte Para Bicicleta",
     "imagen": "azj-80503.jpg",
     "precio_publico": 98.0,
@@ -1391,7 +1391,7 @@
     "inventario": 40
   },
   {
-    "sku": "",
+    "sku": "XZ-6303",
     "nombre": "Soporte de bici",
     "imagen": "xz-6303.jpg",
     "precio_publico": 32.0,
@@ -1404,7 +1404,7 @@
     "inventario": 28
   },
   {
-    "sku": "",
+    "sku": "XZ-6115",
     "nombre": "Soporte Para Celular",
     "imagen": "xz-6115.jpg",
     "precio_publico": 16.0,
@@ -1417,7 +1417,7 @@
     "inventario": 105
   },
   {
-    "sku": "",
+    "sku": "XZ-6111",
     "nombre": "Soporte Flexible Celular",
     "imagen": "xz-6111.jpg",
     "precio_publico": 26.0,
@@ -1430,7 +1430,7 @@
     "inventario": 58
   },
   {
-    "sku": "",
+    "sku": "AZJ-80502",
     "nombre": "Soporte con Diseño de Sombrilla para Motocicleta",
     "imagen": "azj-80502.jpg",
     "precio_publico": 90.0,
@@ -1443,7 +1443,7 @@
     "inventario": 60
   },
   {
-    "sku": "",
+    "sku": "AZJ-80501",
     "nombre": "Soporte con Diseño de Sombrilla para Bicicleta",
     "imagen": "azj-80501.jpg",
     "precio_publico": 90.0,
@@ -1456,7 +1456,7 @@
     "inventario": 39
   },
   {
-    "sku": "",
+    "sku": "XZ-6360",
     "nombre": "Soporte De Celular Para Motocicleta",
     "imagen": "xz-6360.jpg",
     "precio_publico": 68.0,
@@ -1469,7 +1469,7 @@
     "inventario": 28
   },
   {
-    "sku": "",
+    "sku": "TB-6324",
     "nombre": "Smart Watch Ft50",
     "imagen": "tb-6324.jpg",
     "precio_publico": 90.0,
@@ -1482,7 +1482,7 @@
     "inventario": 86
   },
   {
-    "sku": "",
+    "sku": "TB-6317",
     "nombre": "Smarwatch Macaron",
     "imagen": "tb-6317.jpg",
     "precio_publico": 65.0,
@@ -1495,7 +1495,7 @@
     "inventario": 26
   },
   {
-    "sku": "",
+    "sku": "DZB-2330",
     "nombre": "Reloj Digital Touch Infantil",
     "imagen": "dzb-2330.jpg",
     "precio_publico": 11.0,
@@ -1508,7 +1508,7 @@
     "inventario": 224
   },
   {
-    "sku": "",
+    "sku": "TB-6316",
     "nombre": "Smartwatch T500",
     "imagen": "tb-6316.jpg",
     "precio_publico": 82.0,
@@ -1521,7 +1521,7 @@
     "inventario": 65
   },
   {
-    "sku": "",
+    "sku": "TB-6311",
     "nombre": "Reloj Inteligente T500 Plus",
     "imagen": "tb-6311.jpg",
     "precio_publico": 85.0,
@@ -1534,7 +1534,7 @@
     "inventario": 96
   },
   {
-    "sku": "",
+    "sku": "TB-6319",
     "nombre": "Reloj T55 + Dos Correas Deportivas",
     "imagen": "tb-6319.jpg",
     "precio_publico": 100.0,
@@ -1547,7 +1547,7 @@
     "inventario": 60
   },
   {
-    "sku": "",
+    "sku": "DZB-2701",
     "nombre": "Smartwatch Infantil Económico",
     "imagen": "dzb-2701.jpg",
     "precio_publico": 20.0,
@@ -1560,7 +1560,7 @@
     "inventario": 453
   },
   {
-    "sku": "",
+    "sku": "FVB-0302",
     "nombre": "Reloj Digital Infantil con Diseño",
     "imagen": "fvb-0302.jpg",
     "precio_publico": 19.0,
@@ -1573,7 +1573,7 @@
     "inventario": 731
   },
   {
-    "sku": "",
+    "sku": "FVB-0301",
     "nombre": "Reloj Digital Infantil Diseño Labubu",
     "imagen": "fvb-0301.jpg",
     "precio_publico": 20.0,
@@ -1586,7 +1586,7 @@
     "inventario": 446
   },
   {
-    "sku": "",
+    "sku": "BH-21290",
     "nombre": "Candado para Bicicletas",
     "imagen": "bh-21290.jpg",
     "precio_publico": 29.0,
@@ -1599,7 +1599,7 @@
     "inventario": 91
   },
   {
-    "sku": "",
+    "sku": "EKQ-80601",
     "nombre": "Par de Radios Walkie Talkie 777S TAJA",
     "imagen": "ekq-80601.jpg",
     "precio_publico": 365.0,
@@ -1612,7 +1612,7 @@
     "inventario": 0
   },
   {
-    "sku": "",
+    "sku": "SJ-12200",
     "nombre": "Bloqueo De Huellas Dactilare",
     "imagen": "sj-12200.jpg",
     "precio_publico": 200.0,
@@ -1625,7 +1625,7 @@
     "inventario": 31
   },
   {
-    "sku": "",
+    "sku": "DJJ-888",
     "nombre": "(DJJ-888) Radio Woki Toki",
     "imagen": "djj-888.jpg",
     "precio_publico": 227.0,
@@ -1638,7 +1638,7 @@
     "inventario": 49
   },
   {
-    "sku": "",
+    "sku": "EKQ-80602",
     "nombre": "Par de Radios Walkie Talkie",
     "imagen": "ekq-80602.jpg",
     "precio_publico": 441.0,
@@ -1651,7 +1651,7 @@
     "inventario": 20
   },
   {
-    "sku": "",
+    "sku": "XS-1203",
     "nombre": "Cámarta de Seguridad A9",
     "imagen": "xs-1203.jpg",
     "precio_publico": 76.0,
@@ -1664,7 +1664,7 @@
     "inventario": 7
   },
   {
-    "sku": "",
+    "sku": "EKQ-30901",
     "nombre": "Mini Cámara Espía de Seguridad",
     "imagen": "ekq-30901.jpg",
     "precio_publico": 90.0,
@@ -1677,7 +1677,7 @@
     "inventario": 11
   },
   {
-    "sku": "",
+    "sku": "ZXJ-2110",
     "nombre": "(ZXJ-2110) Camara Deportiva Tipo Go Pro",
     "imagen": "zxj-2110.jpg",
     "precio_publico": 233.0,
@@ -1690,7 +1690,7 @@
     "inventario": 43
   },
   {
-    "sku": "",
+    "sku": "EKQ-30403",
     "nombre": "Camara Dual de Seguridad Wifi Socket",
     "imagen": "ekq-30403.jpg",
     "precio_publico": 375.0,
@@ -1703,7 +1703,7 @@
     "inventario": 5
   },
   {
-    "sku": "",
+    "sku": "BH-21277",
     "nombre": "Banda de Resistencia para Yoga",
     "imagen": "bh-21277.jpg",
     "precio_publico": 25.0,
@@ -1716,7 +1716,7 @@
     "inventario": 187
   },
   {
-    "sku": "",
+    "sku": "BH-2169",
     "nombre": "Rizador Para Cabello",
     "imagen": "bh-2169.jpg",
     "precio_publico": 161.0,
@@ -1729,7 +1729,7 @@
     "inventario": 2
   },
   {
-    "sku": "",
+    "sku": "HZJ-4215",
     "nombre": "Espejo con Luz LED",
     "imagen": "hzj-4215.jpg",
     "precio_publico": 117.0,
@@ -1742,7 +1742,7 @@
     "inventario": 37
   },
   {
-    "sku": "",
+    "sku": "HZJ-919",
     "nombre": "Estante De Cosmetico Organizador",
     "imagen": "hzj-919.jpg",
     "precio_publico": 90.0,
@@ -1755,7 +1755,7 @@
     "inventario": 74
   },
   {
-    "sku": "",
+    "sku": "ZFQ-4105",
     "nombre": "Plancha para Cabello",
     "imagen": "zfq-4105.jpg",
     "precio_publico": 105.0,
@@ -1768,7 +1768,7 @@
     "inventario": 61
   },
   {
-    "sku": "",
+    "sku": "HZJ-922",
     "nombre": "Espejo y Alhajero en Forma de Corazón con Luz LED de Atenuación Táctil",
     "imagen": "hzj-922.jpg",
     "precio_publico": 119.0,
@@ -1781,7 +1781,7 @@
     "inventario": 38
   },
   {
-    "sku": "",
+    "sku": "HZJ-928",
     "nombre": "Espejo con Luz LED y Aumento 10x",
     "imagen": "hzj-928.jpg",
     "precio_publico": 126.0,
@@ -1794,7 +1794,7 @@
     "inventario": 31
   },
   {
-    "sku": "",
+    "sku": "MR-100",
     "nombre": "Depilador Eléctrico para Vello Nasal 360°",
     "imagen": "mr-100.jpg",
     "precio_publico": 46.0,
@@ -1807,7 +1807,7 @@
     "inventario": 5
   },
   {
-    "sku": "",
+    "sku": "MR-106P",
     "nombre": "Máquina Cortadora de Cabello de Plástico con Diseño de Buda",
     "imagen": "mr-106p.jpg",
     "precio_publico": 55.0,
@@ -1820,7 +1820,7 @@
     "inventario": 77
   },
   {
-    "sku": "",
+    "sku": "MR-107P",
     "nombre": "Máquina Cortadora de Cabello de Plástico con Diseño de Dragón",
     "imagen": "mr-107p.jpg",
     "precio_publico": 55.0,
@@ -1833,7 +1833,7 @@
     "inventario": 6
   },
   {
-    "sku": "",
+    "sku": "MR-109",
     "nombre": "Máquina Cortadora de Cabello de Metal con Diseño de Dragón",
     "imagen": "mr-109.jpg",
     "precio_publico": 62.0,
@@ -1846,7 +1846,7 @@
     "inventario": 46
   },
   {
-    "sku": "",
+    "sku": "MR-108",
     "nombre": "Máquina Cortadora de Cabello de Metal con Diseño de Buda",
     "imagen": "mr-108.jpg",
     "precio_publico": 62.0,
@@ -1859,7 +1859,7 @@
     "inventario": 90
   },
   {
-    "sku": "",
+    "sku": "MR-111",
     "nombre": "Máquina Cortadora de Cabello de Plástico con Diseño de Dragón Tornasol",
     "imagen": "mr-111.jpg",
     "precio_publico": 55.0,
@@ -1872,7 +1872,7 @@
     "inventario": 5
   },
   {
-    "sku": "",
+    "sku": "MR-112",
     "nombre": "Rasuradora Grabado Buda Multicolores",
     "imagen": "mr-112.jpg",
     "precio_publico": 55.0,
@@ -1885,7 +1885,7 @@
     "inventario": 12
   },
   {
-    "sku": "",
+    "sku": "MR-125",
     "nombre": "Máquina Para Cortar Cabello Calavera",
     "imagen": "mr-125.jpg",
     "precio_publico": 110.0,
@@ -1898,7 +1898,7 @@
     "inventario": 58
   },
   {
-    "sku": "",
+    "sku": "MR-126",
     "nombre": "Máquina Rasuradora Eléctrica con Pantalla LCD Recargable",
     "imagen": "mr-126.jpg",
     "precio_publico": 155.0,
@@ -1911,7 +1911,7 @@
     "inventario": 20
   },
   {
-    "sku": "",
+    "sku": "MR-127",
     "nombre": "Rasuradora Eléctrica con Pantalla LCD Recargable",
     "imagen": "mr-127.jpg",
     "precio_publico": 180.0,
@@ -1924,7 +1924,7 @@
     "inventario": 35
   },
   {
-    "sku": "",
+    "sku": "MR-130P",
     "nombre": "Máquina Para Cortar Cabello",
     "imagen": "mr-130p.jpg",
     "precio_publico": 100.0,
@@ -1937,7 +1937,7 @@
     "inventario": 43
   },
   {
-    "sku": "",
+    "sku": "MR-132",
     "nombre": "Rasuradora y Depiladora Eléctrica de Doble Cabezal",
     "imagen": "mr-132.jpg",
     "precio_publico": 182.0,
@@ -1950,7 +1950,7 @@
     "inventario": 31
   },
   {
-    "sku": "",
+    "sku": "MR-137P",
     "nombre": "Rasuradora Eléctrica con 4 Peines",
     "imagen": "mr-137p.jpg",
     "precio_publico": 155.0,
@@ -1963,7 +1963,7 @@
     "inventario": 13
   },
   {
-    "sku": "",
+    "sku": "MR-138P",
     "nombre": "Rasuradora Eléctrica con 4 Peines",
     "imagen": "mr-138p.jpg",
     "precio_publico": 88.0,
@@ -1976,7 +1976,7 @@
     "inventario": 59
   },
   {
-    "sku": "",
+    "sku": "MR-139P",
     "nombre": "Rasuradora Eléctrica con 4 Peines",
     "imagen": "mr-139p.jpg",
     "precio_publico": 106.0,
@@ -1989,7 +1989,7 @@
     "inventario": 41
   },
   {
-    "sku": "",
+    "sku": "MR-150",
     "nombre": "Rasuradora Eléctrica Recargable",
     "imagen": "mr-150.jpg",
     "precio_publico": 131.0,
@@ -2002,7 +2002,7 @@
     "inventario": 5
   },
   {
-    "sku": "",
+    "sku": "MR-302",
     "nombre": "Rizador Para Cabello",
     "imagen": "mr-302.jpg",
     "precio_publico": 106.0,
@@ -2015,7 +2015,7 @@
     "inventario": 5
   },
   {
-    "sku": "",
+    "sku": "MR-305",
     "nombre": "Plancha de Cabello de 4 Niveles",
     "imagen": "mr-305.jpg",
     "precio_publico": 126.0,
@@ -2028,7 +2028,7 @@
     "inventario": 37
   },
   {
-    "sku": "",
+    "sku": "MR-310",
     "nombre": "Plancha y Rizadora 2 en 1 para el Cabello",
     "imagen": "mr-310.jpg",
     "precio_publico": 88.0,
@@ -2041,7 +2041,7 @@
     "inventario": 18
   },
   {
-    "sku": "",
+    "sku": "MR-313",
     "nombre": "Rizador Planchador Tenaza",
     "imagen": "mr-313.jpg",
     "precio_publico": 137.0,
@@ -2054,7 +2054,7 @@
     "inventario": 29
   },
   {
-    "sku": "",
+    "sku": "MR-321",
     "nombre": "Tenaza Rizadora de Cabello",
     "imagen": "mr-321.jpg",
     "precio_publico": 91.0,
@@ -2067,7 +2067,7 @@
     "inventario": 27
   },
   {
-    "sku": "",
+    "sku": "MR-325",
     "nombre": "Mini Cepillo Plancha/Rizador para Cabello",
     "imagen": "mr-325.jpg",
     "precio_publico": 70.0,
@@ -2080,7 +2080,7 @@
     "inventario": 64
   },
   {
-    "sku": "",
+    "sku": "MR-885",
     "nombre": "Depilador Eléctrico 4 en 1 con Cabezales Intercambiables",
     "imagen": "mr-885.jpg",
     "precio_publico": 175.0,
@@ -2093,7 +2093,7 @@
     "inventario": 81
   },
   {
-    "sku": "",
+    "sku": "MR-829S",
     "nombre": "Cepillo Dental Eléctrico",
     "imagen": "mr-829s.jpg",
     "precio_publico": 64.0,
@@ -2106,7 +2106,7 @@
     "inventario": 4
   },
   {
-    "sku": "",
+    "sku": "TXD-15",
     "nombre": "Rastrillo Desechable con Doble Hoja y Mango Ergonómico",
     "imagen": "txd-15.jpg",
     "precio_publico": 20.0,
@@ -2119,7 +2119,7 @@
     "inventario": 131
   },
   {
-    "sku": "",
+    "sku": "MR-926",
     "nombre": "Masajeador con 6 Velocidades y 4 Cabezales",
     "imagen": "mr-926.jpg",
     "precio_publico": 282.0,
@@ -2132,7 +2132,7 @@
     "inventario": 15
   },
   {
-    "sku": "",
+    "sku": "TXD-20",
     "nombre": "Rastrillo Desechable para Afeitar con Doble Navaja",
     "imagen": "txd-20.jpg",
     "precio_publico": 4.0,
@@ -2145,7 +2145,7 @@
     "inventario": 437
   },
   {
-    "sku": "",
+    "sku": "TXD-22",
     "nombre": "Rastrillo Desechable con Triple Hoja Lubricada",
     "imagen": "txd-22.jpg",
     "precio_publico": 28.0,
@@ -2158,7 +2158,7 @@
     "inventario": 20
   },
   {
-    "sku": "",
+    "sku": "TXD-27",
     "nombre": "Rastrillo con Cabeza Movible",
     "imagen": "txd-27.jpg",
     "precio_publico": 31.0,
@@ -2171,7 +2171,7 @@
     "inventario": 16
   },
   {
-    "sku": "",
+    "sku": "CFJ-115",
     "nombre": "Secadora de Cabello",
     "imagen": "cfj-115.jpg",
     "precio_publico": 210.0,
@@ -2184,7 +2184,7 @@
     "inventario": 18
   },
   {
-    "sku": "",
+    "sku": "CFJ-113",
     "nombre": "Secadora de Cabello de 2000W",
     "imagen": "cfj-113.jpg",
     "precio_publico": 191.0,
@@ -2197,7 +2197,7 @@
     "inventario": 6
   },
   {
-    "sku": "",
+    "sku": "CFJ-111",
     "nombre": "Secadora de Cabello de 1200W",
     "imagen": "cfj-111.jpg",
     "precio_publico": 173.0,
@@ -2210,7 +2210,7 @@
     "inventario": 3
   },
   {
-    "sku": "",
+    "sku": "HZB-359",
     "nombre": "Bolsa Cosmetiquera",
     "imagen": "hzb-359.jpg",
     "precio_publico": 47.0,
@@ -2223,7 +2223,7 @@
     "inventario": 309
   },
   {
-    "sku": "",
+    "sku": "HZB-360",
     "nombre": "Bolsa Cosmetiquera",
     "imagen": "hzb-360.jpg",
     "precio_publico": 55.0,
@@ -2236,7 +2236,7 @@
     "inventario": 27
   },
   {
-    "sku": "",
+    "sku": "QCB-03",
     "nombre": "Bolsa Organizadora para Respaldo para Carro",
     "imagen": "qcb-03.jpg",
     "precio_publico": 59.0,
@@ -2249,7 +2249,7 @@
     "inventario": 2
   },
   {
-    "sku": "",
+    "sku": "SYZ-011",
     "nombre": "Kit de viaje",
     "imagen": "syz-011.jpg",
     "precio_publico": 45.0,
@@ -2262,7 +2262,7 @@
     "inventario": 44
   },
   {
-    "sku": "",
+    "sku": "XQ-522",
     "nombre": "Bolsa De Viaje",
     "imagen": "xq-522.jpg",
     "precio_publico": 7.0,
@@ -2275,7 +2275,7 @@
     "inventario": 442
   },
   {
-    "sku": "",
+    "sku": "QJ-182",
     "nombre": "Cepillo Para Hendiduras",
     "imagen": "qj-182.jpg",
     "precio_publico": 10.0,
@@ -2288,7 +2288,7 @@
     "inventario": 396
   },
   {
-    "sku": "",
+    "sku": "BB-LQ1016",
     "nombre": "Bolsa De Cosmeticos",
     "imagen": "bb-lq1016.jpg",
     "precio_publico": 15.0,
@@ -2301,7 +2301,7 @@
     "inventario": 229
   },
   {
-    "sku": "",
+    "sku": "BB-LQ1017",
     "nombre": "Monederos O Bolsa Cosmetic",
     "imagen": "bb-lq1017.jpg",
     "precio_publico": 15.0,
@@ -2314,7 +2314,7 @@
     "inventario": 446
   },
   {
-    "sku": "",
+    "sku": "BB-LQ1015",
     "nombre": "Monederos O Bolsa Cosmetic",
     "imagen": "bb-lq1015.jpg",
     "precio_publico": 15.0,
@@ -2327,7 +2327,7 @@
     "inventario": 402
   },
   {
-    "sku": "",
+    "sku": "MR-870",
     "nombre": "Peine De Peluqueria",
     "imagen": "mr-870.jpg",
     "precio_publico": 20.0,
@@ -2340,7 +2340,7 @@
     "inventario": 4
   },
   {
-    "sku": "",
+    "sku": "HZJ-935",
     "nombre": "Set De Peine Con Espejo",
     "imagen": "hzj-935.jpg",
     "precio_publico": 23.0,
@@ -2353,7 +2353,7 @@
     "inventario": 57
   },
   {
-    "sku": "",
+    "sku": "BB-HZ1010",
     "nombre": "Bolsa De Cosmeticos",
     "imagen": "bb-hz1010.jpg",
     "precio_publico": 25.0,
@@ -2366,7 +2366,7 @@
     "inventario": 164
   },
   {
-    "sku": "",
+    "sku": "BB-1058",
     "nombre": "Monederos",
     "imagen": "bb-1058.jpg",
     "precio_publico": 28.0,
@@ -2379,7 +2379,7 @@
     "inventario": 98
   },
   {
-    "sku": "",
+    "sku": "BB-1059",
     "nombre": "Monederos",
     "imagen": "bb-1059.jpg",
     "precio_publico": 28.0,
@@ -2392,7 +2392,7 @@
     "inventario": 289
   },
   {
-    "sku": "",
+    "sku": "BB-1060",
     "nombre": "Monederos",
     "imagen": "bb-1060.jpg",
     "precio_publico": 28.0,
@@ -2405,7 +2405,7 @@
     "inventario": 365
   },
   {
-    "sku": "",
+    "sku": "BH-501",
     "nombre": "Depilador",
     "imagen": "bh-501.jpg",
     "precio_publico": 28.0,
@@ -2418,7 +2418,7 @@
     "inventario": 24
   },
   {
-    "sku": "",
+    "sku": "BH-21187",
     "nombre": "(BH-21187) Cosmétiquera Estuche",
     "imagen": "bh-21187.jpg",
     "precio_publico": 29.0,
@@ -2431,7 +2431,7 @@
     "inventario": 5
   },
   {
-    "sku": "",
+    "sku": "BH-2107",
     "nombre": "(BH-2107) Plancha para Cabello",
     "imagen": "bh-2107.jpg",
     "precio_publico": 29.0,
@@ -2444,7 +2444,7 @@
     "inventario": 41
   },
   {
-    "sku": "",
+    "sku": "XT-9921",
     "nombre": "Parche De Pecho",
     "imagen": "xt-9921.jpg",
     "precio_publico": 32.0,
@@ -2457,7 +2457,7 @@
     "inventario": 18
   },
   {
-    "sku": "",
+    "sku": "BB-1025",
     "nombre": "Bolsa De Cosmeticos",
     "imagen": "bb-1025.jpg",
     "precio_publico": 38.0,
@@ -2470,7 +2470,7 @@
     "inventario": 24
   },
   {
-    "sku": "",
+    "sku": "BB-1027",
     "nombre": "Bolsa De Cosmeticos",
     "imagen": "bb-1027.jpg",
     "precio_publico": 38.0,
@@ -2483,7 +2483,7 @@
     "inventario": 62
   },
   {
-    "sku": "",
+    "sku": "HZJ-932",
     "nombre": "Espejo",
     "imagen": "hzj-932.jpg",
     "precio_publico": 45.0,
@@ -2496,7 +2496,7 @@
     "inventario": 93
   },
   {
-    "sku": "",
+    "sku": "MR-322",
     "nombre": "Horquilas Rectas",
     "imagen": "mr-322.jpg",
     "precio_publico": 70.0,
@@ -2509,7 +2509,7 @@
     "inventario": 10
   },
   {
-    "sku": "",
+    "sku": "MR-853",
     "nombre": "Depilador Facial",
     "imagen": "mr-853.jpg",
     "precio_publico": 78.0,
@@ -2522,7 +2522,7 @@
     "inventario": 5
   },
   {
-    "sku": "",
+    "sku": "MR-049",
     "nombre": "Limpiador Facial",
     "imagen": "mr-049.jpg",
     "precio_publico": 87.0,
@@ -2535,7 +2535,7 @@
     "inventario": 14
   },
   {
-    "sku": "",
+    "sku": "K-733",
     "nombre": "Pon Cosas En El Estante",
     "imagen": "k-733.jpg",
     "precio_publico": 142.0,
@@ -2548,7 +2548,7 @@
     "inventario": 29
   },
   {
-    "sku": "",
+    "sku": "MR-933",
     "nombre": "Instrumento De Belleza",
     "imagen": "mr-933.jpg",
     "precio_publico": 142.0,
@@ -2561,7 +2561,7 @@
     "inventario": 9
   },
   {
-    "sku": "",
+    "sku": "MR-925",
     "nombre": "Secador",
     "imagen": "mr-925.jpg",
     "precio_publico": 250.0,
@@ -2574,7 +2574,7 @@
     "inventario": 3
   },
   {
-    "sku": "",
+    "sku": "KQL-6101",
     "nombre": "Soporte para cepillo de dientes",
     "imagen": "kql-6101.jpg",
     "precio_publico": 165.0,
@@ -2587,7 +2587,7 @@
     "inventario": 58
   },
   {
-    "sku": "",
+    "sku": "KQL-6102",
     "nombre": "Soporte para cepillo de dientes",
     "imagen": "kql-6102.jpg",
     "precio_publico": 210.0,
@@ -2600,7 +2600,7 @@
     "inventario": 38
   },
   {
-    "sku": "",
+    "sku": "KQL-6103",
     "nombre": "Soporte para cepillo de dientes",
     "imagen": "kql-6103.jpg",
     "precio_publico": 255.0,
@@ -2613,7 +2613,7 @@
     "inventario": 23
   },
   {
-    "sku": "",
+    "sku": "AZMQ033",
     "nombre": "Lámpara UV Multifuncional con Clip",
     "imagen": "azmq033.jpg",
     "precio_publico": 57.0,
@@ -2626,7 +2626,7 @@
     "inventario": 254
   },
   {
-    "sku": "",
+    "sku": "SE-3006",
     "nombre": "Plancha para el Cabello",
     "imagen": "se-3006.jpg",
     "precio_publico": 100.0,
@@ -2639,7 +2639,7 @@
     "inventario": 25
   },
   {
-    "sku": "",
+    "sku": "SE-3007",
     "nombre": "Plancha para el Cabello",
     "imagen": "se-3007.jpg",
     "precio_publico": 100.0,
@@ -2652,7 +2652,7 @@
     "inventario": 8
   },
   {
-    "sku": "",
+    "sku": "MR-900",
     "nombre": "Cinturon Calido Del Palacio",
     "imagen": "mr-900.jpg",
     "precio_publico": 92.0,
@@ -2665,7 +2665,7 @@
     "inventario": 197
   },
   {
-    "sku": "",
+    "sku": "JSL-5507",
     "nombre": "Parche Para Masaje",
     "imagen": "jsl-5507.jpg",
     "precio_publico": 30.0,
@@ -2678,7 +2678,7 @@
     "inventario": 111
   },
   {
-    "sku": "",
+    "sku": "MR-867",
     "nombre": "Pistola de Fascia",
     "imagen": "mr-867.jpg",
     "precio_publico": 39.0,
@@ -2691,7 +2691,7 @@
     "inventario": 20
   },
   {
-    "sku": "",
+    "sku": "BH-21192",
     "nombre": "(BH-21192) Masajeador con Vibración",
     "imagen": "bh-21192.jpg",
     "precio_publico": 34.0,
@@ -2704,7 +2704,7 @@
     "inventario": 3
   },
   {
-    "sku": "",
+    "sku": "MR-902",
     "nombre": "Cepillo Masajeador",
     "imagen": "mr-902.jpg",
     "precio_publico": 92.0,
@@ -2717,7 +2717,7 @@
     "inventario": 48
   },
   {
-    "sku": "",
+    "sku": "BH-2166",
     "nombre": "Rasuradora Diseño Buda Plastico",
     "imagen": "bh-2166.jpg",
     "precio_publico": 65.0,
@@ -2730,7 +2730,7 @@
     "inventario": 89
   },
   {
-    "sku": "",
+    "sku": "BH-2136",
     "nombre": "Rasuradora De Plastico",
     "imagen": "bh-2136.jpg",
     "precio_publico": 69.0,
@@ -2743,7 +2743,7 @@
     "inventario": 51
   },
   {
-    "sku": "",
+    "sku": "NTN-30303",
     "nombre": "Rasuradora Vintage",
     "imagen": "ntn-30303.jpg",
     "precio_publico": 54.0,
@@ -2756,7 +2756,7 @@
     "inventario": 42
   },
   {
-    "sku": "",
+    "sku": "NTN-30304",
     "nombre": "Rasuradora Dorada de Dragon",
     "imagen": "ntn-30304.jpg",
     "precio_publico": 57.0,
@@ -2769,7 +2769,7 @@
     "inventario": 105
   },
   {
-    "sku": "",
+    "sku": "NTN-30306",
     "nombre": "Rasuradora Vintage de Hombre",
     "imagen": "ntn-30306.jpg",
     "precio_publico": 57.0,
@@ -2782,7 +2782,7 @@
     "inventario": 93
   },
   {
-    "sku": "",
+    "sku": "NTN-30305",
     "nombre": "Rasuradora Dorada de Buda",
     "imagen": "ntn-30305.jpg",
     "precio_publico": 57.0,
@@ -2795,7 +2795,7 @@
     "inventario": 63
   },
   {
-    "sku": "",
+    "sku": "NTN-30303",
     "nombre": "Rasuradora Vintage",
     "imagen": "ntn-30303.jpg",
     "precio_publico": 54.0,
@@ -2808,7 +2808,7 @@
     "inventario": 42
   },
   {
-    "sku": "",
+    "sku": "NTN-30304",
     "nombre": "Rasuradora Dorada de Dragon",
     "imagen": "ntn-30304.jpg",
     "precio_publico": 57.0,
@@ -2821,7 +2821,7 @@
     "inventario": 105
   },
   {
-    "sku": "",
+    "sku": "MR-075",
     "nombre": "Afeitadora Electrica Diseño Buda",
     "imagen": "mr-075.jpg",
     "precio_publico": 59.0,
@@ -2834,7 +2834,7 @@
     "inventario": 38
   },
   {
-    "sku": "",
+    "sku": "SE-3002",
     "nombre": "Rasuradora Diseño de Buda",
     "imagen": "se-3002.jpg",
     "precio_publico": 33.0,
@@ -2847,7 +2847,7 @@
     "inventario": 11
   },
   {
-    "sku": "",
+    "sku": "MR-113",
     "nombre": "Cortadora De Cabello",
     "imagen": "mr-113.jpg",
     "precio_publico": 83.0,
@@ -2860,7 +2860,7 @@
     "inventario": 46
   },
   {
-    "sku": "",
+    "sku": "MR-115",
     "nombre": "Cortadora De Cabello",
     "imagen": "mr-115.jpg",
     "precio_publico": 97.0,
@@ -2873,7 +2873,7 @@
     "inventario": 50
   },
   {
-    "sku": "",
+    "sku": "MR-131P",
     "nombre": "Afeitadora",
     "imagen": "mr-131p.jpg",
     "precio_publico": 100.0,
@@ -2886,7 +2886,7 @@
     "inventario": 62
   },
   {
-    "sku": "",
+    "sku": "MR-120",
     "nombre": "Cortador De Cabello",
     "imagen": "mr-120.jpg",
     "precio_publico": 108.0,
@@ -2899,7 +2899,7 @@
     "inventario": 15
   },
   {
-    "sku": "",
+    "sku": "MR-128",
     "nombre": "Rasuradora Electrica",
     "imagen": "mr-128.jpg",
     "precio_publico": 150.0,
@@ -2912,7 +2912,7 @@
     "inventario": 8
   },
   {
-    "sku": "",
+    "sku": "ZN-1643",
     "nombre": "SmartWatch Nike S11",
     "imagen": "zn-1643.jpg",
     "precio_publico": 333.0,
@@ -2925,7 +2925,7 @@
     "inventario": 36
   },
   {
-    "sku": "",
+    "sku": "AIRPODS PRO 2 NIKE",
     "nombre": "Airpods Pro 2da Gen + Llavero Nike",
     "imagen": "airpods pro 2 nike.jpg",
     "precio_publico": 125.0,
@@ -2938,7 +2938,7 @@
     "inventario": 91
   },
   {
-    "sku": "",
+    "sku": "AIRPODS 4TA GEN",
     "nombre": "Air Pods 4ta Gen",
     "imagen": "airpods 4ta gen.jpg",
     "precio_publico": 125.0,
@@ -2951,7 +2951,7 @@
     "inventario": 117
   },
   {
-    "sku": "",
+    "sku": "FR-9513",
     "nombre": "Audifonos Bluetooth + Funda y Llavero del futbol",
     "imagen": "fr-9513.jpg",
     "precio_publico": 130.0,
@@ -2964,7 +2964,7 @@
     "inventario": 3
   },
   {
-    "sku": "",
+    "sku": "AUDIFONOS E LIGHTNING",
     "nombre": "Audifonos Tipo Earpods Lightning",
     "imagen": "audifonos e lightning.jpg",
     "precio_publico": 42.0,
@@ -2977,7 +2977,7 @@
     "inventario": 394
   },
   {
-    "sku": "",
+    "sku": "EARPODS E 3.5 MM",
     "nombre": "Audifonos Tipo Earpods Jack 3.5mm",
     "imagen": "earpods e 3.5 mm.jpg",
     "precio_publico": 25.0,
@@ -2990,7 +2990,7 @@
     "inventario": 1494
   },
   {
-    "sku": "",
+    "sku": "FR-9518",
     "nombre": "Airpods Pro NIKE",
     "imagen": "fr-9518.jpg",
     "precio_publico": 98.0,
@@ -3003,7 +3003,7 @@
     "inventario": 14
   },
   {
-    "sku": "",
+    "sku": "FR-3702",
     "nombre": "Airpods 2da Gen",
     "imagen": "fr-3702.jpg",
     "precio_publico": 120.0,
@@ -3016,7 +3016,7 @@
     "inventario": 49
   },
   {
-    "sku": "",
+    "sku": "TIPO AIRPODS MAX",
     "nombre": "Audifonos Bluetooth Tipo Airpods Max",
     "imagen": "tipo airpods max.jpg",
     "precio_publico": 250.0,
@@ -3029,7 +3029,7 @@
     "inventario": 11
   },
   {
-    "sku": "",
+    "sku": "AKG S10 3.5MM",
     "nombre": "Audifonos Tipo Samsung Akg S10 3.5Mm",
     "imagen": "akg s10 3.5mm.jpg",
     "precio_publico": 20.0,
@@ -3042,7 +3042,7 @@
     "inventario": 14
   },
   {
-    "sku": "",
+    "sku": "AUDIFONOS TIPO E TC",
     "nombre": "Audifonos Tipo Earpods Tipo C",
     "imagen": "audifonos tipo e tc.jpg",
     "precio_publico": 45.0,
@@ -3055,7 +3055,7 @@
     "inventario": 120
   },
   {
-    "sku": "",
+    "sku": "TWS-04",
     "nombre": "Audífonos Bluetooth + Llavero",
     "imagen": "tws-04.jpg",
     "precio_publico": 113.0,
@@ -3068,7 +3068,7 @@
     "inventario": 44
   },
   {
-    "sku": "",
+    "sku": "TWS-06",
     "nombre": "(TWS-06) Audifonos Bluetooth Personajes",
     "imagen": "tws-06.jpg",
     "precio_publico": 120.0,
@@ -3081,7 +3081,7 @@
     "inventario": 65
   },
   {
-    "sku": "",
+    "sku": "NBD-06",
     "nombre": "Audífonos Bluetooth con Estuche Transparente",
     "imagen": "nbd-06.jpg",
     "precio_publico": 133.0,
@@ -3094,7 +3094,7 @@
     "inventario": 36
   },
   {
-    "sku": "",
+    "sku": "S8 DISNEY",
     "nombre": "Audifonos Bluetooth Diseño",
     "imagen": "s8 disney.jpg",
     "precio_publico": 149.0,
@@ -3107,7 +3107,7 @@
     "inventario": 341
   },
   {
-    "sku": "",
+    "sku": "T25",
     "nombre": "Audífonos Bluetooth Diseño",
     "imagen": "t25.jpg",
     "precio_publico": 161.0,
@@ -3120,7 +3120,7 @@
     "inventario": 584
   },
   {
-    "sku": "",
+    "sku": "AUDIFONOS PRO 2DA TIPO C",
     "nombre": "Audifonos Tipo Airpods Pro 2da Gen Tc",
     "imagen": "audifonos pro 2da tipo c.jpg",
     "precio_publico": 166.0,
@@ -3133,7 +3133,7 @@
     "inventario": 106
   },
   {
-    "sku": "",
+    "sku": "AUDIFONOS PRO 2DA LIGHTNING",
     "nombre": "Audifonos Tipo Airpods Pro 2da Gen",
     "imagen": "audifonos pro 2da lightning.jpg",
     "precio_publico": 167.0,
@@ -3146,7 +3146,7 @@
     "inventario": 13
   },
   {
-    "sku": "",
+    "sku": "XY-100",
     "nombre": "Audifono bluetooth diseño",
     "imagen": "xy-100.jpg",
     "precio_publico": 176.0,
@@ -3159,7 +3159,7 @@
     "inventario": 179
   },
   {
-    "sku": "",
+    "sku": "XY-200",
     "nombre": "Audifono Bluetooth Diseño",
     "imagen": "xy-200.jpg",
     "precio_publico": 176.0,
@@ -3172,7 +3172,7 @@
     "inventario": 321
   },
   {
-    "sku": "",
+    "sku": "PRO70",
     "nombre": "Audífonos Inalámbricos para Niños con Estuche LED",
     "imagen": "pro70.jpg",
     "precio_publico": 177.0,
@@ -3185,7 +3185,7 @@
     "inventario": 245
   },
   {
-    "sku": "",
+    "sku": "YX-24",
     "nombre": "Audifono Bluetooth Diseño",
     "imagen": "yx-24.jpg",
     "precio_publico": 182.0,
@@ -3198,7 +3198,7 @@
     "inventario": 524
   },
   {
-    "sku": "",
+    "sku": "DB1",
     "nombre": "Audifono Bluetooth Diseño",
     "imagen": "db1.jpg",
     "precio_publico": 187.0,
@@ -3211,7 +3211,7 @@
     "inventario": 87
   },
   {
-    "sku": "",
+    "sku": "DB4",
     "nombre": "Audífono Bluetooth Infantil con Estuche de Carga",
     "imagen": "db4.jpg",
     "precio_publico": 187.0,
@@ -3224,7 +3224,7 @@
     "inventario": 239
   },
   {
-    "sku": "",
+    "sku": "PC-991",
     "nombre": "Audifono Bluetooth Diseño",
     "imagen": "pc-991.jpg",
     "precio_publico": 187.0,
@@ -3237,7 +3237,7 @@
     "inventario": 205
   },
   {
-    "sku": "",
+    "sku": "DB-1",
     "nombre": "Audio Bluetooth Diseño Dragon Ball",
     "imagen": "db-1.jpg",
     "precio_publico": 190.0,
@@ -3250,7 +3250,7 @@
     "inventario": 69
   },
   {
-    "sku": "",
+    "sku": "DB2",
     "nombre": "Audifono Bluetooth Diseño",
     "imagen": "db2.jpg",
     "precio_publico": 196.0,
@@ -3263,7 +3263,7 @@
     "inventario": 426
   },
   {
-    "sku": "",
+    "sku": "A12 PRO",
     "nombre": "Audífonos ANC bluetooth con pantalla",
     "imagen": "a12 pro.jpg",
     "precio_publico": 217.0,
@@ -3276,7 +3276,7 @@
     "inventario": 20
   },
   {
-    "sku": "",
+    "sku": "TE-20",
     "nombre": "Audífonos Bluetooth ANC con Pantalla 2.8 Pulgadas",
     "imagen": "te-20.jpg",
     "precio_publico": 420.0,
@@ -3289,7 +3289,7 @@
     "inventario": 184
   },
   {
-    "sku": "",
+    "sku": "AUD V5.3",
     "nombre": "Audífonos Bluetooth Personajes",
     "imagen": "aud v5.3.jpg",
     "precio_publico": 81.0,
@@ -3302,7 +3302,7 @@
     "inventario": 695
   },
   {
-    "sku": "",
+    "sku": "HL-13",
     "nombre": "Audífonos Bluetooth con Estuche Transparente",
     "imagen": "hl-13.jpg",
     "precio_publico": 133.0,
@@ -3315,7 +3315,7 @@
     "inventario": 86
   },
   {
-    "sku": "",
+    "sku": "T1",
     "nombre": "Audífonos Bluetooth Diseño Infantil",
     "imagen": "t1.jpg",
     "precio_publico": 175.0,
@@ -3328,7 +3328,7 @@
     "inventario": 212
   },
   {
-    "sku": "",
+    "sku": "FEE-7404",
     "nombre": "Diadema Bluetooth JBL",
     "imagen": "fee-7404.jpg",
     "precio_publico": 165.0,
@@ -3341,7 +3341,7 @@
     "inventario": 42
   },
   {
-    "sku": "",
+    "sku": "AH-806L",
     "nombre": "Audífonos de Diadema de Mickey y Minie",
     "imagen": "ah-806l.jpg",
     "precio_publico": 142.0,
@@ -3354,7 +3354,7 @@
     "inventario": 5
   },
   {
-    "sku": "",
+    "sku": "TR-9957",
     "nombre": "Diadema Tipo Beats Bear Line",
     "imagen": "tr-9957.jpg",
     "precio_publico": 332.0,
@@ -3367,7 +3367,7 @@
     "inventario": 199
   },
   {
-    "sku": "",
+    "sku": "JB-8812",
     "nombre": "JB-8812",
     "imagen": "jb-8812.jpg",
     "precio_publico": 82.0,
@@ -3380,7 +3380,7 @@
     "inventario": 76
   },
   {
-    "sku": "",
+    "sku": "FM-5118",
     "nombre": "Bocina Bluetooth 2\" Mini 4",
     "imagen": "fm-5118.jpg",
     "precio_publico": 135.0,
@@ -3393,7 +3393,7 @@
     "inventario": 25
   },
   {
-    "sku": "",
+    "sku": "YX-113",
     "nombre": "(YX-113) Bocina Bluetooth de Diseño",
     "imagen": "yx-113.jpg",
     "precio_publico": 73.0,
@@ -3406,7 +3406,7 @@
     "inventario": 17
   },
   {
-    "sku": "",
+    "sku": "FM-5127",
     "nombre": "Bocina Bluetooth Charge 5",
     "imagen": "fm-5127.jpg",
     "precio_publico": 248.0,
@@ -3419,7 +3419,7 @@
     "inventario": 9
   },
   {
-    "sku": "",
+    "sku": "FM-5120",
     "nombre": "Bocina Bluetooth Tipo JBL PRO5",
     "imagen": "fm-5120.jpg",
     "precio_publico": 360.0,
@@ -3432,7 +3432,7 @@
     "inventario": 46
   },
   {
-    "sku": "",
+    "sku": "CABLE IP C A C 2M",
     "nombre": "Cable 2 Metros C a C",
     "imagen": "cable ip c a c 2m.jpg",
     "precio_publico": 26.0,
@@ -3445,7 +3445,7 @@
     "inventario": 499
   },
   {
-    "sku": "",
+    "sku": "CABLE 2M IP C A LIGHTNING",
     "nombre": "Cable 2M Ip C A Lightning",
     "imagen": "cable 2m ip c a lightning.jpg",
     "precio_publico": 20.0,
@@ -3458,7 +3458,7 @@
     "inventario": 220
   },
   {
-    "sku": "",
+    "sku": "CAB TIPO IP USB 1M",
     "nombre": "Cable tipo iPhone usb 1m",
     "imagen": "cab tipo ip usb 1m.jpg",
     "precio_publico": 10.0,
@@ -3471,7 +3471,7 @@
     "inventario": 4
   },
   {
-    "sku": "",
+    "sku": "CABLE 1M IP C A LIGHTNING",
     "nombre": "Cable USB-C a Lightning 1 Metro",
     "imagen": "cable 1m ip c a lightning.jpg",
     "precio_publico": 15.0,
@@ -3484,7 +3484,7 @@
     "inventario": 495
   },
   {
-    "sku": "",
+    "sku": "COMBO IP 5W",
     "nombre": "Combo Ip 5W",
     "imagen": "combo ip 5w.jpg",
     "precio_publico": 27.0,
@@ -3497,7 +3497,7 @@
     "inventario": 273
   },
   {
-    "sku": "",
+    "sku": "SAM INAL S10",
     "nombre": "Cargador Inalambrico Tipo Samsung S10",
     "imagen": "sam inal s10.jpg",
     "precio_publico": 99.0,
@@ -3510,7 +3510,7 @@
     "inventario": 342
   },
   {
-    "sku": "",
+    "sku": "MGSF 2 EN 1",
     "nombre": "Adaptador magsafe 2 en 1",
     "imagen": "mgsf 2 en 1.jpg",
     "precio_publico": 233.0,
@@ -3523,7 +3523,7 @@
     "inventario": 63
   },
   {
-    "sku": "",
+    "sku": "CUBO USB 5W IP",
     "nombre": "Cubo Usb Iphone De Carga Ip",
     "imagen": "cubo usb 5w ip.jpg",
     "precio_publico": 19.0,
@@ -3536,7 +3536,7 @@
     "inventario": 1176
   },
   {
-    "sku": "",
+    "sku": "VGB-01L",
     "nombre": "Combo Cargador Entrada Lightning",
     "imagen": "vgb-01l.jpg",
     "precio_publico": 32.0,
@@ -3549,7 +3549,7 @@
     "inventario": 25
   },
   {
-    "sku": "",
+    "sku": "CARGADOR MGSF",
     "nombre": "Cargador Magsafe Tipo C",
     "imagen": "cargador mgsf.jpg",
     "precio_publico": 53.0,
@@ -3562,7 +3562,7 @@
     "inventario": 96
   },
   {
-    "sku": "",
+    "sku": "COMBO X V8",
     "nombre": "(COMBO X V8) Combo Xiaomi V8",
     "imagen": "combo x v8.jpg",
     "precio_publico": 44.0,
@@ -3575,7 +3575,7 @@
     "inventario": 142
   },
   {
-    "sku": "",
+    "sku": "CUBO IP TC 20W",
     "nombre": "Cubo Tipo C iPhone 20w",
     "imagen": "cubo ip tc 20w.jpg",
     "precio_publico": 25.0,
@@ -3588,7 +3588,7 @@
     "inventario": 1335
   },
   {
-    "sku": "",
+    "sku": "CUBO 30W TC MOTO",
     "nombre": "Cubo Tipo Motorola 30 W Tipo C",
     "imagen": "cubo 30w tc moto.jpg",
     "precio_publico": 42.0,
@@ -3601,7 +3601,7 @@
     "inventario": 168
   },
   {
-    "sku": "",
+    "sku": "CUBO IP 35W 2 TC",
     "nombre": "Cubo tipo iP 35W 2 entradas tc",
     "imagen": "cubo ip 35w 2 tc.jpg",
     "precio_publico": 46.0,
@@ -3614,7 +3614,7 @@
     "inventario": 221
   },
   {
-    "sku": "",
+    "sku": "MGSF 22.5W",
     "nombre": "Bateria Magsafe con Pantalla 22.5w",
     "imagen": "mgsf 22.5w.jpg",
     "precio_publico": 198.0,
@@ -3627,7 +3627,7 @@
     "inventario": 496
   },
   {
-    "sku": "",
+    "sku": "S11",
     "nombre": "SmartWatch S11",
     "imagen": "s11.jpg",
     "precio_publico": 290.0,
@@ -3640,7 +3640,7 @@
     "inventario": 61
   },
   {
-    "sku": "",
+    "sku": "SPACE MAGSAFE",
     "nombre": "Funda para iPhone Space Magsafe Surtido",
     "imagen": "space magsafe.jpg",
     "precio_publico": 58.0,
@@ -3653,7 +3653,7 @@
     "inventario": 41
   },
   {
-    "sku": "",
+    "sku": "XB-5519",
     "nombre": "Power Bank",
     "imagen": "xb-5519.jpg",
     "precio_publico": 68.0,
@@ -3666,7 +3666,7 @@
     "inventario": 79
   },
   {
-    "sku": "",
+    "sku": "XB-5531",
     "nombre": "Power Bank Con Indicador",
     "imagen": "xb-5531.jpg",
     "precio_publico": 70.0,
@@ -3679,7 +3679,7 @@
     "inventario": 65
   },
   {
-    "sku": "",
+    "sku": "XB-5200",
     "nombre": "Power Bank Con Indicador",
     "imagen": "xb-5200.jpg",
     "precio_publico": 95.0,
@@ -3692,7 +3692,7 @@
     "inventario": 86
   },
   {
-    "sku": "",
+    "sku": "VPB-0018",
     "nombre": "Batería Portátil Inalámbrica 5000 mAh 5w",
     "imagen": "vpb-0018.jpg",
     "precio_publico": 108.0,
@@ -3705,7 +3705,7 @@
     "inventario": 10
   },
   {
-    "sku": "",
+    "sku": "VPB-0017",
     "nombre": "Batería Portátil 5000 mAh Carga Rápida 22.5W Pantalla Digital",
     "imagen": "vpb-0017.jpg",
     "precio_publico": 199.0,
@@ -3718,7 +3718,7 @@
     "inventario": 1229
   },
   {
-    "sku": "",
+    "sku": "DY-8021",
     "nombre": "Power Bank 20,000 mAh",
     "imagen": "dy-8021.jpg",
     "precio_publico": 52.0,
@@ -3731,7 +3731,7 @@
     "inventario": 16
   },
   {
-    "sku": "",
+    "sku": "DY-8007",
     "nombre": "Power Bank 20,000 Mah",
     "imagen": "dy-8007.jpg",
     "precio_publico": 52.0,
@@ -3744,7 +3744,7 @@
     "inventario": 16
   },
   {
-    "sku": "",
+    "sku": "FAN-A001",
     "nombre": "Mini Ventilador con Humidificador",
     "imagen": "fan-a001.jpg",
     "precio_publico": 119.0,
@@ -3757,7 +3757,7 @@
     "inventario": 2
   },
   {
-    "sku": "",
+    "sku": "FAN-MINI03",
     "nombre": "Ventilador Portátil Recargable",
     "imagen": "fan-mini03.jpg",
     "precio_publico": 32.0,
@@ -3770,7 +3770,7 @@
     "inventario": 29
   },
   {
-    "sku": "",
+    "sku": "FAN-MINI08",
     "nombre": "Ventilador Portátil Recargable",
     "imagen": "fan-mini08.jpg",
     "precio_publico": 32.0,
@@ -3783,7 +3783,7 @@
     "inventario": 74
   },
   {
-    "sku": "",
+    "sku": "FAN-MINI09",
     "nombre": "Ventilador Portátil Recargable",
     "imagen": "fan-mini09.jpg",
     "precio_publico": 32.0,
@@ -3796,7 +3796,7 @@
     "inventario": 80
   },
   {
-    "sku": "",
+    "sku": "FAN-MINI10",
     "nombre": "Ventilador Portátil Recargable",
     "imagen": "fan-mini10.jpg",
     "precio_publico": 32.0,
@@ -3809,7 +3809,7 @@
     "inventario": 12
   },
   {
-    "sku": "",
+    "sku": "FAN-MINI12",
     "nombre": "Ventilador Portátil Recargable",
     "imagen": "fan-mini12.jpg",
     "precio_publico": 32.0,
@@ -3822,7 +3822,7 @@
     "inventario": 68
   },
   {
-    "sku": "",
+    "sku": "FAN-MINI13",
     "nombre": "Ventilador Portátil Recargable",
     "imagen": "fan-mini13.jpg",
     "precio_publico": 32.0,
@@ -3835,7 +3835,7 @@
     "inventario": 56
   },
   {
-    "sku": "",
+    "sku": "FAN-MINI22",
     "nombre": "Ventilador Portátil Recargable",
     "imagen": "fan-mini22.jpg",
     "precio_publico": 33.0,
@@ -3848,7 +3848,7 @@
     "inventario": 18
   },
   {
-    "sku": "",
+    "sku": "FAN-MINI17",
     "nombre": "Ventilador Portátil Recargable",
     "imagen": "fan-mini17.jpg",
     "precio_publico": 33.0,
@@ -3861,7 +3861,7 @@
     "inventario": 47
   },
   {
-    "sku": "",
+    "sku": "FAN-MINI18",
     "nombre": "Ventilador Portátil Recargable",
     "imagen": "fan-mini18.jpg",
     "precio_publico": 33.0,
@@ -3874,7 +3874,7 @@
     "inventario": 1
   },
   {
-    "sku": "",
+    "sku": "FAN-MINI05",
     "nombre": "Ventilador Portátil Recargable",
     "imagen": "fan-mini05.jpg",
     "precio_publico": 35.0,
@@ -3887,7 +3887,7 @@
     "inventario": 4
   },
   {
-    "sku": "",
+    "sku": "FAN-MINI06",
     "nombre": "Ventilador Portátil Recargable",
     "imagen": "fan-mini06.jpg",
     "precio_publico": 35.0,
@@ -3900,7 +3900,7 @@
     "inventario": 24
   },
   {
-    "sku": "",
+    "sku": "FAN-MINI19",
     "nombre": "Ventilador Portátil Recargable",
     "imagen": "fan-mini19.jpg",
     "precio_publico": 35.0,
@@ -3913,7 +3913,7 @@
     "inventario": 120
   },
   {
-    "sku": "",
+    "sku": "FAN-MINI20",
     "nombre": "Ventilador Portátil Recargable",
     "imagen": "fan-mini20.jpg",
     "precio_publico": 35.0,
@@ -3926,7 +3926,7 @@
     "inventario": 42
   },
   {
-    "sku": "",
+    "sku": "FAN-Q103",
     "nombre": "Ventilador Portátil Recargable",
     "imagen": "fan-q103.jpg",
     "precio_publico": 35.0,
@@ -3939,7 +3939,7 @@
     "inventario": 106
   },
   {
-    "sku": "",
+    "sku": "FAN-Q104",
     "nombre": "Ventilador Portátil Recargable",
     "imagen": "fan-q104.jpg",
     "precio_publico": 35.0,
@@ -3952,7 +3952,7 @@
     "inventario": 113
   },
   {
-    "sku": "",
+    "sku": "FAN-Q105",
     "nombre": "Ventilador Portátil Recargable",
     "imagen": "fan-q105.jpg",
     "precio_publico": 35.0,
@@ -3965,7 +3965,7 @@
     "inventario": 102
   },
   {
-    "sku": "",
+    "sku": "FAN-Q117",
     "nombre": "Ventilador",
     "imagen": "fan-q117.jpg",
     "precio_publico": 37.0,
@@ -3978,7 +3978,7 @@
     "inventario": 122
   },
   {
-    "sku": "",
+    "sku": "FAN-Q118",
     "nombre": "Ventilador",
     "imagen": "fan-q118.jpg",
     "precio_publico": 37.0,
@@ -3991,7 +3991,7 @@
     "inventario": 97
   },
   {
-    "sku": "",
+    "sku": "FAN-MINI23",
     "nombre": "Ventilador Portátil Recargable",
     "imagen": "fan-mini23.jpg",
     "precio_publico": 37.0,
@@ -4004,7 +4004,7 @@
     "inventario": 126
   },
   {
-    "sku": "",
+    "sku": "FAN-MINI24",
     "nombre": "Ventilador Portátil Recargable",
     "imagen": "fan-mini24.jpg",
     "precio_publico": 37.0,
@@ -4017,7 +4017,7 @@
     "inventario": 114
   },
   {
-    "sku": "",
+    "sku": "FAN-MINI25",
     "nombre": "Ventilador Portátil Recargable",
     "imagen": "fan-mini25.jpg",
     "precio_publico": 37.0,
@@ -4030,7 +4030,7 @@
     "inventario": 72
   },
   {
-    "sku": "",
+    "sku": "FAN-MINI26",
     "nombre": "Ventilador Portátil Recargable",
     "imagen": "fan-mini26.jpg",
     "precio_publico": 37.0,
@@ -4043,7 +4043,7 @@
     "inventario": 20
   },
   {
-    "sku": "",
+    "sku": "FAN-MINI27",
     "nombre": "Ventilador Portátil Recargable",
     "imagen": "fan-mini27.jpg",
     "precio_publico": 37.0,
@@ -4056,7 +4056,7 @@
     "inventario": 73
   },
   {
-    "sku": "",
+    "sku": "FAN-MINI28",
     "nombre": "Ventilador Portátil Recargable",
     "imagen": "fan-mini28.jpg",
     "precio_publico": 37.0,
@@ -4069,7 +4069,7 @@
     "inventario": 52
   },
   {
-    "sku": "",
+    "sku": "FAN-Q106",
     "nombre": "Ventilador Portátil Recargable",
     "imagen": "fan-q106.jpg",
     "precio_publico": 37.0,
@@ -4082,7 +4082,7 @@
     "inventario": 86
   },
   {
-    "sku": "",
+    "sku": "FAN-Q107",
     "nombre": "Ventilador Portátil Recargable",
     "imagen": "fan-q107.jpg",
     "precio_publico": 37.0,
@@ -4095,7 +4095,7 @@
     "inventario": 107
   },
   {
-    "sku": "",
+    "sku": "FAN-MINI21",
     "nombre": "Ventilador Portátil Recargable",
     "imagen": "fan-mini21.jpg",
     "precio_publico": 38.0,
@@ -4108,7 +4108,7 @@
     "inventario": 115
   },
   {
-    "sku": "",
+    "sku": "FAN-Q116",
     "nombre": "Ventilador Usb",
     "imagen": "fan-q116.jpg",
     "precio_publico": 40.0,
@@ -4121,7 +4121,7 @@
     "inventario": 114
   },
   {
-    "sku": "",
+    "sku": "FAN-MINI04",
     "nombre": "Ventilador Portátil Recargable",
     "imagen": "fan-mini04.jpg",
     "precio_publico": 40.0,
@@ -4134,7 +4134,7 @@
     "inventario": 115
   },
   {
-    "sku": "",
+    "sku": "FAN-MINI11",
     "nombre": "Ventilador Portátil Recargable",
     "imagen": "fan-mini11.jpg",
     "precio_publico": 40.0,
@@ -4147,7 +4147,7 @@
     "inventario": 98
   },
   {
-    "sku": "",
+    "sku": "FAN-Q114",
     "nombre": "Ventilador",
     "imagen": "fan-q114.jpg",
     "precio_publico": 43.0,
@@ -4160,7 +4160,7 @@
     "inventario": 107
   },
   {
-    "sku": "",
+    "sku": "FAN-Q108",
     "nombre": "Ventilador Portátil Recargable",
     "imagen": "fan-q108.jpg",
     "precio_publico": 43.0,
@@ -4173,7 +4173,7 @@
     "inventario": 9
   },
   {
-    "sku": "",
+    "sku": "FAN-Q110",
     "nombre": "Ventilador Portátil Recargable",
     "imagen": "fan-q110.jpg",
     "precio_publico": 43.0,
@@ -4186,7 +4186,7 @@
     "inventario": 45
   },
   {
-    "sku": "",
+    "sku": "FAN-Q109",
     "nombre": "Ventilador Portátil Recargable",
     "imagen": "fan-q109.jpg",
     "precio_publico": 43.0,
@@ -4199,7 +4199,7 @@
     "inventario": 85
   },
   {
-    "sku": "",
+    "sku": "FAN-Q115",
     "nombre": "Ventilador Usb",
     "imagen": "fan-q115.jpg",
     "precio_publico": 50.0,
@@ -4212,7 +4212,7 @@
     "inventario": 93
   },
   {
-    "sku": "",
+    "sku": "FAN-Q113",
     "nombre": "Ventilador Usb",
     "imagen": "fan-q113.jpg",
     "precio_publico": 52.0,
@@ -4225,7 +4225,7 @@
     "inventario": 90
   },
   {
-    "sku": "",
+    "sku": "FAN-Q111",
     "nombre": "Ventilador Portátil Recargable",
     "imagen": "fan-q111.jpg",
     "precio_publico": 52.0,
@@ -4238,7 +4238,7 @@
     "inventario": 77
   },
   {
-    "sku": "",
+    "sku": "FAN-Q112",
     "nombre": "Ventilador Portátil Recargable",
     "imagen": "fan-q112.jpg",
     "precio_publico": 52.0,
@@ -4251,7 +4251,7 @@
     "inventario": 42
   },
   {
-    "sku": "",
+    "sku": "FAN-MINI16",
     "nombre": "Ventilador Portátil Recargable",
     "imagen": "fan-mini16.jpg",
     "precio_publico": 70.0,
@@ -4264,7 +4264,7 @@
     "inventario": 4
   },
   {
-    "sku": "",
+    "sku": "USB16KM10PREM",
     "nombre": "Memoria KM USB 16 GB KM10 Premium Bulk Silver Musica",
     "imagen": "usb16km10prem.jpg",
     "precio_publico": 60.0,
@@ -4277,7 +4277,7 @@
     "inventario": 36
   },
   {
-    "sku": "",
+    "sku": "M016",
     "nombre": "Memoria Usb 16 GB con Musica",
     "imagen": "m016.jpg",
     "precio_publico": 80.0,
@@ -4290,7 +4290,7 @@
     "inventario": 1741
   },
   {
-    "sku": "",
+    "sku": "HS-USB-E327C-32G-U3",
     "nombre": "Memoria HIKSEMI USB 32gb E327C Dual Tipo A-C",
     "imagen": "hs-usb-e327c-32g-u3.jpg",
     "precio_publico": 105.0,
@@ -4303,7 +4303,7 @@
     "inventario": 25
   },
   {
-    "sku": "",
+    "sku": "AC906-32G-RWB",
     "nombre": "Memoria Adata Usb 32gb C906 Azul",
     "imagen": "ac906-32g-rwb.jpg",
     "precio_publico": 105.0,
@@ -4316,7 +4316,7 @@
     "inventario": 9
   },
   {
-    "sku": "",
+    "sku": "KM10PK-32",
     "nombre": "Memoria Km Usb 32gb KM10 Rosa",
     "imagen": "km10pk-32.jpg",
     "precio_publico": 115.0,
@@ -4329,7 +4329,7 @@
     "inventario": 61
   },
   {
-    "sku": "",
+    "sku": "AUV21032GBRGD",
     "nombre": "Memoria Adata USB 32GB UV210 Classic Silver",
     "imagen": "auv21032gbrgd.jpg",
     "precio_publico": 105.0,
@@ -4342,7 +4342,7 @@
     "inventario": 137
   },
   {
-    "sku": "",
+    "sku": "HS-USB-M200-32GB",
     "nombre": "Memoria HIKSEMI USB 32gb M200 Metalica",
     "imagen": "hs-usb-m200-32gb.jpg",
     "precio_publico": 105.0,
@@ -4355,7 +4355,7 @@
     "inventario": 149
   },
   {
-    "sku": "",
+    "sku": "HS-USB-E327C-64G-U3",
     "nombre": "Memoria HIKSEMI USB 64gb E327C Dual Tipo A-C",
     "imagen": "hs-usb-e327c-64g-u3.jpg",
     "precio_publico": 115.0,
@@ -4368,7 +4368,7 @@
     "inventario": 46
   },
   {
-    "sku": "",
+    "sku": "KM10-64GB",
     "nombre": "Memoria Km USB 64gb KM10 6M",
     "imagen": "km10-64gb.jpg",
     "precio_publico": 120.0,
@@ -4381,7 +4381,7 @@
     "inventario": 67
   },
   {
-    "sku": "",
+    "sku": "AUV210-64G-RGD",
     "nombre": "Memoria Adata USB 64gb UV210 Classic Silver",
     "imagen": "auv210-64g-rgd.jpg",
     "precio_publico": 125.0,
@@ -4394,7 +4394,7 @@
     "inventario": 115
   },
   {
-    "sku": "",
+    "sku": "DTXS-64GB",
     "nombre": "Memoria Kingston DTXS USB 64 GB",
     "imagen": "dtxs-64gb.jpg",
     "precio_publico": 125.0,
@@ -4407,7 +4407,7 @@
     "inventario": 112
   },
   {
-    "sku": "",
+    "sku": "KC-U2L64-7LG",
     "nombre": "Memoria Kingston Usb 64gb DTXM Exodia 3.2 Verde",
     "imagen": "kc-u2l64-7lg.jpg",
     "precio_publico": 125.0,
@@ -4420,7 +4420,7 @@
     "inventario": 7
   },
   {
-    "sku": "",
+    "sku": "KC-U2L64-7LN",
     "nombre": "Memoria Kingston Usb 64gb DTXM Exodia 3.2 Rosa",
     "imagen": "kc-u2l64-7ln.jpg",
     "precio_publico": 125.0,
@@ -4433,7 +4433,7 @@
     "inventario": 23
   },
   {
-    "sku": "",
+    "sku": "KC-U2G64-7GR",
     "nombre": "Memoria Kingston Usb 64gb DTX Exodia 3.2 Rojo",
     "imagen": "kc-u2g64-7gr.jpg",
     "precio_publico": 130.0,
@@ -4446,7 +4446,7 @@
     "inventario": 7
   },
   {
-    "sku": "",
+    "sku": "KM10-128",
     "nombre": "Memoria Km USB 128gb KM10",
     "imagen": "km10-128.jpg",
     "precio_publico": 120.0,
@@ -4459,7 +4459,7 @@
     "inventario": 92
   },
   {
-    "sku": "",
+    "sku": "HS-USB-M200-128GB",
     "nombre": "Memoria HIKSEMI USB 128gb M200 Metalica",
     "imagen": "hs-usb-m200-128gb.jpg",
     "precio_publico": 150.0,
@@ -4472,7 +4472,7 @@
     "inventario": 165
   },
   {
-    "sku": "",
+    "sku": "HS-USB-E327C-128G-U3",
     "nombre": "Memoria HIKSEMI USB 128gb E327C Dual Tipo A-C",
     "imagen": "hs-usb-e327c-128g-u3.jpg",
     "precio_publico": 170.0,
@@ -4485,7 +4485,7 @@
     "inventario": 81
   },
   {
-    "sku": "",
+    "sku": "DTX128GB",
     "nombre": "Memoria Kingston Usb 128 gb DTX Exodia 3.2 Negro",
     "imagen": "dtx128gb.jpg",
     "precio_publico": 200.0,
@@ -4498,7 +4498,7 @@
     "inventario": 49
   },
   {
-    "sku": "",
+    "sku": "DTXM128GB",
     "nombre": "Memoria Kingston Usb 128gb DTXM 3.2 Negro-Rojo",
     "imagen": "dtxm128gb.jpg",
     "precio_publico": 200.0,
@@ -4511,7 +4511,7 @@
     "inventario": 26
   },
   {
-    "sku": "",
+    "sku": "DTXS-128GB",
     "nombre": "Memoria Kingston DTXS USB 128 GB",
     "imagen": "dtxs-128gb.jpg",
     "precio_publico": 200.0,
@@ -4524,7 +4524,7 @@
     "inventario": 45
   },
   {
-    "sku": "",
+    "sku": "KC-U2L128-7LB",
     "nombre": "Memoria Kingston Usb 128gb DTXM Exodia 3.2 Aqua",
     "imagen": "kc-u2l128-7lb.jpg",
     "precio_publico": 195.0,
@@ -4537,7 +4537,7 @@
     "inventario": 77
   },
   {
-    "sku": "",
+    "sku": "KC-U2L128-7LG",
     "nombre": "Memoria Kingston Usb 128gb DTXM Exodia 3.2 Verde",
     "imagen": "kc-u2l128-7lg.jpg",
     "precio_publico": 195.0,
@@ -4550,7 +4550,7 @@
     "inventario": 58
   },
   {
-    "sku": "",
+    "sku": "KC-U2L128-7LN",
     "nombre": "Memoria Kingston Usb 128gb DTXM Exodia 3.2 Rosa",
     "imagen": "kc-u2l128-7ln.jpg",
     "precio_publico": 195.0,
@@ -4563,7 +4563,7 @@
     "inventario": 94
   },
   {
-    "sku": "",
+    "sku": "KC-U2L128-7LP",
     "nombre": "Memoria Kingston Usb 128gb DTXM Exodia 3.2 Morado",
     "imagen": "kc-u2l128-7lp.jpg",
     "precio_publico": 195.0,
@@ -4576,7 +4576,7 @@
     "inventario": 80
   },
   {
-    "sku": "",
+    "sku": "UR350-128G",
     "nombre": "Memoria Adata Usb 128GB UR350 3.2",
     "imagen": "ur350-128g.jpg",
     "precio_publico": 200.0,
@@ -4589,7 +4589,7 @@
     "inventario": 33
   },
   {
-    "sku": "",
+    "sku": "HS-USB-E327C-256G-U3",
     "nombre": "Memoria HIKSEMI USB 256gb E327C Dual Tipo A-C",
     "imagen": "hs-usb-e327c-256g-u3.jpg",
     "precio_publico": 345.0,
@@ -4602,7 +4602,7 @@
     "inventario": 84
   },
   {
-    "sku": "",
+    "sku": "SDCS2512GB",
     "nombre": "Memoria Kingston Micro SD 512GB Blister 100MB-S",
     "imagen": "sdcs2512gb.jpg",
     "precio_publico": 1350.0,
@@ -4615,7 +4615,7 @@
     "inventario": 23
   },
   {
-    "sku": "",
+    "sku": "TLCD02-8P",
     "nombre": "Pizarron Magico De 8 Pulgadas Unicolor",
     "imagen": "tlcd02-8p.jpg",
     "precio_publico": 23.0,
@@ -4628,7 +4628,7 @@
     "inventario": 682
   },
   {
-    "sku": "",
+    "sku": "SA-9107",
     "nombre": "Pistola de Burbujas de Tiburón",
     "imagen": "sa-9107.jpg",
     "precio_publico": 110.0,
@@ -4641,7 +4641,7 @@
     "inventario": 1
   },
   {
-    "sku": "",
+    "sku": "DD2504",
     "nombre": "Pizarron Magico De 8 Pulgadas mULTICOLOR",
     "imagen": "dd2504.jpg",
     "precio_publico": 28.0,
@@ -4654,7 +4654,7 @@
     "inventario": 3347
   },
   {
-    "sku": "",
+    "sku": "SA-9006",
     "nombre": "Slime Cristalina",
     "imagen": "sa-9006.jpg",
     "precio_publico": 6.0,
@@ -4667,7 +4667,7 @@
     "inventario": 146
   },
   {
-    "sku": "",
+    "sku": "SA-9108",
     "nombre": "Burbujas Juguete Forma de Delfín",
     "imagen": "sa-9108.jpg",
     "precio_publico": 30.0,
@@ -4680,7 +4680,7 @@
     "inventario": 5
   },
   {
-    "sku": "",
+    "sku": "ZN-1609",
     "nombre": "Cámara de Juguete Infantil",
     "imagen": "zn-1609.jpg",
     "precio_publico": 139.0,
@@ -4693,7 +4693,7 @@
     "inventario": 22
   },
   {
-    "sku": "",
+    "sku": "TY-Q127",
     "nombre": "Esferas Fluorescentes",
     "imagen": "ty-q127.jpg",
     "precio_publico": 8.5,
@@ -4706,7 +4706,7 @@
     "inventario": 284
   },
   {
-    "sku": "",
+    "sku": "TY-Q130",
     "nombre": "Esferas Fluorescentes",
     "imagen": "ty-q130.jpg",
     "precio_publico": 8.5,
@@ -4719,7 +4719,7 @@
     "inventario": 66
   },
   {
-    "sku": "",
+    "sku": "TY-Q116",
     "nombre": "Pelotas Que Rebotan",
     "imagen": "ty-q116.jpg",
     "precio_publico": 17.0,
@@ -4732,7 +4732,7 @@
     "inventario": 72
   },
   {
-    "sku": "",
+    "sku": "WJL-2121",
     "nombre": "(WJL-2121) Wjl-2121",
     "imagen": "wjl-2121.jpg",
     "precio_publico": 25.0,
@@ -4745,7 +4745,7 @@
     "inventario": 76
   },
   {
-    "sku": "",
+    "sku": "DD2504",
     "nombre": "Pizarrón mágico de 8.5\"",
     "imagen": "dd2504.jpg",
     "precio_publico": 28.0,
@@ -4758,7 +4758,7 @@
     "inventario": 3347
   },
   {
-    "sku": "",
+    "sku": "AJ09-11",
     "nombre": "Pizarron Magico 10.5\"",
     "imagen": "aj09-11.jpg",
     "precio_publico": 44.0,
@@ -4771,7 +4771,7 @@
     "inventario": 35
   },
   {
-    "sku": "",
+    "sku": "Y-539",
     "nombre": "Reloj infantil + llavero diseño camara",
     "imagen": "y-539.jpg",
     "precio_publico": 52.0,
@@ -4784,7 +4784,7 @@
     "inventario": 623
   },
   {
-    "sku": "",
+    "sku": "927-31",
     "nombre": "Reloj infantil + llavero pop it",
     "imagen": "927-31.jpg",
     "precio_publico": 56.0,
@@ -4797,7 +4797,7 @@
     "inventario": 1264
   },
   {
-    "sku": "",
+    "sku": "929-31",
     "nombre": "Reloj infantil con luz + figura",
     "imagen": "929-31.jpg",
     "precio_publico": 56.0,
@@ -4810,7 +4810,7 @@
     "inventario": 568
   },
   {
-    "sku": "",
+    "sku": "928-31",
     "nombre": "Reloj infantil + llavero juego",
     "imagen": "928-31.jpg",
     "precio_publico": 56.0,
@@ -4823,7 +4823,7 @@
     "inventario": 185
   },
   {
-    "sku": "",
+    "sku": "WJ-1361",
     "nombre": "(WJ-1361) Mini Alcancía de Juguete Colores Surtidos",
     "imagen": "wj-1361.jpg",
     "precio_publico": 161.0,
@@ -4836,7 +4836,7 @@
     "inventario": 8
   },
   {
-    "sku": "",
+    "sku": "WJ-1364",
     "nombre": "(WJ-1364) Mini Alcancía de juguete",
     "imagen": "wj-1364.jpg",
     "precio_publico": 161.0,
@@ -4849,7 +4849,7 @@
     "inventario": 3
   },
   {
-    "sku": "",
+    "sku": "ZY-1069",
     "nombre": "Juego de Basta Electrónico Piensa Rápido",
     "imagen": "zy-1069.jpg",
     "precio_publico": 175.0,
@@ -4862,7 +4862,7 @@
     "inventario": 1
   },
   {
-    "sku": "",
+    "sku": "WJ-1347",
     "nombre": "Pistola de juguete 6 LOCK hidrogel",
     "imagen": "wj-1347.jpg",
     "precio_publico": 220.0,
@@ -4875,7 +4875,7 @@
     "inventario": 20
   },
   {
-    "sku": "",
+    "sku": "VJT-0006",
     "nombre": "Camara Digital para Niños Recargable",
     "imagen": "vjt-0006.jpg",
     "precio_publico": 209.0,
@@ -4888,7 +4888,7 @@
     "inventario": 139
   },
   {
-    "sku": "",
+    "sku": "WJ-1354",
     "nombre": "(WJ-1354)  Pistola de Juguete AUG Hidrogel",
     "imagen": "wj-1354.jpg",
     "precio_publico": 260.0,
@@ -4901,7 +4901,7 @@
     "inventario": 9
   },
   {
-    "sku": "",
+    "sku": "WJ-1349",
     "nombre": "Pistola de Juguete AK47 Mini Hidrogel",
     "imagen": "wj-1349.jpg",
     "precio_publico": 235.0,
@@ -4914,7 +4914,7 @@
     "inventario": 60
   },
   {
-    "sku": "",
+    "sku": "WJ-1352",
     "nombre": "(WJ-1352) Pistola de Juguete M4A1 Mini Hidrogel",
     "imagen": "wj-1352.jpg",
     "precio_publico": 293.0,
@@ -4927,7 +4927,7 @@
     "inventario": 13
   },
   {
-    "sku": "",
+    "sku": "WJ-1353",
     "nombre": "(WJ-1353) Pistola de juguete M4 viper hidrogel",
     "imagen": "wj-1353.jpg",
     "precio_publico": 293.0,
@@ -4940,7 +4940,7 @@
     "inventario": 5
   },
   {
-    "sku": "",
+    "sku": "WJF-0802",
     "nombre": "Dron Plegable con Cámara",
     "imagen": "wjf-0802.jpg",
     "precio_publico": 300.0,
@@ -4953,7 +4953,7 @@
     "inventario": 40
   },
   {
-    "sku": "",
+    "sku": "VJT-0004",
     "nombre": "Patin para niños con asiento",
     "imagen": "vjt-0004.jpg",
     "precio_publico": 340.0,
@@ -4966,7 +4966,7 @@
     "inventario": 18
   },
   {
-    "sku": "",
+    "sku": "VPN-0006",
     "nombre": "Patin con asiento para niños",
     "imagen": "vpn-0006.jpg",
     "precio_publico": 384.0,
@@ -4979,7 +4979,7 @@
     "inventario": 63
   },
   {
-    "sku": "",
+    "sku": "AZMQ028",
     "nombre": "Lámpara Cubo LED con Tulipanes",
     "imagen": "azmq028.jpg",
     "precio_publico": 50.0,
@@ -4992,7 +4992,7 @@
     "inventario": 71
   },
   {
-    "sku": "",
+    "sku": "LED-729",
     "nombre": "Linterna de Seguridad para Bicicleta 5W",
     "imagen": "led-729.jpg",
     "precio_publico": 22.0,
@@ -5005,7 +5005,7 @@
     "inventario": 4
   },
   {
-    "sku": "",
+    "sku": "LED-733",
     "nombre": "Linterna de Seguridad para Bicicleta 5W",
     "imagen": "led-733.jpg",
     "precio_publico": 22.0,
@@ -5018,7 +5018,7 @@
     "inventario": 174
   },
   {
-    "sku": "",
+    "sku": "HVH-80301",
     "nombre": "Linterna Llavero",
     "imagen": "hvh-80301.jpg",
     "precio_publico": 27.0,
@@ -5031,7 +5031,7 @@
     "inventario": 199
   },
   {
-    "sku": "",
+    "sku": "AZMQ029",
     "nombre": "Lámpara LED con Diseño de Nube y Tulipanes",
     "imagen": "azmq029.jpg",
     "precio_publico": 50.0,
@@ -5044,7 +5044,7 @@
     "inventario": 21
   },
   {
-    "sku": "",
+    "sku": "SD-586",
     "nombre": "Linterna Portátil LED 5W",
     "imagen": "sd-586.jpg",
     "precio_publico": 135.0,
@@ -5057,7 +5057,7 @@
     "inventario": 74
   },
   {
-    "sku": "",
+    "sku": "SQ-815",
     "nombre": "Linterna Recargable Tipo Minero",
     "imagen": "sq-815.jpg",
     "precio_publico": 33.0,
@@ -5070,7 +5070,7 @@
     "inventario": 117
   },
   {
-    "sku": "",
+    "sku": "HJ-186",
     "nombre": "Encendedor Eléctrico Recargable con Linterna COB",
     "imagen": "hj-186.jpg",
     "precio_publico": 42.0,
@@ -5083,7 +5083,7 @@
     "inventario": 253
   },
   {
-    "sku": "",
+    "sku": "AZMQ023",
     "nombre": "Láser y Lámpara LED con Gancho Tipo Llavero",
     "imagen": "azmq023.jpg",
     "precio_publico": 11.0,
@@ -5096,7 +5096,7 @@
     "inventario": 680
   },
   {
-    "sku": "",
+    "sku": "AZMQ020",
     "nombre": "Lámpara Touch de Luna 3D con 12 Colores y Control Remoto",
     "imagen": "azmq020.jpg",
     "precio_publico": 195.0,
@@ -5109,7 +5109,7 @@
     "inventario": 2
   },
   {
-    "sku": "",
+    "sku": "EM137",
     "nombre": "Lámpara con Luz LED y Panel Solar",
     "imagen": "em137.jpg",
     "precio_publico": 155.0,
@@ -5122,7 +5122,7 @@
     "inventario": 25
   },
   {
-    "sku": "",
+    "sku": "EM53",
     "nombre": "Lámpara de Escritorio Recargable con Clip",
     "imagen": "em53.jpg",
     "precio_publico": 108.0,
@@ -5135,7 +5135,7 @@
     "inventario": 35
   },
   {
-    "sku": "",
+    "sku": "SD-567",
     "nombre": "Linterna LED Táctica de Metal + COB + Zoom",
     "imagen": "sd-567.jpg",
     "precio_publico": 88.0,
@@ -5148,7 +5148,7 @@
     "inventario": 81
   },
   {
-    "sku": "",
+    "sku": "SD-568",
     "nombre": "Linterna LED Táctica de Metal + COB + Zoom",
     "imagen": "sd-568.jpg",
     "precio_publico": 93.0,
@@ -5161,7 +5161,7 @@
     "inventario": 94
   },
   {
-    "sku": "",
+    "sku": "SD-576",
     "nombre": "Linterna LED Portátil con Zoom Telescópico",
     "imagen": "sd-576.jpg",
     "precio_publico": 70.0,
@@ -5174,7 +5174,7 @@
     "inventario": 184
   },
   {
-    "sku": "",
+    "sku": "SD-580",
     "nombre": "Linterna con Zoom LED + COB",
     "imagen": "sd-580.jpg",
     "precio_publico": 119.0,
@@ -5187,7 +5187,7 @@
     "inventario": 132
   },
   {
-    "sku": "",
+    "sku": "SNA-5801",
     "nombre": "Adaptador Enchufe a Socket",
     "imagen": "sna-5801.jpg",
     "precio_publico": 8.0,
@@ -5200,7 +5200,7 @@
     "inventario": 916
   },
   {
-    "sku": "",
+    "sku": "S04W06",
     "nombre": "Luminario LED de Plafon 9W 85-265 V/60Hz",
     "imagen": "s04w06.jpg",
     "precio_publico": 53.0,
@@ -5213,7 +5213,7 @@
     "inventario": 55
   },
   {
-    "sku": "",
+    "sku": "BGD-1344",
     "nombre": "Luz de Relleno Portátil  LED RGB",
     "imagen": "bgd-1344.jpg",
     "precio_publico": 53.0,
@@ -5226,7 +5226,7 @@
     "inventario": 126
   },
   {
-    "sku": "",
+    "sku": "S04W09",
     "nombre": "Luminario LED 9W 85-26.5 V/60Hz Empotrable 6,500K",
     "imagen": "s04w09.jpg",
     "precio_publico": 68.0,
@@ -5239,7 +5239,7 @@
     "inventario": 17
   },
   {
-    "sku": "",
+    "sku": "EM136",
     "nombre": "Lampara",
     "imagen": "em136.jpg",
     "precio_publico": 98.0,
@@ -5252,7 +5252,7 @@
     "inventario": 27
   },
   {
-    "sku": "",
+    "sku": "BGD-1599",
     "nombre": "Tripié para Aro de Luz",
     "imagen": "bgd-1599.jpg",
     "precio_publico": 75.0,
@@ -5265,7 +5265,7 @@
     "inventario": 62
   },
   {
-    "sku": "",
+    "sku": "EM23",
     "nombre": "Lampara de Campamento",
     "imagen": "em23.jpg",
     "precio_publico": 50.0,
@@ -5278,7 +5278,7 @@
     "inventario": 23
   },
   {
-    "sku": "",
+    "sku": "DP-1004",
     "nombre": "(DP-1004) Foco Bocina",
     "imagen": "dp-1004.jpg",
     "precio_publico": 59.0,
@@ -5291,7 +5291,7 @@
     "inventario": 70
   },
   {
-    "sku": "",
+    "sku": "EM39",
     "nombre": "Bombilla LED de Emergencia",
     "imagen": "em39.jpg",
     "precio_publico": 59.0,
@@ -5304,7 +5304,7 @@
     "inventario": 4
   },
   {
-    "sku": "",
+    "sku": "B03W10",
     "nombre": "Foco Bombilla Led 10W Luz Fria",
     "imagen": "b03w10.jpg",
     "precio_publico": 8.0,
@@ -5317,7 +5317,7 @@
     "inventario": 1241
   },
   {
-    "sku": "",
+    "sku": "S71W05",
     "nombre": "Plafón con Foco para Empotrar",
     "imagen": "s71w05.jpg",
     "precio_publico": 31.0,
@@ -5330,7 +5330,7 @@
     "inventario": 3
   },
   {
-    "sku": "",
+    "sku": "EM50",
     "nombre": "Lampara LED de Emergencia 20w",
     "imagen": "em50.jpg",
     "precio_publico": 63.0,
@@ -5343,7 +5343,7 @@
     "inventario": 7
   },
   {
-    "sku": "",
+    "sku": "MQ-006",
     "nombre": "Lámpara Led Giratoria 1.5W RGB",
     "imagen": "mq-006.jpg",
     "precio_publico": 48.0,
@@ -5356,7 +5356,7 @@
     "inventario": 71
   },
   {
-    "sku": "",
+    "sku": "HVH-80302",
     "nombre": "Mini Linterna Led + Llavero",
     "imagen": "hvh-80302.jpg",
     "precio_publico": 20.0,
@@ -5369,7 +5369,7 @@
     "inventario": 103
   },
   {
-    "sku": "",
+    "sku": "EM31W20",
     "nombre": "Lampara de Emergencia + Ventilador Recargable",
     "imagen": "em31w20.jpg",
     "precio_publico": 332.0,
@@ -5382,7 +5382,7 @@
     "inventario": 12
   },
   {
-    "sku": "",
+    "sku": "HVH-40402",
     "nombre": "Lampara Solar para Exteriores",
     "imagen": "hvh-40402.jpg",
     "precio_publico": 63.0,
@@ -5395,7 +5395,7 @@
     "inventario": 12
   },
   {
-    "sku": "",
+    "sku": "ID-66",
     "nombre": "Lampara Musical Noche Navideña",
     "imagen": "id-66.jpg",
     "precio_publico": 183.0,
@@ -5408,7 +5408,7 @@
     "inventario": 52
   },
   {
-    "sku": "",
+    "sku": "VIL-0008",
     "nombre": "Lampara de mano recargable",
     "imagen": "vil-0008.jpg",
     "precio_publico": 32.0,
@@ -5421,7 +5421,7 @@
     "inventario": 220
   },
   {
-    "sku": "",
+    "sku": "VIL-0009",
     "nombre": "Lampara de mano recargable led-1442",
     "imagen": "vil-0009.jpg",
     "precio_publico": 37.0,
@@ -5434,7 +5434,7 @@
     "inventario": 582
   },
   {
-    "sku": "",
+    "sku": "T8W18N17R",
     "nombre": "Regleta De Luz Neón Roja 18w 1.20M",
     "imagen": "t8w18n17r.jpg",
     "precio_publico": 49.0,
@@ -5447,7 +5447,7 @@
     "inventario": 11
   },
   {
-    "sku": "",
+    "sku": "T8W18N17V",
     "nombre": "Regleta De Luz Neón Verde 18w 1.20M",
     "imagen": "t8w18n17v.jpg",
     "precio_publico": 49.0,
@@ -5460,7 +5460,7 @@
     "inventario": 18
   },
   {
-    "sku": "",
+    "sku": "HVH-80510",
     "nombre": "Linterna Luz Led de Búsqueda Portátil",
     "imagen": "hvh-80510.jpg",
     "precio_publico": 105.0,
@@ -5473,7 +5473,7 @@
     "inventario": 41
   },
   {
-    "sku": "",
+    "sku": "HVH-80902",
     "nombre": "Linterna de Mano",
     "imagen": "hvh-80902.jpg",
     "precio_publico": 82.0,
@@ -5486,7 +5486,7 @@
     "inventario": 69
   },
   {
-    "sku": "",
+    "sku": "SD-583",
     "nombre": "Linterna Recargable con Gancho Portatil",
     "imagen": "sd-583.jpg",
     "precio_publico": 79.0,
@@ -5499,7 +5499,7 @@
     "inventario": 82
   },
   {
-    "sku": "",
+    "sku": "HVH-80802",
     "nombre": "Lámpara de Mano Mini",
     "imagen": "hvh-80802.jpg",
     "precio_publico": 32.0,
@@ -5512,7 +5512,7 @@
     "inventario": 6
   },
   {
-    "sku": "",
+    "sku": "VIL-0010",
     "nombre": "Lampara de mano led recargable",
     "imagen": "vil-0010.jpg",
     "precio_publico": 37.0,
@@ -5525,7 +5525,7 @@
     "inventario": 1330
   },
   {
-    "sku": "",
+    "sku": "VIL-0012",
     "nombre": "Lampara led de mano recargable led-1446",
     "imagen": "vil-0012.jpg",
     "precio_publico": 47.0,
@@ -5538,7 +5538,7 @@
     "inventario": 401
   },
   {
-    "sku": "",
+    "sku": "SD-566",
     "nombre": "Linterna de Mano",
     "imagen": "sd-566.jpg",
     "precio_publico": 63.0,
@@ -5551,7 +5551,7 @@
     "inventario": 58
   },
   {
-    "sku": "",
+    "sku": "SD-569",
     "nombre": "Linterna LED + COB Zoom Camuflaje",
     "imagen": "sd-569.jpg",
     "precio_publico": 85.0,
@@ -5564,7 +5564,7 @@
     "inventario": 26
   },
   {
-    "sku": "",
+    "sku": "VIL-0014",
     "nombre": "Lampara led de mano recargable solar led-1447",
     "imagen": "vil-0014.jpg",
     "precio_publico": 87.0,
@@ -5577,7 +5577,7 @@
     "inventario": 263
   },
   {
-    "sku": "",
+    "sku": "SD-570",
     "nombre": "Linterna con Display + COM Zoom y Cuerpo de Metal",
     "imagen": "sd-570.jpg",
     "precio_publico": 97.0,
@@ -5590,7 +5590,7 @@
     "inventario": 16
   },
   {
-    "sku": "",
+    "sku": "VIL-0013",
     "nombre": "Lampra led minera",
     "imagen": "vil-0013.jpg",
     "precio_publico": 30.0,
@@ -5603,7 +5603,7 @@
     "inventario": 609
   },
   {
-    "sku": "",
+    "sku": "LUD-003",
     "nombre": "Luminaria Decorativa Solar De Abejas",
     "imagen": "lud-003.jpg",
     "precio_publico": 207.0,
@@ -5616,7 +5616,7 @@
     "inventario": 104
   },
   {
-    "sku": "",
+    "sku": "DP-10143",
     "nombre": "Proyector Bluetooth Diseño de Astronauta",
     "imagen": "dp-10143.jpg",
     "precio_publico": 191.0,
@@ -5629,7 +5629,7 @@
     "inventario": 39
   },
   {
-    "sku": "",
+    "sku": "DD-2835",
     "nombre": "Tira LED RGB de 5 Metros",
     "imagen": "dd-2835.jpg",
     "precio_publico": 57.0,
@@ -5642,7 +5642,7 @@
     "inventario": 13
   },
   {
-    "sku": "",
+    "sku": "T5054EX02R",
     "nombre": "Tira Led Roja 5 Metros",
     "imagen": "t5054ex02r.jpg",
     "precio_publico": 59.0,
@@ -5655,7 +5655,7 @@
     "inventario": 151
   },
   {
-    "sku": "",
+    "sku": "T5054EX02V",
     "nombre": "Tira Led Verde 5 Metros",
     "imagen": "t5054ex02v.jpg",
     "precio_publico": 59.0,
@@ -5668,7 +5668,7 @@
     "inventario": 254
   },
   {
-    "sku": "",
+    "sku": "LED-1330",
     "nombre": "Tira Led 5 Metros Con 30 Leds Rgb",
     "imagen": "led-1330.jpg",
     "precio_publico": 63.0,
@@ -5681,7 +5681,7 @@
     "inventario": 72
   },
   {
-    "sku": "",
+    "sku": "DP-1054",
     "nombre": "Luz Led",
     "imagen": "dp-1054.jpg",
     "precio_publico": 117.0,
@@ -5694,7 +5694,7 @@
     "inventario": 79
   },
   {
-    "sku": "",
+    "sku": "TS-6601CALK",
     "nombre": "Serie 300 Focos Led Calida",
     "imagen": "ts-6601calk.jpg",
     "precio_publico": 157.0,
@@ -5707,7 +5707,7 @@
     "inventario": 23
   },
   {
-    "sku": "",
+    "sku": "LUD-019",
     "nombre": "Cascada Decorativa Blanca 120 Led",
     "imagen": "lud-019.jpg",
     "precio_publico": 168.0,
@@ -5720,7 +5720,7 @@
     "inventario": 143
   },
   {
-    "sku": "",
+    "sku": "LUD-015",
     "nombre": "(LUD-015) Cascada Decorativa Blanca 3M 96 Led",
     "imagen": "lud-015.jpg",
     "precio_publico": 175.0,
@@ -5733,7 +5733,7 @@
     "inventario": 14
   },
   {
-    "sku": "",
+    "sku": "LUD-014",
     "nombre": "Cascada Decorativa Colores 96 Led",
     "imagen": "lud-014.jpg",
     "precio_publico": 175.0,
@@ -5746,7 +5746,7 @@
     "inventario": 32
   },
   {
-    "sku": "",
+    "sku": "LUD-036",
     "nombre": "Serie De Luces Led",
     "imagen": "lud-036.jpg",
     "precio_publico": 200.0,
@@ -5759,7 +5759,7 @@
     "inventario": 64
   },
   {
-    "sku": "",
+    "sku": "LUD-006",
     "nombre": "Luminaria decorativa navideña",
     "imagen": "lud-006.jpg",
     "precio_publico": 222.0,
@@ -5772,7 +5772,7 @@
     "inventario": 50
   },
   {
-    "sku": "",
+    "sku": "LUD-020",
     "nombre": "Cascada Blanca Decorativa 200 Led",
     "imagen": "lud-020.jpg",
     "precio_publico": 227.0,
@@ -5785,7 +5785,7 @@
     "inventario": 65
   },
   {
-    "sku": "",
+    "sku": "LUD-004",
     "nombre": "Serie Decorativa Alambre 20 W",
     "imagen": "lud-004.jpg",
     "precio_publico": 272.0,
@@ -5798,7 +5798,7 @@
     "inventario": 75
   },
   {
-    "sku": "",
+    "sku": "LUD-022",
     "nombre": "Cascada Decorativa Colores 240 Led",
     "imagen": "lud-022.jpg",
     "precio_publico": 382.0,
@@ -5811,7 +5811,7 @@
     "inventario": 162
   },
   {
-    "sku": "",
+    "sku": "YS-252",
     "nombre": "Vaso Termo de 600ml con Bocina Bluetooth TWS de 5W",
     "imagen": "ys-252.jpg",
     "precio_publico": 197.0,
@@ -5824,7 +5824,7 @@
     "inventario": 17
   },
   {
-    "sku": "",
+    "sku": "YS-251",
     "nombre": "Vaso Termo de 437ml con Bocina Bluetooth TWS",
     "imagen": "ys-251.jpg",
     "precio_publico": 173.0,
@@ -5837,7 +5837,7 @@
     "inventario": 4
   },
   {
-    "sku": "",
+    "sku": "FH-256",
     "nombre": "Termo para Comida",
     "imagen": "fh-256.jpg",
     "precio_publico": 60.0,
@@ -5850,7 +5850,7 @@
     "inventario": 39
   },
   {
-    "sku": "",
+    "sku": "FH-259",
     "nombre": "Tupper para Comida Térmico",
     "imagen": "fh-259.jpg",
     "precio_publico": 120.0,
@@ -5863,7 +5863,7 @@
     "inventario": 18
   },
   {
-    "sku": "",
+    "sku": "K-728",
     "nombre": "Molinillo para Especias de Acero Inoxidable",
     "imagen": "k-728.jpg",
     "precio_publico": 64.0,
@@ -5876,7 +5876,7 @@
     "inventario": 38
   },
   {
-    "sku": "",
+    "sku": "GJ-359",
     "nombre": "Destapa Corchos Metálico",
     "imagen": "gj-359.jpg",
     "precio_publico": 39.0,
@@ -5889,7 +5889,7 @@
     "inventario": 88
   },
   {
-    "sku": "",
+    "sku": "CJ-2073",
     "nombre": "Dispensador De Aceite Con Capacidad De 100ml",
     "imagen": "cj-2073.jpg",
     "precio_publico": 22.0,
@@ -5902,7 +5902,7 @@
     "inventario": 21
   },
   {
-    "sku": "",
+    "sku": "HJ-181",
     "nombre": "Encendedor",
     "imagen": "hj-181.jpg",
     "precio_publico": 53.0,
@@ -5915,7 +5915,7 @@
     "inventario": 21
   },
   {
-    "sku": "",
+    "sku": "VASO-108",
     "nombre": "Vaso",
     "imagen": "vaso-108.jpg",
     "precio_publico": 53.0,
@@ -5928,7 +5928,7 @@
     "inventario": 4
   },
   {
-    "sku": "",
+    "sku": "VASO-109",
     "nombre": "Vaso",
     "imagen": "vaso-109.jpg",
     "precio_publico": 75.0,
@@ -5941,7 +5941,7 @@
     "inventario": 21
   },
   {
-    "sku": "",
+    "sku": "VASO-107",
     "nombre": "Vaso",
     "imagen": "vaso-107.jpg",
     "precio_publico": 75.0,
@@ -5954,7 +5954,7 @@
     "inventario": 44
   },
   {
-    "sku": "",
+    "sku": "VASO-63",
     "nombre": "Vaso",
     "imagen": "vaso-63.jpg",
     "precio_publico": 92.0,
@@ -5967,7 +5967,7 @@
     "inventario": 18
   },
   {
-    "sku": "",
+    "sku": "ZWJ-208",
     "nombre": "Estante Para Filtros De Agua",
     "imagen": "zwj-208.jpg",
     "precio_publico": 117.0,
@@ -5980,7 +5980,7 @@
     "inventario": 6
   },
   {
-    "sku": "",
+    "sku": "BH-21270",
     "nombre": "(BH-21270) Hervidor Plegable",
     "imagen": "bh-21270.jpg",
     "precio_publico": 132.0,
@@ -5993,7 +5993,7 @@
     "inventario": 5
   },
   {
-    "sku": "",
+    "sku": "CSQ-09",
     "nombre": "Dispensador de Agua Automático",
     "imagen": "csq-09.jpg",
     "precio_publico": 70.0,
@@ -6006,7 +6006,7 @@
     "inventario": 4
   },
   {
-    "sku": "",
+    "sku": "BH-21150",
     "nombre": "(BH-21150) Batidora",
     "imagen": "bh-21150.jpg",
     "precio_publico": 21.0,
@@ -6019,7 +6019,7 @@
     "inventario": 183
   },
   {
-    "sku": "",
+    "sku": "FA015",
     "nombre": "Dispensador De Agua",
     "imagen": "fa015.jpg",
     "precio_publico": 48.0,
@@ -6032,7 +6032,7 @@
     "inventario": 1984
   },
   {
-    "sku": "",
+    "sku": "FA018",
     "nombre": "Dispensador De Agua Con Luz Led",
     "imagen": "fa018.jpg",
     "precio_publico": 53.0,
@@ -6045,7 +6045,7 @@
     "inventario": 27
   },
   {
-    "sku": "",
+    "sku": "BWB-17132",
     "nombre": "Termo Tipo Starbucks 30oz",
     "imagen": "bwb-17132.jpg",
     "precio_publico": 95.0,
@@ -6058,7 +6058,7 @@
     "inventario": 23
   },
   {
-    "sku": "",
+    "sku": "BWB-1749",
     "nombre": "(BWB-1749) Termo 20 OZ",
     "imagen": "bwb-1749.jpg",
     "precio_publico": 81.0,
@@ -6071,7 +6071,7 @@
     "inventario": 3
   },
   {
-    "sku": "",
+    "sku": "BZ-2102",
     "nombre": "(BZ-2102) Termo 1.3 L",
     "imagen": "bz-2102.jpg",
     "precio_publico": 127.0,
@@ -6084,7 +6084,7 @@
     "inventario": 44
   },
   {
-    "sku": "",
+    "sku": "BWB-1784",
     "nombre": "(BWB-1784) Vaso de 710ml",
     "imagen": "bwb-1784.jpg",
     "precio_publico": 73.0,
@@ -6097,7 +6097,7 @@
     "inventario": 28
   },
   {
-    "sku": "",
+    "sku": "BWB-1715",
     "nombre": "(BWB-1715) Vaso 30 Oz",
     "imagen": "bwb-1715.jpg",
     "precio_publico": 86.0,
@@ -6110,7 +6110,7 @@
     "inventario": 67
   },
   {
-    "sku": "",
+    "sku": "JJYP272",
     "nombre": "(JJYP272) Vaso Portable 400 Ml",
     "imagen": "jjyp272.jpg",
     "precio_publico": 100.0,
@@ -6123,7 +6123,7 @@
     "inventario": 8
   },
   {
-    "sku": "",
+    "sku": "JBB-5254",
     "nombre": "Vaso Diseño",
     "imagen": "jbb-5254.jpg",
     "precio_publico": 142.0,
@@ -6136,7 +6136,7 @@
     "inventario": 21
   },
   {
-    "sku": "",
+    "sku": "BH-21238",
     "nombre": "Bolsa de Compras Extensible con Ruedas",
     "imagen": "bh-21238.jpg",
     "precio_publico": 59.0,
@@ -6149,7 +6149,7 @@
     "inventario": 41
   },
   {
-    "sku": "",
+    "sku": "JXQ-1402",
     "nombre": "Extensión de 3 Metros Uso Rudo",
     "imagen": "jxq-1402.jpg",
     "precio_publico": 32.0,
@@ -6162,7 +6162,7 @@
     "inventario": 67
   },
   {
-    "sku": "",
+    "sku": "JXQ-1401",
     "nombre": "Extensión de 2 Metros Uso Rudo",
     "imagen": "jxq-1401.jpg",
     "precio_publico": 27.0,
@@ -6175,7 +6175,7 @@
     "inventario": 81
   },
   {
-    "sku": "",
+    "sku": "JXQ-1404",
     "nombre": "Extension 10 Metros Uso Rudo",
     "imagen": "jxq-1404.jpg",
     "precio_publico": 100.0,
@@ -6188,7 +6188,7 @@
     "inventario": 11
   },
   {
-    "sku": "",
+    "sku": "SJ-2502",
     "nombre": "Candado para Moto de 50mm",
     "imagen": "sj-2502.jpg",
     "precio_publico": 46.0,
@@ -6201,7 +6201,7 @@
     "inventario": 90
   },
   {
-    "sku": "",
+    "sku": "MWQ-0213",
     "nombre": "Lampara Mata Mosquitos Mosquitero",
     "imagen": "mwq-0213.jpg",
     "precio_publico": 95.0,
@@ -6214,7 +6214,7 @@
     "inventario": 28
   },
   {
-    "sku": "",
+    "sku": "GJ-337",
     "nombre": "Desarmador con 8 Puntas Intercambiables",
     "imagen": "gj-337.jpg",
     "precio_publico": 35.0,
@@ -6227,7 +6227,7 @@
     "inventario": 14
   },
   {
-    "sku": "",
+    "sku": "RYL-2001",
     "nombre": "Encendedor giratorio de 360 grados",
     "imagen": "ryl-2001.jpg",
     "precio_publico": 42.0,
@@ -6240,7 +6240,7 @@
     "inventario": 113
   },
   {
-    "sku": "",
+    "sku": "SJ-2501",
     "nombre": "Candado para Moto de 40mm",
     "imagen": "sj-2501.jpg",
     "precio_publico": 35.0,
@@ -6253,7 +6253,7 @@
     "inventario": 124
   },
   {
-    "sku": "",
+    "sku": "SJ-2503",
     "nombre": "Candado para Moto de 60mm",
     "imagen": "sj-2503.jpg",
     "precio_publico": 53.0,
@@ -6266,7 +6266,7 @@
     "inventario": 63
   },
   {
-    "sku": "",
+    "sku": "JS-9636",
     "nombre": "Calculadora Básica Retro de 10 Dígitos",
     "imagen": "js-9636.jpg",
     "precio_publico": 60.0,
@@ -6279,7 +6279,7 @@
     "inventario": 38
   },
   {
-    "sku": "",
+    "sku": "JS-9637",
     "nombre": "Calculadora Básica Retro Transparente de 10 Dígitos Degradado",
     "imagen": "js-9637.jpg",
     "precio_publico": 64.0,
@@ -6292,7 +6292,7 @@
     "inventario": 108
   },
   {
-    "sku": "",
+    "sku": "JS-9638",
     "nombre": "Calculadora Básica de 12 Dígitos Colores Pasteles",
     "imagen": "js-9638.jpg",
     "precio_publico": 82.0,
@@ -6305,7 +6305,7 @@
     "inventario": 63
   },
   {
-    "sku": "",
+    "sku": "JS-9639",
     "nombre": "Calculadora Básica de 12 Dígitos Colores Pasteles",
     "imagen": "js-9639.jpg",
     "precio_publico": 64.0,
@@ -6318,7 +6318,7 @@
     "inventario": 98
   },
   {
-    "sku": "",
+    "sku": "JS-9640",
     "nombre": "Calculadora Básica de 12 Dígitos con Color Degradado con Carga Solar",
     "imagen": "js-9640.jpg",
     "precio_publico": 40.0,
@@ -6331,7 +6331,7 @@
     "inventario": 254
   },
   {
-    "sku": "",
+    "sku": "CDQ-L73",
     "nombre": "Cargador de Baterías AA/AAA con 4 Pilas AAA de 350 mAh",
     "imagen": "cdq-l73.jpg",
     "precio_publico": 137.0,
@@ -6344,7 +6344,7 @@
     "inventario": 11
   },
   {
-    "sku": "",
+    "sku": "GJ-306-5M",
     "nombre": "Flexómetro Retráctil de 5m",
     "imagen": "gj-306-5m.jpg",
     "precio_publico": 24.0,
@@ -6357,7 +6357,7 @@
     "inventario": 22
   },
   {
-    "sku": "",
+    "sku": "GJ-361",
     "nombre": "Kit Automotriz para Discos de Frenos",
     "imagen": "gj-361.jpg",
     "precio_publico": 310.0,
@@ -6370,7 +6370,7 @@
     "inventario": 10
   },
   {
-    "sku": "",
+    "sku": "GJ-363",
     "nombre": "Pistola de Silicón Eléctrica",
     "imagen": "gj-363.jpg",
     "precio_publico": 55.0,
@@ -6383,7 +6383,7 @@
     "inventario": 3
   },
   {
-    "sku": "",
+    "sku": "MULTI-08",
     "nombre": "Barra Multicontacto 3 Enchufes, 2 USB, 1 Tipo C",
     "imagen": "multi-08.jpg",
     "precio_publico": 108.0,
@@ -6396,7 +6396,7 @@
     "inventario": 18
   },
   {
-    "sku": "",
+    "sku": "MULTI-10",
     "nombre": "Barra Multicontacto 4 Enchufes, 2 Puertos USB y 1 Puerto Tipo C",
     "imagen": "multi-10.jpg",
     "precio_publico": 119.0,
@@ -6409,7 +6409,7 @@
     "inventario": 16
   },
   {
-    "sku": "",
+    "sku": "SJ-12230",
     "nombre": "Candado de Seguridad Antirrobos para Motocicleta",
     "imagen": "sj-12230.jpg",
     "precio_publico": 48.0,
@@ -6422,7 +6422,7 @@
     "inventario": 39
   },
   {
-    "sku": "",
+    "sku": "MULTI-29",
     "nombre": "Extensión Eléctrica de 5m",
     "imagen": "multi-29.jpg",
     "precio_publico": 42.0,
@@ -6435,7 +6435,7 @@
     "inventario": 15
   },
   {
-    "sku": "",
+    "sku": "MULTI-31",
     "nombre": "Extensión Eléctrica de 15m",
     "imagen": "multi-31.jpg",
     "precio_publico": 100.0,
@@ -6448,7 +6448,7 @@
     "inventario": 23
   },
   {
-    "sku": "",
+    "sku": "FK-903",
     "nombre": "Sellador y Cortador de Bolsas con Imán",
     "imagen": "fk-903.jpg",
     "precio_publico": 39.0,
@@ -6461,7 +6461,7 @@
     "inventario": 151
   },
   {
-    "sku": "",
+    "sku": "QJ-191",
     "nombre": "Mini Trapeador de Mano",
     "imagen": "qj-191.jpg",
     "precio_publico": 31.0,
@@ -6474,7 +6474,7 @@
     "inventario": 159
   },
   {
-    "sku": "",
+    "sku": "ZWJ-210",
     "nombre": "Perchero Plegable",
     "imagen": "zwj-210.jpg",
     "precio_publico": 64.0,
@@ -6487,7 +6487,7 @@
     "inventario": 81
   },
   {
-    "sku": "",
+    "sku": "ZJT-8100",
     "nombre": "Adaptador de Corriente Internacional",
     "imagen": "zjt-8100.jpg",
     "precio_publico": 4.0,
@@ -6500,7 +6500,7 @@
     "inventario": 537
   },
   {
-    "sku": "",
+    "sku": "WSZ-801",
     "nombre": "Vela de Calabaza para Halloween",
     "imagen": "wsz-801.jpg",
     "precio_publico": 10.0,
@@ -6513,7 +6513,7 @@
     "inventario": 346
   },
   {
-    "sku": "",
+    "sku": "JSL-7003",
     "nombre": "Bolsa Impermeable Para Telefono",
     "imagen": "jsl-7003.jpg",
     "precio_publico": 14.0,
@@ -6526,7 +6526,7 @@
     "inventario": 82
   },
   {
-    "sku": "",
+    "sku": "BH-21315",
     "nombre": "(BH-21315) Soporte para levantar Garrafon",
     "imagen": "bh-21315.jpg",
     "precio_publico": 16.0,
@@ -6539,7 +6539,7 @@
     "inventario": 195
   },
   {
-    "sku": "",
+    "sku": "LED-710",
     "nombre": "Luces De Bicicleta",
     "imagen": "led-710.jpg",
     "precio_publico": 17.0,
@@ -6552,7 +6552,7 @@
     "inventario": 30
   },
   {
-    "sku": "",
+    "sku": "BH-21142",
     "nombre": "(BH-21142) Mini Trapeador de Almacenamiento de Agua",
     "imagen": "bh-21142.jpg",
     "precio_publico": 22.0,
@@ -6565,7 +6565,7 @@
     "inventario": 19
   },
   {
-    "sku": "",
+    "sku": "AZMQ055",
     "nombre": "Bola De Cristal",
     "imagen": "azmq055.jpg",
     "precio_publico": 30.0,
@@ -6578,7 +6578,7 @@
     "inventario": 65
   },
   {
-    "sku": "",
+    "sku": "AZMQ056",
     "nombre": "Bola De Cristal",
     "imagen": "azmq056.jpg",
     "precio_publico": 33.0,
@@ -6591,7 +6591,7 @@
     "inventario": 72
   },
   {
-    "sku": "",
+    "sku": "HJ-183",
     "nombre": "Encendedor Eléctrico Recargable con Linterna COB",
     "imagen": "hj-183.jpg",
     "precio_publico": 43.0,
@@ -6604,7 +6604,7 @@
     "inventario": 177
   },
   {
-    "sku": "",
+    "sku": "BH-21230",
     "nombre": "(BH-21230) Lavadora portátil",
     "imagen": "bh-21230.jpg",
     "precio_publico": 51.0,
@@ -6617,7 +6617,7 @@
     "inventario": 56
   },
   {
-    "sku": "",
+    "sku": "HJ-185",
     "nombre": "Cenicero",
     "imagen": "hj-185.jpg",
     "precio_publico": 63.0,
@@ -6630,7 +6630,7 @@
     "inventario": 49
   },
   {
-    "sku": "",
+    "sku": "BH-21196",
     "nombre": "(BH-21196) Aspiradora Portátil",
     "imagen": "bh-21196.jpg",
     "precio_publico": 66.0,
@@ -6643,7 +6643,7 @@
     "inventario": 10
   },
   {
-    "sku": "",
+    "sku": "ZB-030",
     "nombre": "Despeetador",
     "imagen": "zb-030.jpg",
     "precio_publico": 67.0,
@@ -6656,7 +6656,7 @@
     "inventario": 21
   },
   {
-    "sku": "",
+    "sku": "ZB-029",
     "nombre": "Despertador",
     "imagen": "zb-029.jpg",
     "precio_publico": 83.0,
@@ -6669,7 +6669,7 @@
     "inventario": 6
   },
   {
-    "sku": "",
+    "sku": "BH-21319",
     "nombre": "(BH-21319)  Regadera para Baño",
     "imagen": "bh-21319.jpg",
     "precio_publico": 117.0,
@@ -6682,7 +6682,7 @@
     "inventario": 26
   },
   {
-    "sku": "",
+    "sku": "DWP-2006",
     "nombre": "Matamosquitos Electrico",
     "imagen": "dwp-2006.jpg",
     "precio_publico": 125.0,
@@ -6695,7 +6695,7 @@
     "inventario": 11
   },
   {
-    "sku": "",
+    "sku": "BH-21313",
     "nombre": "(BH-21313) Secador de Zapatos",
     "imagen": "bh-21313.jpg",
     "precio_publico": 147.0,
@@ -6708,7 +6708,7 @@
     "inventario": 4
   },
   {
-    "sku": "",
+    "sku": "DES-PLA",
     "nombre": "Paquete de Platos Desechables",
     "imagen": "des-pla.png",
     "precio_publico": 167.0,
@@ -6721,7 +6721,7 @@
     "inventario": 73
   },
   {
-    "sku": "",
+    "sku": "HP-N",
     "nombre": "Cartel de Harry Potter de Led Neón",
     "imagen": "hp-n.png",
     "precio_publico": 167.0,
@@ -6734,7 +6734,7 @@
     "inventario": 6
   },
   {
-    "sku": "",
+    "sku": "QN-22",
     "nombre": "Calentador",
     "imagen": "qn-22.jpg",
     "precio_publico": 175.0,
@@ -6747,7 +6747,7 @@
     "inventario": 29
   },
   {
-    "sku": "",
+    "sku": "QN-20",
     "nombre": "Calentador",
     "imagen": "qn-20.jpg",
     "precio_publico": 197.0,
@@ -6760,7 +6760,7 @@
     "inventario": 58
   },
   {
-    "sku": "",
+    "sku": "VHO-0002",
     "nombre": "Mueble Armable",
     "imagen": "vho-0002.jpg",
     "precio_publico": 269.0,
@@ -6773,7 +6773,7 @@
     "inventario": 62
   },
   {
-    "sku": "",
+    "sku": "SOM-T",
     "nombre": "Sombrillas Tommy Sahama para Playa",
     "imagen": "som-t.png",
     "precio_publico": 467.0,
@@ -6786,7 +6786,7 @@
     "inventario": 4
   },
   {
-    "sku": "",
+    "sku": "BH-21201",
     "nombre": "Zapatero",
     "imagen": "bh-21201.jpg",
     "precio_publico": 51.0,
@@ -6799,7 +6799,7 @@
     "inventario": 38
   },
   {
-    "sku": "",
+    "sku": "BH-21216",
     "nombre": "Perchero",
     "imagen": "bh-21216.jpg",
     "precio_publico": 125.0,
@@ -6812,7 +6812,7 @@
     "inventario": 14
   },
   {
-    "sku": "",
+    "sku": "BH-2171",
     "nombre": "Set De 24 Plumones Doble Punta",
     "imagen": "bh-2171.jpg",
     "precio_publico": 51.0,
@@ -6825,7 +6825,7 @@
     "inventario": 442
   },
   {
-    "sku": "",
+    "sku": "BH-21203",
     "nombre": "(BH-21203) Zapatero",
     "imagen": "bh-21203.jpg",
     "precio_publico": 70.0,
@@ -6838,7 +6838,7 @@
     "inventario": 3
   },
   {
-    "sku": "",
+    "sku": "BH-2172",
     "nombre": "Set De 36 Plumones Doble Punta",
     "imagen": "bh-2172.jpg",
     "precio_publico": 73.0,
@@ -6851,7 +6851,7 @@
     "inventario": 33
   },
   {
-    "sku": "",
+    "sku": "BH-21200",
     "nombre": "(BH-21200) Zapatero",
     "imagen": "bh-21200.jpg",
     "precio_publico": 88.0,
@@ -6864,7 +6864,7 @@
     "inventario": 3
   },
   {
-    "sku": "",
+    "sku": "BH-21213",
     "nombre": "(BH-21213) Cesto de Ropa Plegable",
     "imagen": "bh-21213.jpg",
     "precio_publico": 95.0,
@@ -6877,7 +6877,7 @@
     "inventario": 4
   },
   {
-    "sku": "",
+    "sku": "ZE-0811",
     "nombre": "Set De 24 Plumones",
     "imagen": "ze-0811.jpg",
     "precio_publico": 117.0,
@@ -6890,7 +6890,7 @@
     "inventario": 75
   },
   {
-    "sku": "",
+    "sku": "BH-21154",
     "nombre": "(BH-21154) Mueble para Especias de Cocina",
     "imagen": "bh-21154.jpg",
     "precio_publico": 132.0,
@@ -6903,7 +6903,7 @@
     "inventario": 2
   },
   {
-    "sku": "",
+    "sku": "BH-21212",
     "nombre": "(BH-21212) Cesto de Ropa",
     "imagen": "bh-21212.jpg",
     "precio_publico": 139.0,
@@ -6916,7 +6916,7 @@
     "inventario": 4
   },
   {
-    "sku": "",
+    "sku": "BH-2131",
     "nombre": "(BH-2131) Closet Portatil 55 Cm X 42 Cm X 160 Cm",
     "imagen": "bh-2131.jpg",
     "precio_publico": 176.0,
@@ -6929,7 +6929,7 @@
     "inventario": 5
   },
   {
-    "sku": "",
+    "sku": "BH-21210",
     "nombre": "(BH-21210) Estante De Baño",
     "imagen": "bh-21210.jpg",
     "precio_publico": 198.0,
@@ -6942,7 +6942,7 @@
     "inventario": 13
   },
   {
-    "sku": "",
+    "sku": "BH-21215",
     "nombre": "(BH-21215) Mueble de Baño",
     "imagen": "bh-21215.jpg",
     "precio_publico": 227.0,
@@ -6955,7 +6955,7 @@
     "inventario": 6
   },
   {
-    "sku": "",
+    "sku": "BH-21245",
     "nombre": "(BH-21245) Mueble para colgar ropa",
     "imagen": "bh-21245.jpg",
     "precio_publico": 264.0,
@@ -6968,7 +6968,7 @@
     "inventario": 7
   },
   {
-    "sku": "",
+    "sku": "ZE-0813",
     "nombre": "Set De 60 Plumones Acrilico",
     "imagen": "ze-0813.jpg",
     "precio_publico": 267.0,
@@ -6981,7 +6981,7 @@
     "inventario": 40
   },
   {
-    "sku": "",
+    "sku": "LUD-017",
     "nombre": "Serie de luz para navidad",
     "imagen": "lud-017.jpg",
     "precio_publico": 53.0,
@@ -6994,7 +6994,7 @@
     "inventario": 20
   },
   {
-    "sku": "",
+    "sku": "TS-8602V3CK",
     "nombre": "Serie de 500 focos led multicolor",
     "imagen": "ts-8602v3ck.jpg",
     "precio_publico": 267.0,
@@ -7007,7 +7007,7 @@
     "inventario": 16
   },
   {
-    "sku": "",
+    "sku": "JXQ-1800",
     "nombre": "Regleta Multicontacto de 6 Entradas con Interruptor de Encendido",
     "imagen": "jxq-1800.jpg",
     "precio_publico": 40.0,
@@ -7020,7 +7020,7 @@
     "inventario": 19
   },
   {
-    "sku": "",
+    "sku": "ZJT-8104",
     "nombre": "Adaptador de Corriente Universal Plano a Redondo 110V",
     "imagen": "zjt-8104.jpg",
     "precio_publico": 3.0,
@@ -7033,7 +7033,7 @@
     "inventario": 1414
   },
   {
-    "sku": "",
+    "sku": "HOG.953.P",
     "nombre": "Escobilla Desechable Para Baño",
     "imagen": "hog.953.p.jpg",
     "precio_publico": 32.0,
@@ -7046,7 +7046,7 @@
     "inventario": 76
   },
   {
-    "sku": "",
+    "sku": "ZJT-8101",
     "nombre": "Adaptador Internacional De Corriente",
     "imagen": "zjt-8101.jpg",
     "precio_publico": 33.0,
@@ -7059,7 +7059,7 @@
     "inventario": 71
   },
   {
-    "sku": "",
+    "sku": "XZ-6370",
     "nombre": "Porta Vasos Multifuncional",
     "imagen": "xz-6370.jpg",
     "precio_publico": 53.0,
@@ -7072,7 +7072,7 @@
     "inventario": 7
   },
   {
-    "sku": "",
+    "sku": "FS-1110",
     "nombre": "Ventilador Pinza",
     "imagen": "fs-1110.jpg",
     "precio_publico": 95.0,
@@ -7085,7 +7085,7 @@
     "inventario": 216
   },
   {
-    "sku": "",
+    "sku": "HOG.78",
     "nombre": "Maquina De Sellado Al Vacio",
     "imagen": "hog.78.jpg",
     "precio_publico": 190.0,
@@ -7098,7 +7098,7 @@
     "inventario": 92
   },
   {
-    "sku": "",
+    "sku": "PLAYO CALIBRE .80 18",
     "nombre": "Playo 18",
     "imagen": "playo calibre .80 18.jpg",
     "precio_publico": 166.0,
@@ -7111,7 +7111,7 @@
     "inventario": 152
   },
   {
-    "sku": "",
+    "sku": "CAMISETAS SELECCION MEXICANA",
     "nombre": "Camisetas Seleccion Mexicana",
     "imagen": "camisetas seleccion mexicana.jpg",
     "precio_publico": 248.0,
@@ -7124,7 +7124,7 @@
     "inventario": 55
   },
   {
-    "sku": "",
+    "sku": "TL1542N22B",
     "nombre": "Soporte para TV de 26 a 55 Pulgadas",
     "imagen": "tl1542n22b.jpg",
     "precio_publico": 79.0,
@@ -7137,7 +7137,7 @@
     "inventario": 97
   },
   {
-    "sku": "",
+    "sku": "TL1412N17C",
     "nombre": "Soporte De Pared Para Tv 14\" - 43\"",
     "imagen": "tl1412n17c.jpg",
     "precio_publico": 43.0,
@@ -7150,7 +7150,7 @@
     "inventario": 20
   },
   {
-    "sku": "",
+    "sku": "B1442N07B",
     "nombre": "Soporte Movible Para Tv De 14\" a 42\"",
     "imagen": "b1442n07b.jpg",
     "precio_publico": 140.0,
@@ -7163,7 +7163,7 @@
     "inventario": 20
   },
   {
-    "sku": "",
+    "sku": "SOPORTE 14-42",
     "nombre": "Soporte De Tv 14\"",
     "imagen": "soporte 14-42.jpg",
     "precio_publico": 248.0,
@@ -7176,7 +7176,7 @@
     "inventario": 13
   },
   {
-    "sku": "",
+    "sku": "C1732N53",
     "nombre": "(C1732N53) Soporte para Pantalla",
     "imagen": "c1732n53.jpg",
     "precio_publico": 455.0,
@@ -7189,7 +7189,7 @@
     "inventario": 4
   },
   {
-    "sku": "",
+    "sku": "Z011",
     "nombre": "Soporte Para Monitor",
     "imagen": "z011.jpg",
     "precio_publico": 465.0,
@@ -7202,7 +7202,7 @@
     "inventario": 19
   },
   {
-    "sku": "",
+    "sku": "JSQ-1810",
     "nombre": "Humidificador",
     "imagen": "jsq-1810.jpg",
     "precio_publico": 73.0,
@@ -7215,7 +7215,7 @@
     "inventario": 36
   },
   {
-    "sku": "",
+    "sku": "JSQ-23",
     "nombre": "(JSQ-23) Humidificador Foco",
     "imagen": "jsq-23.jpg",
     "precio_publico": 92.0,
@@ -7228,7 +7228,7 @@
     "inventario": 32
   },
   {
-    "sku": "",
+    "sku": "MULTI-16",
     "nombre": "Multi Contacto 5 enchufes, conexión USB, Conexión Tipo C",
     "imagen": "multi-16.jpg",
     "precio_publico": 137.0,
@@ -7241,7 +7241,7 @@
     "inventario": 11
   },
   {
-    "sku": "",
+    "sku": "BH-21312",
     "nombre": "Compresora de Aire",
     "imagen": "bh-21312.jpg",
     "precio_publico": 95.0,
@@ -7254,7 +7254,7 @@
     "inventario": 30
   },
   {
-    "sku": "",
+    "sku": "LSD-6134",
     "nombre": "Destornillador",
     "imagen": "lsd-6134.jpg",
     "precio_publico": 27.0,
@@ -7267,7 +7267,7 @@
     "inventario": 5
   },
   {
-    "sku": "",
+    "sku": "GJ-308-3M",
     "nombre": "Cinta Metrica",
     "imagen": "gj-308-3m.jpg",
     "precio_publico": 12.0,
@@ -7280,7 +7280,7 @@
     "inventario": 61
   },
   {
-    "sku": "",
+    "sku": "GJ-307-3M",
     "nombre": "Cinta Metrica",
     "imagen": "gj-307-3m.jpg",
     "precio_publico": 13.0,
@@ -7293,7 +7293,7 @@
     "inventario": 137
   },
   {
-    "sku": "",
+    "sku": "SNA-5831",
     "nombre": "Extension Electrica Socket 5M",
     "imagen": "sna-5831.jpg",
     "precio_publico": 27.0,
@@ -7306,7 +7306,7 @@
     "inventario": 368
   },
   {
-    "sku": "",
+    "sku": "LSD-6135",
     "nombre": "Juego de Herramientas de Destornilladores",
     "imagen": "lsd-6135.jpg",
     "precio_publico": 106.0,
@@ -7319,7 +7319,7 @@
     "inventario": 46
   },
   {
-    "sku": "",
+    "sku": "GJ-D302",
     "nombre": "Cuter",
     "imagen": "gj-d302.jpg",
     "precio_publico": 8.0,
@@ -7332,7 +7332,7 @@
     "inventario": 6
   },
   {
-    "sku": "",
+    "sku": "MR-839",
     "nombre": "Candado",
     "imagen": "mr-839.jpg",
     "precio_publico": 27.0,
@@ -7345,7 +7345,7 @@
     "inventario": 46
   },
   {
-    "sku": "",
+    "sku": "YXJ-1506",
     "nombre": "Consola Arcade + 2 Mandos",
     "imagen": "yxj-1506.jpg",
     "precio_publico": 175.0,
@@ -7358,7 +7358,7 @@
     "inventario": 350
   },
   {
-    "sku": "",
+    "sku": "X2",
     "nombre": "Mini consola arcade 64Gb + 30,000 juegos",
     "imagen": "x2.jpg",
     "precio_publico": 433.0,
@@ -7371,7 +7371,7 @@
     "inventario": 934
   },
   {
-    "sku": "",
+    "sku": "TO-1021",
     "nombre": "Consola Retro SUP",
     "imagen": "to-1021.jpg",
     "precio_publico": 150.0,
@@ -7384,7 +7384,7 @@
     "inventario": 123
   },
   {
-    "sku": "",
+    "sku": "YXJ-1513",
     "nombre": "Consola S10 + Control",
     "imagen": "yxj-1513.jpg",
     "precio_publico": 227.0,
@@ -7397,7 +7397,7 @@
     "inventario": 21
   },
   {
-    "sku": "",
+    "sku": "YXJ-1504",
     "nombre": "Consola Inalambrica M8",
     "imagen": "yxj-1504.jpg",
     "precio_publico": 317.0,
@@ -7410,7 +7410,7 @@
     "inventario": 3013
   },
   {
-    "sku": "",
+    "sku": "YXJ-1522",
     "nombre": "Consola M8S",
     "imagen": "yxj-1522.jpg",
     "precio_publico": 392.0,
@@ -7423,7 +7423,7 @@
     "inventario": 1940
   },
   {
-    "sku": "",
+    "sku": "YXJ-1507",
     "nombre": "Control Xbox 360",
     "imagen": "yxj-1507.jpg",
     "precio_publico": 191.0,
@@ -7436,7 +7436,7 @@
     "inventario": 24
   },
   {
-    "sku": "",
+    "sku": "YXJ-1509",
     "nombre": "(YXJ-1509) Control PS4 Negro",
     "imagen": "yxj-1509.jpg",
     "precio_publico": 235.0,
@@ -7449,7 +7449,7 @@
     "inventario": 54
   },
   {
-    "sku": "",
+    "sku": "YXJ-1510",
     "nombre": "(YXJ-1510) Control para Play 4 Diseño Surtido",
     "imagen": "yxj-1510.jpg",
     "precio_publico": 249.0,
@@ -7462,7 +7462,7 @@
     "inventario": 36
   },
   {
-    "sku": "",
+    "sku": "P47M",
     "nombre": "Diadema Diseño Gato",
     "imagen": "p47m.jpg",
     "precio_publico": 75.0,
@@ -7475,7 +7475,7 @@
     "inventario": 394
   },
   {
-    "sku": "",
+    "sku": "P47R",
     "nombre": "Diadema Bluetooth con Orejas de Conejo",
     "imagen": "p47r.jpg",
     "precio_publico": 60.0,
@@ -7488,7 +7488,7 @@
     "inventario": 33
   },
   {
-    "sku": "",
+    "sku": "BG-123",
     "nombre": "Diadema Bluetooth Recargable",
     "imagen": "bg-123.jpg",
     "precio_publico": 60.0,
@@ -7501,7 +7501,7 @@
     "inventario": 93
   },
   {
-    "sku": "",
+    "sku": "CEP-8",
     "nombre": "Diadema Bluetooth Estilo Piel",
     "imagen": "cep-8.jpg",
     "precio_publico": 98.0,
@@ -7514,7 +7514,7 @@
     "inventario": 200
   },
   {
-    "sku": "",
+    "sku": "P9PROMAXPAINT",
     "nombre": "Audifonos de Diadema Bluetooth Diseño Paint P9",
     "imagen": "p9promaxpaint.jpg",
     "precio_publico": 99.0,
@@ -7527,7 +7527,7 @@
     "inventario": 687
   },
   {
-    "sku": "",
+    "sku": "XR-3202",
     "nombre": "Diadema de Gato",
     "imagen": "xr-3202.jpg",
     "precio_publico": 83.0,
@@ -7540,7 +7540,7 @@
     "inventario": 20
   },
   {
-    "sku": "",
+    "sku": "P9",
     "nombre": "Diadema Bluetooth P9",
     "imagen": "p9.jpg",
     "precio_publico": 78.0,
@@ -7553,7 +7553,7 @@
     "inventario": 1022
   },
   {
-    "sku": "",
+    "sku": "XR-3218",
     "nombre": "Diadema P con Diseño",
     "imagen": "xr-3218.jpg",
     "precio_publico": 128.0,
@@ -7566,7 +7566,7 @@
     "inventario": 90
   },
   {
-    "sku": "",
+    "sku": "AH-806M",
     "nombre": "Diadema Bt Diseño",
     "imagen": "ah-806m.jpg",
     "precio_publico": 142.0,
@@ -7579,7 +7579,7 @@
     "inventario": 21
   },
   {
-    "sku": "",
+    "sku": "XR-3201",
     "nombre": "Audífonos Inalámbricos Diadema con Diseño Pop It",
     "imagen": "xr-3201.jpg",
     "precio_publico": 189.0,
@@ -7592,7 +7592,7 @@
     "inventario": 490
   },
   {
-    "sku": "",
+    "sku": "XR-3241",
     "nombre": "Diadema Bluetooth",
     "imagen": "xr-3241.jpg",
     "precio_publico": 233.0,
@@ -7605,7 +7605,7 @@
     "inventario": 31
   },
   {
-    "sku": "",
+    "sku": "DKQ-9601",
     "nombre": "Adaptador para Memorias Micro SD",
     "imagen": "dkq-9601.jpg",
     "precio_publico": 11.0,
@@ -7618,7 +7618,7 @@
     "inventario": 315
   },
   {
-    "sku": "",
+    "sku": "DNSD-9210",
     "nombre": "Mouse",
     "imagen": "dnsd-9210.jpg",
     "precio_publico": 21.0,
@@ -7631,7 +7631,7 @@
     "inventario": 75
   },
   {
-    "sku": "",
+    "sku": "DNSD-9211",
     "nombre": "Raton Con Cable",
     "imagen": "dnsd-9211.jpg",
     "precio_publico": 26.0,
@@ -7644,7 +7644,7 @@
     "inventario": 37
   },
   {
-    "sku": "",
+    "sku": "SB-9250",
     "nombre": "Mouse Para Pc",
     "imagen": "sb-9250.jpg",
     "precio_publico": 50.0,
@@ -7657,7 +7657,7 @@
     "inventario": 99
   },
   {
-    "sku": "",
+    "sku": "DNSD-9310",
     "nombre": "Teclado",
     "imagen": "dnsd-9310.jpg",
     "precio_publico": 165.0,
@@ -7670,7 +7670,7 @@
     "inventario": 15
   },
   {
-    "sku": "",
+    "sku": "DNSD-9303",
     "nombre": "Kit Teclado Y Mouse",
     "imagen": "dnsd-9303.jpg",
     "precio_publico": 197.0,
@@ -7683,7 +7683,7 @@
     "inventario": 1
   },
   {
-    "sku": "",
+    "sku": "DNSD-9307",
     "nombre": "Kit Teclado Y Mouse",
     "imagen": "dnsd-9307.jpg",
     "precio_publico": 225.0,
@@ -7696,7 +7696,7 @@
     "inventario": 15
   },
   {
-    "sku": "",
+    "sku": "ATC-24002",
     "nombre": "Cargador para Moto",
     "imagen": "atc-24002.jpg",
     "precio_publico": 62.0,
@@ -7709,7 +7709,7 @@
     "inventario": 54
   },
   {
-    "sku": "",
+    "sku": "ATC-24001",
     "nombre": "Cargador Para Moto",
     "imagen": "atc-24001.jpg",
     "precio_publico": 36.0,
@@ -7722,7 +7722,7 @@
     "inventario": 57
   },
   {
-    "sku": "",
+    "sku": "CAR-353",
     "nombre": "Cargador de Doble Puerto USB-C de 12W",
     "imagen": "car-353.jpg",
     "precio_publico": 42.0,
@@ -7735,7 +7735,7 @@
     "inventario": 52
   },
   {
-    "sku": "",
+    "sku": "CAR-PD93",
     "nombre": "Cargador de Carga Súper Rápida de 20W Tipo C",
     "imagen": "car-pd93.jpg",
     "precio_publico": 55.0,
@@ -7748,7 +7748,7 @@
     "inventario": 21
   },
   {
-    "sku": "",
+    "sku": "CAR-350",
     "nombre": "Cargador Alámbrico de 12W con Puerto USB y Tipo C",
     "imagen": "car-350.jpg",
     "precio_publico": 42.0,
@@ -7761,7 +7761,7 @@
     "inventario": 90
   },
   {
-    "sku": "",
+    "sku": "CAR-351",
     "nombre": "Cargador Alámbrico de 12W con Puerto USB y Tipo C",
     "imagen": "car-351.jpg",
     "precio_publico": 46.0,
@@ -7774,7 +7774,7 @@
     "inventario": 122
   },
   {
-    "sku": "",
+    "sku": "CAR-352",
     "nombre": "Cargador Alámbrico de 12W con Puerto USB y Tipo C",
     "imagen": "car-352.jpg",
     "precio_publico": 44.0,
@@ -7787,7 +7787,7 @@
     "inventario": 118
   },
   {
-    "sku": "",
+    "sku": "CAR-PD90",
     "nombre": "Cargador Alámbrico de 20W con Puerto Tipo C",
     "imagen": "car-pd90.jpg",
     "precio_publico": 51.0,
@@ -7800,7 +7800,7 @@
     "inventario": 76
   },
   {
-    "sku": "",
+    "sku": "CAR-U101",
     "nombre": "Combo Cubo Cargador con Cable Tipo V8 y Puerto USB",
     "imagen": "car-u101.jpg",
     "precio_publico": 35.0,
@@ -7813,7 +7813,7 @@
     "inventario": 101
   },
   {
-    "sku": "",
+    "sku": "CAR-U263",
     "nombre": "Cargador Alámbrico de 12W con Puerto USB",
     "imagen": "car-u263.jpg",
     "precio_publico": 37.0,
@@ -7826,7 +7826,7 @@
     "inventario": 196
   },
   {
-    "sku": "",
+    "sku": "CAR-U261",
     "nombre": "Cargador Alámbrico de 12W con Puerto USB",
     "imagen": "car-u261.jpg",
     "precio_publico": 37.0,
@@ -7839,7 +7839,7 @@
     "inventario": 115
   },
   {
-    "sku": "",
+    "sku": "CAR-U260",
     "nombre": "Cargador Alámbrico de 12W con Puerto USB",
     "imagen": "car-u260.jpg",
     "precio_publico": 37.0,
@@ -7852,7 +7852,7 @@
     "inventario": 138
   },
   {
-    "sku": "",
+    "sku": "CDQ-L77",
     "nombre": "Cargador USB para Batería LI-ION de 1,000 MAH",
     "imagen": "cdq-l77.jpg",
     "precio_publico": 25.0,
@@ -7865,7 +7865,7 @@
     "inventario": 95
   },
   {
-    "sku": "",
+    "sku": "CDQ-L76",
     "nombre": "Cargador USB para Baterías tipo LI-ION de 2,000 MAH",
     "imagen": "cdq-l76.jpg",
     "precio_publico": 40.0,
@@ -7878,7 +7878,7 @@
     "inventario": 101
   },
   {
-    "sku": "",
+    "sku": "TC-2009",
     "nombre": "Cargador De Auto Con 2 Puertos Usb",
     "imagen": "tc-2009.jpg",
     "precio_publico": 11.0,
@@ -7891,7 +7891,7 @@
     "inventario": 171
   },
   {
-    "sku": "",
+    "sku": "ADC80-03",
     "nombre": "Adaptador de Corriente AC/DC 24W",
     "imagen": "adc80-03.jpg",
     "precio_publico": 37.0,
@@ -7904,7 +7904,7 @@
     "inventario": 146
   },
   {
-    "sku": "",
+    "sku": "ADC80-02",
     "nombre": "Adaptador de Corriente 18W",
     "imagen": "adc80-02.jpg",
     "precio_publico": 33.0,
@@ -7917,7 +7917,7 @@
     "inventario": 56
   },
   {
-    "sku": "",
+    "sku": "BH-2130",
     "nombre": "(BH-2130) Cargador Para Baterias + Baterias Aaa",
     "imagen": "bh-2130.jpg",
     "precio_publico": 117.0,
@@ -7930,7 +7930,7 @@
     "inventario": 12
   },
   {
-    "sku": "",
+    "sku": "ZJT-8102",
     "nombre": "Multicontacto para Enchufes",
     "imagen": "zjt-8102.jpg",
     "precio_publico": 9.0,
@@ -7943,7 +7943,7 @@
     "inventario": 274
   },
   {
-    "sku": "",
+    "sku": "CAR-PD70",
     "nombre": "Cubo Cargador USB-C PD 20w Max",
     "imagen": "car-pd70.jpg",
     "precio_publico": 39.0,
@@ -7956,7 +7956,7 @@
     "inventario": 172
   },
   {
-    "sku": "",
+    "sku": "CAR-323",
     "nombre": "Cubo Cargador de Doble Puerto USB-C de 12W",
     "imagen": "car-323.jpg",
     "precio_publico": 35.0,
@@ -7969,7 +7969,7 @@
     "inventario": 27
   },
   {
-    "sku": "",
+    "sku": "CAR-PD73",
     "nombre": "Cubo de Carga Súper Rápida de 20W Max",
     "imagen": "car-pd73.jpg",
     "precio_publico": 42.0,
@@ -7982,7 +7982,7 @@
     "inventario": 156
   },
   {
-    "sku": "",
+    "sku": "CAR-PD120",
     "nombre": "Cubo Cargador de 20W con Puerto Tipo C Dual",
     "imagen": "car-pd120.jpg",
     "precio_publico": 73.0,
@@ -7995,7 +7995,7 @@
     "inventario": 178
   },
   {
-    "sku": "",
+    "sku": "CAR-321",
     "nombre": "Cargador de Doble Puerto 12w max 2.4A",
     "imagen": "car-321.jpg",
     "precio_publico": 35.0,
@@ -8008,7 +8008,7 @@
     "inventario": 85
   },
   {
-    "sku": "",
+    "sku": "CAR-306",
     "nombre": "Cubo Cargador de 12W con Puerto USB y Tipo C",
     "imagen": "car-306.jpg",
     "precio_publico": 28.0,
@@ -8021,7 +8021,7 @@
     "inventario": 313
   },
   {
-    "sku": "",
+    "sku": "CAR-308",
     "nombre": "Cubo Cargador de 12W con Puerto USB y Tipo C",
     "imagen": "car-308.jpg",
     "precio_publico": 28.0,
@@ -8034,7 +8034,7 @@
     "inventario": 407
   },
   {
-    "sku": "",
+    "sku": "CAR-PD53",
     "nombre": "Cubo Cargador de 20W con Puerto Tipo C",
     "imagen": "car-pd53.jpg",
     "precio_publico": 37.0,
@@ -8047,7 +8047,7 @@
     "inventario": 340
   },
   {
-    "sku": "",
+    "sku": "CAR-PD70",
     "nombre": "Cubo Cargador USB-C PD 20w Max",
     "imagen": "car-pd70.jpg",
     "precio_publico": 39.0,
@@ -8060,7 +8060,7 @@
     "inventario": 172
   },
   {
-    "sku": "",
+    "sku": "CAR-U103",
     "nombre": "Cubo Cargador con 1 Puerto USB y Cable Tipo C",
     "imagen": "car-u103.jpg",
     "precio_publico": 31.0,
@@ -8073,7 +8073,7 @@
     "inventario": 63
   },
   {
-    "sku": "",
+    "sku": "CAR-U105",
     "nombre": "Cubo Cargador con Puerto USB de 10W",
     "imagen": "car-u105.jpg",
     "precio_publico": 17.0,
@@ -8086,7 +8086,7 @@
     "inventario": 977
   },
   {
-    "sku": "",
+    "sku": "TT-3001",
     "nombre": "Cubo De Carga USB Sencillo",
     "imagen": "tt-3001.jpg",
     "precio_publico": 8.5,
@@ -8099,7 +8099,7 @@
     "inventario": 462
   },
   {
-    "sku": "",
+    "sku": "CAR-U202",
     "nombre": "Cargador Cubo USB 12w",
     "imagen": "car-u202.jpg",
     "precio_publico": 20.0,
@@ -8112,7 +8112,7 @@
     "inventario": 275
   },
   {
-    "sku": "",
+    "sku": "CAR-U201",
     "nombre": "Cargador Cubo USB 12w",
     "imagen": "car-u201.jpg",
     "precio_publico": 20.0,
@@ -8125,7 +8125,7 @@
     "inventario": 413
   },
   {
-    "sku": "",
+    "sku": "VGA-051",
     "nombre": "Cubo de Carga de 12W Entrada Tipo C y USB",
     "imagen": "vga-051.jpg",
     "precio_publico": 23.0,
@@ -8138,7 +8138,7 @@
     "inventario": 196
   },
   {
-    "sku": "",
+    "sku": "CAR-305",
     "nombre": "Cargador Cubo de Doble Entrada Diseño",
     "imagen": "car-305.jpg",
     "precio_publico": 25.0,
@@ -8151,7 +8151,7 @@
     "inventario": 4
   },
   {
-    "sku": "",
+    "sku": "CAR-303",
     "nombre": "Cargador Cubo de Doble Puerto 12w",
     "imagen": "car-303.jpg",
     "precio_publico": 25.0,
@@ -8164,7 +8164,7 @@
     "inventario": 260
   },
   {
-    "sku": "",
+    "sku": "CAR-302",
     "nombre": "Cargador Cubo de 12w Doble Entrada",
     "imagen": "car-302.jpg",
     "precio_publico": 25.0,
@@ -8177,7 +8177,7 @@
     "inventario": 422
   },
   {
-    "sku": "",
+    "sku": "CAR-U221",
     "nombre": "Cargador USB 12w Max 2.4A",
     "imagen": "car-u221.jpg",
     "precio_publico": 28.0,
@@ -8190,7 +8190,7 @@
     "inventario": 173
   },
   {
-    "sku": "",
+    "sku": "CAR-PD50",
     "nombre": "Cargador Cubo tc carga Rápida 20w",
     "imagen": "car-pd50.jpg",
     "precio_publico": 28.0,
@@ -8203,7 +8203,7 @@
     "inventario": 213
   },
   {
-    "sku": "",
+    "sku": "CAR-U220",
     "nombre": "Cubo de Carga 12w 2.4A Max",
     "imagen": "car-u220.jpg",
     "precio_publico": 28.0,
@@ -8216,7 +8216,7 @@
     "inventario": 137
   },
   {
-    "sku": "",
+    "sku": "CAR-322",
     "nombre": "Cargador de Doble Entrada 12w Max",
     "imagen": "car-322.jpg",
     "precio_publico": 32.0,
@@ -8229,7 +8229,7 @@
     "inventario": 160
   },
   {
-    "sku": "",
+    "sku": "CAR-320",
     "nombre": "Cargador Doble entrada 2.4A 12w",
     "imagen": "car-320.jpg",
     "precio_publico": 32.0,
@@ -8242,7 +8242,7 @@
     "inventario": 2
   },
   {
-    "sku": "",
+    "sku": "VGA-028",
     "nombre": "Cubo de Carga Doble entrada USB y Tipo C",
     "imagen": "vga-028.jpg",
     "precio_publico": 50.0,
@@ -8255,7 +8255,7 @@
     "inventario": 2
   },
   {
-    "sku": "",
+    "sku": "VGA-029",
     "nombre": "Cubo de Carga Entrada Doble TC 40W PD20Wx2 Amarillo",
     "imagen": "vga-029.jpg",
     "precio_publico": 82.0,
@@ -8268,7 +8268,7 @@
     "inventario": 31
   },
   {
-    "sku": "",
+    "sku": "TC-1001",
     "nombre": "Plug In Para Auto 2 Usb",
     "imagen": "tc-1001.jpg",
     "precio_publico": 8.0,
@@ -8281,7 +8281,7 @@
     "inventario": 209
   },
   {
-    "sku": "",
+    "sku": "TC-1002",
     "nombre": "Cargador Plug In Doble Entrada Usb",
     "imagen": "tc-1002.jpg",
     "precio_publico": 8.0,
@@ -8294,7 +8294,7 @@
     "inventario": 78
   },
   {
-    "sku": "",
+    "sku": "VGA-007",
     "nombre": "Combo Cargador V8 Nebro 2.5A",
     "imagen": "vga-007.jpg",
     "precio_publico": 30.0,
@@ -8307,7 +8307,7 @@
     "inventario": 88
   },
   {
-    "sku": "",
+    "sku": "XH-V8-1653",
     "nombre": "Cable V8",
     "imagen": "xh-v8-1653.jpg",
     "precio_publico": 6.5,
@@ -8320,7 +8320,7 @@
     "inventario": 468
   },
   {
-    "sku": "",
+    "sku": "XH-I8-1693",
     "nombre": "Cable Iphone",
     "imagen": "xh-i8-1693.jpg",
     "precio_publico": 11.0,
@@ -8333,7 +8333,7 @@
     "inventario": 381
   },
   {
-    "sku": "",
+    "sku": "TY-9001",
     "nombre": "Cable Auxiliar 1 Metro 3.5mm a 3.5mm",
     "imagen": "ty-9001.jpg",
     "precio_publico": 6.5,
@@ -8346,7 +8346,7 @@
     "inventario": 1027
   },
   {
-    "sku": "",
+    "sku": "TY-9011",
     "nombre": "Cable Auxiliar 1 Metro 3.5mm a 3.5mm",
     "imagen": "ty-9011.jpg",
     "precio_publico": 6.5,
@@ -8359,7 +8359,7 @@
     "inventario": 148
   },
   {
-    "sku": "",
+    "sku": "TY-9041",
     "nombre": "Cable Auxiliar 1 Metro 3.5mm a 3.5mm",
     "imagen": "ty-9041.jpg",
     "precio_publico": 7.0,
@@ -8372,7 +8372,7 @@
     "inventario": 369
   },
   {
-    "sku": "",
+    "sku": "TY-9002",
     "nombre": "Cable Auxiliar 2 Metros 3.5mm a 3.5mm",
     "imagen": "ty-9002.jpg",
     "precio_publico": 9.0,
@@ -8385,7 +8385,7 @@
     "inventario": 1341
   },
   {
-    "sku": "",
+    "sku": "TY-9004",
     "nombre": "Cable Auxiliar 3.5mm a 3.5mm",
     "imagen": "ty-9004.jpg",
     "precio_publico": 7.0,
@@ -8398,7 +8398,7 @@
     "inventario": 86
   },
   {
-    "sku": "",
+    "sku": "TY-9003",
     "nombre": "Cable Auxiliar 3 Metros 3.5mm a 3.5mm",
     "imagen": "ty-9003.jpg",
     "precio_publico": 13.0,
@@ -8411,7 +8411,7 @@
     "inventario": 7
   },
   {
-    "sku": "",
+    "sku": "HDM-9406",
     "nombre": "Cable HDMI a HDMI de 20 Metros",
     "imagen": "hdm-9406.jpg",
     "precio_publico": 163.0,
@@ -8424,7 +8424,7 @@
     "inventario": 29
   },
   {
-    "sku": "",
+    "sku": "HDM-9404",
     "nombre": "Cable HDMI a HDMI de 10 Metros",
     "imagen": "hdm-9404.jpg",
     "precio_publico": 82.0,
@@ -8437,7 +8437,7 @@
     "inventario": 26
   },
   {
-    "sku": "",
+    "sku": "HDM-9403",
     "nombre": "Cable HDMI 5 Metros",
     "imagen": "hdm-9403.jpg",
     "precio_publico": 45.0,
@@ -8450,7 +8450,7 @@
     "inventario": 76
   },
   {
-    "sku": "",
+    "sku": "HDM-9402",
     "nombre": "Cable HDMI a HDMI de 3 Metros",
     "imagen": "hdm-9402.jpg",
     "precio_publico": 25.0,
@@ -8463,7 +8463,7 @@
     "inventario": 28
   },
   {
-    "sku": "",
+    "sku": "HDM-9401",
     "nombre": "Cable HDMI a HDMI de 1.5 Metros",
     "imagen": "hdm-9401.jpg",
     "precio_publico": 19.0,
@@ -8476,7 +8476,7 @@
     "inventario": 122
   },
   {
-    "sku": "",
+    "sku": "HDM-9405",
     "nombre": "Cable HDMI 15 Metros",
     "imagen": "hdm-9405.jpg",
     "precio_publico": 98.0,
@@ -8489,7 +8489,7 @@
     "inventario": 36
   },
   {
-    "sku": "",
+    "sku": "TS-0902",
     "nombre": "Cable de Carga Gen USB a Lightning",
     "imagen": "ts-0902.jpg",
     "precio_publico": 7.0,
@@ -8502,7 +8502,7 @@
     "inventario": 879
   },
   {
-    "sku": "",
+    "sku": "TS-0911",
     "nombre": "Cable de Carga Genérico Tipo C a Lightning",
     "imagen": "ts-0911.jpg",
     "precio_publico": 8.0,
@@ -8515,7 +8515,7 @@
     "inventario": 696
   },
   {
-    "sku": "",
+    "sku": "WD-010L",
     "nombre": "Cable de Carga USB a Lightning 1 Metro",
     "imagen": "wd-010l.jpg",
     "precio_publico": 18.0,
@@ -8528,7 +8528,7 @@
     "inventario": 131
   },
   {
-    "sku": "",
+    "sku": "WD-05TL",
     "nombre": "Cable de carga Tipo C a Lightning",
     "imagen": "wd-05tl.jpg",
     "precio_publico": 18.0,
@@ -8541,7 +8541,7 @@
     "inventario": 68
   },
   {
-    "sku": "",
+    "sku": "WD-038",
     "nombre": "Cable Adaptador C a USB/Lightning",
     "imagen": "wd-038.jpg",
     "precio_publico": 21.0,
@@ -8554,7 +8554,7 @@
     "inventario": 7
   },
   {
-    "sku": "",
+    "sku": "WD-25TL",
     "nombre": "Cable de Carga Tipo C a Lightning",
     "imagen": "wd-25tl.jpg",
     "precio_publico": 30.0,
@@ -8567,7 +8567,7 @@
     "inventario": 36
   },
   {
-    "sku": "",
+    "sku": "TS-0932",
     "nombre": "Cable de Carga Gen Tipo C a C",
     "imagen": "ts-0932.jpg",
     "precio_publico": 9.0,
@@ -8580,7 +8580,7 @@
     "inventario": 120
   },
   {
-    "sku": "",
+    "sku": "CAB005B",
     "nombre": "Cable Tipo V8 Blanco",
     "imagen": "cab005b.jpg",
     "precio_publico": 8.0,
@@ -8593,7 +8593,7 @@
     "inventario": 235
   },
   {
-    "sku": "",
+    "sku": "CAB005N",
     "nombre": "Cable Tipo V8 Negro",
     "imagen": "cab005n.jpg",
     "precio_publico": 8.0,
@@ -8606,7 +8606,7 @@
     "inventario": 128
   },
   {
-    "sku": "",
+    "sku": "CABSAM",
     "nombre": "Cable C a C Samsung",
     "imagen": "cabsam.jpg",
     "precio_publico": 17.0,
@@ -8619,7 +8619,7 @@
     "inventario": 55
   },
   {
-    "sku": "",
+    "sku": "WD-25T",
     "nombre": "Cable de Carga Tipo C",
     "imagen": "wd-25t.jpg",
     "precio_publico": 17.0,
@@ -8632,7 +8632,7 @@
     "inventario": 25
   },
   {
-    "sku": "",
+    "sku": "WD-010TT",
     "nombre": "Cable de Carga Tipo C 1 metro",
     "imagen": "wd-010tt.jpg",
     "precio_publico": 18.0,
@@ -8645,7 +8645,7 @@
     "inventario": 10
   },
   {
-    "sku": "",
+    "sku": "TS-540",
     "nombre": "Cable V8 vinipiel",
     "imagen": "ts-540.jpg",
     "precio_publico": 5.5,
@@ -8658,7 +8658,7 @@
     "inventario": 554
   },
   {
-    "sku": "",
+    "sku": "WD-05M",
     "nombre": "Cable de Carga V8 1M",
     "imagen": "wd-05m.jpg",
     "precio_publico": 10.0,
@@ -8671,7 +8671,7 @@
     "inventario": 460
   },
   {
-    "sku": "",
+    "sku": "SB428T",
     "nombre": "Bocina Bluetooth 4x2\" 5W",
     "imagen": "sb428t.jpg",
     "precio_publico": 148.0,
@@ -8684,7 +8684,7 @@
     "inventario": 11
   },
   {
-    "sku": "",
+    "sku": "SA443T",
     "nombre": "Bocina Bluetooth de 4 Pulgadas",
     "imagen": "sa443t.jpg",
     "precio_publico": 83.0,
@@ -8697,7 +8697,7 @@
     "inventario": 3
   },
   {
-    "sku": "",
+    "sku": "SA438T",
     "nombre": "Bocina Bluetooth 4 Pulgadas 5w",
     "imagen": "sa438t.jpg",
     "precio_publico": 83.0,
@@ -8710,7 +8710,7 @@
     "inventario": 55
   },
   {
-    "sku": "",
+    "sku": "KTS-2006",
     "nombre": "Bocina Bluetooth RGB Radio FM 4\" OEM",
     "imagen": "kts-2006.jpg",
     "precio_publico": 93.0,
@@ -8723,7 +8723,7 @@
     "inventario": 41
   },
   {
-    "sku": "",
+    "sku": "SA439T",
     "nombre": "Bocina Bluetooth 4 Pulgadas Recargable",
     "imagen": "sa439t.jpg",
     "precio_publico": 93.0,
@@ -8736,7 +8736,7 @@
     "inventario": 80
   },
   {
-    "sku": "",
+    "sku": "VA499T",
     "nombre": "Bocina Bluetooth 4 Pulgadas 5W",
     "imagen": "va499t.jpg",
     "precio_publico": 95.0,
@@ -8749,7 +8749,7 @@
     "inventario": 8
   },
   {
-    "sku": "",
+    "sku": "SA441T",
     "nombre": "Bocina Bluetooth de 4 Pulgadas",
     "imagen": "sa441t.jpg",
     "precio_publico": 98.0,
@@ -8762,7 +8762,7 @@
     "inventario": 3
   },
   {
-    "sku": "",
+    "sku": "KTS-1706",
     "nombre": "Bocina Bluetooth 4 Pulgadas + Lámpara 5W",
     "imagen": "kts-1706.jpg",
     "precio_publico": 138.0,
@@ -8775,7 +8775,7 @@
     "inventario": 4
   },
   {
-    "sku": "",
+    "sku": "KTS-2057",
     "nombre": "Bocina Bluetooth de 4 Pulgadas 10W",
     "imagen": "kts-2057.jpg",
     "precio_publico": 215.0,
@@ -8788,7 +8788,7 @@
     "inventario": 4
   },
   {
-    "sku": "",
+    "sku": "SB416T",
     "nombre": "Bocina Bluetooth 4 x2 Pulgadas 10w",
     "imagen": "sb416t.jpg",
     "precio_publico": 267.0,
@@ -8801,7 +8801,7 @@
     "inventario": 167
   },
   {
-    "sku": "",
+    "sku": "KTS-1966",
     "nombre": "Bocina Bluetooth 4\" 12W TWS RGB",
     "imagen": "kts-1966.jpg",
     "precio_publico": 280.0,
@@ -8814,7 +8814,7 @@
     "inventario": 13
   },
   {
-    "sku": "",
+    "sku": "GTS-1559",
     "nombre": "Bocina De Doble 3",
     "imagen": "gts-1559.jpg",
     "precio_publico": 125.0,
@@ -8827,7 +8827,7 @@
     "inventario": 8
   },
   {
-    "sku": "",
+    "sku": "GTS-2085",
     "nombre": "Bocina De 3\"*2",
     "imagen": "gts-2085.jpg",
     "precio_publico": 143.0,
@@ -8840,7 +8840,7 @@
     "inventario": 8
   },
   {
-    "sku": "",
+    "sku": "VB357T",
     "nombre": "Bocina Bluetooth 3 x2 Pulgadas 5w",
     "imagen": "vb357t.jpg",
     "precio_publico": 158.0,
@@ -8853,7 +8853,7 @@
     "inventario": 981
   },
   {
-    "sku": "",
+    "sku": "GTS-1926",
     "nombre": "Bocina De 3\"*2",
     "imagen": "gts-1926.jpg",
     "precio_publico": 175.0,
@@ -8866,7 +8866,7 @@
     "inventario": 5
   },
   {
-    "sku": "",
+    "sku": "KTS-2206",
     "nombre": "Bocina Bluetooth 3x2\" 5W + Micrófono Karaoke",
     "imagen": "kts-2206.jpg",
     "precio_publico": 225.0,
@@ -8879,7 +8879,7 @@
     "inventario": 6
   },
   {
-    "sku": "",
+    "sku": "KTS-1973",
     "nombre": "Bocina Bluetooth 3x2\" 6W RGB + Micrófono",
     "imagen": "kts-1973.jpg",
     "precio_publico": 325.0,
@@ -8892,7 +8892,7 @@
     "inventario": 9
   },
   {
-    "sku": "",
+    "sku": "VA370R",
     "nombre": "Bocina Bluetooth Portátil Color Rojo 5W",
     "imagen": "va370r.jpg",
     "precio_publico": 50.0,
@@ -8905,7 +8905,7 @@
     "inventario": 52
   },
   {
-    "sku": "",
+    "sku": "SA325T",
     "nombre": "Bocina Portátil de 3 Pulgadas 5W",
     "imagen": "sa325t.jpg",
     "precio_publico": 56.0,
@@ -8918,7 +8918,7 @@
     "inventario": 761
   },
   {
-    "sku": "",
+    "sku": "GTS-1961",
     "nombre": "Bocina De 3\"",
     "imagen": "gts-1961.jpg",
     "precio_publico": 58.0,
@@ -8931,7 +8931,7 @@
     "inventario": 38
   },
   {
-    "sku": "",
+    "sku": "VA364T",
     "nombre": "Bocina Bluetooth Portátil de 3 Pulgadas",
     "imagen": "va364t.jpg",
     "precio_publico": 65.0,
@@ -8944,7 +8944,7 @@
     "inventario": 65
   },
   {
-    "sku": "",
+    "sku": "GTS-1271",
     "nombre": "Bocina De 3\"",
     "imagen": "gts-1271.jpg",
     "precio_publico": 63.0,
@@ -8957,7 +8957,7 @@
     "inventario": 110
   },
   {
-    "sku": "",
+    "sku": "GTS-1971",
     "nombre": "Bocina De 3\"",
     "imagen": "gts-1971.jpg",
     "precio_publico": 62.0,
@@ -8970,7 +8970,7 @@
     "inventario": 56
   },
   {
-    "sku": "",
+    "sku": "GTS-1803",
     "nombre": "Bocina De 3\"",
     "imagen": "gts-1803.jpg",
     "precio_publico": 65.0,
@@ -8983,7 +8983,7 @@
     "inventario": 61
   },
   {
-    "sku": "",
+    "sku": "SA317T",
     "nombre": "Bocina Bluetooth de 3\"",
     "imagen": "sa317t.jpg",
     "precio_publico": 68.0,
@@ -8996,7 +8996,7 @@
     "inventario": 16
   },
   {
-    "sku": "",
+    "sku": "SA320T",
     "nombre": "Bocina Bluetooth de 3 Pulgadas",
     "imagen": "sa320t.jpg",
     "precio_publico": 83.0,
@@ -9009,7 +9009,7 @@
     "inventario": 4
   },
   {
-    "sku": "",
+    "sku": "KTS-2295",
     "nombre": "Bocina Bluetooth 3 Pulgadas 5W + Correa",
     "imagen": "kts-2295.jpg",
     "precio_publico": 145.0,
@@ -9022,7 +9022,7 @@
     "inventario": 42
   },
   {
-    "sku": "",
+    "sku": "KTS-1251",
     "nombre": "Bocina Bluetooth 3 Pulgadas 5w",
     "imagen": "kts-1251.jpg",
     "precio_publico": 125.0,
@@ -9035,7 +9035,7 @@
     "inventario": 5
   },
   {
-    "sku": "",
+    "sku": "GTS-2040",
     "nombre": "Bocina De 3\"",
     "imagen": "gts-2040.jpg",
     "precio_publico": 132.0,
@@ -9048,7 +9048,7 @@
     "inventario": 24
   },
   {
-    "sku": "",
+    "sku": "KTS-1901",
     "nombre": "Bocina Bluetooth de 3\" con Luces Led",
     "imagen": "kts-1901.jpg",
     "precio_publico": 135.0,
@@ -9061,7 +9061,7 @@
     "inventario": 4
   },
   {
-    "sku": "",
+    "sku": "KTS-1889",
     "nombre": "Bocina Bluetooth 3\" 12W con Micrófono Portátil Karaoke luz LED",
     "imagen": "kts-1889.jpg",
     "precio_publico": 215.0,
@@ -9074,7 +9074,7 @@
     "inventario": 13
   },
   {
-    "sku": "",
+    "sku": "SA322T",
     "nombre": "Bocina Bluetooth 3\" 10W + Micrófono RGB",
     "imagen": "sa322t.jpg",
     "precio_publico": 258.0,
@@ -9087,7 +9087,7 @@
     "inventario": 26
   },
   {
-    "sku": "",
+    "sku": "SA316T",
     "nombre": "Bocina Bluetooth de 3 Pulgadas + Micrófono",
     "imagen": "sa316t.jpg",
     "precio_publico": 287.0,
@@ -9100,7 +9100,7 @@
     "inventario": 45
   },
   {
-    "sku": "",
+    "sku": "RD-257",
     "nombre": "Bocina Bluetooth Vintage Radio FM 5w 3\"",
     "imagen": "rd-257.jpg",
     "precio_publico": 413.0,
@@ -9113,7 +9113,7 @@
     "inventario": 5
   },
   {
-    "sku": "",
+    "sku": "MCK-002",
     "nombre": "Bocina Bluetooth con Micrófono",
     "imagen": "mck-002.jpg",
     "precio_publico": 123.0,
@@ -9126,7 +9126,7 @@
     "inventario": 14
   },
   {
-    "sku": "",
+    "sku": "RD-262",
     "nombre": "Radio Bocina Bluetooth 2 Pulgadas",
     "imagen": "rd-262.jpg",
     "precio_publico": 255.0,
@@ -9139,7 +9139,7 @@
     "inventario": 9
   },
   {
-    "sku": "",
+    "sku": "XM-7104",
     "nombre": "Mini Altavoz Inalámbrico Portátil",
     "imagen": "xm-7104.jpg",
     "precio_publico": 38.0,
@@ -9152,7 +9152,7 @@
     "inventario": 4
   },
   {
-    "sku": "",
+    "sku": "FM-5129",
     "nombre": "Bocina Bluetooth Flip 6",
     "imagen": "fm-5129.jpg",
     "precio_publico": 220.0,
@@ -9165,7 +9165,7 @@
     "inventario": 12
   },
   {
-    "sku": "",
+    "sku": "CH-J2138",
     "nombre": "Reloj Despertador con Bocinas Bluetooth TWS",
     "imagen": "ch-j2138.jpg",
     "precio_publico": 397.0,
@@ -9178,7 +9178,7 @@
     "inventario": 18
   },
   {
-    "sku": "",
+    "sku": "XM-7130",
     "nombre": "Bocina de Baño",
     "imagen": "xm-7130.jpg",
     "precio_publico": 50.0,
@@ -9191,7 +9191,7 @@
     "inventario": 123
   },
   {
-    "sku": "",
+    "sku": "CH-J2062",
     "nombre": "Bocina Bluetooth con Diseño de Automóvil con Función TWS",
     "imagen": "ch-j2062.jpg",
     "precio_publico": 146.0,
@@ -9204,7 +9204,7 @@
     "inventario": 26
   },
   {
-    "sku": "",
+    "sku": "GTS-1560",
     "nombre": "Bocina Bluetooth de 3\"x 2 con Luz LED",
     "imagen": "gts-1560.jpg",
     "precio_publico": 108.0,
@@ -9217,7 +9217,7 @@
     "inventario": 26
   },
   {
-    "sku": "",
+    "sku": "GTS-2083",
     "nombre": "Bocina Bluetooth 3\" x2 con Luz LED",
     "imagen": "gts-2083.jpg",
     "precio_publico": 119.0,
@@ -9230,7 +9230,7 @@
     "inventario": 5
   },
   {
-    "sku": "",
+    "sku": "GTS-1637",
     "nombre": "Bocina Bluetooth Portátil 4\" con Asa y Luz LED",
     "imagen": "gts-1637.jpg",
     "precio_publico": 144.0,
@@ -9243,7 +9243,7 @@
     "inventario": 14
   },
   {
-    "sku": "",
+    "sku": "GTS-1830",
     "nombre": "Bocina Bluetooth 8″ luz LED",
     "imagen": "gts-1830.jpg",
     "precio_publico": 282.0,
@@ -9256,7 +9256,7 @@
     "inventario": 5
   },
   {
-    "sku": "",
+    "sku": "CH-J2054",
     "nombre": "Bocina Bluetooth con Diseño de Automóvil y Panel Solar",
     "imagen": "ch-j2054.jpg",
     "precio_publico": 191.0,
@@ -9269,7 +9269,7 @@
     "inventario": 12
   },
   {
-    "sku": "",
+    "sku": "CH-J2055",
     "nombre": "Bocina Bluetooth con Diseño de Auto y Luz LED",
     "imagen": "ch-j2055.jpg",
     "precio_publico": 217.0,
@@ -9282,7 +9282,7 @@
     "inventario": 21
   },
   {
-    "sku": "",
+    "sku": "CH-J2062",
     "nombre": "Bocina Bluetooth con Diseño de Automóvil con Función TWS",
     "imagen": "ch-j2062.jpg",
     "precio_publico": 146.0,
@@ -9295,7 +9295,7 @@
     "inventario": 26
   },
   {
-    "sku": "",
+    "sku": "CH-J2074",
     "nombre": "Micrófono Karaoke con Bluetooth y Radio FM",
     "imagen": "ch-j2074.jpg",
     "precio_publico": 106.0,
@@ -9308,7 +9308,7 @@
     "inventario": 16
   },
   {
-    "sku": "",
+    "sku": "CH-J2065",
     "nombre": "Mini Bocina Bluetooth con Función TWS y Luz RGB",
     "imagen": "ch-j2065.jpg",
     "precio_publico": 119.0,
@@ -9321,7 +9321,7 @@
     "inventario": 8
   },
   {
-    "sku": "",
+    "sku": "CH-J2082",
     "nombre": "Bocina Bluetooth con Función TWS",
     "imagen": "ch-j2082.jpg",
     "precio_publico": 119.0,
@@ -9334,7 +9334,7 @@
     "inventario": 20
   },
   {
-    "sku": "",
+    "sku": "CH-J2106",
     "nombre": "Bocina Bluetooth TWS con Diseño de Camioneta",
     "imagen": "ch-j2106.jpg",
     "precio_publico": 190.0,
@@ -9347,7 +9347,7 @@
     "inventario": 18
   },
   {
-    "sku": "",
+    "sku": "CH-J2078",
     "nombre": "Bocina Bluetooth TWS, Resistente al Agua y Luz RGB",
     "imagen": "ch-j2078.jpg",
     "precio_publico": 131.0,
@@ -9360,7 +9360,7 @@
     "inventario": 22
   },
   {
-    "sku": "",
+    "sku": "CH-J2111",
     "nombre": "Bocina Bluetooth 2 en 1 con Imán",
     "imagen": "ch-j2111.jpg",
     "precio_publico": 497.0,
@@ -9373,7 +9373,7 @@
     "inventario": 12
   },
   {
-    "sku": "",
+    "sku": "CH-J2119",
     "nombre": "Bocina Bluetooth TWS con Agarradera para Bicicleta",
     "imagen": "ch-j2119.jpg",
     "precio_publico": 120.0,
@@ -9386,7 +9386,7 @@
     "inventario": 23
   },
   {
-    "sku": "",
+    "sku": "CH-J2124",
     "nombre": "Bocina Bluetooth TWS, Resistente a Salpicaduras y Luz LED",
     "imagen": "ch-j2124.jpg",
     "precio_publico": 217.0,
@@ -9399,7 +9399,7 @@
     "inventario": 9
   },
   {
-    "sku": "",
+    "sku": "CH-J2125",
     "nombre": "Bocina Bluetooth TWS con Luz LED",
     "imagen": "ch-j2125.jpg",
     "precio_publico": 210.0,
@@ -9412,7 +9412,7 @@
     "inventario": 10
   },
   {
-    "sku": "",
+    "sku": "CH-J2129",
     "nombre": "Bocina Bluetooth TWS, Resistente a Salpicaduras y Luz LED",
     "imagen": "ch-j2129.jpg",
     "precio_publico": 300.0,
@@ -9425,7 +9425,7 @@
     "inventario": 1
   },
   {
-    "sku": "",
+    "sku": "CH-J2130",
     "nombre": "Bocina",
     "imagen": "ch-j2130.jpg",
     "precio_publico": 366.0,
@@ -9438,7 +9438,7 @@
     "inventario": 18
   },
   {
-    "sku": "",
+    "sku": "CH-J2131",
     "nombre": "Bocina Bluetooth TWS, Resistente a Salpicaduras y Luz RGB",
     "imagen": "ch-j2131.jpg",
     "precio_publico": 319.0,
@@ -9451,7 +9451,7 @@
     "inventario": 26
   },
   {
-    "sku": "",
+    "sku": "CH-J2132",
     "nombre": "Bocina Bluetooth Portátil con TWS y Luz RGB",
     "imagen": "ch-j2132.jpg",
     "precio_publico": 142.0,
@@ -9464,7 +9464,7 @@
     "inventario": 24
   },
   {
-    "sku": "",
+    "sku": "CH-J2133",
     "nombre": "Bocina Bluetooth Portátil con Radio FM",
     "imagen": "ch-j2133.jpg",
     "precio_publico": 106.0,
@@ -9477,7 +9477,7 @@
     "inventario": 44
   },
   {
-    "sku": "",
+    "sku": "CH-J2134",
     "nombre": "Bocina Bluetooth TWS con Power Bank",
     "imagen": "ch-j2134.jpg",
     "precio_publico": 264.0,
@@ -9490,7 +9490,7 @@
     "inventario": 51
   },
   {
-    "sku": "",
+    "sku": "CH-J2135",
     "nombre": "Bocina Bluetooth TWS con Power Bank",
     "imagen": "ch-j2135.jpg",
     "precio_publico": 266.0,
@@ -9503,7 +9503,7 @@
     "inventario": 36
   },
   {
-    "sku": "",
+    "sku": "CH-J2136",
     "nombre": "Despertador Inteligente con Bocina Bluetooth y Luz RGB",
     "imagen": "ch-j2136.jpg",
     "precio_publico": 470.0,
@@ -9516,7 +9516,7 @@
     "inventario": 27
   },
   {
-    "sku": "",
+    "sku": "CH-J2137",
     "nombre": "Reloj Despertador con Bocina Bluetooth TWS",
     "imagen": "ch-j2137.jpg",
     "precio_publico": 491.0,
@@ -9529,7 +9529,7 @@
     "inventario": 12
   },
   {
-    "sku": "",
+    "sku": "CH-J2139",
     "nombre": "Reloj Despertador con Bocina Bluetooth TWS",
     "imagen": "ch-2139.jpg",
     "precio_publico": 300.0,
@@ -9542,7 +9542,7 @@
     "inventario": 8
   },
   {
-    "sku": "",
+    "sku": "CH-M240",
     "nombre": "Bocina Bluetooth con Diseño de Automóvil Tipo Porsche",
     "imagen": "ch-m240.jpg",
     "precio_publico": 264.0,
@@ -9555,7 +9555,7 @@
     "inventario": 32
   },
   {
-    "sku": "",
+    "sku": "CH-M241",
     "nombre": "Bocina Bluetooth con Diseño de Automóvil Tipo Toyota",
     "imagen": "ch-m241.jpg",
     "precio_publico": 259.0,
@@ -9568,7 +9568,7 @@
     "inventario": 28
   },
   {
-    "sku": "",
+    "sku": "G106",
     "nombre": "Bocina Bluetooth con Función TWS",
     "imagen": "g106.jpg",
     "precio_publico": 180.0,
@@ -9581,7 +9581,7 @@
     "inventario": 9
   },
   {
-    "sku": "",
+    "sku": "GTS-2140",
     "nombre": "Bocina TWS con Diseño de Puerquito",
     "imagen": "gts-2140.jpg",
     "precio_publico": 100.0,
@@ -9594,7 +9594,7 @@
     "inventario": 32
   },
   {
-    "sku": "",
+    "sku": "CH-J2147",
     "nombre": "Bocina Bluetooth TWS, Resistente a Salpicaduras y Luz LED",
     "imagen": "ch-j2147.jpg",
     "precio_publico": 217.0,
@@ -9607,7 +9607,7 @@
     "inventario": 7
   },
   {
-    "sku": "",
+    "sku": "WKS-204",
     "nombre": "Megáfono Bluetooth con Antena",
     "imagen": "wks-204.jpg",
     "precio_publico": 128.0,
@@ -9620,7 +9620,7 @@
     "inventario": 98
   },
   {
-    "sku": "",
+    "sku": "WKS-561",
     "nombre": "Bocina Bluetooth Estilo Megáfono",
     "imagen": "wks-561.jpg",
     "precio_publico": 128.0,
@@ -9633,7 +9633,7 @@
     "inventario": 80
   },
   {
-    "sku": "",
+    "sku": "WKS-562",
     "nombre": "Bocina Megáfono Bluetooth de Doble Batería con Diadema",
     "imagen": "wks-562.jpg",
     "precio_publico": 144.0,
@@ -9646,7 +9646,7 @@
     "inventario": 24
   },
   {
-    "sku": "",
+    "sku": "KTS-1446",
     "nombre": "Bocina Bluetooth Con Panel Solar Radio Fm",
     "imagen": "kts-1446.jpg",
     "precio_publico": 297.0,
@@ -9659,7 +9659,7 @@
     "inventario": 39
   },
   {
-    "sku": "",
+    "sku": "GTS-2150",
     "nombre": "Bocinas De Diseño",
     "imagen": "gts-2150.jpg",
     "precio_publico": 58.0,
@@ -9672,7 +9672,7 @@
     "inventario": 17
   },
   {
-    "sku": "",
+    "sku": "MB-152",
     "nombre": "Mini Bocina Bluetooth RGB Portátil",
     "imagen": "mb-152.jpg",
     "precio_publico": 63.0,
@@ -9685,7 +9685,7 @@
     "inventario": 81
   },
   {
-    "sku": "",
+    "sku": "CH-J2103",
     "nombre": "Bocina De Diseno",
     "imagen": "ch-j2103.jpg",
     "precio_publico": 63.0,
@@ -9698,7 +9698,7 @@
     "inventario": 20
   },
   {
-    "sku": "",
+    "sku": "VA377T",
     "nombre": "Mini Bocina Bluetooth 3 Pulgadas RGB",
     "imagen": "va377t.jpg",
     "precio_publico": 64.0,
@@ -9711,7 +9711,7 @@
     "inventario": 4
   },
   {
-    "sku": "",
+    "sku": "SA313T",
     "nombre": "Bocina Bluetooth de Diseño",
     "imagen": "sa313t.jpg",
     "precio_publico": 65.0,
@@ -9724,7 +9724,7 @@
     "inventario": 58
   },
   {
-    "sku": "",
+    "sku": "CH-J2102",
     "nombre": "Bocdina De Diseno",
     "imagen": "ch-j2102.jpg",
     "precio_publico": 67.0,
@@ -9737,7 +9737,7 @@
     "inventario": 100
   },
   {
-    "sku": "",
+    "sku": "CH-J2101",
     "nombre": "Bocina De Diseno",
     "imagen": "ch-j2101.jpg",
     "precio_publico": 67.0,
@@ -9750,7 +9750,7 @@
     "inventario": 66
   },
   {
-    "sku": "",
+    "sku": "CH-J2108",
     "nombre": "Bocina De Diseno",
     "imagen": "ch-j2108.jpg",
     "precio_publico": 72.0,
@@ -9763,7 +9763,7 @@
     "inventario": 32
   },
   {
-    "sku": "",
+    "sku": "GTS-1468",
     "nombre": "Bocina De Diseño",
     "imagen": "gts-1468.jpg",
     "precio_publico": 72.0,
@@ -9776,7 +9776,7 @@
     "inventario": 35
   },
   {
-    "sku": "",
+    "sku": "CH-J2104",
     "nombre": "Bocina De Diseno",
     "imagen": "ch-j2104.jpg",
     "precio_publico": 75.0,
@@ -9789,7 +9789,7 @@
     "inventario": 1
   },
   {
-    "sku": "",
+    "sku": "GTS-1732",
     "nombre": "Bocina De Diseño",
     "imagen": "gts-1732.jpg",
     "precio_publico": 75.0,
@@ -9802,7 +9802,7 @@
     "inventario": 10
   },
   {
-    "sku": "",
+    "sku": "G81",
     "nombre": "Bocina De Diseno",
     "imagen": "g81.jpg",
     "precio_publico": 80.0,
@@ -9815,7 +9815,7 @@
     "inventario": 9
   },
   {
-    "sku": "",
+    "sku": "CH-K3014",
     "nombre": "Bocina De Diseno",
     "imagen": "ch-k3014.jpg",
     "precio_publico": 80.0,
@@ -9828,7 +9828,7 @@
     "inventario": 46
   },
   {
-    "sku": "",
+    "sku": "G107",
     "nombre": "Bocina De Diseno",
     "imagen": "g107.jpg",
     "precio_publico": 92.0,
@@ -9841,7 +9841,7 @@
     "inventario": 38
   },
   {
-    "sku": "",
+    "sku": "GTS-1498",
     "nombre": "Bocina De Diseno",
     "imagen": "gts-1498.jpg",
     "precio_publico": 92.0,
@@ -9854,7 +9854,7 @@
     "inventario": 66
   },
   {
-    "sku": "",
+    "sku": "GTS-2201",
     "nombre": "Bocina De Diseno",
     "imagen": "gts-2201.jpg",
     "precio_publico": 92.0,
@@ -9867,7 +9867,7 @@
     "inventario": 77
   },
   {
-    "sku": "",
+    "sku": "CH-J2077",
     "nombre": "Bocinas De Diseño",
     "imagen": "ch-j2077.jpg",
     "precio_publico": 92.0,
@@ -9880,7 +9880,7 @@
     "inventario": 14
   },
   {
-    "sku": "",
+    "sku": "GTS-1742",
     "nombre": "Bocina De Diseño",
     "imagen": "gts-1742.jpg",
     "precio_publico": 97.0,
@@ -9893,7 +9893,7 @@
     "inventario": 88
   },
   {
-    "sku": "",
+    "sku": "SA324T",
     "nombre": "Mini Bocina Bluetooth de 3 Pulgadas 5W + Micrófono",
     "imagen": "sa324t.jpg",
     "precio_publico": 95.0,
@@ -9906,7 +9906,7 @@
     "inventario": 22
   },
   {
-    "sku": "",
+    "sku": "CH-K3016",
     "nombre": "Bocina De Diseno",
     "imagen": "ch-k3016.jpg",
     "precio_publico": 106.0,
@@ -9919,7 +9919,7 @@
     "inventario": 79
   },
   {
-    "sku": "",
+    "sku": "CH-M231",
     "nombre": "Bocina De Diseno",
     "imagen": "ch-m231.jpg",
     "precio_publico": 97.0,
@@ -9932,7 +9932,7 @@
     "inventario": 25
   },
   {
-    "sku": "",
+    "sku": "CH-M232",
     "nombre": "Bocina De Diseno",
     "imagen": "ch-m232.jpg",
     "precio_publico": 97.0,
@@ -9945,7 +9945,7 @@
     "inventario": 40
   },
   {
-    "sku": "",
+    "sku": "CH-J2110",
     "nombre": "Bocina De Diseno",
     "imagen": "ch-j2110.jpg",
     "precio_publico": 100.0,
@@ -9958,7 +9958,7 @@
     "inventario": 80
   },
   {
-    "sku": "",
+    "sku": "GTS-1679",
     "nombre": "Bocina De Diseno",
     "imagen": "gts-1679.jpg",
     "precio_publico": 100.0,
@@ -9971,7 +9971,7 @@
     "inventario": 48
   },
   {
-    "sku": "",
+    "sku": "GTS-2072",
     "nombre": "Bocinas De Diseño",
     "imagen": "gts-2072.jpg",
     "precio_publico": 100.0,
@@ -9984,7 +9984,7 @@
     "inventario": 14
   },
   {
-    "sku": "",
+    "sku": "CH-J2086",
     "nombre": "Bocinas De Diseno",
     "imagen": "ch-j2086.jpg",
     "precio_publico": 100.0,
@@ -9997,7 +9997,7 @@
     "inventario": 43
   },
   {
-    "sku": "",
+    "sku": "GTS-1552",
     "nombre": "Bocina De Diseño",
     "imagen": "gts-1552.jpg",
     "precio_publico": 103.0,
@@ -10010,7 +10010,7 @@
     "inventario": 23
   },
   {
-    "sku": "",
+    "sku": "GTS-2092",
     "nombre": "Bocina De Diseño",
     "imagen": "gts-2092.jpg",
     "precio_publico": 108.0,
@@ -10023,7 +10023,7 @@
     "inventario": 21
   },
   {
-    "sku": "",
+    "sku": "CH-K3020",
     "nombre": "Bocina De Diseno",
     "imagen": "ch-k3020.jpg",
     "precio_publico": 110.0,
@@ -10036,7 +10036,7 @@
     "inventario": 39
   },
   {
-    "sku": "",
+    "sku": "CH-J2090",
     "nombre": "Bocina De Diseno",
     "imagen": "ch-j2090.jpg",
     "precio_publico": 113.0,
@@ -10049,7 +10049,7 @@
     "inventario": 3
   },
   {
-    "sku": "",
+    "sku": "WG-191",
     "nombre": "Bocina Portatil RGB con Agarradera Bluetooth",
     "imagen": "wg-191.jpg",
     "precio_publico": 115.0,
@@ -10062,7 +10062,7 @@
     "inventario": 28
   },
   {
-    "sku": "",
+    "sku": "GTS-2149",
     "nombre": "Bocina De Diseno",
     "imagen": "gts-2149.jpg",
     "precio_publico": 150.0,
@@ -10075,7 +10075,7 @@
     "inventario": 22
   },
   {
-    "sku": "",
+    "sku": "CH-K3019",
     "nombre": "Bocina De Diseno",
     "imagen": "ch-k3019.jpg",
     "precio_publico": 158.0,
@@ -10088,7 +10088,7 @@
     "inventario": 8
   },
   {
-    "sku": "",
+    "sku": "CH-M298",
     "nombre": "Bocina De Diseño",
     "imagen": "ch-m298.jpg",
     "precio_publico": 158.0,
@@ -10101,7 +10101,7 @@
     "inventario": 46
   },
   {
-    "sku": "",
+    "sku": "CH-K3022",
     "nombre": "Bocina De Diseno",
     "imagen": "ch-k3022.jpg",
     "precio_publico": 165.0,
@@ -10114,7 +10114,7 @@
     "inventario": 44
   },
   {
-    "sku": "",
+    "sku": "CH-J2099",
     "nombre": "Bocina De Diseno",
     "imagen": "ch-j2099.jpg",
     "precio_publico": 165.0,
@@ -10127,7 +10127,7 @@
     "inventario": 15
   },
   {
-    "sku": "",
+    "sku": "KTF-1480",
     "nombre": "Radio",
     "imagen": "ktf-1480.jpg",
     "precio_publico": 168.0,
@@ -10140,7 +10140,7 @@
     "inventario": 16
   },
   {
-    "sku": "",
+    "sku": "KTF-1481",
     "nombre": "Radio",
     "imagen": "ktf-1481.jpg",
     "precio_publico": 175.0,
@@ -10153,7 +10153,7 @@
     "inventario": 16
   },
   {
-    "sku": "",
+    "sku": "KF-AM17",
     "nombre": "Bocina*Am*Fm",
     "imagen": "kf-am17.jpg",
     "precio_publico": 177.0,
@@ -10166,7 +10166,7 @@
     "inventario": 24
   },
   {
-    "sku": "",
+    "sku": "KF-AM18",
     "nombre": "Bocina*Am*Fm",
     "imagen": "kf-am18.jpg",
     "precio_publico": 177.0,
@@ -10179,7 +10179,7 @@
     "inventario": 34
   },
   {
-    "sku": "",
+    "sku": "RD-237",
     "nombre": "Radio Bocina Portatil 5W Con Luz",
     "imagen": "rd-237.jpg",
     "precio_publico": 178.0,
@@ -10192,7 +10192,7 @@
     "inventario": 10
   },
   {
-    "sku": "",
+    "sku": "CH-J2053",
     "nombre": "Bocina De Diseno",
     "imagen": "ch-j2053.jpg",
     "precio_publico": 180.0,
@@ -10205,7 +10205,7 @@
     "inventario": 23
   },
   {
-    "sku": "",
+    "sku": "MB-161",
     "nombre": "Bocina Bluetooth 2 Pulgadas 8w",
     "imagen": "mb-161.jpg",
     "precio_publico": 182.0,
@@ -10218,7 +10218,7 @@
     "inventario": 17
   },
   {
-    "sku": "",
+    "sku": "GTS-1979",
     "nombre": "Bocina De 6.5\"",
     "imagen": "gts-1979.jpg",
     "precio_publico": 192.0,
@@ -10231,7 +10231,7 @@
     "inventario": 14
   },
   {
-    "sku": "",
+    "sku": "BTS-1952",
     "nombre": "Bocinas De Diseño",
     "imagen": "bts-1952.jpg",
     "precio_publico": 192.0,
@@ -10244,7 +10244,7 @@
     "inventario": 12
   },
   {
-    "sku": "",
+    "sku": "BTS-1822",
     "nombre": "Bocinas De Diseño",
     "imagen": "bts-1822.jpg",
     "precio_publico": 192.0,
@@ -10257,7 +10257,7 @@
     "inventario": 16
   },
   {
-    "sku": "",
+    "sku": "KTF-1488",
     "nombre": "Radio",
     "imagen": "ktf-1488.jpg",
     "precio_publico": 192.0,
@@ -10270,7 +10270,7 @@
     "inventario": 53
   },
   {
-    "sku": "",
+    "sku": "KTF-1650",
     "nombre": "Bocina*Am*Fm",
     "imagen": "ktf-1650.jpg",
     "precio_publico": 197.0,
@@ -10283,7 +10283,7 @@
     "inventario": 20
   },
   {
-    "sku": "",
+    "sku": "KTF-1651",
     "nombre": "Bocina*Am*Fm",
     "imagen": "ktf-1651.jpg",
     "precio_publico": 197.0,
@@ -10296,7 +10296,7 @@
     "inventario": 30
   },
   {
-    "sku": "",
+    "sku": "CH-K3021",
     "nombre": "Bocina De Diseno",
     "imagen": "ch-k3021.jpg",
     "precio_publico": 200.0,
@@ -10309,7 +10309,7 @@
     "inventario": 14
   },
   {
-    "sku": "",
+    "sku": "KF-AM55",
     "nombre": "Radio Am",
     "imagen": "kf-am55.jpg",
     "precio_publico": 200.0,
@@ -10322,7 +10322,7 @@
     "inventario": 30
   },
   {
-    "sku": "",
+    "sku": "KTF-2015",
     "nombre": "Bocina*Am*Fm",
     "imagen": "ktf-2015.jpg",
     "precio_publico": 200.0,
@@ -10335,7 +10335,7 @@
     "inventario": 1
   },
   {
-    "sku": "",
+    "sku": "CH-J2067",
     "nombre": "Bocina De Diseno",
     "imagen": "ch-j2067.jpg",
     "precio_publico": 208.0,
@@ -10348,7 +10348,7 @@
     "inventario": 3
   },
   {
-    "sku": "",
+    "sku": "KTF-1641",
     "nombre": "Bocina*Am*Fm",
     "imagen": "ktf-1641.jpg",
     "precio_publico": 208.0,
@@ -10361,7 +10361,7 @@
     "inventario": 25
   },
   {
-    "sku": "",
+    "sku": "CH-M246",
     "nombre": "Bocinas De Diseño",
     "imagen": "ch-m246.jpg",
     "precio_publico": 213.0,
@@ -10374,7 +10374,7 @@
     "inventario": 22
   },
   {
-    "sku": "",
+    "sku": "KTF-2011",
     "nombre": "Bocina*Am*Fm",
     "imagen": "ktf-2011.jpg",
     "precio_publico": 217.0,
@@ -10387,7 +10387,7 @@
     "inventario": 7
   },
   {
-    "sku": "",
+    "sku": "KTF-2013",
     "nombre": "Bocina*Am*Fm",
     "imagen": "ktf-2013.jpg",
     "precio_publico": 217.0,
@@ -10400,7 +10400,7 @@
     "inventario": 20
   },
   {
-    "sku": "",
+    "sku": "CH-K3013",
     "nombre": "Bocina De Diseno",
     "imagen": "ch-k3013.jpg",
     "precio_publico": 225.0,
@@ -10413,7 +10413,7 @@
     "inventario": 9
   },
   {
-    "sku": "",
+    "sku": "CH-J2059",
     "nombre": "Bocina De Diseno",
     "imagen": "ch-j2059.jpg",
     "precio_publico": 232.0,
@@ -10426,7 +10426,7 @@
     "inventario": 15
   },
   {
-    "sku": "",
+    "sku": "BTS-1953",
     "nombre": "Bocinas De Diseño",
     "imagen": "bts-1953.jpg",
     "precio_publico": 233.0,
@@ -10439,7 +10439,7 @@
     "inventario": 28
   },
   {
-    "sku": "",
+    "sku": "CH-K3015",
     "nombre": "Bocina De Diseno",
     "imagen": "ch-k3015.jpg",
     "precio_publico": 247.0,
@@ -10452,7 +10452,7 @@
     "inventario": 15
   },
   {
-    "sku": "",
+    "sku": "KTF-1466",
     "nombre": "Radio",
     "imagen": "ktf-1466.jpg",
     "precio_publico": 247.0,
@@ -10465,7 +10465,7 @@
     "inventario": 26
   },
   {
-    "sku": "",
+    "sku": "CH-J2028",
     "nombre": "Bocinas De Diseño",
     "imagen": "ch-j2028.jpg",
     "precio_publico": 250.0,
@@ -10478,7 +10478,7 @@
     "inventario": 21
   },
   {
-    "sku": "",
+    "sku": "KTF-2017",
     "nombre": "Bocina*Am*Fm",
     "imagen": "ktf-2017.jpg",
     "precio_publico": 258.0,
@@ -10491,7 +10491,7 @@
     "inventario": 3
   },
   {
-    "sku": "",
+    "sku": "CH-J2048",
     "nombre": "Bocinas De Diseno",
     "imagen": "ch-j2048.jpg",
     "precio_publico": 263.0,
@@ -10504,7 +10504,7 @@
     "inventario": 6
   },
   {
-    "sku": "",
+    "sku": "CH-K3023",
     "nombre": "Bocina De Diseno",
     "imagen": "ch-k3023.jpg",
     "precio_publico": 263.0,
@@ -10517,7 +10517,7 @@
     "inventario": 29
   },
   {
-    "sku": "",
+    "sku": "KTF-2016",
     "nombre": "Bocina*Am*Fm",
     "imagen": "ktf-2016.jpg",
     "precio_publico": 263.0,
@@ -10530,7 +10530,7 @@
     "inventario": 6
   },
   {
-    "sku": "",
+    "sku": "CH-J2041",
     "nombre": "Bocina De Diseno",
     "imagen": "ch-j2041.jpg",
     "precio_publico": 280.0,
@@ -10543,7 +10543,7 @@
     "inventario": 5
   },
   {
-    "sku": "",
+    "sku": "CH-J2044",
     "nombre": "Bocinas De Diseño",
     "imagen": "ch-j2044.jpg",
     "precio_publico": 280.0,
@@ -10556,7 +10556,7 @@
     "inventario": 7
   },
   {
-    "sku": "",
+    "sku": "CH-J2069",
     "nombre": "Bocina De Diseno",
     "imagen": "ch-j2069.jpg",
     "precio_publico": 280.0,
@@ -10569,7 +10569,7 @@
     "inventario": 19
   },
   {
-    "sku": "",
+    "sku": "BTS-2409",
     "nombre": "Bocina De Diseno",
     "imagen": "bts-2409.jpg",
     "precio_publico": 280.0,
@@ -10582,7 +10582,7 @@
     "inventario": 19
   },
   {
-    "sku": "",
+    "sku": "CH-J2050",
     "nombre": "Bocina De Diseno",
     "imagen": "ch-j2050.jpg",
     "precio_publico": 300.0,
@@ -10595,7 +10595,7 @@
     "inventario": 10
   },
   {
-    "sku": "",
+    "sku": "CH-J2071",
     "nombre": "Bocina De Diseno",
     "imagen": "ch-j2071.jpg",
     "precio_publico": 317.0,
@@ -10608,7 +10608,7 @@
     "inventario": 3
   },
   {
-    "sku": "",
+    "sku": "CH-J2084",
     "nombre": "Bocina De Diseno",
     "imagen": "ch-j2084.jpg",
     "precio_publico": 317.0,
@@ -10621,7 +10621,7 @@
     "inventario": 3
   },
   {
-    "sku": "",
+    "sku": "CH-J2045",
     "nombre": "Bocinas De Diseño",
     "imagen": "ch-j2045.jpg",
     "precio_publico": 325.0,
@@ -10634,7 +10634,7 @@
     "inventario": 18
   },
   {
-    "sku": "",
+    "sku": "CH-J2046",
     "nombre": "Bocina De Diseno",
     "imagen": "ch-j2046.jpg",
     "precio_publico": 358.0,
@@ -10647,7 +10647,7 @@
     "inventario": 71
   },
   {
-    "sku": "",
+    "sku": "CH-J2052",
     "nombre": "Bocina De Diseno",
     "imagen": "ch-j2052.jpg",
     "precio_publico": 383.0,
@@ -10660,7 +10660,7 @@
     "inventario": 16
   },
   {
-    "sku": "",
+    "sku": "CH-J2068",
     "nombre": "Bocina De Diseno",
     "imagen": "ch-j2068.jpg",
     "precio_publico": 433.0,
@@ -10673,7 +10673,7 @@
     "inventario": 10
   },
   {
-    "sku": "",
+    "sku": "CH-J2085",
     "nombre": "Bocina De Diseno",
     "imagen": "ch-j2085.jpg",
     "precio_publico": 490.0,
@@ -10686,7 +10686,7 @@
     "inventario": 73
   },
   {
-    "sku": "",
+    "sku": "CH-J2092",
     "nombre": "Bocinas De Diseno",
     "imagen": "ch-j2092.jpg",
     "precio_publico": 497.0,
@@ -10699,7 +10699,7 @@
     "inventario": 11
   },
   {
-    "sku": "",
+    "sku": "FM-5502",
     "nombre": "Bocina Bluetooth Luz RGB Boombox 3 Mini",
     "imagen": "fm-5502.jpg",
     "precio_publico": 282.0,
@@ -10712,7 +10712,7 @@
     "inventario": 22
   },
   {
-    "sku": "",
+    "sku": "KTF-2063",
     "nombre": "(KTF-2063) Bocina Bluetooth Radio FM/AM con Panel Solar y Linterna",
     "imagen": "ktf-2063.jpg",
     "precio_publico": 267.0,
@@ -10725,7 +10725,7 @@
     "inventario": 8
   },
   {
-    "sku": "",
+    "sku": "XM-113",
     "nombre": "Bocina Bluetooth Cilindrica Recargable",
     "imagen": "xm-113.jpg",
     "precio_publico": 83.0,
@@ -10738,7 +10738,7 @@
     "inventario": 22
   },
   {
-    "sku": "",
+    "sku": "XM-7121",
     "nombre": "Mini Bocina Diseño Hongo",
     "imagen": "xm-7121.jpg",
     "precio_publico": 52.0,
@@ -10751,7 +10751,7 @@
     "inventario": 150
   },
   {
-    "sku": "",
+    "sku": "KTS-1612",
     "nombre": "Bocina Bluetooth Retro",
     "imagen": "kts-1612.jpg",
     "precio_publico": 115.0,
@@ -10764,7 +10764,7 @@
     "inventario": 6
   },
   {
-    "sku": "",
+    "sku": "SPE-597",
     "nombre": "Bocina Megáfono Bluetooth",
     "imagen": "spe-597.jpg",
     "precio_publico": 95.0,
@@ -10777,7 +10777,7 @@
     "inventario": 55
   },
   {
-    "sku": "",
+    "sku": "KTS-1936",
     "nombre": "Espejo LED + Bocina Bluetooth y Cargador Inalámbrico",
     "imagen": "kts-1936.jpg",
     "precio_publico": 303.0,
@@ -10790,7 +10790,7 @@
     "inventario": 7
   },
   {
-    "sku": "",
+    "sku": "G100",
     "nombre": "Bocina De Diseno",
     "imagen": "g100.jpg",
     "precio_publico": 464.0,
@@ -10803,7 +10803,7 @@
     "inventario": 7
   },
   {
-    "sku": "",
+    "sku": "KTF-2156",
     "nombre": "Bocina Bluetooth con Panel Solar y Linterna Radio FM/AM",
     "imagen": "ktf-2156.jpg",
     "precio_publico": 183.0,
@@ -10816,7 +10816,7 @@
     "inventario": 21
   },
   {
-    "sku": "",
+    "sku": "KTF-2019",
     "nombre": "Bocina Radio FM/AM Bluetooth con Linterna",
     "imagen": "ktf-2019.jpg",
     "precio_publico": 208.0,
@@ -10829,7 +10829,7 @@
     "inventario": 7
   },
   {
-    "sku": "",
+    "sku": "KTF-2093",
     "nombre": "Bocina Radio FM/AM Bluetooth con Doble Panel Solar",
     "imagen": "ktf-2093.jpg",
     "precio_publico": 230.0,
@@ -10842,7 +10842,7 @@
     "inventario": 6
   },
   {
-    "sku": "",
+    "sku": "KTF-2207",
     "nombre": "Bocina bluetooth con Reloj y Carga Solar Radio FM/AM",
     "imagen": "ktf-2207.jpg",
     "precio_publico": 230.0,
@@ -10855,7 +10855,7 @@
     "inventario": 29
   },
   {
-    "sku": "",
+    "sku": "MB-174",
     "nombre": "Soporte Bocina Bluetooth",
     "imagen": "mb-174.jpg",
     "precio_publico": 117.0,
@@ -10868,7 +10868,7 @@
     "inventario": 20
   },
   {
-    "sku": "",
+    "sku": "KTS-2408",
     "nombre": "Bocina Bluetooth Portátil WaterProof",
     "imagen": "kts-2408.jpg",
     "precio_publico": 193.0,
@@ -10881,7 +10881,7 @@
     "inventario": 14
   },
   {
-    "sku": "",
+    "sku": "CH-J2114",
     "nombre": "Bocina De Diseno",
     "imagen": "ch-j2114.jpg",
     "precio_publico": 60.0,
@@ -10894,7 +10894,7 @@
     "inventario": 68
   },
   {
-    "sku": "",
+    "sku": "CH-J2115",
     "nombre": "Bocina De Diseno",
     "imagen": "ch-j2115.jpg",
     "precio_publico": 60.0,
@@ -10907,7 +10907,7 @@
     "inventario": 5
   },
   {
-    "sku": "",
+    "sku": "CH-J2116",
     "nombre": "Bocina De Diseno",
     "imagen": "ch-j2116.jpg",
     "precio_publico": 60.0,
@@ -10920,7 +10920,7 @@
     "inventario": 3
   },
   {
-    "sku": "",
+    "sku": "CH-J2118",
     "nombre": "Bocina De Diseño Bluetooth Portátil",
     "imagen": "ch-j2118.jpg",
     "precio_publico": 60.0,
@@ -10933,7 +10933,7 @@
     "inventario": 65
   },
   {
-    "sku": "",
+    "sku": "XM-7189",
     "nombre": "Mini Bocina",
     "imagen": "xm-7189.jpg",
     "precio_publico": 71.0,
@@ -10946,7 +10946,7 @@
     "inventario": 79
   },
   {
-    "sku": "",
+    "sku": "MCM-008",
     "nombre": "Bocina Bluetooth 2 Pulgadas",
     "imagen": "mcm-008.jpg",
     "precio_publico": 80.0,
@@ -10959,7 +10959,7 @@
     "inventario": 24
   },
   {
-    "sku": "",
+    "sku": "MCM-001",
     "nombre": "Bocina Bluetooth Portatil 5W",
     "imagen": "mcm-001.jpg",
     "precio_publico": 87.0,
@@ -10972,7 +10972,7 @@
     "inventario": 23
   },
   {
-    "sku": "",
+    "sku": "WG-131",
     "nombre": "Bocina Bluetooth de 5W",
     "imagen": "wg-131.jpg",
     "precio_publico": 98.0,
@@ -10985,7 +10985,7 @@
     "inventario": 3
   },
   {
-    "sku": "",
+    "sku": "FM-5135",
     "nombre": "Bocina Bluetooth F04",
     "imagen": "fm-5135.jpg",
     "precio_publico": 105.0,
@@ -10998,7 +10998,7 @@
     "inventario": 47
   },
   {
-    "sku": "",
+    "sku": "WG-184",
     "nombre": "Bocina Portatil Bluetooth Cubo",
     "imagen": "wg-184.jpg",
     "precio_publico": 115.0,
@@ -11011,7 +11011,7 @@
     "inventario": 153
   },
   {
-    "sku": "",
+    "sku": "KTS-1943",
     "nombre": "Bocina Bluetooth Portatil con Micrófono",
     "imagen": "kts-1943.jpg",
     "precio_publico": 125.0,
@@ -11024,7 +11024,7 @@
     "inventario": 3
   },
   {
-    "sku": "",
+    "sku": "WG-185",
     "nombre": "Bocina Bluetooth Portatil Extra bass",
     "imagen": "wg-185.jpg",
     "precio_publico": 142.0,
@@ -11037,7 +11037,7 @@
     "inventario": 51
   },
   {
-    "sku": "",
+    "sku": "MCA3001",
     "nombre": "Bocina Bluetooth de LLanta",
     "imagen": "mca3001.jpg",
     "precio_publico": 143.0,
@@ -11050,7 +11050,7 @@
     "inventario": 37
   },
   {
-    "sku": "",
+    "sku": "CH-J2127",
     "nombre": "Bocina De Diseno",
     "imagen": "ch-j2127.jpg",
     "precio_publico": 145.0,
@@ -11063,7 +11063,7 @@
     "inventario": 67
   },
   {
-    "sku": "",
+    "sku": "WG-132",
     "nombre": "Mini Bocina Portatil Bluetooth Impermeable",
     "imagen": "wg-132.jpg",
     "precio_publico": 160.0,
@@ -11076,7 +11076,7 @@
     "inventario": 46
   },
   {
-    "sku": "",
+    "sku": "KTS-1827",
     "nombre": "Mini Bocina Cilindrica Bluetooth RGB",
     "imagen": "kts-1827.jpg",
     "precio_publico": 165.0,
@@ -11089,7 +11089,7 @@
     "inventario": 52
   },
   {
-    "sku": "",
+    "sku": "CH-M305",
     "nombre": "Bocina De Diseno",
     "imagen": "ch-m305.jpg",
     "precio_publico": 175.0,
@@ -11102,7 +11102,7 @@
     "inventario": 8
   },
   {
-    "sku": "",
+    "sku": "RD-248",
     "nombre": "Bocina Bluetooth-Radio FM 5w con Panel Solar",
     "imagen": "rd-248.jpg",
     "precio_publico": 183.0,
@@ -11115,7 +11115,7 @@
     "inventario": 78
   },
   {
-    "sku": "",
+    "sku": "CH-J2042",
     "nombre": "Bocina De Diseno",
     "imagen": "ch-j2042.jpg",
     "precio_publico": 192.0,
@@ -11128,7 +11128,7 @@
     "inventario": 23
   },
   {
-    "sku": "",
+    "sku": "KTS-2292",
     "nombre": "Bocina Portátil Bluetooth ABS 12W",
     "imagen": "kts-2292.jpg",
     "precio_publico": 197.0,
@@ -11141,7 +11141,7 @@
     "inventario": 14
   },
   {
-    "sku": "",
+    "sku": "WG-147",
     "nombre": "Bocina Bluetooth de Disco Portatil",
     "imagen": "wg-147.jpg",
     "precio_publico": 208.0,
@@ -11154,7 +11154,7 @@
     "inventario": 8
   },
   {
-    "sku": "",
+    "sku": "WG-182",
     "nombre": "Bocina Bluetooth RGB Extra bass Portatil",
     "imagen": "wg-182.jpg",
     "precio_publico": 215.0,
@@ -11167,7 +11167,7 @@
     "inventario": 27
   },
   {
-    "sku": "",
+    "sku": "RD-259",
     "nombre": "Bocina Bluetooth Vintage 5W 1200mAh",
     "imagen": "rd-259.jpg",
     "precio_publico": 225.0,
@@ -11180,7 +11180,7 @@
     "inventario": 8
   },
   {
-    "sku": "",
+    "sku": "WG-190",
     "nombre": "Bocina Bluetooth Portatil RGB Extra bass",
     "imagen": "wg-190.jpg",
     "precio_publico": 225.0,
@@ -11193,7 +11193,7 @@
     "inventario": 21
   },
   {
-    "sku": "",
+    "sku": "WG-601",
     "nombre": "Bocina Bluetooth Portatil RGB Extra Bass",
     "imagen": "wg-601.jpg",
     "precio_publico": 225.0,
@@ -11206,7 +11206,7 @@
     "inventario": 10
   },
   {
-    "sku": "",
+    "sku": "WG-134",
     "nombre": "Bocina Bluetooth Portatil RGB",
     "imagen": "wg-134.jpg",
     "precio_publico": 232.0,
@@ -11219,7 +11219,7 @@
     "inventario": 6
   },
   {
-    "sku": "",
+    "sku": "WG-602",
     "nombre": "Bocina Bluetotoh Portatil Extra Bass",
     "imagen": "wg-602.jpg",
     "precio_publico": 242.0,
@@ -11232,7 +11232,7 @@
     "inventario": 32
   },
   {
-    "sku": "",
+    "sku": "CH-M306",
     "nombre": "Bocina De Diseno",
     "imagen": "ch-m306.jpg",
     "precio_publico": 253.0,
@@ -11245,7 +11245,7 @@
     "inventario": 5
   },
   {
-    "sku": "",
+    "sku": "RD-261",
     "nombre": "Bocina mini Portatil 3W 5V Vintage Bluetooth Carga Solar",
     "imagen": "rd-261.jpg",
     "precio_publico": 273.0,
@@ -11258,7 +11258,7 @@
     "inventario": 23
   },
   {
-    "sku": "",
+    "sku": "RD-256",
     "nombre": "Bocina Bluetooth Diseño Vintage 1.5W 3\"",
     "imagen": "rd-256.jpg",
     "precio_publico": 275.0,
@@ -11271,7 +11271,7 @@
     "inventario": 29
   },
   {
-    "sku": "",
+    "sku": "RD-250",
     "nombre": "Bocina Bluetooth 3\" Diseño Vintage",
     "imagen": "rd-250.jpg",
     "precio_publico": 348.0,
@@ -11284,7 +11284,7 @@
     "inventario": 23
   },
   {
-    "sku": "",
+    "sku": "XM-7316",
     "nombre": "(XM-7316) Bocina Bluetooth Luz Rgb + Micrófono",
     "imagen": "xm-7316.jpg",
     "precio_publico": 375.0,
@@ -11297,7 +11297,7 @@
     "inventario": 5
   },
   {
-    "sku": "",
+    "sku": "MB-176",
     "nombre": "Bocina Bluetooth con Luz Led",
     "imagen": "mb-176.jpg",
     "precio_publico": 425.0,
@@ -11310,7 +11310,7 @@
     "inventario": 92
   },
   {
-    "sku": "",
+    "sku": "SA8071T",
     "nombre": "Bafle Bluetooth 8\" con Luz Led+ Micrófono",
     "imagen": "sa8071t.jpg",
     "precio_publico": 278.0,
@@ -11323,7 +11323,7 @@
     "inventario": 8
   },
   {
-    "sku": "",
+    "sku": "GTS-1987",
     "nombre": "Bocina Bluetooth de 8″ con Micrófono",
     "imagen": "gts-1987.jpg",
     "precio_publico": 342.0,
@@ -11336,7 +11336,7 @@
     "inventario": 8
   },
   {
-    "sku": "",
+    "sku": "GTS-2066",
     "nombre": "Bocina Bluetooth de 6.5\" con Micrófono Inalámbrico",
     "imagen": "gts-2066.jpg",
     "precio_publico": 264.0,
@@ -11349,7 +11349,7 @@
     "inventario": 9
   },
   {
-    "sku": "",
+    "sku": "GTS-2065",
     "nombre": "Bocina De 6.5\"",
     "imagen": "gts-2065.jpg",
     "precio_publico": 222.0,
@@ -11362,7 +11362,7 @@
     "inventario": 3
   },
   {
-    "sku": "",
+    "sku": "SA8065T",
     "nombre": "Bocina 8 Pulgadas 10W Con Luz Rgb + Microfono",
     "imagen": "sa8065t.jpg",
     "precio_publico": 312.0,
@@ -11375,7 +11375,7 @@
     "inventario": 197
   },
   {
-    "sku": "",
+    "sku": "ATA-50105",
     "nombre": "Audífonos Alámbricos Tipo C",
     "imagen": "ata-50105.jpg",
     "precio_publico": 25.0,
@@ -11388,7 +11388,7 @@
     "inventario": 24
   },
   {
-    "sku": "",
+    "sku": "XR-3159",
     "nombre": "(XR-3159) Audifono Alambrico Jack 3.5mm",
     "imagen": "xr-3159.jpg",
     "precio_publico": 12.0,
@@ -11401,7 +11401,7 @@
     "inventario": 26
   },
   {
-    "sku": "",
+    "sku": "XR-9130",
     "nombre": "AudÍfonos manos libres alámbricos",
     "imagen": "xr-9130.jpg",
     "precio_publico": 14.0,
@@ -11414,7 +11414,7 @@
     "inventario": 252
   },
   {
-    "sku": "",
+    "sku": "ST-218",
     "nombre": "Audífonos de Manos libres Alámbricos",
     "imagen": "st-218.jpg",
     "precio_publico": 9.0,
@@ -11427,7 +11427,7 @@
     "inventario": 4
   },
   {
-    "sku": "",
+    "sku": "XR-3116",
     "nombre": "Audifonos Alambicos",
     "imagen": "xr-3116.jpg",
     "precio_publico": 8.0,
@@ -11440,7 +11440,7 @@
     "inventario": 596
   },
   {
-    "sku": "",
+    "sku": "XR-3159",
     "nombre": "(XR-3159) Audifono Alambrico Jack 3.5mm",
     "imagen": "xr-3159.jpg",
     "precio_publico": 12.0,
@@ -11453,7 +11453,7 @@
     "inventario": 26
   },
   {
-    "sku": "",
+    "sku": "XR-3150",
     "nombre": "Audifonos alambricos con microfono",
     "imagen": "xr-3150.jpg",
     "precio_publico": 14.0,
@@ -11466,7 +11466,7 @@
     "inventario": 262
   },
   {
-    "sku": "",
+    "sku": "XR-3156",
     "nombre": "Audifonos alambricos con microfono",
     "imagen": "xr-3156.jpg",
     "precio_publico": 15.0,
@@ -11479,7 +11479,7 @@
     "inventario": 469
   },
   {
-    "sku": "",
+    "sku": "XR-3101",
     "nombre": "Audifonos Alambricos",
     "imagen": "xr-3101.jpg",
     "precio_publico": 15.0,
@@ -11492,7 +11492,7 @@
     "inventario": 57
   },
   {
-    "sku": "",
+    "sku": "XR-3109",
     "nombre": "(XR-3109) Audifonos Alambricos Jack 3.5mm",
     "imagen": "xr-3109.jpg",
     "precio_publico": 15.0,
@@ -11505,7 +11505,7 @@
     "inventario": 152
   },
   {
-    "sku": "",
+    "sku": "TR-6001",
     "nombre": "Audifono Bluetooth i12 con Estuche de Carga",
     "imagen": "tr-6001.jpg",
     "precio_publico": 53.0,
@@ -11518,7 +11518,7 @@
     "inventario": 78
   },
   {
-    "sku": "",
+    "sku": "I12SY",
     "nombre": "Audífonos Bluetooth i12S Amarillo",
     "imagen": "i12sy.jpg",
     "precio_publico": 62.0,
@@ -11531,7 +11531,7 @@
     "inventario": 40
   },
   {
-    "sku": "",
+    "sku": "XR-3158",
     "nombre": "Audifonos Alambricos Jack 3.5mm",
     "imagen": "xr-3158.jpg",
     "precio_publico": 7.0,
@@ -11544,7 +11544,7 @@
     "inventario": 426
   },
   {
-    "sku": "",
+    "sku": "TR-6005",
     "nombre": "Audifono Bluetooth 6S Pro",
     "imagen": "tr-6005.jpg",
     "precio_publico": 82.0,
@@ -11557,7 +11557,7 @@
     "inventario": 64
   },
   {
-    "sku": "",
+    "sku": "TR-6010",
     "nombre": "Audífonos Bluetooth con Estuche de Carga",
     "imagen": "tr-6010.jpg",
     "precio_publico": 58.0,
@@ -11570,7 +11570,7 @@
     "inventario": 82
   },
   {
-    "sku": "",
+    "sku": "TR-6009",
     "nombre": "Audífonos Bluetooth con Estuche de Carga",
     "imagen": "tr-6009.jpg",
     "precio_publico": 58.0,
@@ -11583,7 +11583,7 @@
     "inventario": 51
   },
   {
-    "sku": "",
+    "sku": "TR-6006",
     "nombre": "Audifonos Bluetooth i11 con Estuche de Carga",
     "imagen": "tr-6006.jpg",
     "precio_publico": 53.0,
@@ -11596,7 +11596,7 @@
     "inventario": 4
   },
   {
-    "sku": "",
+    "sku": "I12SG",
     "nombre": "Audífonos Bluetooth I12S Verde",
     "imagen": "i12sg.jpg",
     "precio_publico": 64.0,
@@ -11609,7 +11609,7 @@
     "inventario": 32
   },
   {
-    "sku": "",
+    "sku": "TR-6063",
     "nombre": "Auriculares Bluetooth TWS-U33",
     "imagen": "tr-6063.jpg",
     "precio_publico": 113.0,
@@ -11622,7 +11622,7 @@
     "inventario": 17
   },
   {
-    "sku": "",
+    "sku": "TR-6066",
     "nombre": "Audífonos Bluetooth con Estuche de Carga",
     "imagen": "tr-6066.jpg",
     "precio_publico": 115.0,
@@ -11635,7 +11635,7 @@
     "inventario": 44
   },
   {
-    "sku": "",
+    "sku": "TR-6043",
     "nombre": "Audífonos Bluetooth con Estuche de Carga",
     "imagen": "tr-6043.jpg",
     "precio_publico": 158.0,
@@ -11648,7 +11648,7 @@
     "inventario": 172
   },
   {
-    "sku": "",
+    "sku": "FR-6605",
     "nombre": "Audifonos Bluetooth + Funda",
     "imagen": "fr-6605.jpg",
     "precio_publico": 180.0,
@@ -11661,7 +11661,7 @@
     "inventario": 41
   },
   {
-    "sku": "",
+    "sku": "LSD-6131",
     "nombre": "Kit De Desarmadores Para Celular",
     "imagen": "lsd-6131.jpg",
     "precio_publico": 68.0,
@@ -11674,7 +11674,7 @@
     "inventario": 60
   },
   {
-    "sku": "",
+    "sku": "TY-8101",
     "nombre": "Adaptador Otg V8 a Usb",
     "imagen": "ty-8101.jpg",
     "precio_publico": 3.5,
@@ -11687,7 +11687,7 @@
     "inventario": 5277
   },
   {
-    "sku": "",
+    "sku": "XZ-6401",
     "nombre": "Pop Socket",
     "imagen": "xz-6401.jpg",
     "precio_publico": 4.5,
@@ -11700,7 +11700,7 @@
     "inventario": 105
   },
   {
-    "sku": "",
+    "sku": "XZ-6402",
     "nombre": "Pop Socket",
     "imagen": "xz-6402.jpg",
     "precio_publico": 6.0,
@@ -11713,7 +11713,7 @@
     "inventario": 237
   },
   {
-    "sku": "",
+    "sku": "JSL-7001",
     "nombre": "Funda Para Celular Contra Agua",
     "imagen": "jsl-7001.jpg",
     "precio_publico": 10.0,
@@ -11726,7 +11726,7 @@
     "inventario": 431
   },
   {
-    "sku": "",
+    "sku": "JSL-7006",
     "nombre": "Funda Flotante Para Celular Contra El Agua",
     "imagen": "jsl-7006.jpg",
     "precio_publico": 20.0,
@@ -11739,7 +11739,7 @@
     "inventario": 143
   },
   {
-    "sku": "",
+    "sku": "MR-836",
     "nombre": "Microfono",
     "imagen": "mr-836.jpg",
     "precio_publico": 63.0,
@@ -11752,7 +11752,7 @@
     "inventario": 13
   },
   {
-    "sku": "",
+    "sku": "MR-891",
     "nombre": "Microfono",
     "imagen": "mr-891.jpg",
     "precio_publico": 242.0,
@@ -11765,7 +11765,7 @@
     "inventario": 7
   },
   {
-    "sku": "",
+    "sku": "PJ098N",
     "nombre": "Soporte Para Celular",
     "imagen": "pj098n.jpg",
     "precio_publico": 25.0,
@@ -11778,7 +11778,7 @@
     "inventario": 1040
   },
   {
-    "sku": "",
+    "sku": "CAB272B",
     "nombre": "(CAB272B) Cable Tipo C a C 1 Metro 3A",
     "imagen": "cab272b.jpg",
     "precio_publico": 23.0,
@@ -11791,7 +11791,7 @@
     "inventario": 177
   },
   {
-    "sku": "",
+    "sku": "CAB259",
     "nombre": "Cable 3 En 1 C/V8/IP",
     "imagen": "cab259.jpg",
     "precio_publico": 35.0,
@@ -11804,7 +11804,7 @@
     "inventario": 241
   },
   {
-    "sku": "",
+    "sku": "CAB252B-300",
     "nombre": "Cable Tipo C a C 1 Metro 3A Blanco",
     "imagen": "cab252b-300.jpg",
     "precio_publico": 17.0,
@@ -11817,7 +11817,7 @@
     "inventario": 151
   },
   {
-    "sku": "",
+    "sku": "CAB186N",
     "nombre": "Cable V8/Micro 1 Metro 2.1A Negro",
     "imagen": "cab186n.jpg",
     "precio_publico": 13.0,
@@ -11830,7 +11830,7 @@
     "inventario": 97
   },
   {
-    "sku": "",
+    "sku": "CAB242N",
     "nombre": "Cable V8 1 Metro 2.1A Negro",
     "imagen": "cab242n.jpg",
     "precio_publico": 10.0,
@@ -11843,7 +11843,7 @@
     "inventario": 14
   },
   {
-    "sku": "",
+    "sku": "GAR064N",
     "nombre": "Combo Cargador V8",
     "imagen": "gar064n.jpg",
     "precio_publico": 37.0,
@@ -11856,7 +11856,7 @@
     "inventario": 37
   },
   {
-    "sku": "",
+    "sku": "GAR136A-800",
     "nombre": "Paquete de 4 Pilas Alcalinas AA",
     "imagen": "gar136a-800.jpg",
     "precio_publico": 18.0,
@@ -11869,7 +11869,7 @@
     "inventario": 62
   },
   {
-    "sku": "",
+    "sku": "GAR241",
     "nombre": "Turbo Cargador Para Auto C A C",
     "imagen": "gar241.jpg",
     "precio_publico": 95.0,
