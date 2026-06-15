@@ -603,7 +603,8 @@ DOM.resetSearch.addEventListener('click', () => {
 
 /* ─── Carrito ────────────────────────────────────────────────────── */
 const CART_KEY    = 'vmtop_cart';
-const WA_NUMBER   = '525568850885';
+const WA_NUMBER        = '525568850885';  // Botón flotante (contacto general)
+const WA_PEDIDOS       = '525578472699';  // Pedidos por transferencia
 
 const CART_DOM = {
   btn:       $('cartBtn'),
@@ -859,7 +860,7 @@ function sendWhatsApp() {
 
   const contacto = [email && `Email: ${email}`, phone && `Tel: ${phone}`].filter(Boolean).join(' | ');
   const msg = `¡Hola! Mi nombre es ${name}${contacto ? ` (${contacto})` : ''} y quiero realizar el siguiente pedido (precio ${tierName}):\n\n${lines}\n\nTotal: ${fmtShort(grandTotal)}\n\nQuedo en espera de confirmación. 😊`;
-  const url = `https://api.whatsapp.com/send?phone=${WA_NUMBER}&text=${encodeURIComponent(msg)}`;
+  const url = `https://api.whatsapp.com/send?phone=${WA_PEDIDOS}&text=${encodeURIComponent(msg)}`;
   closeCheckoutPopup();
   clearCart();
   window.open(url, '_blank');
