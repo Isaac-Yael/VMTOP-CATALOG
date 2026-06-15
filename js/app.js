@@ -339,7 +339,7 @@ function createCard(p) {
       ${img ? `<img class="card-img" data-src="img/${escHtml(img)}" alt="${escHtml(name)}" loading="lazy" />` : ''}
     </div>
     <div class="card-body">
-      <span class="card-sku">${escHtml(sku)}${inventario >= 0 ? ` <span class="card-stock${sinStock ? ' card-stock--out' : ''}">— ${sinStock ? 'Sin stock' : `${inventario} piezas disponibles`}</span>` : ''}</span>
+      <span class="card-sku">${escHtml(sku)}${inventario >= 0 ? ` <span class="card-stock${sinStock ? ' card-stock--out' : ''}">— ${sinStock ? 'Sin stock' : `${inventario} disponibles`}</span>` : ''}</span>
       <span class="card-name">${escHtml(name)}</span>
       <span class="card-category">${escHtml(cat)}</span>
       <div class="card-prices">
