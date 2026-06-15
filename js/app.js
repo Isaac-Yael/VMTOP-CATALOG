@@ -339,7 +339,7 @@ function createCard(p) {
       ${img ? `<img class="card-img" data-src="img/${escHtml(img)}" alt="${escHtml(name)}" loading="lazy" />` : ''}
     </div>
     <div class="card-body">
-      <span class="card-sku">${escHtml(sku)}${inventario >= 0 ? `<span class="card-stock${sinStock ? ' card-stock--out' : ''}">${sinStock ? 'Sin stock' : `${inventario} pzas`}</span>` : ''}</span>
+      <span class="card-sku">${escHtml(sku)}${inventario >= 0 ? ` <span class="card-stock${sinStock ? ' card-stock--out' : ''}">— ${sinStock ? 'Sin stock' : `${inventario} piezas disponibles`}</span>` : ''}</span>
       <span class="card-name">${escHtml(name)}</span>
       <span class="card-category">${escHtml(cat)}</span>
       <div class="card-prices">
@@ -959,14 +959,30 @@ function confirmQtyPopup() {
   openCart();
 }
 
+// Helper: obtener el límite de inventario del input activo
+function getInvMax() {
+  const raw = QTY_DOM.input.max;
+  if (raw === '' || raw === undefined) return -1;
+  const n = parseInt(raw);
+  return isNaN(n) ? -1 : n;
+}
+
 // Controles +/-
 QTY_DOM.minus.addEventListener('click', () => {
   QTY_DOM.input.value = Math.max(1, (parseInt(QTY_DOM.input.value) || 1) - 1);
 });
 QTY_DOM.plus.addEventListener('click', () => {
-  const inv    = parseInt(QTY_DOM.input.max) || -1;
+  const inv    = getInvMax();
   const newVal = (parseInt(QTY_DOM.input.value) || 1) + 1;
   QTY_DOM.input.value = (inv >= 0) ? Math.min(newVal, inv) : newVal;
+});
+// Bloquear escritura manual mayor al inventario
+QTY_DOM.input.addEventListener('input', () => {
+  const inv = getInvMax();
+  if (inv < 0) return;
+  const val = parseInt(QTY_DOM.input.value) || 1;
+  if (val > inv) QTY_DOM.input.value = inv;
+  if (val < 1)  QTY_DOM.input.value = 1;
 });
 QTY_DOM.cancel.addEventListener('click',  closeQtyPopup);
 QTY_DOM.confirm.addEventListener('click', confirmQtyPopup);
