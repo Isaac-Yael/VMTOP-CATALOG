@@ -45,6 +45,9 @@ def main():
             # Normalizar nombres de columnas (quitar espacios y @)
             row = {k.strip().lstrip('@'): v.strip() for k, v in row.items()}
 
+            inv_raw = row.get('inventario', row.get('Inventario', row.get('INVENTARIO', '')))
+            inventario = int(float(re.sub(r'[,$\s]', '', str(inv_raw)) or -1)) if inv_raw else -1
+
             producto = {
                 'sku':                  row.get('SKU', ''),
                 'nombre':               row.get('NOMBRE', ''),
@@ -56,6 +59,7 @@ def main():
                 'piezas_caja':          int(float(re.sub(r'[,$\s]', '', str(row.get('PZAS', row.get('piezas', 0)))) or 0)),
                 'categoria':            row.get('Categoría', row.get('Categoria', row.get('CATEGORIA', ''))),
                 'descuento':            limpiar_descuento(row.get('Descuento', row.get('DESCUENTO', 0))),
+                'inventario':           inventario,
             }
 
             productos.append(producto)

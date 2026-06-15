@@ -655,20 +655,22 @@ function calcCartPricing() {
 }
 
 function addToCart(p) {
-  const sku    = getField(p, 'sku', 'SKU') ?? 'SIN-SKU';
-  const name   = getField(p, 'nombre', 'Nombre', 'NOMBRE') ?? 'Producto';
-  const img    = (getField(p, 'imagen', 'Imagen', 'IMAGEN', 'image', 'img') ?? '').toLowerCase();
-  const pMay   = getField(p, 'precio_mayoreo',       'PrecioMayoreo',      'Precio Mayoreo')      ?? 0;
-  const pDist  = getField(p, 'precio_distribuidor',  'PrecioDistribuidor', 'Precio Distribuidor') ?? 0;
-  const pCaja  = getField(p, 'precio_caja',          'PrecioCaja',         'Precio Caja')         ?? 0;
-  const piezas = getField(p, 'piezas_caja',          'PiezasCaja',         'Piezas por Caja', 'piezas') ?? 0;
+  const sku       = getField(p, 'sku', 'SKU') ?? 'SIN-SKU';
+  const name      = getField(p, 'nombre', 'Nombre', 'NOMBRE') ?? 'Producto';
+  const img       = (getField(p, 'imagen', 'Imagen', 'IMAGEN', 'image', 'img') ?? '').toLowerCase();
+  const pMay      = getField(p, 'precio_mayoreo',       'PrecioMayoreo',      'Precio Mayoreo')      ?? 0;
+  const pDist     = getField(p, 'precio_distribuidor',  'PrecioDistribuidor', 'Precio Distribuidor') ?? 0;
+  const pCaja     = getField(p, 'precio_caja',          'PrecioCaja',         'Precio Caja')         ?? 0;
+  const piezas    = getField(p, 'piezas_caja',          'PiezasCaja',         'Piezas por Caja', 'piezas') ?? 0;
+  const inventario = parseInt(getField(p, 'inventario', 'Inventario', 'INVENTARIO') ?? -1);
 
   if (cart[sku]) {
-    cart[sku].qty += 1;
+    const newQty = cart[sku].qty + 1;
+    cart[sku].qty = (inventario >= 0) ? Math.min(newQty, inventario) : newQty;
   } else {
     cart[sku] = { sku, nombre: name, imagen: img, qty: 1,
                   precio_mayoreo: pMay, precio_distribuidor: pDist,
-                  precio_caja: pCaja, piezas_caja: piezas };
+                  precio_caja: pCaja, piezas_caja: piezas, inventario };
   }
   saveCart();
   renderCart();
@@ -684,7 +686,9 @@ function removeFromCart(sku) {
 
 function updateQty(sku, delta) {
   if (!cart[sku]) return;
-  cart[sku].qty = Math.max(1, cart[sku].qty + delta);
+  const inv    = cart[sku].inventario ?? -1;
+  const newQty = cart[sku].qty + delta;
+  cart[sku].qty = Math.max(1, inv >= 0 ? Math.min(newQty, inv) : newQty);
   saveCart();
   renderCart();
 }
@@ -754,8 +758,8 @@ function renderCart() {
       <div class="cart-item-controls">
         <div class="qty-wrap">
           <button class="qty-btn" data-sku="${escHtml(item.sku)}" data-delta="-1">−</button>
-          <span class="qty-value">${item.qty}</span>
-          <button class="qty-btn" data-sku="${escHtml(item.sku)}" data-delta="1">+</button>
+          <span class="qty-value">${item.qty}${(item.inventario >= 0) ? `<span class="qty-stock-max">/${item.inventario}</span>` : ''}</span>
+          <button class="qty-btn" data-sku="${escHtml(item.sku)}" data-delta="1" ${(item.inventario >= 0 && item.qty >= item.inventario) ? 'disabled' : ''}>+</button>
         </div>
         <button class="cart-item-remove" data-sku="${escHtml(item.sku)}" aria-label="Eliminar">🗑</button>
       </div>`;
@@ -874,15 +878,25 @@ function isMobile() { return window.innerWidth <= 768; }
 function openQtyPopup(p) {
   document.body.classList.add('qty-popup-open');
   qtyPopupProduct = p;
-  const sku    = getField(p, 'sku', 'SKU') ?? '';
-  const name   = getField(p, 'nombre', 'Nombre', 'NOMBRE') ?? '';
-  const img    = (getField(p, 'imagen', 'Imagen', 'IMAGEN', 'image', 'img') ?? '').toLowerCase();
-  const pMay   = getField(p, 'precio_mayoreo', 'PrecioMayoreo', 'Precio Mayoreo');
-  const piezas = parseInt(getField(p, 'piezas_caja', 'PiezasCaja', 'Piezas por Caja', 'piezas') ?? 0);
+  const sku        = getField(p, 'sku', 'SKU') ?? '';
+  const name       = getField(p, 'nombre', 'Nombre', 'NOMBRE') ?? '';
+  const img        = (getField(p, 'imagen', 'Imagen', 'IMAGEN', 'image', 'img') ?? '').toLowerCase();
+  const pMay       = getField(p, 'precio_mayoreo', 'PrecioMayoreo', 'Precio Mayoreo');
+  const piezas     = parseInt(getField(p, 'piezas_caja', 'PiezasCaja', 'Piezas por Caja', 'piezas') ?? 0);
+  const inventario = parseInt(getField(p, 'inventario', 'Inventario', 'INVENTARIO') ?? -1);
 
   // Qty actual en carrito (si ya existe)
   const existing = cart[sku];
   QTY_DOM.input.value = existing ? existing.qty : 1;
+  QTY_DOM.input.min   = 1;
+  QTY_DOM.input.max   = inventario >= 0 ? inventario : '';
+
+  // Badge de stock
+  const stockBadge = inventario > 0
+    ? `<span class="qty-popup-stock">${inventario} disponibles</span>`
+    : inventario === 0
+      ? `<span class="qty-popup-stock qty-popup-stock--out">Sin stock</span>`
+      : '';
 
   // Info del producto
   QTY_DOM.product.innerHTML = `
@@ -893,13 +907,15 @@ function openQtyPopup(p) {
       <span class="qty-popup-sku">${escHtml(sku)}</span>
       <span class="qty-popup-name">${escHtml(name)}</span>
       <span class="qty-popup-price">${fmtShort(pMay)} / pza</span>
+      ${stockBadge}
     </div>`;
 
-  // Botón de caja
+  // Botón de caja — limitar al inventario disponible
   if (piezas) {
-    QTY_DOM.addCaja.textContent = `📦 Agregar caja completa (${piezas} pzas)`;
-    QTY_DOM.addCaja.hidden = false;
-    QTY_DOM.addCaja.onclick = () => { QTY_DOM.input.value = piezas; };
+    const cajaCap = inventario >= 0 ? Math.min(piezas, inventario) : piezas;
+    QTY_DOM.addCaja.textContent = `📦 Agregar caja completa (${cajaCap} pzas)`;
+    QTY_DOM.addCaja.hidden  = cajaCap === 0;
+    QTY_DOM.addCaja.onclick = () => { QTY_DOM.input.value = cajaCap; };
   } else {
     QTY_DOM.addCaja.hidden = true;
   }
@@ -921,7 +937,10 @@ function closeQtyPopup() {
 
 function confirmQtyPopup() {
   if (!qtyPopupProduct) return;
-  const qty = Math.max(1, parseInt(QTY_DOM.input.value) || 1);
+  const inventario = parseInt(getField(qtyPopupProduct, 'inventario', 'Inventario', 'INVENTARIO') ?? -1);
+  let qty = Math.max(1, parseInt(QTY_DOM.input.value) || 1);
+  if (inventario >= 0) qty = Math.min(qty, inventario);
+
   const sku = getField(qtyPopupProduct, 'sku', 'SKU') ?? 'SIN-SKU';
 
   // Agregar/actualizar directamente con la cantidad elegida
