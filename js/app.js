@@ -862,7 +862,8 @@ function sendWhatsApp() {
   const msg = `¡Hola! Mi nombre es ${name}${contacto ? ` (${contacto})` : ''} y quiero realizar el siguiente pedido (precio ${tierName}):\n\n${lines}\n\nTotal: ${fmtShort(grandTotal)}\n\nQuedo en espera de confirmación. 😊`;
   const url = `https://api.whatsapp.com/send?phone=${WA_PEDIDOS}&text=${encodeURIComponent(msg)}`;
   closeCheckoutPopup();
-  clearCart();
+  // El carrito ya NO se vacía automáticamente al enviar el pedido por WhatsApp
+  // (decisión de negocio: el cliente puede querer ver/repetir su pedido).
   window.open(url, '_blank');
 }
 
@@ -1280,7 +1281,8 @@ async function initPayPalButtons() {
         }
 
         // Paso 3: Confirmar éxito al usuario
-        clearCart();
+        // El carrito ya NO se vacía automáticamente tras el pago (decisión de
+        // negocio: el cliente puede querer ver/repetir su pedido).
         closeCheckoutPopup();
         alert(`✅ ¡Pago recibido! Tu pedido ha sido confirmado.\nRecibirás un correo en ${formData.email}.\n\nID de confirmación: ${captureId}`);
 
@@ -1288,7 +1290,6 @@ async function initPayPalButtons() {
         console.error('PayPal onApprove error:', e);
         if (captureId) {
           // El pago SÍ fue cobrado pero falló algo después — no decirle que hubo error de pago
-          clearCart();
           closeCheckoutPopup();
           alert(`✅ ¡Pago procesado exitosamente!\nID de confirmación: ${captureId}\n\nGuarda este ID y envíanos mensaje por WhatsApp para confirmar tu entrega.`);
         } else {
