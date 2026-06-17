@@ -1034,9 +1034,10 @@ mobileMenuClose?.addEventListener('click', closeMobileMenu);
 mobileMenuBackdrop?.addEventListener('click', closeMobileMenu);
 
 /* ─── Checkout popup ─────────────────────────────────────────────── */
-const WC_PROXY    = 'https://vmtop.mx/crear-pedido.php';
-const PP_CREATE   = 'https://vmtop.mx/paypal-create-order.php';
-const PP_CAPTURE  = 'https://vmtop.mx/paypal-capture-order.php';
+const WC_PROXY     = 'https://vmtop.mx/crear-pedido.php';
+const PP_CREATE    = 'https://vmtop.mx/paypal-create-order.php';
+const PP_CAPTURE   = 'https://vmtop.mx/paypal-capture-order.php';
+const NOTIFY_PROXY = 'https://vmtop.mx/notificar-pedido.php'; // TEMPORAL: respaldo por correo mientras se arregla WC_PROXY
 /* ⚠️ Reemplaza con tu Client ID LIVE de PayPal (panel.paypal.com → Apps) */
 const PP_CLIENT_ID = 'BAAbBL15yk9Eur-y5AW9O48tpwryAGS6TvPahyOXo3L9t20IXyluYPHO5CWTSjPw70GL3LOQbQfAkJBO2U';
 
@@ -1174,6 +1175,39 @@ async function createWCOrder(status, captureId, formData) {
   return res.json();
 }
 
+/* ── TEMPORAL: notificar pedido por correo (respaldo mientras WC_PROXY falla) ── */
+async function notifyOrderByEmail(captureId, formData) {
+  const { name, email, phone, address, city, zip } = formData;
+  const { priced, grandTotal } = calcCartPricing();
+  const shippingCost   = calcShipping(grandTotal);
+  const totalConEnvio  = grandTotal + shippingCost;
+  const nameParts      = name.split(' ');
+
+  const lineItems = priced.map(item => ({
+    name:     item.name || item.sku.toUpperCase(),
+    sku:      item.sku.toUpperCase(),
+    quantity: item.qty,
+    total:    (item.unitPrice * item.qty).toFixed(2),
+  }));
+
+  await fetch(NOTIFY_PROXY, {
+    method:  'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      captureId,
+      customer_note: `Total con envío: $${totalConEnvio.toFixed(2)}`,
+      billing: {
+        first_name: nameParts[0] || name,
+        last_name:  nameParts.slice(1).join(' ') || '',
+        email, phone,
+        address_1: address,
+        city, postcode: zip,
+      },
+      line_items: lineItems,
+    }),
+  });
+}
+
 /* ── Cargar SDK de PayPal dinámicamente ──────────────────────────── */
 function loadPayPalSDK() {
   return new Promise((resolve, reject) => {
@@ -1230,6 +1264,14 @@ async function initPayPalButtons() {
 
         // Paso 2: Crear pedido en WooCommerce (no crítico para el usuario)
         const formData = getFormData();
+
+        // TEMPORAL: notificar por correo (independiente de WooCommerce, mientras se resuelve WC_PROXY)
+        try {
+          await notifyOrderByEmail(captureId, formData);
+        } catch (mailErr) {
+          console.error('Email notification failed:', captureId, mailErr);
+        }
+
         try {
           await createWCOrder('processing', captureId, formData);
         } catch (wcErr) {
