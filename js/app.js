@@ -1167,7 +1167,11 @@ async function createWCOrder(status, captureId, formData) {
       meta_data:      meta,
     }),
   });
-  return res.ok ? res.json() : null;
+  if (!res.ok) {
+    const errBody = await res.text().catch(() => '');
+    throw new Error(`WC proxy respondió ${res.status}: ${errBody}`);
+  }
+  return res.json();
 }
 
 /* ── Cargar SDK de PayPal dinámicamente ──────────────────────────── */
