@@ -604,7 +604,7 @@ DOM.resetSearch.addEventListener('click', () => {
 /* ─── Carrito ────────────────────────────────────────────────────── */
 const CART_KEY    = 'vmtop_cart';
 const WA_NUMBER        = '525568850885';  // Botón flotante (contacto general)
-const WA_PEDIDOS       = '525578484532';  // Pedidos por transferencia
+const WA_PEDIDOS       = '525568850885';  // Pedidos por transferencia
 
 const CART_DOM = {
   btn:       $('cartBtn'),
