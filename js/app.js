@@ -802,27 +802,17 @@ function renderCart() {
   const totalQty = entries.reduce((s, i) => s + i.qty, 0);
   CART_DOM.totalItems.textContent = `${totalQty} artículo${totalQty !== 1 ? 's' : ''}`;
 
-  // Mostrar total en footer
+  // Mostrar total en footer: suma de los productos agregados.
+  // El envío ya no se desglosa aquí visualmente (sigue calculándose y
+  // cobrándose normal en el pago — ver calcShipping() en createWCOrder/PayPal).
   let totalEl = CART_DOM.footer.querySelector('.cart-grand-total');
   if (!totalEl) {
     totalEl = document.createElement('div');
     totalEl.className = 'cart-grand-total';
     CART_DOM.footer.querySelector('.cart-summary').appendChild(totalEl);
   }
-  // Fila de envío (solo pago en línea)
-  let shippingEl = CART_DOM.footer.querySelector('.cart-shipping-row');
-  if (!shippingEl) {
-    shippingEl = document.createElement('div');
-    shippingEl.className = 'cart-summary-row cart-shipping-row';
-    CART_DOM.footer.querySelector('.cart-summary').insertBefore(shippingEl, totalEl);
-  }
-  const shippingCost = calcShipping(grandTotal);
-  shippingEl.innerHTML = shippingCost === 0
-    ? `<span>Envío</span><span style="color:var(--clr-success);font-weight:700;">¡Gratis!</span>`
-    : `<span>Envío</span><span>${fmtShort(shippingCost)}</span>`;
-
-  const totalConEnvio = grandTotal + shippingCost;
-  totalEl.innerHTML = `<span>Total</span><span>${fmtShort(totalConEnvio)}</span>`;
+  CART_DOM.footer.querySelector('.cart-shipping-row')?.remove();
+  totalEl.innerHTML = `<span>Total</span><span>${fmtShort(grandTotal)}</span>`;
 
   // Listeners
   CART_DOM.items.querySelectorAll('.qty-btn').forEach(btn => {
