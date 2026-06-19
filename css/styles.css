@@ -1112,6 +1112,24 @@ body {
 }
 .btn-pay-online:hover { background: #2563eb; transform: translateY(-1px); }
 .btn-pay-online:active { transform: translateY(0); }
+.btn-pay-online:disabled {
+  background: var(--clr-surface2);
+  color: var(--clr-text-muted);
+  cursor: not-allowed;
+  box-shadow: none;
+}
+.btn-pay-online:disabled:hover { background: var(--clr-surface2); transform: none; }
+
+.cart-online-pay-note {
+  font-size: 11px;
+  line-height: 1.4;
+  color: var(--clr-text-muted);
+  background: rgba(245,158,11,.1);
+  border: 1px solid rgba(245,158,11,.3);
+  border-radius: var(--radius-sm);
+  padding: 8px 10px;
+  margin: -2px 0 2px;
+}
 
 .btn-whatsapp {
   display: flex;

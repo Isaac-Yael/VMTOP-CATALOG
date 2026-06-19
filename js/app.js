@@ -618,6 +618,8 @@ const CART_DOM = {
   totalItems:$('cartTotalItems'),
   whatsapp:  $('btnWhatsapp'),
   clear:     $('btnClearCart'),
+  payOnline: $('btnPayOnline'),
+  payNote:   $('cartOnlinePayNote'),
 };
 
 // Estructura: { [sku]: { sku, nombre, imagen, qty } }
@@ -743,9 +745,19 @@ function renderCart() {
 
   CART_DOM.items.querySelectorAll('.cart-item, .cart-tier-banner').forEach(el => el.remove());
 
-  if (!entries.length) return;
+  if (!entries.length) {
+    if (CART_DOM.payOnline) CART_DOM.payOnline.disabled = false;
+    if (CART_DOM.payNote)   CART_DOM.payNote.hidden = true;
+    return;
+  }
 
   const { priced, grandTotal, distActive, totalMayoreo } = calcCartPricing();
+
+  // Pago en línea solo permitido si TODO el carrito está a precio Mayoreo.
+  // Precio Distribuidor o Precio Caja requieren coordinación manual (WhatsApp).
+  const onlineBlocked = priced.some(item => item.tier === 'dist' || item.tier === 'caja');
+  if (CART_DOM.payOnline) CART_DOM.payOnline.disabled = onlineBlocked;
+  if (CART_DOM.payNote)   CART_DOM.payNote.hidden = !onlineBlocked;
 
   // Banner de nivel de precio activo
   const remaining = DIST_THRESHOLD - totalMayoreo;
@@ -1335,7 +1347,13 @@ async function proceedToPayPal() {
 }
 
 /* ── Event listeners ─────────────────────────────────────────────── */
-$('btnPayOnline')?.addEventListener('click', () => openCheckoutPopup('online'));
+$('btnPayOnline')?.addEventListener('click', () => {
+  // Seguridad adicional: el botón ya está disabled en este caso (ver renderCart),
+  // pero se valida de nuevo para evitar pagos en línea con precio Distribuidor/Caja.
+  const { priced } = calcCartPricing();
+  if (priced.some(item => item.tier === 'dist' || item.tier === 'caja')) return;
+  openCheckoutPopup('online');
+});
 CART_DOM.whatsapp?.removeEventListener('click', sendWhatsApp);
 CART_DOM.whatsapp?.addEventListener('click', () => openCheckoutPopup('whatsapp'));
 $('checkoutPopupClose')?.addEventListener('click', closeCheckoutPopup);
