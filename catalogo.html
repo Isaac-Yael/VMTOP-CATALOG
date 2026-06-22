@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Descarga el catálogo completo de VMTOP en PDF: productos, precios de mayoreo, distribuidor y caja." />
+  <title>Catálogo PDF – VMTOP</title>
+  <link rel="icon" type="image/png" href="img/vmtop_icon.png" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    .catpdf-topbar {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+      background: var(--clr-surface);
+      border-bottom: 1px solid var(--clr-border);
+      z-index: 10;
+    }
+    .catpdf-topbar img { height: 28px; }
+
+    .catpdf-wrap {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 100px 20px 60px;
+    }
+
+    .catpdf-icon { font-size: 56px; margin-bottom: 20px; }
+
+    .catpdf-title {
+      font-size: clamp(36px, 8vw, 64px);
+      font-weight: 800;
+      letter-spacing: 2px;
+      color: var(--clr-text);
+      margin-bottom: 14px;
+    }
+
+    .catpdf-subtitle {
+      font-size: 16px;
+      color: var(--clr-text-muted);
+      max-width: 480px;
+      line-height: 1.5;
+      margin-bottom: 40px;
+    }
+
+    .catpdf-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--clr-accent);
+      color: #000;
+      font-size: 18px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      padding: 18px 48px;
+      border: none;
+      border-radius: var(--radius-md);
+      text-decoration: none;
+      cursor: pointer;
+      box-shadow: var(--shadow-card);
+      transition: var(--transition);
+    }
+    .catpdf-btn:hover { background: #e08c00; transform: translateY(-2px); box-shadow: var(--shadow-hover); }
+    .catpdf-btn svg { width: 22px; height: 22px; flex-shrink: 0; }
+
+    .catpdf-back {
+      margin-top: 36px;
+      font-size: 13px;
+      color: var(--clr-text-muted);
+      text-decoration: none;
+    }
+    .catpdf-back:hover { color: var(--clr-text); }
+  </style>
+</head>
+<body>
+
+  <div class="catpdf-topbar">
+    <a href="index.html">
+      <img src="img/logo_1.webp" alt="VMTOP" />
+    </a>
+  </div>
+
+  <div class="catpdf-wrap">
+    <div class="catpdf-icon">📄</div>
+    <h1 class="catpdf-title">CATALOGO</h1>
+    <p class="catpdf-subtitle">Descarga el catálogo completo de VMTOP en PDF, con todos nuestros productos, categorías y precios de mayoreo.</p>
+
+    <a class="catpdf-btn" href="pdf/catalogo.pdf" download="catalogo-vmtop.pdf">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/>
+      </svg>
+      DESCARGAR
+    </a>
+
+    <a href="index.html" class="catpdf-back">← Volver al catálogo</a>
+  </div>
+
+</body>
+</html>

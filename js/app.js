@@ -998,16 +998,8 @@ QTY_DOM.confirm.addEventListener('click', confirmQtyPopup);
 QTY_DOM.overlay.addEventListener('click', closeQtyPopup);
 
 /* ─── PDF ────────────────────────────────────────────────────────── */
-function downloadPDF() {
-  const a = document.createElement('a');
-  a.href     = 'pdf/catalogo.pdf';
-  a.download = 'catalogo.pdf';
-  a.click();
-}
-const btnPdf       = $('btnPdf');
-const btnPdfMobile = $('btnPdfMobile');
-if (btnPdf)       btnPdf.addEventListener('click', downloadPDF);
-if (btnPdfMobile) btnPdfMobile.addEventListener('click', downloadPDF);
+/* Los botones de PDF (btnPdf / btnPdfMobile) ahora son enlaces <a>
+   directos a catalogo.html, que tiene su propio botón de descarga. */
 
 /* ─── Menú móvil (panel lateral) ────────────────────────────────── */
 const hamburgerBtn       = $('hamburgerBtn');
