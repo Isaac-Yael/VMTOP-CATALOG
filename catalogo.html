@@ -8,18 +8,7 @@
   <link rel="icon" type="image/png" href="img/vmtop_icon.png" />
   <link rel="stylesheet" href="css/styles.css" />
   <style>
-    .catpdf-topbar {
-      position: fixed;
-      top: 0; left: 0; right: 0;
-      height: 60px;
-      display: flex;
-      align-items: center;
-      padding: 0 20px;
-      background: var(--clr-surface);
-      border-bottom: 1px solid var(--clr-border);
-      z-index: 10;
-    }
-    .catpdf-topbar img { height: 28px; }
+    body { padding-top: 0; }
 
     .catpdf-wrap {
       min-height: 100vh;
@@ -28,10 +17,10 @@
       align-items: center;
       justify-content: center;
       text-align: center;
-      padding: 100px 20px 60px;
+      padding: 60px 20px;
     }
 
-    .catpdf-icon { font-size: 56px; margin-bottom: 20px; }
+    .catpdf-logo { width: min(320px, 80vw); height: auto; margin-bottom: 28px; }
 
     .catpdf-title {
       font-size: clamp(36px, 8vw, 64px);
@@ -80,14 +69,8 @@
 </head>
 <body>
 
-  <div class="catpdf-topbar">
-    <a href="index.html">
-      <img src="img/logo_1.webp" alt="VMTOP" />
-    </a>
-  </div>
-
   <div class="catpdf-wrap">
-    <div class="catpdf-icon">📄</div>
+    <img class="catpdf-logo" src="img/logo.webp" alt="VMTOP" />
     <h1 class="catpdf-title">CATALOGO</h1>
     <p class="catpdf-subtitle">Descarga el catálogo completo de VMTOP en PDF, con todos nuestros productos, categorías y precios de mayoreo.</p>
 
