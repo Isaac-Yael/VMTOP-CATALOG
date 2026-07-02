@@ -1120,6 +1120,18 @@ body {
 }
 .btn-pay-online:disabled:hover { background: var(--clr-surface2); transform: none; }
 
+.cart-shipping-notice {
+  font-size: 11px;
+  line-height: 1.5;
+  color: var(--clr-text-muted);
+  background: rgba(59,130,246,.08);
+  border: 1px solid rgba(59,130,246,.2);
+  border-radius: var(--radius-sm);
+  padding: 8px 10px;
+  margin: 0 0 10px;
+}
+.cart-shipping-notice strong { color: var(--clr-text); font-weight: 600; }
+
 .cart-online-pay-note {
   font-size: 11px;
   line-height: 1.4;
