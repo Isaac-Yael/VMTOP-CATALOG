@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Manual GoHighLevel – VMTOP</title>
+  <link rel="icon" type="image/png" href="../img/vmtop_icon.png" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <style>
+    body { padding-top: 0; margin: 0; }
+
+    /* ═══════════════════════════════════════════════
+       PASSWORD SCREEN
+    ═══════════════════════════════════════════════ */
+    #pw-screen {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--clr-bg);
+      padding: 20px;
+    }
+    .pw-card {
+      background: var(--clr-surface);
+      border: 1px solid var(--clr-border);
+      border-radius: var(--radius-lg);
+      padding: 48px 40px 36px;
+      width: 100%;
+      max-width: 380px;
+      text-align: center;
+      box-shadow: var(--shadow-card);
+    }
+    .pw-logo { width: 170px; height: auto; margin-bottom: 24px; }
+    .pw-title {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--clr-text);
+      margin-bottom: 6px;
+      letter-spacing: .3px;
+    }
+    .pw-subtitle {
+      font-size: 12px;
+      color: var(--clr-text-muted);
+      margin-bottom: 28px;
+      line-height: 1.5;
+    }
+    .pw-input {
+      width: 100%;
+      box-sizing: border-box;
+      background: var(--clr-surface2);
+      border: 1px solid var(--clr-border);
+      border-radius: var(--radius-md);
+      color: var(--clr-text);
+      font-size: 18px;
+      letter-spacing: 5px;
+      padding: 12px 16px;
+      text-align: center;
+      outline: none;
+      margin-bottom: 12px;
+      transition: var(--transition);
+    }
+    .pw-input:focus { border-color: var(--clr-accent); box-shadow: 0 0 0 2px rgba(245,158,11,.18); }
+    .pw-input::placeholder { letter-spacing: 1px; font-size: 13px; }
+    .pw-btn {
+      width: 100%;
+      background: var(--clr-accent);
+      color: #000;
+      font-size: 15px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      padding: 12px 20px;
+      border: none;
+      border-radius: var(--radius-md);
+      cursor: pointer;
+      transition: var(--transition);
+    }
+    .pw-btn:hover { background: #e08c00; transform: translateY(-1px); }
+    .pw-error {
+      font-size: 12px;
+      color: #f87171;
+      margin-top: 10px;
+      min-height: 16px;
+    }
+
+    /* ═══════════════════════════════════════════════
+       MANUAL LAYOUT
+    ═══════════════════════════════════════════════ */
+    #manual-app { display: none; min-height: 100vh; background: var(--clr-bg); }
+
+    .manual-layout { display: flex; min-height: 100vh; }
+
+    /* ─── Sidebar ──────────────────────────────── */
+    .sidebar {
+      width: 265px;
+      flex-shrink: 0;
+      background: var(--clr-surface);
+      border-right: 1px solid var(--clr-border);
+      position: fixed;
+      top: 0; left: 0;
+      height: 100vh;
+      overflow-y: auto;
+      z-index: 100;
+      display: flex;
+      flex-direction: column;
+      transition: transform .25s ease;
+    }
+    .sidebar-header {
+      padding: 18px 16px 14px;
+      border-bottom: 1px solid var(--clr-border);
+      flex-shrink: 0;
+    }
+    .sidebar-logo { width: 110px; height: auto; display: block; margin-bottom: 8px; }
+    .sidebar-tagline {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: .8px;
+      text-transform: uppercase;
+      color: var(--clr-accent);
+    }
+
+    .sidebar-search {
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--clr-border);
+      flex-shrink: 0;
+    }
+    .search-wrap { position: relative; }
+    .search-wrap svg {
+      position: absolute;
+      left: 9px; top: 50%;
+      transform: translateY(-50%);
+      width: 13px; height: 13px;
+      color: var(--clr-text-muted);
+      pointer-events: none;
+    }
+    .search-input {
+      width: 100%;
+      box-sizing: border-box;
+      background: var(--clr-surface2);
+      border: 1px solid var(--clr-border);
+      border-radius: var(--radius-sm);
+      color: var(--clr-text);
+      font-size: 12px;
+      padding: 7px 8px 7px 28px;
+      outline: none;
+      transition: var(--transition);
+    }
+    .search-input:focus { border-color: var(--clr-accent2); }
+    .search-input::placeholder { color: var(--clr-text-muted); }
+
+    .sidebar-nav { flex: 1; overflow-y: auto; padding: 8px 0 24px; }
+
+    .nav-sec-label {
+      padding: 12px 14px 4px;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: .7px;
+      text-transform: uppercase;
+      color: var(--clr-accent);
+      cursor: pointer;
+      user-select: none;
+    }
+    .nav-sec-label:hover { color: var(--clr-text); }
+
+    .nav-item {
+      display: block;
+      padding: 5px 14px 5px 24px;
+      font-size: 12px;
+      color: var(--clr-text-muted);
+      text-decoration: none;
+      cursor: pointer;
+      border-left: 2px solid transparent;
+      line-height: 1.35;
+      transition: background .12s, color .12s, border-color .12s;
+    }
+    .nav-item:hover { color: var(--clr-text); background: var(--clr-surface2); }
+    .nav-item.active {
+      color: var(--clr-accent);
+      border-left-color: var(--clr-accent);
+      background: rgba(245,158,11,.06);
+      font-weight: 600;
+    }
+
+    /* ─── Main content ─────────────────────────── */
+    .manual-main {
+      margin-left: 265px;
+      flex: 1;
+      padding: 44px 52px 60px;
+      min-width: 0;
+    }
+
+    .manual-header {
+      margin-bottom: 40px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--clr-border);
+    }
+    .manual-header h1 {
+      font-size: clamp(20px, 3.5vw, 30px);
+      font-weight: 800;
+      color: var(--clr-text);
+      margin: 0 0 10px;
+      line-height: 1.2;
+    }
+    .manual-header p {
+      font-size: 14px;
+      color: var(--clr-text-muted);
+      line-height: 1.7;
+      margin: 0;
+      max-width: 680px;
+    }
+
+    /* ─── Sections ──────────────────────────────── */
+    .section-block { margin-bottom: 56px; }
+
+    .section-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 18px;
+      font-weight: 800;
+      color: var(--clr-accent);
+      margin: 0 0 24px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid rgba(245,158,11,.2);
+    }
+    .sec-badge {
+      font-size: 10px;
+      font-weight: 700;
+      background: rgba(245,158,11,.15);
+      color: var(--clr-accent);
+      border-radius: 4px;
+      padding: 2px 8px;
+      letter-spacing: .6px;
+      white-space: nowrap;
+    }
+
+    .subsection { margin-bottom: 30px; }
+
+    .sub-title {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--clr-text);
+      margin: 0 0 10px;
+      display: flex;
+      align-items: baseline;
+      gap: 6px;
+    }
+    .sub-num { color: var(--clr-accent2); font-size: 13px; }
+
+    .cp {
+      font-size: 13px;
+      color: var(--clr-text-muted);
+      line-height: 1.75;
+      margin: 0 0 10px;
+    }
+
+    /* ─── Note / Warning / Gold boxes ──────────── */
+    .box-note {
+      background: rgba(59,130,246,.07);
+      border: 1px solid rgba(59,130,246,.22);
+      border-left: 3px solid var(--clr-accent2);
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      padding: 11px 14px;
+      margin: 10px 0;
+      font-size: 13px;
+      color: var(--clr-text);
+      line-height: 1.65;
+    }
+    .box-warn {
+      background: rgba(245,158,11,.07);
+      border: 1px solid rgba(245,158,11,.22);
+      border-left: 3px solid var(--clr-accent);
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      padding: 11px 14px;
+      margin: 10px 0;
+      font-size: 13px;
+      color: var(--clr-text);
+      line-height: 1.65;
+    }
+    .box-gold {
+      background: rgba(245,158,11,.1);
+      border: 1px solid rgba(245,158,11,.35);
+      border-radius: var(--radius-md);
+      padding: 14px 18px;
+      margin: 10px 0;
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--clr-text);
+      line-height: 1.5;
+    }
+
+    /* ─── Step list ─────────────────────────────── */
+    .step-list { list-style: none; padding: 0; margin: 10px 0; display: flex; flex-direction: column; gap: 9px; }
+    .step-list li { display: flex; gap: 10px; align-items: flex-start; font-size: 13px; color: var(--clr-text-muted); line-height: 1.65; }
+    .sn {
+      background: var(--clr-accent2);
+      color: #fff;
+      font-size: 10px;
+      font-weight: 800;
+      width: 20px; height: 20px;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    /* ─── Bullet list ───────────────────────────── */
+    .bul { list-style: none; padding: 0; margin: 8px 0; }
+    .bul li {
+      font-size: 13px;
+      color: var(--clr-text-muted);
+      line-height: 1.7;
+      padding: 2px 0 2px 16px;
+      position: relative;
+    }
+    .bul li::before {
+      content: '▸';
+      position: absolute;
+      left: 0;
+      color: var(--clr-accent);
+      font-size: 10px;
+      top: 5px;
+    }
+
+    /* ─── Clock items ───────────────────────────── */
+    .clock-row {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      padding: 9px 12px;
+      background: var(--clr-surface2);
+      border-radius: var(--radius-sm);
+      margin: 6px 0;
+      font-size: 13px;
+      color: var(--clr-text-muted);
+      line-height: 1.5;
+    }
+
+    /* ─── Stage badges ──────────────────────────── */
+    .stg {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 700;
+      border-radius: 4px;
+      padding: 1px 7px;
+      letter-spacing: .2px;
+      vertical-align: middle;
+    }
+    .stg-blue  { background: rgba(59,130,246,.14);  color: #93c5fd; border: 1px solid rgba(59,130,246,.3); }
+    .stg-amber { background: rgba(245,158,11,.14);  color: var(--clr-accent); border: 1px solid rgba(245,158,11,.3); }
+    .stg-green { background: rgba(34,197,94,.12);   color: #86efac; border: 1px solid rgba(34,197,94,.3); }
+    .stg-red   { background: rgba(239,68,68,.1);    color: #fca5a5; border: 1px solid rgba(239,68,68,.25); }
+
+    /* ─── Table ──────────────────────────────────── */
+    .m-table { width: 100%; border-collapse: collapse; font-size: 13px; margin: 14px 0; }
+    .m-table th {
+      background: var(--clr-surface2);
+      color: var(--clr-text);
+      font-weight: 700;
+      padding: 10px 12px;
+      text-align: left;
+      border: 1px solid var(--clr-border);
+      font-size: 12px;
+    }
+    .m-table td {
+      padding: 10px 12px;
+      border: 1px solid var(--clr-border);
+      color: var(--clr-text-muted);
+      vertical-align: middle;
+    }
+    .m-table tr:nth-child(even) td { background: rgba(255,255,255,.015); }
+
+    /* ─── Code inline ───────────────────────────── */
+    .code-tag {
+      background: var(--clr-surface2);
+      border: 1px solid var(--clr-border);
+      border-radius: 3px;
+      padding: 1px 6px;
+      font-size: 12px;
+      font-family: monospace;
+      color: var(--clr-text);
+    }
+
+    /* ─── Search state ───────────────────────────── */
+    .section-block.s-hide,
+    .subsection.s-hide { display: none; }
+    .no-results {
+      text-align: center;
+      color: var(--clr-text-muted);
+      font-size: 14px;
+      padding: 60px 0;
+    }
+
+    /* ─── Footer ─────────────────────────────────── */
+    .manual-footer {
+      margin-top: 60px;
+      padding-top: 20px;
+      border-top: 1px solid var(--clr-border);
+      font-size: 12px;
+      color: var(--clr-text-muted);
+      text-align: center;
+      line-height: 1.7;
+    }
+
+    /* ─── Mobile toggle ──────────────────────────── */
+    .mob-toggle {
+      display: none;
+      position: fixed;
+      top: 14px; left: 14px;
+      z-index: 200;
+      background: var(--clr-surface);
+      border: 1px solid var(--clr-border);
+      border-radius: var(--radius-sm);
+      padding: 8px;
+      cursor: pointer;
+      color: var(--clr-text);
+      align-items: center;
+      justify-content: center;
+    }
+    .mob-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,.5);
+      z-index: 99;
+    }
+    .mob-overlay.open { display: block; }
+
+    /* ═══════════════════════════════════════════════
+       RESPONSIVE
+    ═══════════════════════════════════════════════ */
+    @media (max-width: 900px) {
+      .manual-main { padding: 32px 24px 48px; }
+    }
+    @media (max-width: 768px) {
+      .mob-toggle { display: flex; }
+      .sidebar {
+        transform: translateX(-100%);
+        width: 280px;
+        box-shadow: 4px 0 24px rgba(0,0,0,.4);
+      }
+      .sidebar.open { transform: translateX(0); }
+      .manual-main {
+        margin-left: 0;
+        padding: 68px 18px 48px;
+      }
+      .m-table { font-size: 12px; }
+      .m-table th, .m-table td { padding: 8px 10px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ═══════════ PASSWORD SCREEN ═══════════ -->
+<div id="pw-screen">
+  <div class="pw-card">
+    <img class="pw-logo" src="../img/logo.webp" alt="VMTOP" />
+    <div class="pw-title">Manual Interno — GoHighLevel</div>
+    <div class="pw-subtitle">Acceso restringido al equipo de ventas y atención al cliente de VMTOP.</div>
+    <input type="password" class="pw-input" id="pwInput" placeholder="Contraseña" autocomplete="off" />
+    <button class="pw-btn" id="pwBtn">ENTRAR</button>
+    <div class="pw-error" id="pwError"></div>
+  </div>
+</div>
+
+<!-- ═══════════ MANUAL APP ═══════════ -->
+<div id="manual-app">
+
+  <button class="mob-toggle" id="mobToggle" aria-label="Menú">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+      <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+    </svg>
+  </button>
+  <div class="mob-overlay" id="mobOverlay"></div>
+
+  <div class="manual-layout">
+
+    <!-- ══════ SIDEBAR ══════ -->
+    <aside class="sidebar" id="sidebar">
+
+      <div class="sidebar-header">
+        <img class="sidebar-logo" src="../img/logo.webp" alt="VMTOP" />
+        <div class="sidebar-tagline">Manual · GoHighLevel</div>
+      </div>
+
+      <div class="sidebar-search">
+        <div class="search-wrap">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+          </svg>
+          <input type="search" class="search-input" id="searchInput" placeholder="Buscar en el manual…" />
+        </div>
+      </div>
+
+      <nav class="sidebar-nav">
+        <div class="nav-sec-label" onclick="goTo('sec1')">§ Sección 1 — Atención de Leads</div>
+        <a class="nav-item" onclick="goTo('s1-1')">1.1 Cómo empieza la conversación</a>
+        <a class="nav-item" onclick="goTo('s1-2')">1.2 Señales de intervención</a>
+        <a class="nav-item" onclick="goTo('s1-3')">1.3 Camino A — Tú detectas</a>
+        <a class="nav-item" onclick="goTo('s1-4')">1.4 Camino B — El bot detecta</a>
+        <a class="nav-item" onclick="goTo('s1-5')">1.5 Reactivar el bot</a>
+        <a class="nav-item" onclick="goTo('s1-6')">1.6 El reloj (SLA)</a>
+        <a class="nav-item" onclick="goTo('s1-7')">1.7 Regla de oro ⭐</a>
+
+        <div class="nav-sec-label" onclick="goTo('sec2')" style="margin-top:4px;">§ Sección 2 — Leads Interesados</div>
+        <a class="nav-item" onclick="goTo('s2-1')">2.1 ¿Qué es "Interesado"?</a>
+        <a class="nav-item" onclick="goTo('s2-2')">2.2 Tu objetivo en esta etapa</a>
+        <a class="nav-item" onclick="goTo('s2-3')">2.3 Escenario A — Cotizar</a>
+        <a class="nav-item" onclick="goTo('s2-4')">2.4 Escenario B — Sin respuesta</a>
+        <a class="nav-item" onclick="goTo('s2-5')">2.5 Qué pasa en "Indeciso"</a>
+
+        <div class="nav-sec-label" onclick="goTo('sec3')" style="margin-top:4px;">§ Sección 3 — Cierre de Venta</div>
+        <a class="nav-item" onclick="goTo('s3-1')">3.1 Rol del agente de ventas</a>
+        <a class="nav-item" onclick="goTo('s3-2')">3.2 Escenario A — Venta exitosa</a>
+        <a class="nav-item" onclick="goTo('s3-3')">3.3 Escenario B — No se concreta</a>
+        <a class="nav-item" onclick="goTo('s3-4')">3.4 Tabla resumen "Indeciso"</a>
+        <a class="nav-item" onclick="goTo('s3-5')">3.5 Reactivación espontánea</a>
+      </nav>
+    </aside>
+
+    <!-- ══════ MAIN ══════ -->
+    <main class="manual-main" id="manualMain">
+
+      <div class="manual-header">
+        <h1>Manual de Usuario — GoHighLevel para el Equipo de Ventas y Atención al Cliente</h1>
+        <p>Este manual explica los procesos de GoHighLevel en los que participan directamente las agentes de atención al cliente y las vendedoras. No cubre toda la plataforma — solo lo que necesitas saber para hacer bien tu trabajo día a día.</p>
+      </div>
+
+      <!-- ══ SECCIÓN 1 ══ -->
+      <div class="section-block" id="sec1">
+        <h2 class="section-title">
+          <span class="sec-badge">SECCIÓN 1</span>
+          Atención de Leads Nuevos — Bot IA + Intervención Humana
+        </h2>
+
+        <div class="subsection" id="s1-1">
+          <h3 class="sub-title"><span class="sub-num">1.1</span> Cómo empieza la conversación</h3>
+          <p class="cp">Cuando un cliente escribe por primera vez (por cualquier canal: WhatsApp, SMS, webchat, etc.), lo atiende automáticamente un bot de inteligencia artificial. El bot resuelve dudas simples y mantiene la conversación, pero no es perfecto — puede dar respuestas torpes o poco naturales.</p>
+          <div class="box-note">📌 Por eso, todo agente de atención al cliente debe <strong>monitorear constantemente las conversaciones que el bot está manejando</strong>, no solo las propias.</div>
+        </div>
+
+        <div class="subsection" id="s1-2">
+          <h3 class="sub-title"><span class="sub-num">1.2</span> Señales de que hay que intervenir</h3>
+          <p class="cp">Debes prestar atención cuando el cliente muestra señales de:</p>
+          <ul class="bul">
+            <li>Querer comprar</li>
+            <li>Pedir una cotización</li>
+            <li>Querer visitar la tienda físicamente</li>
+            <li>Cualquier otro indicio claro de conversión (interés real de avanzar)</li>
+          </ul>
+          <p class="cp" style="margin-top:8px;">Esto aplica igual sin importar el canal por el que esté escribiendo el cliente.</p>
+        </div>
+
+        <div class="subsection" id="s1-3">
+          <h3 class="sub-title"><span class="sub-num">1.3</span> Camino A — Tú detectas el interés primero</h3>
+          <p class="cp">Si tú (agente humano) notas estas señales antes que el sistema:</p>
+          <ol class="step-list">
+            <li><span class="sn">1</span><span>Interrumpe la conversación escribiéndole directamente al cliente para guiarlo mejor de lo que el bot podría hacerlo.</span></li>
+            <li><span class="sn">2</span><span>En cuanto envías ese mensaje manual, <strong>el bot se apaga automáticamente</strong> para ese contacto.</span></li>
+            <li><span class="sn">3</span><span>Tú debes <strong>mover manualmente al lead</strong> dentro del pipeline: del stage <span class="stg stg-blue">Lead</span> al stage <span class="stg stg-amber">Interesado</span>. Esto no sucede solo — es una acción que te toca hacer a ti.</span></li>
+          </ol>
+        </div>
+
+        <div class="subsection" id="s1-4">
+          <h3 class="sub-title"><span class="sub-num">1.4</span> Camino B — El bot detecta el interés primero</h3>
+          <p class="cp">Si es el propio bot quien identifica que el cliente está muy interesado:</p>
+          <ol class="step-list">
+            <li><span class="sn">1</span><span>El sistema mueve automáticamente al lead al stage <span class="stg stg-amber">Interesado</span> dentro del pipeline.</span></li>
+            <li><span class="sn">2</span><span>Se notifica a un agente de atención al cliente para que revise y tome la conversación.</span></li>
+            <li><span class="sn">3</span><span>El bot se apaga automáticamente en ese momento.</span></li>
+          </ol>
+        </div>
+
+        <div class="subsection" id="s1-5">
+          <h3 class="sub-title"><span class="sub-num">1.5</span> ¿El bot se puede volver a activar?</h3>
+          <p class="cp">Sí. Si el bot se apagó por error (falsa alarma, o el cliente ya resolvió su duda y quieres que el bot vuelva a atenderlo), se puede reactivar manualmente activando el Workflow <strong>"Atención Automática"</strong> sobre ese contacto.</p>
+          <div class="box-warn">⚠️ <strong>Esto solo debe hacerlo quien tenga permiso/entrenamiento para tocar workflows.</strong> Si no sabes cómo, pide ayuda antes de intentarlo — para evitar activarlo sobre el contacto equivocado.</div>
+        </div>
+
+        <div class="subsection" id="s1-6">
+          <h3 class="sub-title"><span class="sub-num">1.6</span> El reloj de conversaciones (SLA)</h3>
+          <p class="cp">Vas a ver un ícono de reloj en cada conversación que cambia de color:</p>
+          <div class="clock-row">🟠 <span><strong>Naranja</strong> — pasaron 5 minutos sin responder. Se está por vencer el tiempo de respuesta.</span></div>
+          <div class="clock-row">🔴 <span><strong>Rojo</strong> — pasaron 10 minutos sin responder. Ya se tardó demasiado.</span></div>
+          <p class="cp" style="margin-top:12px;">Mientras el bot está activo no te preocupes — el bot responde al instante. Cuando el bot está apagado, <strong>la responsabilidad de responder rápido es tuya</strong>. Debes estar pendiente para que el reloj nunca llegue a rojo.</p>
+        </div>
+
+        <div class="subsection" id="s1-7">
+          <h3 class="sub-title"><span class="sub-num">1.7</span> Regla de oro ⭐</h3>
+          <div class="box-gold">⭐ Siempre sé tú quien manda el último mensaje. Nunca dejes una conversación donde el cliente escribió y nadie le respondió.</div>
+        </div>
+      </div>
+
+      <!-- ══ SECCIÓN 2 ══ -->
+      <div class="section-block" id="sec2">
+        <h2 class="section-title">
+          <span class="sec-badge">SECCIÓN 2</span>
+          Gestión de Leads Interesados — Conversión y Seguimiento
+        </h2>
+
+        <div class="subsection" id="s2-1">
+          <h3 class="sub-title"><span class="sub-num">2.1</span> ¿Qué significa que un lead esté en "Interesado"?</h3>
+          <p class="cp">Un cliente llega al stage <span class="stg stg-amber">Interesado</span> de dos formas: porque el bot detectó su interés automáticamente, o porque un agente lo movió manualmente al notar señales de conversión (ver Sección 1).</p>
+          <div class="box-note">📌 <strong>Esta es la etapa de mayor prioridad después de la venta misma.</strong> Los leads aquí son tibios o calientes — es donde se define si se convierten en clientes o se pierden. Deben atenderse con prioridad sobre cualquier otra conversación.</div>
+        </div>
+
+        <div class="subsection" id="s2-2">
+          <h3 class="sub-title"><span class="sub-num">2.2</span> Tu objetivo en esta etapa</h3>
+          <p class="cp">Como agente de atención al cliente, tu trabajo es <strong>empujar activamente la conversión</strong> usando las herramientas disponibles:</p>
+          <ul class="bul">
+            <li>Catálogo de productos</li>
+            <li>Promociones vigentes</li>
+            <li>Videos explicativos</li>
+            <li>Videollamadas</li>
+            <li>Cualquier otro recurso que ayude a cerrar la venta</li>
+          </ul>
+        </div>
+
+        <div class="subsection" id="s2-3">
+          <h3 class="sub-title"><span class="sub-num">2.3</span> Escenario A — El cliente quiere cotizar</h3>
+          <p class="cp">Cuando, después de tu proceso de conversión, el cliente muestra que ya quiere avanzar a cotizar formalmente:</p>
+          <ol class="step-list">
+            <li><span class="sn">1</span><span>Tú (agente de atención) debes <strong>mover manualmente al cliente al stage <span class="stg stg-blue">Cotización</span></strong>.</span></li>
+            <li><span class="sn">2</span><span>Al hacerlo, el sistema automáticamente te quita a ti de la conversación y asigna a un <strong>agente de ventas</strong> para que continúe el proceso.</span></li>
+            <li><span class="sn">3</span><span>Este lead pasa a tener <strong>prioridad máxima</strong>, ya que es donde se define la venta.</span></li>
+          </ol>
+        </div>
+
+        <div class="subsection" id="s2-4">
+          <h3 class="sub-title"><span class="sub-num">2.4</span> Escenario B — El cliente deja de responder o pospone</h3>
+          <p class="cp"><strong>¿Cuándo mover a "Indeciso"?</strong> Cuando se cumpla cualquiera de estas dos señales:</p>
+          <ul class="bul">
+            <li>Pasaron <strong>72 horas sin respuesta</strong> del cliente a tu último mensaje, o</li>
+            <li>El cliente da una respuesta de aplazamiento ("lo voy a pensar", "te aviso después", "ahora no puedo") sin dar fecha concreta — <strong>en este caso muévelo de inmediato, no esperes las 72 horas.</strong></li>
+          </ul>
+          <p class="cp" style="margin-top:10px;"><strong>Qué hacer:</strong></p>
+          <ol class="step-list">
+            <li><span class="sn">1</span><span>Mueve manualmente al cliente al stage <span class="stg stg-red">Indeciso</span>.</span></li>
+            <li><span class="sn">2</span><span>A partir de ahí, el sistema envía recordatorios automáticos (promociones, seguimiento) — tú no tienes que hacer nada manual.</span></li>
+          </ol>
+        </div>
+
+        <div class="subsection" id="s2-5">
+          <h3 class="sub-title"><span class="sub-num">2.5</span> Qué pasa después de "Indeciso"</h3>
+          <ul class="bul">
+            <li>Si el cliente responde a los recordatorios automáticos → el sistema lo regresa automáticamente al stage <span class="stg stg-amber">Interesado</span>, y retomas la conversación.</li>
+            <li>Si el cliente no responde después del 3er recordatorio → se mueve automáticamente a <span class="stg stg-red">Lead Perdido</span>.</li>
+          </ul>
+          <div class="box-warn" style="margin-top:12px;">⚠️ <strong>Por qué esto es importante:</strong> si no mueves al lead a <span class="stg stg-red">Indeciso</span> a tiempo, se pierde entre la totalidad de contactos y nunca entra a la secuencia de recordatorios — perdiendo una oportunidad de venta que se pudo haber rescatado.</div>
+        </div>
+      </div>
+
+      <!-- ══ SECCIÓN 3 ══ -->
+      <div class="section-block" id="sec3">
+        <h2 class="section-title">
+          <span class="sec-badge">SECCIÓN 3</span>
+          Cierre de Venta y Manejo de Cotizaciones No Concretadas
+        </h2>
+
+        <div class="subsection" id="s3-1">
+          <h3 class="sub-title"><span class="sub-num">3.1</span> Rol del agente de ventas</h3>
+          <p class="cp">El agente de ventas debe tomar la cotización y llevar a cabo la venta utilizando todos los medios disponibles: catálogo, promociones, videollamadas, visitas a tienda, etc.</p>
+        </div>
+
+        <div class="subsection" id="s3-2">
+          <h3 class="sub-title"><span class="sub-num">3.2</span> Escenario A — Venta exitosa y cerrada por completo</h3>
+          <p class="cp">Solo cuando ya no hay ninguna comunicación pendiente con el cliente (se le enviaron guías, comprobantes, facturas, etc.), el agente de ventas debe mover al cliente al stage <span class="stg stg-green">Venta Realizada</span>.</p>
+          <div class="box-warn">⚠️ <strong>No muevas al cliente aquí solo porque pagó.</strong> Espera a que todo el proceso post-venta esté 100% cerrado: documentos, envíos, confirmaciones.</div>
+          <p class="cp" style="margin-top:12px;"><strong>Qué pasa al moverlo:</strong></p>
+          <ol class="step-list">
+            <li><span class="sn">1</span><span>El <strong>Contact Type</strong> del cliente cambia a <span class="code-tag">Customer</span> — esto no es un Tag, es el campo Contact Type.</span></li>
+            <li><span class="sn">2</span><span>Permite tener control de clientes reales para futuras segundas ventas, promociones especiales, etc.</span></li>
+            <li><span class="sn">3</span><span>El <strong>Owner / Assigned User</strong> se mantiene con el mismo agente de ventas de forma permanente — es quien queda responsable de ese cliente para cualquier venta futura.</span></li>
+          </ol>
+        </div>
+
+        <div class="subsection" id="s3-3">
+          <h3 class="sub-title"><span class="sub-num">3.3</span> Escenario B — La venta no se concreta</h3>
+          <p class="cp">Cuando el cliente no paga, pospone su visita, deja de contestar, o cualquier otro motivo impide cerrar la venta.</p>
+          <p class="cp"><strong>Cuándo hacerlo:</strong> después de 7 días sin respuesta, o de que el cliente posponga repetidamente su compra.</p>
+          <p class="cp"><strong>Qué hacer:</strong></p>
+          <ol class="step-list">
+            <li><span class="sn">1</span><span>Agrega el Tag <span class="stg stg-amber">Cotizado</span> al contacto.</span></li>
+            <li><span class="sn">2</span><span>Mueve al cliente al stage <span class="stg stg-red">Indeciso</span>.</span></li>
+          </ol>
+          <div class="box-note" style="margin-top:12px;">📌 <strong>"Indeciso" es el mismo stage que ya conoces de la Sección 2</strong> — no es un stage distinto. La diferencia está en el Tag <span class="stg stg-amber">Cotizado</span>: gracias a ese tag, el sistema sabe que este cliente ya llegó hasta Cotización antes de enfriarse y le envía recordatorios especializados (distintos a los de un Interesado que nunca cotizó).</div>
+        </div>
+
+        <div class="subsection" id="s3-4">
+          <h3 class="sub-title"><span class="sub-num">3.4</span> Qué pasa después de este "Indeciso" (con Tag "Cotizado")</h3>
+          <ul class="bul">
+            <li>Si el cliente responde a los recordatorios → regresa directamente al stage <span class="stg stg-blue">Cotización</span> (no a "Interesado"), ya que el Tag indica en qué fase estaba. El mismo agente de ventas retoma la conversación desde donde se quedó.</li>
+            <li>Si el cliente no responde después del 3er recordatorio → se mueve automáticamente a <span class="stg stg-red">Lead Perdido</span>.</li>
+          </ul>
+          <p class="cp" style="margin-top:16px; font-weight:700; color:var(--clr-text);">Tabla resumen: cómo identificar el tipo de "Indeciso"</p>
+          <table class="m-table">
+            <thead>
+              <tr>
+                <th>Situación del cliente</th>
+                <th>Tag presente</th>
+                <th>Al responder, regresa a…</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Se enfrió estando en <span class="stg stg-amber">Interesado</span> (nunca cotizó)</td>
+                <td>Sin tag</td>
+                <td><span class="stg stg-amber">Interesado</span></td>
+              </tr>
+              <tr>
+                <td>Se enfrió estando en <span class="stg stg-blue">Cotización</span> (ya había cotizado)</td>
+                <td><span class="stg stg-amber">Cotizado</span></td>
+                <td><span class="stg stg-blue">Cotización</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="subsection" id="s3-5">
+          <h3 class="sub-title"><span class="sub-num">3.5</span> Reactivación espontánea de un cliente ("Venta Realizada" → nueva compra)</h3>
+          <p class="cp">Cuando un cliente en stage <span class="stg stg-green">Venta Realizada</span> (Contact Type: Customer) vuelve a escribir por su propia cuenta — no como respuesta a una automatización, sino porque él mismo inició contacto mostrando interés:</p>
+          <ol class="step-list">
+            <li><span class="sn">1</span><span><strong>El bot nunca interviene aquí.</strong> Los bots solo atienden leads que escriben por primera vez; un cliente que ya compró siempre se dirige directo a un humano.</span></li>
+            <li><span class="sn">2</span><span>La conversación llega directamente a su <strong>vendedor asignado</strong> (el mismo que hizo la venta anterior — el Owner no cambió).</span></li>
+            <li><span class="sn">3</span><span>Ese mismo vendedor debe mover manualmente al cliente de vuelta al stage <span class="stg stg-amber">Interesado</span>.</span></li>
+            <li><span class="sn">4</span><span>⚠️ <strong>Este movimiento no dispara ninguna automatización</strong> — es únicamente para llevar control interno de en qué fase está la conversación.</span></li>
+            <li><span class="sn">5</span><span>A partir de ahí, se repiten los mismos procesos: si el cliente decide cotizar → moverlo a <span class="stg stg-blue">Cotización</span> (Sección 2.3); si se enfría → <span class="stg stg-red">Indeciso</span> con Tag <span class="stg stg-amber">Cotizado</span> (Sección 3.3).</span></li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="manual-footer">
+        Documento vivo — se irán agregando más secciones conforme se definan nuevos procesos.<br>
+        VMTOP Mayoreo · Uso interno exclusivo
+      </div>
+
+    </main>
+  </div>
+</div>
+
+<script>
+/* ── Password ─────────────────────────────────────────── */
+const PASS = 'VENTOP';
+const pwScreen  = document.getElementById('pw-screen');
+const manualApp = document.getElementById('manual-app');
+const pwInput   = document.getElementById('pwInput');
+const pwBtn     = document.getElementById('pwBtn');
+const pwError   = document.getElementById('pwError');
+
+function tryUnlock() {
+  if (pwInput.value.trim().toUpperCase() === PASS) {
+    sessionStorage.setItem('vmtop_ghl_auth', '1');
+    pwScreen.style.display  = 'none';
+    manualApp.style.display = 'block';
+  } else {
+    pwError.textContent = 'Contraseña incorrecta. Intenta de nuevo.';
+    pwInput.value = '';
+    pwInput.focus();
+  }
+}
+
+if (sessionStorage.getItem('vmtop_ghl_auth') === '1') {
+  pwScreen.style.display  = 'none';
+  manualApp.style.display = 'block';
+}
+
+pwBtn.addEventListener('click', tryUnlock);
+pwInput.addEventListener('keydown', e => { if (e.key === 'Enter') tryUnlock(); });
+
+/* ── Mobile sidebar ───────────────────────────────────── */
+const sidebar    = document.getElementById('sidebar');
+const mobToggle  = document.getElementById('mobToggle');
+const mobOverlay = document.getElementById('mobOverlay');
+
+mobToggle.addEventListener('click', () => {
+  sidebar.classList.toggle('open');
+  mobOverlay.classList.toggle('open');
+});
+mobOverlay.addEventListener('click', () => {
+  sidebar.classList.remove('open');
+  mobOverlay.classList.remove('open');
+});
+
+/* ── Scroll to section ────────────────────────────────── */
+function goTo(id) {
+  const el = document.getElementById(id);
+  if (!el) return;
+  const offset = window.innerWidth <= 768 ? 68 : 28;
+  window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - offset, behavior: 'smooth' });
+  if (window.innerWidth <= 768) {
+    sidebar.classList.remove('open');
+    mobOverlay.classList.remove('open');
+  }
+  setActive(id);
+}
+
+function setActive(id) {
+  document.querySelectorAll('.nav-item').forEach(a => {
+    a.classList.toggle('active', (a.getAttribute('onclick') || '').includes(`'${id}'`));
+  });
+}
+
+/* ── Active nav on scroll ─────────────────────────────── */
+const subsections = [...document.querySelectorAll('.subsection[id]')];
+window.addEventListener('scroll', () => {
+  let cur = '';
+  subsections.forEach(s => { if (s.getBoundingClientRect().top < 120) cur = s.id; });
+  if (cur) setActive(cur);
+}, { passive: true });
+
+/* ── Search / filter ──────────────────────────────────── */
+const searchInput = document.getElementById('searchInput');
+const mainEl = document.getElementById('manualMain');
+
+searchInput.addEventListener('input', () => {
+  const q = searchInput.value.trim().toLowerCase();
+  mainEl.querySelector('.no-results')?.remove();
+
+  if (!q) {
+    document.querySelectorAll('.section-block, .subsection').forEach(el => el.classList.remove('s-hide'));
+    return;
+  }
+
+  let found = false;
+  document.querySelectorAll('.section-block').forEach(sec => {
+    let secMatch = false;
+    sec.querySelectorAll('.subsection').forEach(sub => {
+      const match = sub.textContent.toLowerCase().includes(q);
+      sub.classList.toggle('s-hide', !match);
+      if (match) { secMatch = true; found = true; }
+    });
+    sec.classList.toggle('s-hide', !secMatch);
+  });
+
+  if (!found) {
+    const p = document.createElement('p');
+    p.className = 'no-results';
+    p.textContent = `Sin resultados para "${searchInput.value}"`;
+    mainEl.appendChild(p);
+  }
+});
+</script>
+
+</body>
+</html>
