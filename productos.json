@@ -22,7 +22,7 @@
     "precio_caja": 2.0,
     "piezas_caja": 1000,
     "categoria": "Accesorios para Celular",
-    "descuento": 40.0,
+    "descuento": 50.0,
     "inventario": 5196
   },
   {
@@ -35,7 +35,7 @@
     "precio_caja": 2.5,
     "piezas_caja": 2400,
     "categoria": "Temporada",
-    "descuento": 40.0,
+    "descuento": 50.0,
     "inventario": 1254
   },
   {
