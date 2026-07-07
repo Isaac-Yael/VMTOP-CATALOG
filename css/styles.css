@@ -501,6 +501,24 @@ body {
   border-color: rgba(245,158,11,.35);
 }
 
+/* Descuento en carrito */
+.cart-orig-price {
+  color: var(--clr-text-muted);
+  font-size: 11px;
+  text-decoration: line-through;
+  margin-right: 3px;
+}
+.cart-disc-badge {
+  background: #dc2626;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  border-radius: 99px;
+  padding: 1px 5px;
+  margin-right: 4px;
+  vertical-align: middle;
+}
+
 /* Descuento badge */
 .discount-badge {
   position: absolute;

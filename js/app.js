@@ -667,9 +667,13 @@ function calcCartPricing() {
       tier = 'mayoreo';
     }
 
+    const desc = parseFloat(item.descuento) || 0;
+    const originalUnitPrice = unitPrice;
+    if (desc > 0) unitPrice = Math.round(unitPrice * (1 - desc / 100) * 100) / 100;
+
     const lineTotal = unitPrice * item.qty;
     grandTotal += lineTotal;
-    return { ...item, unitPrice, tier, lineTotal };
+    return { ...item, unitPrice, originalUnitPrice, descuento: desc, tier, lineTotal };
   });
 
   return { priced, grandTotal, distActive, totalMayoreo };
@@ -684,6 +688,7 @@ function addToCart(p) {
   const pCaja     = getField(p, 'precio_caja',          'PrecioCaja',         'Precio Caja')         ?? 0;
   const piezas    = getField(p, 'piezas_caja',          'PiezasCaja',         'Piezas por Caja', 'piezas') ?? 0;
   const inventario = parseInt(getField(p, 'inventario', 'Inventario', 'INVENTARIO') ?? -1);
+  const descuento  = parseFloat(getField(p, 'descuento', 'Descuento') ?? 0) || 0;
 
   if (cart[sku]) {
     const newQty = cart[sku].qty + 1;
@@ -691,7 +696,7 @@ function addToCart(p) {
   } else {
     cart[sku] = { sku, nombre: name, imagen: img, qty: 1,
                   precio_mayoreo: pMay, precio_distribuidor: pDist,
-                  precio_caja: pCaja, piezas_caja: piezas, inventario };
+                  precio_caja: pCaja, piezas_caja: piezas, inventario, descuento };
   }
   saveCart();
   renderCart();
@@ -783,7 +788,9 @@ function renderCart() {
         <span class="cart-item-name">${escHtml(item.nombre)}</span>
         <span class="cart-item-price">
           <span class="cart-tier-label" style="color:${TIER_COLOR[item.tier]}">${TIER_LABEL[item.tier]}</span>
-          ${fmtShort(item.unitPrice)}/pza · <strong>${fmtShort(item.lineTotal)}</strong>
+          ${item.descuento > 0
+            ? `<del class="cart-orig-price">${fmtShort(item.originalUnitPrice)}</del><span class="cart-disc-badge">-${item.descuento}%</span> `
+            : ''}${fmtShort(item.unitPrice)}/pza · <strong>${fmtShort(item.lineTotal)}</strong>
         </span>
       </div>
       <div class="cart-item-controls">
