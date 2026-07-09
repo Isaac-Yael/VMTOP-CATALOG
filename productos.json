@@ -1001,9 +1001,9 @@
     "inventario": 500
   },
   {
-    "sku": "100",
+    "sku": "XZ-6210",
     "nombre": "(XZ-6210) Soporte de Auto Para Celular",
-    "imagen": "100.jpg",
+    "imagen": "xz-6210.jpg",
     "precio_publico": 38.0,
     "precio_mayoreo": 30.0,
     "precio_distribuidor": 26.0,
