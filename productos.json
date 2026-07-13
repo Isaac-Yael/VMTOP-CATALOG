@@ -10,7 +10,7 @@
     "piezas_caja": 200,
     "categoria": "Novedades",
     "descuento": 0.0,
-    "inventario": 146
+    "inventario": 136
   },
   {
     "sku": "AIRPODS 4TA GEN ANC",
@@ -114,7 +114,7 @@
     "piezas_caja": 60,
     "categoria": "Novedades",
     "descuento": 0.0,
-    "inventario": 50
+    "inventario": 48
   },
   {
     "sku": "AZMQ062",
@@ -140,7 +140,7 @@
     "piezas_caja": 100,
     "categoria": "Novedades",
     "descuento": 0.0,
-    "inventario": 99
+    "inventario": 96
   },
   {
     "sku": "B39V2",
@@ -153,7 +153,7 @@
     "piezas_caja": 80,
     "categoria": "Novedades",
     "descuento": 0.0,
-    "inventario": 122
+    "inventario": 116
   },
   {
     "sku": "BGD-1599",
@@ -179,7 +179,7 @@
     "piezas_caja": 200,
     "categoria": "Novedades",
     "descuento": 0.0,
-    "inventario": 126
+    "inventario": 121
   },
   {
     "sku": "CAR-309",
@@ -218,7 +218,7 @@
     "piezas_caja": 300,
     "categoria": "Novedades",
     "descuento": 0.0,
-    "inventario": 180
+    "inventario": 178
   },
   {
     "sku": "CFJ-109",
@@ -231,7 +231,7 @@
     "piezas_caja": 30,
     "categoria": "Novedades",
     "descuento": 0.0,
-    "inventario": 83
+    "inventario": 80
   },
   {
     "sku": "CH-J2062",
@@ -270,7 +270,7 @@
     "piezas_caja": 40,
     "categoria": "Novedades",
     "descuento": 0.0,
-    "inventario": 36
+    "inventario": 33
   },
   {
     "sku": "CH-K3032",
@@ -283,7 +283,7 @@
     "piezas_caja": 40,
     "categoria": "Novedades",
     "descuento": 0.0,
-    "inventario": 39
+    "inventario": 36
   },
   {
     "sku": "COMBO 14 PM",
@@ -296,7 +296,7 @@
     "piezas_caja": 300,
     "categoria": "Novedades",
     "descuento": 0.0,
-    "inventario": 20
+    "inventario": 0
   },
   {
     "sku": "CSQ-07",
@@ -309,7 +309,7 @@
     "piezas_caja": 60,
     "categoria": "Novedades",
     "descuento": 0.0,
-    "inventario": 47
+    "inventario": 44
   },
   {
     "sku": "DNSD-9219",
@@ -322,7 +322,7 @@
     "piezas_caja": 200,
     "categoria": "Novedades",
     "descuento": 0.0,
-    "inventario": 192
+    "inventario": 188
   },
   {
     "sku": "DZ-329",
@@ -348,7 +348,7 @@
     "piezas_caja": 40,
     "categoria": "Novedades",
     "descuento": 0.0,
-    "inventario": 70
+    "inventario": 69
   },
   {
     "sku": "EKQ-30902",
@@ -426,7 +426,7 @@
     "piezas_caja": 400,
     "categoria": "Novedades",
     "descuento": 0.0,
-    "inventario": 393
+    "inventario": 386
   },
   {
     "sku": "GTS-1345",
@@ -452,7 +452,7 @@
     "piezas_caja": 150,
     "categoria": "Novedades",
     "descuento": 0.0,
-    "inventario": 121
+    "inventario": 120
   },
   {
     "sku": "HVH-40401",
@@ -465,7 +465,7 @@
     "piezas_caja": 100,
     "categoria": "Novedades",
     "descuento": 0.0,
-    "inventario": 77
+    "inventario": 74
   },
   {
     "sku": "HVH-54401",
@@ -478,7 +478,7 @@
     "piezas_caja": 80,
     "categoria": "Novedades",
     "descuento": 0.0,
-    "inventario": 72
+    "inventario": 70
   },
   {
     "sku": "HVV-00214",
@@ -530,7 +530,7 @@
     "piezas_caja": 60,
     "categoria": "Novedades",
     "descuento": 0.0,
-    "inventario": 60
+    "inventario": 59
   },
   {
     "sku": "IDC-2025",
@@ -608,7 +608,7 @@
     "piezas_caja": 144,
     "categoria": "Novedades",
     "descuento": 0.0,
-    "inventario": 69
+    "inventario": 45
   },
   {
     "sku": "IDC-AA-40",
@@ -660,7 +660,7 @@
     "piezas_caja": 80,
     "categoria": "Novedades",
     "descuento": 0.0,
-    "inventario": 137
+    "inventario": 0
   },
   {
     "sku": "JXQ-1404",
@@ -673,7 +673,7 @@
     "piezas_caja": 50,
     "categoria": "Novedades",
     "descuento": 0.0,
-    "inventario": 104
+    "inventario": 0
   },
   {
     "sku": "JXQ-1800",
@@ -686,7 +686,7 @@
     "piezas_caja": 60,
     "categoria": "Novedades",
     "descuento": 0.0,
-    "inventario": 116
+    "inventario": 115
   },
   {
     "sku": "K-730",
@@ -699,7 +699,7 @@
     "piezas_caja": 48,
     "categoria": "Novedades",
     "descuento": 0.0,
-    "inventario": 42
+    "inventario": 39
   },
   {
     "sku": "LED-1335",
@@ -725,7 +725,7 @@
     "piezas_caja": 100,
     "categoria": "Novedades",
     "descuento": 0.0,
-    "inventario": 99
+    "inventario": 98
   },
   {
     "sku": "MR-706",
@@ -751,7 +751,7 @@
     "piezas_caja": 200,
     "categoria": "Novedades",
     "descuento": 0.0,
-    "inventario": 179
+    "inventario": 178
   },
   {
     "sku": "MWQ-0105",
@@ -777,7 +777,7 @@
     "piezas_caja": 60,
     "categoria": "Novedades",
     "descuento": 0.0,
-    "inventario": 43
+    "inventario": 42
   },
   {
     "sku": "MWQ-0502",
@@ -803,7 +803,7 @@
     "piezas_caja": 100,
     "categoria": "Novedades",
     "descuento": 0.0,
-    "inventario": 48
+    "inventario": 35
   },
   {
     "sku": "SD-560S",
@@ -829,7 +829,7 @@
     "piezas_caja": 300,
     "categoria": "Novedades",
     "descuento": 0.0,
-    "inventario": 237
+    "inventario": 236
   },
   {
     "sku": "SOP-1068",
@@ -842,7 +842,7 @@
     "piezas_caja": 200,
     "categoria": "Novedades",
     "descuento": 0.0,
-    "inventario": 187
+    "inventario": 183
   },
   {
     "sku": "SOP-1069",
@@ -855,7 +855,7 @@
     "piezas_caja": 200,
     "categoria": "Novedades",
     "descuento": 0.0,
-    "inventario": 181
+    "inventario": 178
   },
   {
     "sku": "SOP-1081",
@@ -868,7 +868,7 @@
     "piezas_caja": 100,
     "categoria": "Novedades",
     "descuento": 0.0,
-    "inventario": 96
+    "inventario": 95
   },
   {
     "sku": "ST-B262",
@@ -881,7 +881,7 @@
     "piezas_caja": 100,
     "categoria": "Novedades",
     "descuento": 0.0,
-    "inventario": 239
+    "inventario": 223
   },
   {
     "sku": "T450",
@@ -894,7 +894,7 @@
     "piezas_caja": 100,
     "categoria": "Novedades",
     "descuento": 0.0,
-    "inventario": 16
+    "inventario": 14
   },
   {
     "sku": "TB-6318",
@@ -907,7 +907,7 @@
     "piezas_caja": 100,
     "categoria": "Novedades",
     "descuento": 0.0,
-    "inventario": 131
+    "inventario": 127
   },
   {
     "sku": "TIPO AIRPODS MAX",
@@ -920,7 +920,7 @@
     "piezas_caja": 60,
     "categoria": "Novedades",
     "descuento": 0.0,
-    "inventario": 54
+    "inventario": 57
   },
   {
     "sku": "TO-1321",
@@ -933,7 +933,7 @@
     "piezas_caja": 40,
     "categoria": "Novedades",
     "descuento": 0.0,
-    "inventario": 39
+    "inventario": 38
   },
   {
     "sku": "TR-6025",
@@ -946,7 +946,7 @@
     "piezas_caja": 100,
     "categoria": "Novedades",
     "descuento": 0.0,
-    "inventario": 83
+    "inventario": 81
   },
   {
     "sku": "TY-8103",
@@ -959,7 +959,7 @@
     "piezas_caja": 1000,
     "categoria": "Novedades",
     "descuento": 0.0,
-    "inventario": 797
+    "inventario": 792
   },
   {
     "sku": "TY-9003",
@@ -972,7 +972,7 @@
     "piezas_caja": 500,
     "categoria": "Novedades",
     "descuento": 0.0,
-    "inventario": 461
+    "inventario": 459
   },
   {
     "sku": "XB-5539",
@@ -985,13 +985,13 @@
     "piezas_caja": 100,
     "categoria": "Novedades",
     "descuento": 0.0,
-    "inventario": 76
+    "inventario": 75
   },
   {
     "sku": "XR-3128",
     "nombre": "(XR-3128) Audífonos alámbricos",
     "imagen": "xr-3128.jpg",
-    "precio_publico": 15.0,
+    "precio_publico": 19.0,
     "precio_mayoreo": 14.0,
     "precio_distribuidor": 12.0,
     "precio_caja": 11.5,
@@ -1024,7 +1024,7 @@
     "piezas_caja": 50,
     "categoria": "Novedades",
     "descuento": 0.0,
-    "inventario": 47
+    "inventario": 44
   },
   {
     "sku": "YCY-18",
@@ -1036,7 +1036,7 @@
     "precio_caja": 69.0,
     "piezas_caja": 60,
     "categoria": "Salud y Belleza",
-    "descuento": 10.0,
+    "descuento": 0.0,
     "inventario": 47
   },
   {
@@ -1049,7 +1049,7 @@
     "precio_caja": 2.0,
     "piezas_caja": 1000,
     "categoria": "Accesorios para Celular",
-    "descuento": 50.0,
+    "descuento": 0.0,
     "inventario": 5177
   },
   {
@@ -1062,8 +1062,8 @@
     "precio_caja": 2.5,
     "piezas_caja": 2400,
     "categoria": "Temporada",
-    "descuento": 50.0,
-    "inventario": 1232
+    "descuento": 0.0,
+    "inventario": 1227
   },
   {
     "sku": "ZJD-907",
@@ -1075,8 +1075,8 @@
     "precio_caja": 62.0,
     "piezas_caja": 50,
     "categoria": "Salud y Belleza",
-    "descuento": 40.0,
-    "inventario": 34
+    "descuento": 0.0,
+    "inventario": 32
   },
   {
     "sku": "ZJT-8104",
@@ -1088,7 +1088,7 @@
     "precio_caja": 1.2,
     "piezas_caja": 2500,
     "categoria": "Hogar",
-    "descuento": 50.0,
+    "descuento": 0.0,
     "inventario": 1322
   },
   {
@@ -1101,8 +1101,8 @@
     "precio_caja": 18.0,
     "piezas_caja": 100,
     "categoria": "Juguetes",
-    "descuento": 30.0,
-    "inventario": 3264
+    "descuento": 0.0,
+    "inventario": 3062
   },
   {
     "sku": "DD2504",
@@ -1114,8 +1114,8 @@
     "precio_caja": 19.0,
     "piezas_caja": 100,
     "categoria": "Juguetes",
-    "descuento": 30.0,
-    "inventario": 3264
+    "descuento": 0.0,
+    "inventario": 3062
   },
   {
     "sku": "HZJ-932",
@@ -1127,7 +1127,7 @@
     "precio_caja": 30.0,
     "piezas_caja": 120,
     "categoria": "Salud y Belleza",
-    "descuento": 30.0,
+    "descuento": 0.0,
     "inventario": 63
   },
   {
@@ -1140,8 +1140,8 @@
     "precio_caja": 2.5,
     "piezas_caja": 1728,
     "categoria": "Salud y Belleza",
-    "descuento": 30.0,
-    "inventario": 104
+    "descuento": 0.0,
+    "inventario": 92
   },
   {
     "sku": "XQ-522",
@@ -1153,7 +1153,7 @@
     "precio_caja": 4.5,
     "piezas_caja": 1200,
     "categoria": "Salud y Belleza",
-    "descuento": 30.0,
+    "descuento": 0.0,
     "inventario": 210
   },
   {
@@ -1166,8 +1166,8 @@
     "precio_caja": 37.0,
     "piezas_caja": 288,
     "categoria": "Juguetes",
-    "descuento": 25.0,
-    "inventario": 1245
+    "descuento": 0.0,
+    "inventario": 1254
   },
   {
     "sku": "BH-2107",
@@ -1179,7 +1179,7 @@
     "precio_caja": 20.0,
     "piezas_caja": 120,
     "categoria": "Salud y Belleza",
-    "descuento": 25.0,
+    "descuento": 0.0,
     "inventario": 41
   },
   {
@@ -1192,8 +1192,8 @@
     "precio_caja": 47.0,
     "piezas_caja": 60,
     "categoria": "Salud y Belleza",
-    "descuento": 25.0,
-    "inventario": 60
+    "descuento": 0.0,
+    "inventario": 54
   },
   {
     "sku": "SNA-5801",
@@ -1205,7 +1205,7 @@
     "precio_caja": 5.0,
     "piezas_caja": 1200,
     "categoria": "Iluminación",
-    "descuento": 25.0,
+    "descuento": 0.0,
     "inventario": 880
   },
   {
@@ -1218,7 +1218,7 @@
     "precio_caja": 6.0,
     "piezas_caja": 1200,
     "categoria": "Temporada",
-    "descuento": 25.0,
+    "descuento": 0.0,
     "inventario": 1055
   },
   {
@@ -1231,7 +1231,7 @@
     "precio_caja": 18.0,
     "piezas_caja": 200,
     "categoria": "Audífonos",
-    "descuento": 20.0,
+    "descuento": 0.0,
     "inventario": 153
   },
   {
@@ -1244,7 +1244,7 @@
     "precio_caja": 31.0,
     "piezas_caja": 100,
     "categoria": "Iluminación",
-    "descuento": 20.0,
+    "descuento": 0.0,
     "inventario": 46
   },
   {
@@ -1257,7 +1257,7 @@
     "precio_caja": 25.0,
     "piezas_caja": 100,
     "categoria": "Salud y Belleza",
-    "descuento": 20.0,
+    "descuento": 0.0,
     "inventario": 4
   },
   {
@@ -1270,8 +1270,8 @@
     "precio_caja": 15.5,
     "piezas_caja": 300,
     "categoria": "1HORA",
-    "descuento": 20.0,
-    "inventario": 27
+    "descuento": 0.0,
+    "inventario": 25
   },
   {
     "sku": "FAN-MINI03",
@@ -1283,7 +1283,7 @@
     "precio_caja": 21.0,
     "piezas_caja": 144,
     "categoria": "Oferta",
-    "descuento": 20.0,
+    "descuento": 0.0,
     "inventario": 17
   },
   {
@@ -1296,8 +1296,8 @@
     "precio_caja": 27.0,
     "piezas_caja": 144,
     "categoria": "Oferta",
-    "descuento": 20.0,
-    "inventario": 74
+    "descuento": 0.0,
+    "inventario": 73
   },
   {
     "sku": "FAN-MINI09",
@@ -1309,7 +1309,7 @@
     "precio_caja": 21.0,
     "piezas_caja": 144,
     "categoria": "Oferta",
-    "descuento": 20.0,
+    "descuento": 0.0,
     "inventario": 22
   },
   {
@@ -1322,7 +1322,7 @@
     "precio_caja": 27.0,
     "piezas_caja": 144,
     "categoria": "Oferta",
-    "descuento": 20.0,
+    "descuento": 0.0,
     "inventario": 97
   },
   {
@@ -1335,7 +1335,7 @@
     "precio_caja": 21.0,
     "piezas_caja": 144,
     "categoria": "Oferta",
-    "descuento": 20.0,
+    "descuento": 0.0,
     "inventario": 18
   },
   {
@@ -1348,8 +1348,8 @@
     "precio_caja": 21.0,
     "piezas_caja": 144,
     "categoria": "Oferta",
-    "descuento": 20.0,
-    "inventario": 30
+    "descuento": 0.0,
+    "inventario": 29
   },
   {
     "sku": "FAN-MINI19",
@@ -1361,7 +1361,7 @@
     "precio_caja": 23.0,
     "piezas_caja": 144,
     "categoria": "Oferta",
-    "descuento": 20.0,
+    "descuento": 0.0,
     "inventario": 80
   },
   {
@@ -1374,7 +1374,7 @@
     "precio_caja": 23.0,
     "piezas_caja": 144,
     "categoria": "Oferta",
-    "descuento": 20.0,
+    "descuento": 0.0,
     "inventario": 31
   },
   {
@@ -1387,8 +1387,8 @@
     "precio_caja": 26.0,
     "piezas_caja": 144,
     "categoria": "Oferta",
-    "descuento": 20.0,
-    "inventario": 71
+    "descuento": 0.0,
+    "inventario": 69
   },
   {
     "sku": "FAN-MINI23",
@@ -1400,7 +1400,7 @@
     "precio_caja": 24.0,
     "piezas_caja": 144,
     "categoria": "Oferta",
-    "descuento": 20.0,
+    "descuento": 0.0,
     "inventario": 102
   },
   {
@@ -1413,7 +1413,7 @@
     "precio_caja": 24.0,
     "piezas_caja": 144,
     "categoria": "Oferta",
-    "descuento": 20.0,
+    "descuento": 0.0,
     "inventario": 107
   },
   {
@@ -1426,7 +1426,7 @@
     "precio_caja": 24.0,
     "piezas_caja": 144,
     "categoria": "Oferta",
-    "descuento": 20.0,
+    "descuento": 0.0,
     "inventario": 41
   },
   {
@@ -1439,7 +1439,7 @@
     "precio_caja": 24.0,
     "piezas_caja": 144,
     "categoria": "Oferta",
-    "descuento": 20.0,
+    "descuento": 0.0,
     "inventario": 8
   },
   {
@@ -1452,7 +1452,7 @@
     "precio_caja": 24.0,
     "piezas_caja": 144,
     "categoria": "Oferta",
-    "descuento": 20.0,
+    "descuento": 0.0,
     "inventario": 13
   },
   {
@@ -1465,7 +1465,7 @@
     "precio_caja": 24.0,
     "piezas_caja": 144,
     "categoria": "Oferta",
-    "descuento": 20.0,
+    "descuento": 0.0,
     "inventario": 24
   },
   {
@@ -1478,8 +1478,8 @@
     "precio_caja": 23.0,
     "piezas_caja": 144,
     "categoria": "Oferta",
-    "descuento": 20.0,
-    "inventario": 42
+    "descuento": 0.0,
+    "inventario": 41
   },
   {
     "sku": "FAN-Q104",
@@ -1491,7 +1491,7 @@
     "precio_caja": 23.0,
     "piezas_caja": 144,
     "categoria": "Oferta",
-    "descuento": 20.0,
+    "descuento": 0.0,
     "inventario": 45
   },
   {
@@ -1504,8 +1504,8 @@
     "precio_caja": 23.0,
     "piezas_caja": 144,
     "categoria": "Oferta",
-    "descuento": 20.0,
-    "inventario": 91
+    "descuento": 0.0,
+    "inventario": 90
   },
   {
     "sku": "FAN-Q106",
@@ -1517,8 +1517,8 @@
     "precio_caja": 24.0,
     "piezas_caja": 144,
     "categoria": "Oferta",
-    "descuento": 20.0,
-    "inventario": 54
+    "descuento": 0.0,
+    "inventario": 53
   },
   {
     "sku": "FAN-Q107",
@@ -1530,7 +1530,7 @@
     "precio_caja": 24.0,
     "piezas_caja": 150,
     "categoria": "Oferta",
-    "descuento": 20.0,
+    "descuento": 0.0,
     "inventario": 100
   },
   {
@@ -1543,7 +1543,7 @@
     "precio_caja": 29.0,
     "piezas_caja": 120,
     "categoria": "Oferta",
-    "descuento": 20.0,
+    "descuento": 0.0,
     "inventario": 8
   },
   {
@@ -1556,7 +1556,7 @@
     "precio_caja": 29.0,
     "piezas_caja": 144,
     "categoria": "Oferta",
-    "descuento": 20.0,
+    "descuento": 0.0,
     "inventario": 81
   },
   {
@@ -1569,7 +1569,7 @@
     "precio_caja": 29.0,
     "piezas_caja": 120,
     "categoria": "Oferta",
-    "descuento": 20.0,
+    "descuento": 0.0,
     "inventario": 35
   },
   {
@@ -1582,8 +1582,8 @@
     "precio_caja": 34.0,
     "piezas_caja": 120,
     "categoria": "Oferta",
-    "descuento": 20.0,
-    "inventario": 71
+    "descuento": 0.0,
+    "inventario": 70
   },
   {
     "sku": "FAN-Q112",
@@ -1595,8 +1595,8 @@
     "precio_caja": 34.0,
     "piezas_caja": 120,
     "categoria": "Oferta",
-    "descuento": 20.0,
-    "inventario": 33
+    "descuento": 0.0,
+    "inventario": 32
   },
   {
     "sku": "FAN-Q113",
@@ -1608,7 +1608,7 @@
     "precio_caja": 34.0,
     "piezas_caja": 120,
     "categoria": "Oferta",
-    "descuento": 20.0,
+    "descuento": 0.0,
     "inventario": 87
   },
   {
@@ -1621,8 +1621,8 @@
     "precio_caja": 29.0,
     "piezas_caja": 120,
     "categoria": "Oferta",
-    "descuento": 20.0,
-    "inventario": 45
+    "descuento": 0.0,
+    "inventario": 40
   },
   {
     "sku": "FAN-Q115",
@@ -1634,7 +1634,7 @@
     "precio_caja": 33.0,
     "piezas_caja": 120,
     "categoria": "Oferta",
-    "descuento": 20.0,
+    "descuento": 0.0,
     "inventario": 92
   },
   {
@@ -1647,7 +1647,7 @@
     "precio_caja": 27.0,
     "piezas_caja": 144,
     "categoria": "Oferta",
-    "descuento": 20.0,
+    "descuento": 0.0,
     "inventario": 104
   },
   {
@@ -1660,7 +1660,7 @@
     "precio_caja": 24.0,
     "piezas_caja": 144,
     "categoria": "Oferta",
-    "descuento": 20.0,
+    "descuento": 0.0,
     "inventario": 104
   },
   {
@@ -1673,7 +1673,7 @@
     "precio_caja": 24.0,
     "piezas_caja": 144,
     "categoria": "Oferta",
-    "descuento": 20.0,
+    "descuento": 0.0,
     "inventario": 77
   },
   {
@@ -1686,8 +1686,8 @@
     "precio_caja": 13.0,
     "piezas_caja": 240,
     "categoria": "Iluminación",
-    "descuento": 20.0,
-    "inventario": 221
+    "descuento": 0.0,
+    "inventario": 213
   },
   {
     "sku": "HVH-80303",
@@ -1699,8 +1699,8 @@
     "precio_caja": 22.0,
     "piezas_caja": 400,
     "categoria": "Iluminación / Lámparas",
-    "descuento": 20.0,
-    "inventario": 293
+    "descuento": 0.0,
+    "inventario": 290
   },
   {
     "sku": "HVH-80902",
@@ -1712,7 +1712,7 @@
     "precio_caja": 50.0,
     "piezas_caja": 100,
     "categoria": "Iluminación",
-    "descuento": 20.0,
+    "descuento": 0.0,
     "inventario": 55
   },
   {
@@ -1725,8 +1725,8 @@
     "precio_caja": 13.5,
     "piezas_caja": 500,
     "categoria": "Accesorios para Celular",
-    "descuento": 20.0,
-    "inventario": 95
+    "descuento": 0.0,
+    "inventario": 93
   },
   {
     "sku": "LED-710",
@@ -1738,8 +1738,8 @@
     "precio_caja": 11.0,
     "piezas_caja": 600,
     "categoria": "Hogar",
-    "descuento": 20.0,
-    "inventario": 460
+    "descuento": 0.0,
+    "inventario": 455
   },
   {
     "sku": "P47M",
@@ -1751,8 +1751,8 @@
     "precio_caja": 42.0,
     "piezas_caja": 100,
     "categoria": "Diademas",
-    "descuento": 20.0,
-    "inventario": 309
+    "descuento": 0.0,
+    "inventario": 308
   },
   {
     "sku": "QJ-182",
@@ -1764,7 +1764,7 @@
     "precio_caja": 7.0,
     "piezas_caja": 600,
     "categoria": "Salud y Belleza",
-    "descuento": 20.0,
+    "descuento": 0.0,
     "inventario": 386
   },
   {
@@ -1777,8 +1777,8 @@
     "precio_caja": 17.0,
     "piezas_caja": 144,
     "categoria": "Salud y Belleza",
-    "descuento": 20.0,
-    "inventario": 7
+    "descuento": 0.0,
+    "inventario": 0
   },
   {
     "sku": "TY-Q127",
@@ -1790,7 +1790,7 @@
     "precio_caja": 5.5,
     "piezas_caja": 600,
     "categoria": "Juguetes",
-    "descuento": 20.0,
+    "descuento": 0.0,
     "inventario": 253
   },
   {
@@ -1803,7 +1803,7 @@
     "precio_caja": 5.5,
     "piezas_caja": 600,
     "categoria": "Juguetes",
-    "descuento": 20.0,
+    "descuento": 0.0,
     "inventario": 5
   },
   {
@@ -1816,7 +1816,7 @@
     "precio_caja": 52.0,
     "piezas_caja": 100,
     "categoria": "Power Banks",
-    "descuento": 20.0,
+    "descuento": 0.0,
     "inventario": 0
   },
   {
@@ -1829,8 +1829,8 @@
     "precio_caja": 42.0,
     "piezas_caja": 100,
     "categoria": "Power Banks",
-    "descuento": 20.0,
-    "inventario": 257
+    "descuento": 0.0,
+    "inventario": 57
   },
   {
     "sku": "XQ-201",
@@ -1842,7 +1842,7 @@
     "precio_caja": 5.0,
     "piezas_caja": 620,
     "categoria": "Temporada",
-    "descuento": 20.0,
+    "descuento": 0.0,
     "inventario": 317
   },
   {
@@ -1855,7 +1855,7 @@
     "precio_caja": 7.0,
     "piezas_caja": 600,
     "categoria": "Hogar",
-    "descuento": 20.0,
+    "descuento": 0.0,
     "inventario": 591
   },
   {
@@ -1868,7 +1868,7 @@
     "precio_caja": 5.5,
     "piezas_caja": 500,
     "categoria": "Audífonos",
-    "descuento": 20.0,
+    "descuento": 0.0,
     "inventario": 397
   },
   {
@@ -1881,8 +1881,8 @@
     "precio_caja": 9.0,
     "piezas_caja": 500,
     "categoria": "Audífonos",
-    "descuento": 20.0,
-    "inventario": 122
+    "descuento": 0.0,
+    "inventario": 222
   },
   {
     "sku": "XR-3156",
@@ -1894,8 +1894,8 @@
     "precio_caja": 9.0,
     "piezas_caja": 500,
     "categoria": "Audífonos",
-    "descuento": 20.0,
-    "inventario": 321
+    "descuento": 0.0,
+    "inventario": 320
   },
   {
     "sku": "XR-3158",
@@ -1907,7 +1907,7 @@
     "precio_caja": 4.0,
     "piezas_caja": 500,
     "categoria": "Audífonos",
-    "descuento": 20.0,
+    "descuento": 0.0,
     "inventario": 36
   },
   {
@@ -1920,8 +1920,8 @@
     "precio_caja": 10.0,
     "piezas_caja": 500,
     "categoria": "Audífonos",
-    "descuento": 20.0,
-    "inventario": 147
+    "descuento": 0.0,
+    "inventario": 145
   },
   {
     "sku": "YJ-815",
@@ -1933,8 +1933,8 @@
     "precio_caja": 5.0,
     "piezas_caja": 800,
     "categoria": "Hogar",
-    "descuento": 20.0,
-    "inventario": 636
+    "descuento": 0.0,
+    "inventario": 626
   },
   {
     "sku": "AZMQ023",
@@ -1946,7 +1946,7 @@
     "precio_caja": 7.0,
     "piezas_caja": 1200,
     "categoria": "Iluminación",
-    "descuento": 15.0,
+    "descuento": 0.0,
     "inventario": 441
   },
   {
@@ -1959,8 +1959,8 @@
     "precio_caja": 32.0,
     "piezas_caja": 64,
     "categoria": "Hogar / Cocina",
-    "descuento": 15.0,
-    "inventario": 1825
+    "descuento": 0.0,
+    "inventario": 1823
   },
   {
     "sku": "TS-0902",
@@ -1972,8 +1972,8 @@
     "precio_caja": 4.5,
     "piezas_caja": 1000,
     "categoria": "Cables",
-    "descuento": 15.0,
-    "inventario": 656
+    "descuento": 0.0,
+    "inventario": 653
   },
   {
     "sku": "TS-0911",
@@ -1985,7 +1985,7 @@
     "precio_caja": 5.0,
     "piezas_caja": 1000,
     "categoria": "Cables",
-    "descuento": 15.0,
+    "descuento": 0.0,
     "inventario": 180
   },
   {
@@ -1998,7 +1998,7 @@
     "precio_caja": 6.5,
     "piezas_caja": 1000,
     "categoria": "Cables",
-    "descuento": 15.0,
+    "descuento": 0.0,
     "inventario": 1131
   },
   {
@@ -2011,7 +2011,7 @@
     "precio_caja": 4.5,
     "piezas_caja": 1000,
     "categoria": "Cables",
-    "descuento": 15.0,
+    "descuento": 0.0,
     "inventario": 970
   },
   {
@@ -2024,7 +2024,7 @@
     "precio_caja": 4.2,
     "piezas_caja": 1000,
     "categoria": "Cables",
-    "descuento": 15.0,
+    "descuento": 0.0,
     "inventario": 43
   },
   {
@@ -2037,7 +2037,7 @@
     "precio_caja": 4.5,
     "piezas_caja": 1000,
     "categoria": "Cables",
-    "descuento": 15.0,
+    "descuento": 0.0,
     "inventario": 267
   },
   {
@@ -2050,7 +2050,7 @@
     "precio_caja": 4.0,
     "piezas_caja": 1000,
     "categoria": "Cables",
-    "descuento": 15.0,
+    "descuento": 0.0,
     "inventario": 342
   },
   {
@@ -2063,7 +2063,7 @@
     "precio_caja": 10.0,
     "piezas_caja": 1000,
     "categoria": "Audífonos",
-    "descuento": 15.0,
+    "descuento": 0.0,
     "inventario": 48
   },
   {
@@ -2076,7 +2076,7 @@
     "precio_caja": 5.5,
     "piezas_caja": 1000,
     "categoria": "Audífonos",
-    "descuento": 15.0,
+    "descuento": 0.0,
     "inventario": 1005
   },
   {
@@ -2089,7 +2089,7 @@
     "precio_caja": 5.5,
     "piezas_caja": 1000,
     "categoria": "Audífonos",
-    "descuento": 15.0,
+    "descuento": 0.0,
     "inventario": 1005
   },
   {
@@ -2102,20 +2102,20 @@
     "precio_caja": 261.0,
     "piezas_caja": 40,
     "categoria": "Entretenimiento",
-    "descuento": 15.0,
+    "descuento": 0.0,
     "inventario": 1891
   },
   {
     "sku": "CABLE IP 15 1M IP C A C",
     "nombre": "(CABLE IP 15 1M IP C A C) Cable iPhone 15 C a C",
     "imagen": "cable ip 15 1m ip c a c.jpg",
-    "precio_publico": 15.0,
+    "precio_publico": 18.0,
     "precio_mayoreo": 12.0,
     "precio_distribuidor": 11.0,
     "precio_caja": 10.0,
     "piezas_caja": 1000,
     "categoria": "Renombre / Cables / T-C",
-    "descuento": 12.0,
+    "descuento": 0.0,
     "inventario": 232
   },
   {
@@ -2128,8 +2128,8 @@
     "precio_caja": 17.0,
     "piezas_caja": 500,
     "categoria": "Cargadores",
-    "descuento": 12.0,
-    "inventario": 382
+    "descuento": 0.0,
+    "inventario": 381
   },
   {
     "sku": "CAR-303",
@@ -2141,7 +2141,7 @@
     "precio_caja": 17.0,
     "piezas_caja": 500,
     "categoria": "Cargadores",
-    "descuento": 12.0,
+    "descuento": 0.0,
     "inventario": 238
   },
   {
@@ -2154,8 +2154,8 @@
     "precio_caja": 19.0,
     "piezas_caja": 500,
     "categoria": "Cargadores",
-    "descuento": 12.0,
-    "inventario": 182
+    "descuento": 0.0,
+    "inventario": 181
   },
   {
     "sku": "CAR-U201",
@@ -2167,8 +2167,8 @@
     "precio_caja": 13.0,
     "piezas_caja": 500,
     "categoria": "Cargadores",
-    "descuento": 12.0,
-    "inventario": 400
+    "descuento": 0.0,
+    "inventario": 399
   },
   {
     "sku": "CAR-U202",
@@ -2180,7 +2180,7 @@
     "precio_caja": 13.0,
     "piezas_caja": 500,
     "categoria": "Cargadores",
-    "descuento": 12.0,
+    "descuento": 0.0,
     "inventario": 233
   },
   {
@@ -2193,7 +2193,7 @@
     "precio_caja": 18.0,
     "piezas_caja": 500,
     "categoria": "Ferreteria",
-    "descuento": 12.0,
+    "descuento": 0.0,
     "inventario": 0
   },
   {
@@ -2206,8 +2206,8 @@
     "precio_caja": 17.0,
     "piezas_caja": 144,
     "categoria": "Salud y Belleza",
-    "descuento": 10.0,
-    "inventario": 290
+    "descuento": 0.0,
+    "inventario": 0
   },
   {
     "sku": "YXJ-1504",
@@ -2219,7 +2219,7 @@
     "precio_caja": 211.0,
     "piezas_caja": 40,
     "categoria": "Entretenimiento",
-    "descuento": 10.0,
+    "descuento": 0.0,
     "inventario": 2999
   },
   {
@@ -2233,7 +2233,7 @@
     "piezas_caja": 80,
     "categoria": "Diademas / Bluetooth",
     "descuento": 0.0,
-    "inventario": 126
+    "inventario": 131
   },
   {
     "sku": "928-31",
@@ -2246,7 +2246,7 @@
     "piezas_caja": 288,
     "categoria": "Juguetes",
     "descuento": 0.0,
-    "inventario": 54
+    "inventario": 53
   },
   {
     "sku": "929-31",
@@ -2259,7 +2259,7 @@
     "piezas_caja": 288,
     "categoria": "Juguetes",
     "descuento": 0.0,
-    "inventario": 437
+    "inventario": 449
   },
   {
     "sku": "A12 PRO",
@@ -2311,7 +2311,7 @@
     "piezas_caja": 100,
     "categoria": "Transmisores",
     "descuento": 0.0,
-    "inventario": 27
+    "inventario": 26
   },
   {
     "sku": "ACC-20201",
@@ -2337,7 +2337,7 @@
     "piezas_caja": 200,
     "categoria": "Transmisores",
     "descuento": 0.0,
-    "inventario": 145
+    "inventario": 143
   },
   {
     "sku": "ACC-20500",
@@ -2415,7 +2415,7 @@
     "piezas_caja": 100,
     "categoria": "Renombre",
     "descuento": 0.0,
-    "inventario": 46
+    "inventario": 44
   },
   {
     "sku": "AIRPODS PRO 2 NIKE",
@@ -2441,7 +2441,7 @@
     "piezas_caja": 50,
     "categoria": "Juguetes",
     "descuento": 0.0,
-    "inventario": 27
+    "inventario": 26
   },
   {
     "sku": "AT5M01",
@@ -2467,20 +2467,20 @@
     "piezas_caja": 100,
     "categoria": "Cargadores",
     "descuento": 0.0,
-    "inventario": 70
+    "inventario": 82
   },
   {
     "sku": "ATC-24002",
     "nombre": "Cargador para Moto",
     "imagen": "atc-24002.jpg",
-    "precio_publico": 62.0,
-    "precio_mayoreo": 45.0,
-    "precio_distribuidor": 40.0,
-    "precio_caja": 38.0,
+    "precio_publico": 60.0,
+    "precio_mayoreo": 44.0,
+    "precio_distribuidor": 38.0,
+    "precio_caja": 36.0,
     "piezas_caja": 100,
     "categoria": "Cargadores",
     "descuento": 0.0,
-    "inventario": 100
+    "inventario": 96
   },
   {
     "sku": "AUD V5.3",
@@ -2532,7 +2532,7 @@
     "piezas_caja": 100,
     "categoria": "Memorias / USB",
     "descuento": 0.0,
-    "inventario": 72
+    "inventario": 67
   },
   {
     "sku": "AUV21032GBRGD",
@@ -2545,7 +2545,7 @@
     "piezas_caja": 100,
     "categoria": "Memorias / USB",
     "descuento": 0.0,
-    "inventario": 33
+    "inventario": 30
   },
   {
     "sku": "AZJ-80501",
@@ -2610,7 +2610,7 @@
     "piezas_caja": 24,
     "categoria": "Iluminación",
     "descuento": 0.0,
-    "inventario": 18
+    "inventario": 17
   },
   {
     "sku": "AZMQ033",
@@ -2623,7 +2623,7 @@
     "piezas_caja": 100,
     "categoria": "Salud y Belleza",
     "descuento": 0.0,
-    "inventario": 227
+    "inventario": 226
   },
   {
     "sku": "AZMQ055",
@@ -2688,7 +2688,7 @@
     "piezas_caja": 180,
     "categoria": "Salud y Belleza",
     "descuento": 0.0,
-    "inventario": 15
+    "inventario": 9
   },
   {
     "sku": "BB-1027",
@@ -2701,7 +2701,7 @@
     "piezas_caja": 180,
     "categoria": "Salud y Belleza",
     "descuento": 0.0,
-    "inventario": 33
+    "inventario": 32
   },
   {
     "sku": "BB-1058",
@@ -2714,7 +2714,7 @@
     "piezas_caja": 600,
     "categoria": "Salud y Belleza",
     "descuento": 0.0,
-    "inventario": 82
+    "inventario": 80
   },
   {
     "sku": "BB-1059",
@@ -2727,7 +2727,7 @@
     "piezas_caja": 600,
     "categoria": "Salud y Belleza",
     "descuento": 0.0,
-    "inventario": 209
+    "inventario": 208
   },
   {
     "sku": "BB-1060",
@@ -2740,7 +2740,7 @@
     "piezas_caja": 600,
     "categoria": "Salud y Belleza",
     "descuento": 0.0,
-    "inventario": 295
+    "inventario": 293
   },
   {
     "sku": "BB-HZ1010",
@@ -2753,7 +2753,7 @@
     "piezas_caja": 360,
     "categoria": "Salud y Belleza",
     "descuento": 0.0,
-    "inventario": 114
+    "inventario": 111
   },
   {
     "sku": "BB-LQ1015",
@@ -2779,7 +2779,7 @@
     "piezas_caja": 600,
     "categoria": "Salud y Belleza",
     "descuento": 0.0,
-    "inventario": 171
+    "inventario": 168
   },
   {
     "sku": "BB-LQ1017",
@@ -2844,7 +2844,7 @@
     "piezas_caja": 20,
     "categoria": "Hogar",
     "descuento": 0.0,
-    "inventario": 14
+    "inventario": 13
   },
   {
     "sku": "BH-21132",
@@ -2863,10 +2863,10 @@
     "sku": "BH-21140",
     "nombre": "(BH-21140) Mini Lavadora Eléctrica",
     "imagen": "bh-21140.jpg",
-    "precio_publico": 400.0,
-    "precio_mayoreo": 267.0,
-    "precio_distribuidor": 235.0,
-    "precio_caja": 222.0,
+    "precio_publico": 412.0,
+    "precio_mayoreo": 275.0,
+    "precio_distribuidor": 242.0,
+    "precio_caja": 229.0,
     "piezas_caja": 18,
     "categoria": "Hogar",
     "descuento": 0.0,
@@ -2909,7 +2909,7 @@
     "piezas_caja": 30,
     "categoria": "Hogar / Muebles",
     "descuento": 0.0,
-    "inventario": 7
+    "inventario": 6
   },
   {
     "sku": "BH-21201",
@@ -2961,7 +2961,7 @@
     "piezas_caja": 48,
     "categoria": "Hogar",
     "descuento": 0.0,
-    "inventario": 38
+    "inventario": 36
   },
   {
     "sku": "BH-21216",
@@ -2974,7 +2974,7 @@
     "piezas_caja": 36,
     "categoria": "Hogar",
     "descuento": 0.0,
-    "inventario": 34
+    "inventario": 33
   },
   {
     "sku": "BH-21230",
@@ -3013,7 +3013,7 @@
     "piezas_caja": 12,
     "categoria": "Hogar",
     "descuento": 0.0,
-    "inventario": 28
+    "inventario": 26
   },
   {
     "sku": "BH-21277",
@@ -3026,7 +3026,7 @@
     "piezas_caja": 200,
     "categoria": "Salud y Belleza",
     "descuento": 0.0,
-    "inventario": 161
+    "inventario": 158
   },
   {
     "sku": "BH-21279",
@@ -3065,7 +3065,7 @@
     "piezas_caja": 100,
     "categoria": "Seguridad",
     "descuento": 0.0,
-    "inventario": 43
+    "inventario": 58
   },
   {
     "sku": "BH-21315",
@@ -3078,7 +3078,7 @@
     "piezas_caja": 300,
     "categoria": "Hogar",
     "descuento": 0.0,
-    "inventario": 172
+    "inventario": 171
   },
   {
     "sku": "BH-21316",
@@ -3117,7 +3117,7 @@
     "piezas_caja": 100,
     "categoria": "Hogar",
     "descuento": 0.0,
-    "inventario": 96
+    "inventario": 92
   },
   {
     "sku": "BH-21328",
@@ -3143,7 +3143,7 @@
     "piezas_caja": 100,
     "categoria": "Salud y Belleza",
     "descuento": 0.0,
-    "inventario": 0
+    "inventario": 27
   },
   {
     "sku": "BH-2169",
@@ -3156,7 +3156,7 @@
     "piezas_caja": 36,
     "categoria": "Salud y Belleza",
     "descuento": 0.0,
-    "inventario": 59
+    "inventario": 56
   },
   {
     "sku": "BH-2171",
@@ -3169,7 +3169,7 @@
     "piezas_caja": 50,
     "categoria": "Hogar",
     "descuento": 0.0,
-    "inventario": 142
+    "inventario": 137
   },
   {
     "sku": "BH-501",
@@ -3182,7 +3182,7 @@
     "piezas_caja": 200,
     "categoria": "Salud y Belleza",
     "descuento": 0.0,
-    "inventario": 17
+    "inventario": 16
   },
   {
     "sku": "BT-1001",
@@ -3234,7 +3234,7 @@
     "piezas_caja": 100,
     "categoria": "Cómputo",
     "descuento": 0.0,
-    "inventario": 56
+    "inventario": 54
   },
   {
     "sku": "BTS-1822",
@@ -3299,7 +3299,7 @@
     "piezas_caja": 50,
     "categoria": "Hogar / Cocina",
     "descuento": 0.0,
-    "inventario": 15
+    "inventario": 14
   },
   {
     "sku": "BWB-1715",
@@ -3312,16 +3312,16 @@
     "piezas_caja": 50,
     "categoria": "Hogar / Cocina",
     "descuento": 0.0,
-    "inventario": 9
+    "inventario": 59
   },
   {
     "sku": "BWB-1749",
     "nombre": "(BWB-1749) Termo 20 OZ",
     "imagen": "bwb-1749.jpg",
-    "precio_publico": 90.0,
-    "precio_mayoreo": 60.0,
-    "precio_distribuidor": 55.0,
-    "precio_caja": 54.0,
+    "precio_publico": 96.0,
+    "precio_mayoreo": 64.0,
+    "precio_distribuidor": 56.0,
+    "precio_caja": 53.0,
     "piezas_caja": 50,
     "categoria": "Hogar / Cocina",
     "descuento": 0.0,
@@ -3338,7 +3338,7 @@
     "piezas_caja": 48,
     "categoria": "Hogar / Cocina",
     "descuento": 0.0,
-    "inventario": 26
+    "inventario": 24
   },
   {
     "sku": "BWB-1788",
@@ -3351,7 +3351,7 @@
     "piezas_caja": 50,
     "categoria": "Hogar / Cocina / Vasos",
     "descuento": 0.0,
-    "inventario": 15
+    "inventario": 8
   },
   {
     "sku": "BZ-2102",
@@ -3377,7 +3377,7 @@
     "piezas_caja": 100,
     "categoria": "Cables",
     "descuento": 0.0,
-    "inventario": 100
+    "inventario": 99
   },
   {
     "sku": "CAB005N",
@@ -3435,14 +3435,14 @@
     "sku": "CAB252B-300",
     "nombre": "Cable Tipo C a C 1 Metro 3A Blanco",
     "imagen": "cab252b-300.jpg",
-    "precio_publico": 17.0,
+    "precio_publico": 22.0,
     "precio_mayoreo": 15.0,
     "precio_distribuidor": 13.0,
     "precio_caja": 12.5,
     "piezas_caja": 300,
     "categoria": "1HORA",
     "descuento": 0.0,
-    "inventario": 240
+    "inventario": 336
   },
   {
     "sku": "CAB259",
@@ -3455,7 +3455,7 @@
     "piezas_caja": 300,
     "categoria": "1HORA",
     "descuento": 0.0,
-    "inventario": 42
+    "inventario": 22
   },
   {
     "sku": "CABLE 1M IP C A LIGHTNING",
@@ -3494,7 +3494,7 @@
     "piezas_caja": 500,
     "categoria": "Renombre",
     "descuento": 0.0,
-    "inventario": 161
+    "inventario": 160
   },
   {
     "sku": "CAR-306",
@@ -3507,7 +3507,7 @@
     "piezas_caja": 500,
     "categoria": "Cargadores",
     "descuento": 0.0,
-    "inventario": 199
+    "inventario": 190
   },
   {
     "sku": "CAR-308",
@@ -3656,14 +3656,14 @@
     "sku": "CAR-PD93",
     "nombre": "Cargador de Carga Súper Rápida de 20W Tipo C",
     "imagen": "car-pd93.jpg",
-    "precio_publico": 55.0,
+    "precio_publico": 60.0,
     "precio_mayoreo": 40.0,
     "precio_distribuidor": 36.0,
     "precio_caja": 34.0,
     "piezas_caja": 200,
     "categoria": "Cargadores",
     "descuento": 0.0,
-    "inventario": 167
+    "inventario": 160
   },
   {
     "sku": "CAR-U101",
@@ -3676,7 +3676,7 @@
     "piezas_caja": 200,
     "categoria": "Cargadores",
     "descuento": 0.0,
-    "inventario": 5
+    "inventario": 205
   },
   {
     "sku": "CAR-U103",
@@ -3689,7 +3689,7 @@
     "piezas_caja": 200,
     "categoria": "Cargadores",
     "descuento": 0.0,
-    "inventario": 55
+    "inventario": 63
   },
   {
     "sku": "CAR-U105",
@@ -3741,7 +3741,7 @@
     "piezas_caja": 200,
     "categoria": "Cargadores",
     "descuento": 0.0,
-    "inventario": 91
+    "inventario": 90
   },
   {
     "sku": "CAR-U261",
@@ -3754,7 +3754,7 @@
     "piezas_caja": 200,
     "categoria": "Cargadores",
     "descuento": 0.0,
-    "inventario": 49
+    "inventario": 47
   },
   {
     "sku": "CAR-U263",
@@ -3780,7 +3780,7 @@
     "piezas_caja": 60,
     "categoria": "Cargadores",
     "descuento": 0.0,
-    "inventario": 51
+    "inventario": 64
   },
   {
     "sku": "CDQ-L73",
@@ -3845,7 +3845,7 @@
     "piezas_caja": 50,
     "categoria": "Salud y Belleza",
     "descuento": 0.0,
-    "inventario": 70
+    "inventario": 67
   },
   {
     "sku": "CFJ-111",
@@ -3871,7 +3871,7 @@
     "piezas_caja": 50,
     "categoria": "Salud y Belleza",
     "descuento": 0.0,
-    "inventario": 22
+    "inventario": 17
   },
   {
     "sku": "CFJ-115",
@@ -3884,7 +3884,7 @@
     "piezas_caja": 50,
     "categoria": "Salud y Belleza",
     "descuento": 0.0,
-    "inventario": 59
+    "inventario": 58
   },
   {
     "sku": "CFL-1101",
@@ -3897,7 +3897,7 @@
     "piezas_caja": 60,
     "categoria": "Hogar / Cocina",
     "descuento": 0.0,
-    "inventario": 87
+    "inventario": 38
   },
   {
     "sku": "CH-J2028",
@@ -3910,7 +3910,7 @@
     "piezas_caja": 40,
     "categoria": "Bocinas",
     "descuento": 0.0,
-    "inventario": 6
+    "inventario": 4
   },
   {
     "sku": "CH-J2045",
@@ -3988,13 +3988,13 @@
     "piezas_caja": 50,
     "categoria": "Bocinas",
     "descuento": 0.0,
-    "inventario": 16
+    "inventario": 15
   },
   {
     "sku": "CH-J2054",
     "nombre": "Bocina Bluetooth con Diseño de Automóvil y Panel Solar",
     "imagen": "ch-j2054.jpg",
-    "precio_publico": 191.0,
+    "precio_publico": 210.0,
     "precio_mayoreo": 140.0,
     "precio_distribuidor": 124.0,
     "precio_caja": 117.0,
@@ -4014,7 +4014,7 @@
     "piezas_caja": 40,
     "categoria": "Bocinas",
     "descuento": 0.0,
-    "inventario": 11
+    "inventario": 10
   },
   {
     "sku": "CH-J2056",
@@ -4170,7 +4170,7 @@
     "piezas_caja": 80,
     "categoria": "Bocinas",
     "descuento": 0.0,
-    "inventario": 6
+    "inventario": 0
   },
   {
     "sku": "CH-J2085",
@@ -4183,7 +4183,7 @@
     "piezas_caja": 30,
     "categoria": "Bocinas",
     "descuento": 0.0,
-    "inventario": 30
+    "inventario": 29
   },
   {
     "sku": "CH-J2086",
@@ -4196,7 +4196,7 @@
     "piezas_caja": 80,
     "categoria": "Bocinas",
     "descuento": 0.0,
-    "inventario": 36
+    "inventario": 34
   },
   {
     "sku": "CH-J2090",
@@ -4222,7 +4222,7 @@
     "piezas_caja": 20,
     "categoria": "Bocinas",
     "descuento": 0.0,
-    "inventario": 8
+    "inventario": 7
   },
   {
     "sku": "CH-J2099",
@@ -4248,7 +4248,7 @@
     "piezas_caja": 100,
     "categoria": "Bocinas / Diseño",
     "descuento": 0.0,
-    "inventario": 95
+    "inventario": 90
   },
   {
     "sku": "CH-J2101",
@@ -4274,7 +4274,7 @@
     "piezas_caja": 150,
     "categoria": "Bocinas",
     "descuento": 0.0,
-    "inventario": 62
+    "inventario": 56
   },
   {
     "sku": "CH-J2106",
@@ -4287,20 +4287,20 @@
     "piezas_caja": 30,
     "categoria": "Bocinas",
     "descuento": 0.0,
-    "inventario": 6
+    "inventario": 5
   },
   {
     "sku": "CH-J2108",
     "nombre": "Bocina De Diseno",
     "imagen": "ch-j2108.jpg",
-    "precio_publico": 72.0,
+    "precio_publico": 86.0,
     "precio_mayoreo": 57.0,
     "precio_distribuidor": 51.0,
     "precio_caja": 48.0,
     "piezas_caja": 100,
     "categoria": "Bocinas",
     "descuento": 0.0,
-    "inventario": 70
+    "inventario": 68
   },
   {
     "sku": "CH-J2110",
@@ -4326,7 +4326,7 @@
     "piezas_caja": 100,
     "categoria": "Bocinas",
     "descuento": 0.0,
-    "inventario": 9
+    "inventario": 5
   },
   {
     "sku": "CH-J2115",
@@ -4365,7 +4365,7 @@
     "piezas_caja": 100,
     "categoria": "Bocinas",
     "descuento": 0.0,
-    "inventario": 54
+    "inventario": 53
   },
   {
     "sku": "CH-J2119",
@@ -4378,7 +4378,7 @@
     "piezas_caja": 100,
     "categoria": "Bocinas",
     "descuento": 0.0,
-    "inventario": 5
+    "inventario": 4
   },
   {
     "sku": "CH-J2125",
@@ -4560,7 +4560,7 @@
     "piezas_caja": 100,
     "categoria": "Bocinas",
     "descuento": 0.0,
-    "inventario": 75
+    "inventario": 73
   },
   {
     "sku": "CH-J2155",
@@ -4573,7 +4573,7 @@
     "piezas_caja": 80,
     "categoria": "Bocinas",
     "descuento": 0.0,
-    "inventario": 69
+    "inventario": 66
   },
   {
     "sku": "CH-J2171",
@@ -4586,7 +4586,7 @@
     "piezas_caja": 40,
     "categoria": "Bocinas",
     "descuento": 0.0,
-    "inventario": 29
+    "inventario": 25
   },
   {
     "sku": "CH-K3014",
@@ -4690,7 +4690,7 @@
     "piezas_caja": 80,
     "categoria": "Bocinas",
     "descuento": 0.0,
-    "inventario": 15
+    "inventario": 12
   },
   {
     "sku": "CH-M232",
@@ -4768,7 +4768,7 @@
     "piezas_caja": 50,
     "categoria": "Bocinas",
     "descuento": 0.0,
-    "inventario": 4
+    "inventario": 5
   },
   {
     "sku": "CJ-2073",
@@ -4781,7 +4781,7 @@
     "piezas_caja": 100,
     "categoria": "Hogar / Cocina",
     "descuento": 0.0,
-    "inventario": 10
+    "inventario": 21
   },
   {
     "sku": "Combo C a C 35W",
@@ -4794,7 +4794,7 @@
     "piezas_caja": 300,
     "categoria": "Renombre / Combo Cargador / T-C",
     "descuento": 0.0,
-    "inventario": 270
+    "inventario": 267
   },
   {
     "sku": "COMBO IP 5W",
@@ -4807,7 +4807,7 @@
     "piezas_caja": 500,
     "categoria": "Renombre",
     "descuento": 0.0,
-    "inventario": 234
+    "inventario": 232
   },
   {
     "sku": "COMBO SAMSUNG TC 45W",
@@ -4820,7 +4820,7 @@
     "piezas_caja": 300,
     "categoria": "Renombre / Combo Cargador",
     "descuento": 0.0,
-    "inventario": 144
+    "inventario": 142
   },
   {
     "sku": "COMBO X V8",
@@ -4872,7 +4872,7 @@
     "piezas_caja": 400,
     "categoria": "Renombre",
     "descuento": 0.0,
-    "inventario": 628
+    "inventario": 627
   },
   {
     "sku": "CUBO USB 5W IP",
@@ -4898,7 +4898,7 @@
     "piezas_caja": 150,
     "categoria": "Salud y Belleza",
     "descuento": 0.0,
-    "inventario": 137
+    "inventario": 133
   },
   {
     "sku": "CW-2051",
@@ -4911,7 +4911,7 @@
     "piezas_caja": 200,
     "categoria": "Salud y Belleza",
     "descuento": 0.0,
-    "inventario": 150
+    "inventario": 144
   },
   {
     "sku": "CW-2055",
@@ -4924,7 +4924,7 @@
     "piezas_caja": 200,
     "categoria": "Juguetes",
     "descuento": 0.0,
-    "inventario": 160
+    "inventario": 159
   },
   {
     "sku": "DB-1",
@@ -5002,7 +5002,7 @@
     "piezas_caja": 50,
     "categoria": "Iluminación",
     "descuento": 0.0,
-    "inventario": 0
+    "inventario": 12
   },
   {
     "sku": "DES-PLA",
@@ -5041,7 +5041,7 @@
     "piezas_caja": 1000,
     "categoria": "Cómputo",
     "descuento": 0.0,
-    "inventario": 176
+    "inventario": 175
   },
   {
     "sku": "DNSD-9210",
@@ -5060,7 +5060,7 @@
     "sku": "DNSD-9211",
     "nombre": "Raton Con Cable",
     "imagen": "dnsd-9211.jpg",
-    "precio_publico": 26.0,
+    "precio_publico": 31.0,
     "precio_mayoreo": 21.0,
     "precio_distribuidor": 18.0,
     "precio_caja": 17.0,
@@ -5197,20 +5197,20 @@
     "piezas_caja": 100,
     "categoria": "Iluminación",
     "descuento": 0.0,
-    "inventario": 34
+    "inventario": 32
   },
   {
     "sku": "DP-10143",
     "nombre": "Proyector Bluetooth Diseño de Astronauta",
     "imagen": "dp-10143.jpg",
-    "precio_publico": 191.0,
-    "precio_mayoreo": 175.0,
+    "precio_publico": 270.0,
+    "precio_mayoreo": 180.0,
     "precio_distribuidor": 160.0,
     "precio_caja": 150.0,
     "piezas_caja": 24,
     "categoria": "Iluminación",
     "descuento": 0.0,
-    "inventario": 29
+    "inventario": 27
   },
   {
     "sku": "DP-1032",
@@ -5249,7 +5249,7 @@
     "piezas_caja": 72,
     "categoria": "Iluminación / Lámparas",
     "descuento": 0.0,
-    "inventario": 131
+    "inventario": 59
   },
   {
     "sku": "DTX128GB",
@@ -5288,7 +5288,7 @@
     "piezas_caja": 100,
     "categoria": "Memorias / USB",
     "descuento": 0.0,
-    "inventario": 40
+    "inventario": 37
   },
   {
     "sku": "DTXS-64GB",
@@ -5301,7 +5301,7 @@
     "piezas_caja": 100,
     "categoria": "Memorias / USB",
     "descuento": 0.0,
-    "inventario": 101
+    "inventario": 97
   },
   {
     "sku": "DZB-2330",
@@ -5314,7 +5314,7 @@
     "piezas_caja": 1000,
     "categoria": "Smartwatch / Infantiles",
     "descuento": 0.0,
-    "inventario": 1079
+    "inventario": 1009
   },
   {
     "sku": "DZB-2701",
@@ -5327,7 +5327,7 @@
     "piezas_caja": 1000,
     "categoria": "Smartwatch / Infantiles",
     "descuento": 0.0,
-    "inventario": 221
+    "inventario": 210
   },
   {
     "sku": "E27W45T33",
@@ -5379,7 +5379,7 @@
     "piezas_caja": 120,
     "categoria": "Iluminación",
     "descuento": 0.0,
-    "inventario": 72
+    "inventario": 68
   },
   {
     "sku": "EM137",
@@ -5411,7 +5411,7 @@
     "sku": "EM139",
     "nombre": "(EM139) Lámpara Solar para Exterior de 100W",
     "imagen": "em139.jpg",
-    "precio_publico": 276.0,
+    "precio_publico": 260.0,
     "precio_mayoreo": 184.0,
     "precio_distribuidor": 162.0,
     "precio_caja": 155.0,
@@ -5444,7 +5444,7 @@
     "piezas_caja": 100,
     "categoria": "Iluminación",
     "descuento": 0.0,
-    "inventario": 99
+    "inventario": 96
   },
   {
     "sku": "EM23",
@@ -5470,7 +5470,7 @@
     "piezas_caja": 200,
     "categoria": "Iluminación",
     "descuento": 0.0,
-    "inventario": 122
+    "inventario": 120
   },
   {
     "sku": "EM30",
@@ -5496,7 +5496,7 @@
     "piezas_caja": 100,
     "categoria": "Iluminación",
     "descuento": 0.0,
-    "inventario": 57
+    "inventario": 53
   },
   {
     "sku": "EM32",
@@ -5522,20 +5522,20 @@
     "piezas_caja": 100,
     "categoria": "Iluminación",
     "descuento": 0.0,
-    "inventario": 54
+    "inventario": 48
   },
   {
     "sku": "EM39",
     "nombre": "Bombilla LED de Emergencia",
     "imagen": "em39.jpg",
-    "precio_publico": 59.0,
+    "precio_publico": 72.0,
     "precio_mayoreo": 51.0,
     "precio_distribuidor": 47.0,
     "precio_caja": 42.0,
     "piezas_caja": 100,
     "categoria": "Iluminación",
     "descuento": 0.0,
-    "inventario": 44
+    "inventario": 42
   },
   {
     "sku": "EM51",
@@ -5548,7 +5548,7 @@
     "piezas_caja": 100,
     "categoria": "Iluminación / Focos / LED",
     "descuento": 0.0,
-    "inventario": 68
+    "inventario": 65
   },
   {
     "sku": "EM53",
@@ -5587,7 +5587,7 @@
     "piezas_caja": 60,
     "categoria": "Hogar",
     "descuento": 0.0,
-    "inventario": 283
+    "inventario": 281
   },
   {
     "sku": "EXT03M03",
@@ -5600,7 +5600,7 @@
     "piezas_caja": 70,
     "categoria": "Hogar",
     "descuento": 0.0,
-    "inventario": 255
+    "inventario": 252
   },
   {
     "sku": "EXT05M02",
@@ -5665,7 +5665,7 @@
     "piezas_caja": 30,
     "categoria": "Hogar",
     "descuento": 0.0,
-    "inventario": 136
+    "inventario": 135
   },
   {
     "sku": "EXT07M03",
@@ -5769,7 +5769,7 @@
     "piezas_caja": 15,
     "categoria": "Hogar",
     "descuento": 0.0,
-    "inventario": 140
+    "inventario": 138
   },
   {
     "sku": "EXT15M03",
@@ -5795,7 +5795,7 @@
     "piezas_caja": 10,
     "categoria": "Hogar",
     "descuento": 0.0,
-    "inventario": 88
+    "inventario": 85
   },
   {
     "sku": "FA018",
@@ -5821,7 +5821,7 @@
     "piezas_caja": 100,
     "categoria": "Hogar / Cocina",
     "descuento": 0.0,
-    "inventario": 123
+    "inventario": 122
   },
   {
     "sku": "FEE-7404",
@@ -5847,7 +5847,7 @@
     "piezas_caja": 40,
     "categoria": "Hogar / Cocina",
     "descuento": 0.0,
-    "inventario": 21
+    "inventario": 20
   },
   {
     "sku": "FK-903",
@@ -5860,7 +5860,7 @@
     "piezas_caja": 200,
     "categoria": "Hogar",
     "descuento": 0.0,
-    "inventario": 127
+    "inventario": 125
   },
   {
     "sku": "FM-5118",
@@ -5899,7 +5899,7 @@
     "piezas_caja": 40,
     "categoria": "Renombre",
     "descuento": 0.0,
-    "inventario": 82
+    "inventario": 34
   },
   {
     "sku": "FM-5129",
@@ -5912,7 +5912,7 @@
     "piezas_caja": 60,
     "categoria": "Bocinas",
     "descuento": 0.0,
-    "inventario": 47
+    "inventario": 46
   },
   {
     "sku": "FM-5135",
@@ -5925,7 +5925,7 @@
     "piezas_caja": 100,
     "categoria": "Bocinas",
     "descuento": 0.0,
-    "inventario": 33
+    "inventario": 32
   },
   {
     "sku": "FM-5502",
@@ -6068,7 +6068,7 @@
     "piezas_caja": 144,
     "categoria": "Ventiladores",
     "descuento": 0.0,
-    "inventario": 67
+    "inventario": 66
   },
   {
     "sku": "FS-1105",
@@ -6081,7 +6081,7 @@
     "piezas_caja": 100,
     "categoria": "Ventiladores",
     "descuento": 0.0,
-    "inventario": 301
+    "inventario": 300
   },
   {
     "sku": "FS-1110",
@@ -6094,7 +6094,7 @@
     "piezas_caja": 50,
     "categoria": "Hogar",
     "descuento": 0.0,
-    "inventario": 174
+    "inventario": 173
   },
   {
     "sku": "FS-1123",
@@ -6107,7 +6107,7 @@
     "piezas_caja": 45,
     "categoria": "Ventiladores",
     "descuento": 0.0,
-    "inventario": 286
+    "inventario": 285
   },
   {
     "sku": "FS-4013",
@@ -6172,7 +6172,7 @@
     "piezas_caja": 1000,
     "categoria": "Smartwatch / Infantiles",
     "descuento": 0.0,
-    "inventario": 642
+    "inventario": 632
   },
   {
     "sku": "G107",
@@ -6204,14 +6204,14 @@
     "sku": "GAR135A-800",
     "nombre": "(GAR135A-800) Paquete de 4 Pilas Alcalinas AAA",
     "imagen": "gar135a-800.jpg",
-    "precio_publico": 12.0,
+    "precio_publico": 14.5,
     "precio_mayoreo": 10.0,
     "precio_distribuidor": 9.0,
     "precio_caja": 8.0,
     "piezas_caja": 200,
     "categoria": "1HORA",
     "descuento": 0.0,
-    "inventario": 75
+    "inventario": 73
   },
   {
     "sku": "GAR136A-800",
@@ -6237,7 +6237,7 @@
     "piezas_caja": 200,
     "categoria": "1HORA",
     "descuento": 0.0,
-    "inventario": 171
+    "inventario": 165
   },
   {
     "sku": "GJ-306-3M",
@@ -6250,7 +6250,7 @@
     "piezas_caja": 240,
     "categoria": "Ferretería",
     "descuento": 0.0,
-    "inventario": 215
+    "inventario": 213
   },
   {
     "sku": "GJ-307-3M",
@@ -6263,7 +6263,7 @@
     "piezas_caja": 240,
     "categoria": "Ferretería",
     "descuento": 0.0,
-    "inventario": 103
+    "inventario": 101
   },
   {
     "sku": "GJ-307-5M",
@@ -6328,7 +6328,7 @@
     "piezas_caja": 10,
     "categoria": "Ferretería",
     "descuento": 0.0,
-    "inventario": 27
+    "inventario": 26
   },
   {
     "sku": "GJ-362",
@@ -6354,7 +6354,7 @@
     "piezas_caja": 100,
     "categoria": "Hogar",
     "descuento": 0.0,
-    "inventario": 29
+    "inventario": 25
   },
   {
     "sku": "GTS-1271",
@@ -6484,7 +6484,7 @@
     "piezas_caja": 80,
     "categoria": "Bocinas / 3\"",
     "descuento": 0.0,
-    "inventario": 51
+    "inventario": 50
   },
   {
     "sku": "GTS-1868",
@@ -6601,7 +6601,7 @@
     "piezas_caja": 50,
     "categoria": "Bocinas / 4\"",
     "descuento": 0.0,
-    "inventario": 50
+    "inventario": 49
   },
   {
     "sku": "GTS-2149",
@@ -6640,7 +6640,7 @@
     "piezas_caja": 100,
     "categoria": "Bocinas",
     "descuento": 0.0,
-    "inventario": 70
+    "inventario": 69
   },
   {
     "sku": "GTS-2220",
@@ -6653,7 +6653,7 @@
     "piezas_caja": 40,
     "categoria": "Bocinas",
     "descuento": 0.0,
-    "inventario": 26
+    "inventario": 25
   },
   {
     "sku": "GTS-2307",
@@ -6666,7 +6666,7 @@
     "piezas_caja": 80,
     "categoria": "Bocinas",
     "descuento": 0.0,
-    "inventario": 31
+    "inventario": 28
   },
   {
     "sku": "GTS-C927",
@@ -6705,7 +6705,7 @@
     "piezas_caja": 100,
     "categoria": "Cables",
     "descuento": 0.0,
-    "inventario": 5
+    "inventario": 20
   },
   {
     "sku": "HDM-9404",
@@ -6718,7 +6718,7 @@
     "piezas_caja": 50,
     "categoria": "Cables",
     "descuento": 0.0,
-    "inventario": 61
+    "inventario": 60
   },
   {
     "sku": "HDM-9405",
@@ -6744,7 +6744,7 @@
     "piezas_caja": 30,
     "categoria": "Cables",
     "descuento": 0.0,
-    "inventario": 24
+    "inventario": 23
   },
   {
     "sku": "HJ-183",
@@ -6757,7 +6757,7 @@
     "piezas_caja": 300,
     "categoria": "Hogar",
     "descuento": 0.0,
-    "inventario": 68
+    "inventario": 64
   },
   {
     "sku": "HJ-185",
@@ -6783,7 +6783,7 @@
     "piezas_caja": 400,
     "categoria": "Iluminación",
     "descuento": 0.0,
-    "inventario": 237
+    "inventario": 234
   },
   {
     "sku": "HL-13",
@@ -6809,7 +6809,7 @@
     "piezas_caja": 50,
     "categoria": "Hogar",
     "descuento": 0.0,
-    "inventario": 81
+    "inventario": 80
   },
   {
     "sku": "HOG.953.P",
@@ -6874,7 +6874,7 @@
     "piezas_caja": 100,
     "categoria": "Memorias / USB",
     "descuento": 0.0,
-    "inventario": 22
+    "inventario": 12
   },
   {
     "sku": "HS-USB-E327C-64G-U3",
@@ -6926,7 +6926,7 @@
     "piezas_caja": 240,
     "categoria": "Iluminación",
     "descuento": 0.0,
-    "inventario": 159
+    "inventario": 158
   },
   {
     "sku": "HVH-80510",
@@ -7069,7 +7069,7 @@
     "piezas_caja": 72,
     "categoria": "Salud y Belleza",
     "descuento": 0.0,
-    "inventario": 28
+    "inventario": 24
   },
   {
     "sku": "I12SG",
@@ -7108,7 +7108,7 @@
     "piezas_caja": 100,
     "categoria": "Renombre",
     "descuento": 0.0,
-    "inventario": 30
+    "inventario": 26
   },
   {
     "sku": "JBB-5254",
@@ -7134,7 +7134,7 @@
     "piezas_caja": 100,
     "categoria": "Soportes para Celular / Selfie Stick",
     "descuento": 0.0,
-    "inventario": 58
+    "inventario": 88
   },
   {
     "sku": "JC-10",
@@ -7147,7 +7147,7 @@
     "piezas_caja": 100,
     "categoria": "Soportes para Celular / Selfie Stick",
     "descuento": 0.0,
-    "inventario": 72
+    "inventario": 55
   },
   {
     "sku": "JC-13",
@@ -7160,7 +7160,7 @@
     "piezas_caja": 100,
     "categoria": "Soportes para Celular",
     "descuento": 0.0,
-    "inventario": 51
+    "inventario": 50
   },
   {
     "sku": "JC-15",
@@ -7186,7 +7186,7 @@
     "piezas_caja": 50,
     "categoria": "Soportes para Celular / Selfie Stick",
     "descuento": 0.0,
-    "inventario": 46
+    "inventario": 45
   },
   {
     "sku": "JC-23",
@@ -7212,7 +7212,7 @@
     "piezas_caja": 150,
     "categoria": "Iluminación",
     "descuento": 0.0,
-    "inventario": 126
+    "inventario": 124
   },
   {
     "sku": "JC-35",
@@ -7238,7 +7238,7 @@
     "piezas_caja": 50,
     "categoria": "Soportes para Celular / Selfie Stick",
     "descuento": 0.0,
-    "inventario": 36
+    "inventario": 34
   },
   {
     "sku": "JJYP272",
@@ -7368,7 +7368,7 @@
     "piezas_caja": 500,
     "categoria": "Hogar",
     "descuento": 0.0,
-    "inventario": 46
+    "inventario": 43
   },
   {
     "sku": "JSL-7303",
@@ -7420,7 +7420,7 @@
     "piezas_caja": 120,
     "categoria": "Salud y Belleza / Ejercicio",
     "descuento": 0.0,
-    "inventario": 19
+    "inventario": 18
   },
   {
     "sku": "JSQC-003",
@@ -7459,7 +7459,7 @@
     "piezas_caja": 120,
     "categoria": "Hogar",
     "descuento": 0.0,
-    "inventario": 24
+    "inventario": 23
   },
   {
     "sku": "K-628",
@@ -7472,7 +7472,7 @@
     "piezas_caja": 144,
     "categoria": "Hogar / Cocina",
     "descuento": 0.0,
-    "inventario": 19
+    "inventario": 5
   },
   {
     "sku": "K-703",
@@ -7498,7 +7498,7 @@
     "piezas_caja": 100,
     "categoria": "Hogar / Cocina",
     "descuento": 0.0,
-    "inventario": 14
+    "inventario": 13
   },
   {
     "sku": "K-733",
@@ -7654,7 +7654,7 @@
     "piezas_caja": 100,
     "categoria": "Memorias / USB",
     "descuento": 0.0,
-    "inventario": 63
+    "inventario": 59
   },
   {
     "sku": "KM10PK-32",
@@ -7784,7 +7784,7 @@
     "piezas_caja": 40,
     "categoria": "Bocinas",
     "descuento": 0.0,
-    "inventario": 9
+    "inventario": 8
   },
   {
     "sku": "KTF-1651",
@@ -7875,7 +7875,7 @@
     "piezas_caja": 40,
     "categoria": "Bocinas",
     "descuento": 0.0,
-    "inventario": 25
+    "inventario": 23
   },
   {
     "sku": "KTS-1251",
@@ -7979,7 +7979,7 @@
     "piezas_caja": 24,
     "categoria": "Bocinas / 3x2\"",
     "descuento": 0.0,
-    "inventario": 6
+    "inventario": 5
   },
   {
     "sku": "KTS-2295",
@@ -7992,20 +7992,20 @@
     "piezas_caja": 50,
     "categoria": "Bocinas / 3\"",
     "descuento": 0.0,
-    "inventario": 24
+    "inventario": 17
   },
   {
     "sku": "LED-1330",
     "nombre": "Tira Led 5 Metros Con 30 Leds Rgb",
     "imagen": "led-1330.jpg",
-    "precio_publico": 63.0,
-    "precio_mayoreo": 52.0,
-    "precio_distribuidor": 47.0,
-    "precio_caja": 44.0,
+    "precio_publico": 65.0,
+    "precio_mayoreo": 48.0,
+    "precio_distribuidor": 42.0,
+    "precio_caja": 40.0,
     "piezas_caja": 50,
     "categoria": "Iluminación",
     "descuento": 0.0,
-    "inventario": 26
+    "inventario": 66
   },
   {
     "sku": "LED-728",
@@ -8018,7 +8018,7 @@
     "piezas_caja": 100,
     "categoria": "Iluminación",
     "descuento": 0.0,
-    "inventario": 72
+    "inventario": 71
   },
   {
     "sku": "LED-733",
@@ -8031,7 +8031,7 @@
     "piezas_caja": 240,
     "categoria": "Iluminación",
     "descuento": 0.0,
-    "inventario": 139
+    "inventario": 126
   },
   {
     "sku": "LED-736",
@@ -8044,7 +8044,7 @@
     "piezas_caja": 60,
     "categoria": "Iluminación / Lámparas / De Escritorio",
     "descuento": 0.0,
-    "inventario": 18
+    "inventario": 28
   },
   {
     "sku": "LED-737",
@@ -8057,7 +8057,7 @@
     "piezas_caja": 60,
     "categoria": "Iluminación / Lámparas / De Escritorio",
     "descuento": 0.0,
-    "inventario": 39
+    "inventario": 48
   },
   {
     "sku": "LSD-6131",
@@ -8083,7 +8083,7 @@
     "piezas_caja": 120,
     "categoria": "Ferretería",
     "descuento": 0.0,
-    "inventario": 120
+    "inventario": 115
   },
   {
     "sku": "LUD-003",
@@ -8232,7 +8232,7 @@
     "sku": "LV67W12",
     "nombre": "Ventilador de Techo con Lámpara 28w",
     "imagen": "lv67w12.jpg",
-    "precio_publico": 75.0,
+    "precio_publico": 90.0,
     "precio_mayoreo": 64.0,
     "precio_distribuidor": 59.0,
     "precio_caja": 55.0,
@@ -8252,7 +8252,7 @@
     "piezas_caja": 1000,
     "categoria": "Memorias / USB",
     "descuento": 0.0,
-    "inventario": 1227
+    "inventario": 1099
   },
   {
     "sku": "MB-152",
@@ -8265,7 +8265,7 @@
     "piezas_caja": 100,
     "categoria": "Bocinas",
     "descuento": 0.0,
-    "inventario": 70
+    "inventario": 68
   },
   {
     "sku": "MB-161",
@@ -8382,7 +8382,7 @@
     "piezas_caja": 100,
     "categoria": "Iluminación",
     "descuento": 0.0,
-    "inventario": 42
+    "inventario": 44
   },
   {
     "sku": "MR-049",
@@ -8434,7 +8434,7 @@
     "piezas_caja": 100,
     "categoria": "Salud y Belleza",
     "descuento": 0.0,
-    "inventario": 45
+    "inventario": 43
   },
   {
     "sku": "MR-107P",
@@ -8447,7 +8447,7 @@
     "piezas_caja": 100,
     "categoria": "Salud y Belleza",
     "descuento": 0.0,
-    "inventario": 6
+    "inventario": 106
   },
   {
     "sku": "MR-108",
@@ -8473,7 +8473,7 @@
     "piezas_caja": 100,
     "categoria": "Salud y Belleza",
     "descuento": 0.0,
-    "inventario": 11
+    "inventario": 10
   },
   {
     "sku": "MR-111",
@@ -8486,7 +8486,7 @@
     "piezas_caja": 100,
     "categoria": "Salud y Belleza",
     "descuento": 0.0,
-    "inventario": 62
+    "inventario": 60
   },
   {
     "sku": "MR-112",
@@ -8538,7 +8538,7 @@
     "piezas_caja": 100,
     "categoria": "Salud y Belleza",
     "descuento": 0.0,
-    "inventario": 60
+    "inventario": 59
   },
   {
     "sku": "MR-120",
@@ -8564,7 +8564,7 @@
     "piezas_caja": 80,
     "categoria": "Salud y Belleza",
     "descuento": 0.0,
-    "inventario": 32
+    "inventario": 31
   },
   {
     "sku": "MR-123",
@@ -8590,20 +8590,20 @@
     "piezas_caja": 100,
     "categoria": "Salud y Belleza",
     "descuento": 0.0,
-    "inventario": 23
+    "inventario": 22
   },
   {
     "sku": "MR-126",
     "nombre": "Máquina Rasuradora Eléctrica con Pantalla LCD Recargable",
     "imagen": "mr-126.jpg",
-    "precio_publico": 155.0,
+    "precio_publico": 170.0,
     "precio_mayoreo": 114.0,
     "precio_distribuidor": 100.0,
     "precio_caja": 95.0,
     "piezas_caja": 60,
     "categoria": "Salud y Belleza",
     "descuento": 0.0,
-    "inventario": 55
+    "inventario": 54
   },
   {
     "sku": "MR-127",
@@ -8642,7 +8642,7 @@
     "piezas_caja": 60,
     "categoria": "Salud y Belleza",
     "descuento": 0.0,
-    "inventario": 4
+    "inventario": 0
   },
   {
     "sku": "MR-130P",
@@ -8694,7 +8694,7 @@
     "piezas_caja": 100,
     "categoria": "Salud y Belleza",
     "descuento": 0.0,
-    "inventario": 16
+    "inventario": 15
   },
   {
     "sku": "MR-135",
@@ -8707,13 +8707,13 @@
     "piezas_caja": 200,
     "categoria": "Salud y Belleza",
     "descuento": 0.0,
-    "inventario": 234
+    "inventario": 232
   },
   {
     "sku": "MR-137P",
     "nombre": "Rasuradora Eléctrica con 4 Peines",
     "imagen": "mr-137p.jpg",
-    "precio_publico": 155.0,
+    "precio_publico": 170.0,
     "precio_mayoreo": 114.0,
     "precio_distribuidor": 100.0,
     "precio_caja": 95.0,
@@ -8759,16 +8759,16 @@
     "piezas_caja": 60,
     "categoria": "Salud y Belleza",
     "descuento": 0.0,
-    "inventario": 33
+    "inventario": 29
   },
   {
     "sku": "MR-305",
     "nombre": "Plancha de Cabello de 4 Niveles",
     "imagen": "mr-305.jpg",
-    "precio_publico": 126.0,
-    "precio_mayoreo": 92.0,
-    "precio_distribuidor": 82.0,
-    "precio_caja": 77.0,
+    "precio_publico": 130.0,
+    "precio_mayoreo": 86.0,
+    "precio_distribuidor": 76.0,
+    "precio_caja": 72.0,
     "piezas_caja": 60,
     "categoria": "Salud y Belleza",
     "descuento": 0.0,
@@ -8785,7 +8785,7 @@
     "piezas_caja": 20,
     "categoria": "Salud y Belleza",
     "descuento": 0.0,
-    "inventario": 19
+    "inventario": 16
   },
   {
     "sku": "MR-310",
@@ -8817,7 +8817,7 @@
     "sku": "MR-322",
     "nombre": "Horquilas Rectas",
     "imagen": "mr-322.jpg",
-    "precio_publico": 70.0,
+    "precio_publico": 84.0,
     "precio_mayoreo": 56.0,
     "precio_distribuidor": 49.0,
     "precio_caja": 47.0,
@@ -8837,7 +8837,7 @@
     "piezas_caja": 100,
     "categoria": "Salud y Belleza",
     "descuento": 0.0,
-    "inventario": 35
+    "inventario": 32
   },
   {
     "sku": "MR-327",
@@ -8850,7 +8850,7 @@
     "piezas_caja": 60,
     "categoria": "Salud y Belleza",
     "descuento": 0.0,
-    "inventario": 24
+    "inventario": 21
   },
   {
     "sku": "MR-707",
@@ -8863,7 +8863,7 @@
     "piezas_caja": 80,
     "categoria": "Salud y Belleza",
     "descuento": 0.0,
-    "inventario": 66
+    "inventario": 65
   },
   {
     "sku": "MR-711",
@@ -8876,7 +8876,7 @@
     "piezas_caja": 100,
     "categoria": "Salud y Belleza",
     "descuento": 0.0,
-    "inventario": 62
+    "inventario": 61
   },
   {
     "sku": "MR-836",
@@ -8902,7 +8902,7 @@
     "piezas_caja": 100,
     "categoria": "Accesorios para Celular",
     "descuento": 0.0,
-    "inventario": 75
+    "inventario": 73
   },
   {
     "sku": "MR-865",
@@ -8915,20 +8915,20 @@
     "piezas_caja": 200,
     "categoria": "Salud y Belleza",
     "descuento": 0.0,
-    "inventario": 74
+    "inventario": 72
   },
   {
     "sku": "MR-867",
     "nombre": "Pistola de Fascia",
     "imagen": "mr-867.jpg",
-    "precio_publico": 39.0,
+    "precio_publico": 50.0,
     "precio_mayoreo": 33.0,
     "precio_distribuidor": 31.0,
     "precio_caja": 29.0,
     "piezas_caja": 200,
     "categoria": "Salud y Belleza",
     "descuento": 0.0,
-    "inventario": 199
+    "inventario": 196
   },
   {
     "sku": "MR-870",
@@ -8941,7 +8941,7 @@
     "piezas_caja": 200,
     "categoria": "Salud y Belleza",
     "descuento": 0.0,
-    "inventario": 91
+    "inventario": 82
   },
   {
     "sku": "MR-885",
@@ -8967,7 +8967,7 @@
     "piezas_caja": 100,
     "categoria": "Accesorios para Celular",
     "descuento": 0.0,
-    "inventario": 36
+    "inventario": 35
   },
   {
     "sku": "MR-891",
@@ -8993,7 +8993,7 @@
     "piezas_caja": 100,
     "categoria": "Accesorios para Celular",
     "descuento": 0.0,
-    "inventario": 79
+    "inventario": 78
   },
   {
     "sku": "MR-900",
@@ -9032,7 +9032,7 @@
     "piezas_caja": 100,
     "categoria": "Salud y Belleza",
     "descuento": 0.0,
-    "inventario": 37
+    "inventario": 36
   },
   {
     "sku": "MR-911",
@@ -9084,7 +9084,7 @@
     "piezas_caja": 100,
     "categoria": "Salud y Belleza",
     "descuento": 0.0,
-    "inventario": 22
+    "inventario": 19
   },
   {
     "sku": "MR-929",
@@ -9123,7 +9123,7 @@
     "piezas_caja": 60,
     "categoria": "Salud y Belleza / Masajeadores",
     "descuento": 0.0,
-    "inventario": 244
+    "inventario": 234
   },
   {
     "sku": "MULTI-08",
@@ -9162,7 +9162,7 @@
     "piezas_caja": 60,
     "categoria": "Hogar / Otros",
     "descuento": 0.0,
-    "inventario": 25
+    "inventario": 24
   },
   {
     "sku": "MULTI-15",
@@ -9240,7 +9240,7 @@
     "piezas_caja": 80,
     "categoria": "Hogar / Otros",
     "descuento": 0.0,
-    "inventario": 186
+    "inventario": 178
   },
   {
     "sku": "MULTI-33",
@@ -9253,7 +9253,7 @@
     "piezas_caja": 60,
     "categoria": "Hogar / Otros",
     "descuento": 0.0,
-    "inventario": 162
+    "inventario": 160
   },
   {
     "sku": "MVP-1012",
@@ -9266,7 +9266,7 @@
     "piezas_caja": 60,
     "categoria": "Ventiladores",
     "descuento": 0.0,
-    "inventario": 540
+    "inventario": 538
   },
   {
     "sku": "MWQ-0213",
@@ -9279,7 +9279,7 @@
     "piezas_caja": 60,
     "categoria": "Hogar",
     "descuento": 0.0,
-    "inventario": 17
+    "inventario": 15
   },
   {
     "sku": "NTN-30303",
@@ -9357,7 +9357,7 @@
     "piezas_caja": 100,
     "categoria": "Salud y Belleza",
     "descuento": 0.0,
-    "inventario": 90
+    "inventario": 88
   },
   {
     "sku": "P9",
@@ -9370,7 +9370,7 @@
     "piezas_caja": 80,
     "categoria": "Diademas",
     "descuento": 0.0,
-    "inventario": 903
+    "inventario": 900
   },
   {
     "sku": "P9PROMAX",
@@ -9383,7 +9383,7 @@
     "piezas_caja": 80,
     "categoria": "Diademas",
     "descuento": 0.0,
-    "inventario": 33
+    "inventario": 42
   },
   {
     "sku": "P9PROMAXPAINT",
@@ -9396,7 +9396,7 @@
     "piezas_caja": 80,
     "categoria": "Diademas",
     "descuento": 0.0,
-    "inventario": 604
+    "inventario": 603
   },
   {
     "sku": "PC-991",
@@ -9409,7 +9409,7 @@
     "piezas_caja": 100,
     "categoria": "Renombre",
     "descuento": 0.0,
-    "inventario": 203
+    "inventario": 202
   },
   {
     "sku": "PJ098N",
@@ -9422,7 +9422,7 @@
     "piezas_caja": 300,
     "categoria": "1HORA",
     "descuento": 0.0,
-    "inventario": 913
+    "inventario": 904
   },
   {
     "sku": "PL-19",
@@ -9448,7 +9448,7 @@
     "piezas_caja": 160,
     "categoria": "Power Banks / 20,000 mAh",
     "descuento": 0.0,
-    "inventario": 189
+    "inventario": 164
   },
   {
     "sku": "PL-23",
@@ -9461,7 +9461,7 @@
     "piezas_caja": 160,
     "categoria": "Power Banks / 20,000 mAh",
     "descuento": 0.0,
-    "inventario": 398
+    "inventario": 393
   },
   {
     "sku": "PL-26",
@@ -9474,7 +9474,7 @@
     "piezas_caja": 160,
     "categoria": "Power Banks / 20,000 mAh",
     "descuento": 0.0,
-    "inventario": 322
+    "inventario": 313
   },
   {
     "sku": "PLAYO CALIBRE .80 18",
@@ -9552,7 +9552,7 @@
     "piezas_caja": 300,
     "categoria": "Temporada",
     "descuento": 0.0,
-    "inventario": 129
+    "inventario": 126
   },
   {
     "sku": "RD-237",
@@ -9643,7 +9643,7 @@
     "piezas_caja": 200,
     "categoria": "Hogar",
     "descuento": 0.0,
-    "inventario": 154
+    "inventario": 135
   },
   {
     "sku": "S04W06",
@@ -9708,7 +9708,7 @@
     "piezas_caja": 480,
     "categoria": "Juguetes",
     "descuento": 0.0,
-    "inventario": 33
+    "inventario": 25
   },
   {
     "sku": "SA313T",
@@ -9721,7 +9721,7 @@
     "piezas_caja": 100,
     "categoria": "Bocinas",
     "descuento": 0.0,
-    "inventario": 36
+    "inventario": 35
   },
   {
     "sku": "SA316T",
@@ -9786,7 +9786,7 @@
     "piezas_caja": 80,
     "categoria": "Bocinas / 3\"",
     "descuento": 0.0,
-    "inventario": 640
+    "inventario": 639
   },
   {
     "sku": "SA438T",
@@ -9812,7 +9812,7 @@
     "piezas_caja": 60,
     "categoria": "Bocinas / 4\"",
     "descuento": 0.0,
-    "inventario": 48
+    "inventario": 47
   },
   {
     "sku": "SA8065T",
@@ -9825,7 +9825,7 @@
     "piezas_caja": 8,
     "categoria": "Bafles / 10\"",
     "descuento": 0.0,
-    "inventario": 164
+    "inventario": 161
   },
   {
     "sku": "SAM INAL S10",
@@ -9844,8 +9844,8 @@
     "sku": "SAMSUNG COMBO 65W",
     "nombre": "(SAMSUNG COMBO 65W) SAMSUNG COMBO 65W",
     "imagen": "samsung combo 65w.jpg",
-    "precio_publico": 68.0,
-    "precio_mayoreo": 58.0,
+    "precio_publico": 90.0,
+    "precio_mayoreo": 60.0,
     "precio_distribuidor": 54.0,
     "precio_caja": 50.0,
     "piezas_caja": 300,
@@ -9864,7 +9864,7 @@
     "piezas_caja": 12,
     "categoria": "Bocinas / 4\"",
     "descuento": 0.0,
-    "inventario": 133
+    "inventario": 132
   },
   {
     "sku": "SD-562",
@@ -9903,7 +9903,7 @@
     "piezas_caja": 120,
     "categoria": "Iluminación",
     "descuento": 0.0,
-    "inventario": 38
+    "inventario": 37
   },
   {
     "sku": "SD-567",
@@ -9968,7 +9968,7 @@
     "piezas_caja": 240,
     "categoria": "Iluminación",
     "descuento": 0.0,
-    "inventario": 146
+    "inventario": 140
   },
   {
     "sku": "SD-580",
@@ -10111,7 +10111,7 @@
     "piezas_caja": 96,
     "categoria": "Ferretería",
     "descuento": 0.0,
-    "inventario": 64
+    "inventario": 58
   },
   {
     "sku": "SJ-2503",
@@ -10137,7 +10137,7 @@
     "piezas_caja": 100,
     "categoria": "Ferretería",
     "descuento": 0.0,
-    "inventario": 228
+    "inventario": 227
   },
   {
     "sku": "SOP-1059",
@@ -10176,7 +10176,7 @@
     "piezas_caja": 100,
     "categoria": "Soportes para Celular",
     "descuento": 0.0,
-    "inventario": 22
+    "inventario": 20
   },
   {
     "sku": "SOP-1070",
@@ -10208,7 +10208,7 @@
     "sku": "SOP-1077",
     "nombre": "(SOP-1077) Soporte Metálico Giratorio para Celular",
     "imagen": "sop-1077.jpg",
-    "precio_publico": 91.0,
+    "precio_publico": 100.0,
     "precio_mayoreo": 67.0,
     "precio_distribuidor": 59.0,
     "precio_caja": 56.0,
@@ -10241,7 +10241,7 @@
     "piezas_caja": 200,
     "categoria": "Soportes para Celular",
     "descuento": 0.0,
-    "inventario": 98
+    "inventario": 97
   },
   {
     "sku": "SOP-1080",
@@ -10267,7 +10267,7 @@
     "piezas_caja": 200,
     "categoria": "Soportes para Celular",
     "descuento": 0.0,
-    "inventario": 79
+    "inventario": 71
   },
   {
     "sku": "SOP-1083",
@@ -10293,7 +10293,7 @@
     "piezas_caja": 100,
     "categoria": "Soportes para Celular",
     "descuento": 0.0,
-    "inventario": 40
+    "inventario": 37
   },
   {
     "sku": "SOPORTE 14-42",
@@ -10423,7 +10423,7 @@
     "piezas_caja": 100,
     "categoria": "Audífonos",
     "descuento": 0.0,
-    "inventario": 84
+    "inventario": 82
   },
   {
     "sku": "ST-A010",
@@ -10436,7 +10436,7 @@
     "piezas_caja": 100,
     "categoria": "Audífonos",
     "descuento": 0.0,
-    "inventario": 29
+    "inventario": 24
   },
   {
     "sku": "ST-A017",
@@ -10449,7 +10449,7 @@
     "piezas_caja": 100,
     "categoria": "Audífonos",
     "descuento": 0.0,
-    "inventario": 24
+    "inventario": 23
   },
   {
     "sku": "ST-A018",
@@ -10475,7 +10475,7 @@
     "piezas_caja": 100,
     "categoria": "Audífonos",
     "descuento": 0.0,
-    "inventario": 80
+    "inventario": 78
   },
   {
     "sku": "ST-A022",
@@ -10488,7 +10488,7 @@
     "piezas_caja": 100,
     "categoria": "Audífonos / Bluetooth",
     "descuento": 0.0,
-    "inventario": 66
+    "inventario": 65
   },
   {
     "sku": "ST-A023",
@@ -10514,7 +10514,7 @@
     "piezas_caja": 100,
     "categoria": "Audífonos",
     "descuento": 0.0,
-    "inventario": 46
+    "inventario": 44
   },
   {
     "sku": "ST-A025",
@@ -10566,7 +10566,7 @@
     "piezas_caja": 100,
     "categoria": "Audífonos",
     "descuento": 0.0,
-    "inventario": 90
+    "inventario": 89
   },
   {
     "sku": "ST-A031",
@@ -10579,7 +10579,7 @@
     "piezas_caja": 100,
     "categoria": "Audífonos",
     "descuento": 0.0,
-    "inventario": 77
+    "inventario": 76
   },
   {
     "sku": "ST-B261",
@@ -10592,7 +10592,7 @@
     "piezas_caja": 100,
     "categoria": "Audífonos",
     "descuento": 0.0,
-    "inventario": 158
+    "inventario": 164
   },
   {
     "sku": "ST-W130",
@@ -10605,7 +10605,7 @@
     "piezas_caja": 100,
     "categoria": "Audífonos",
     "descuento": 0.0,
-    "inventario": 20
+    "inventario": 16
   },
   {
     "sku": "ST-W132",
@@ -10618,7 +10618,7 @@
     "piezas_caja": 100,
     "categoria": "Audífonos",
     "descuento": 0.0,
-    "inventario": 44
+    "inventario": 43
   },
   {
     "sku": "ST-W133",
@@ -10631,7 +10631,7 @@
     "piezas_caja": 100,
     "categoria": "Audífonos / Bluetooth",
     "descuento": 0.0,
-    "inventario": 82
+    "inventario": 83
   },
   {
     "sku": "ST-W139",
@@ -10644,7 +10644,7 @@
     "piezas_caja": 100,
     "categoria": "Audífonos / Bluetooth",
     "descuento": 0.0,
-    "inventario": 24
+    "inventario": 23
   },
   {
     "sku": "ST-W152",
@@ -10657,7 +10657,7 @@
     "piezas_caja": 200,
     "categoria": "Audífonos / Bluetooth",
     "descuento": 0.0,
-    "inventario": 210
+    "inventario": 224
   },
   {
     "sku": "SYZ-011",
@@ -10683,7 +10683,7 @@
     "piezas_caja": 100,
     "categoria": "Renombre",
     "descuento": 0.0,
-    "inventario": 210
+    "inventario": 209
   },
   {
     "sku": "T25",
@@ -10761,7 +10761,7 @@
     "piezas_caja": 100,
     "categoria": "Smartwatch",
     "descuento": 0.0,
-    "inventario": 248
+    "inventario": 46
   },
   {
     "sku": "TB-6316",
@@ -10787,7 +10787,7 @@
     "piezas_caja": 100,
     "categoria": "Smartwatch",
     "descuento": 0.0,
-    "inventario": 27
+    "inventario": 24
   },
   {
     "sku": "TB-6319",
@@ -10813,7 +10813,7 @@
     "piezas_caja": 100,
     "categoria": "Smartwatch",
     "descuento": 0.0,
-    "inventario": 82
+    "inventario": 80
   },
   {
     "sku": "TB-6803",
@@ -10826,7 +10826,7 @@
     "piezas_caja": 100,
     "categoria": "Smartwatch",
     "descuento": 0.0,
-    "inventario": 43
+    "inventario": 39
   },
   {
     "sku": "TC-1001",
@@ -10865,7 +10865,7 @@
     "piezas_caja": 1000,
     "categoria": "Cargadores",
     "descuento": 0.0,
-    "inventario": 50
+    "inventario": 45
   },
   {
     "sku": "TE-20",
@@ -10891,16 +10891,16 @@
     "piezas_caja": 20,
     "categoria": "Hogar",
     "descuento": 0.0,
-    "inventario": 60
+    "inventario": 59
   },
   {
     "sku": "TL2663N18C",
     "nombre": "(TL2663N18C) Soporte Fijo para Tv 26\" a 63\"",
     "imagen": "tl2663n18c.jpg",
-    "precio_publico": 84.0,
-    "precio_mayoreo": 56.0,
-    "precio_distribuidor": 50.0,
-    "precio_caja": 47.0,
+    "precio_publico": 88.0,
+    "precio_mayoreo": 58.0,
+    "precio_distribuidor": 51.0,
+    "precio_caja": 49.0,
     "piezas_caja": 20,
     "categoria": "Hogar / Soportes para TV",
     "descuento": 0.0,
@@ -10917,7 +10917,7 @@
     "piezas_caja": 100,
     "categoria": "Juguetes",
     "descuento": 0.0,
-    "inventario": 452
+    "inventario": 448
   },
   {
     "sku": "TO-1021",
@@ -10956,7 +10956,7 @@
     "piezas_caja": 100,
     "categoria": "Audífonos",
     "descuento": 0.0,
-    "inventario": 41
+    "inventario": 43
   },
   {
     "sku": "TR-6003",
@@ -10969,7 +10969,7 @@
     "piezas_caja": 100,
     "categoria": "Audífonos",
     "descuento": 0.0,
-    "inventario": 25
+    "inventario": 24
   },
   {
     "sku": "TR-6005",
@@ -10982,7 +10982,7 @@
     "piezas_caja": 100,
     "categoria": "Audífonos",
     "descuento": 0.0,
-    "inventario": 58
+    "inventario": 53
   },
   {
     "sku": "TR-6006",
@@ -10995,7 +10995,7 @@
     "piezas_caja": 100,
     "categoria": "Audífonos",
     "descuento": 0.0,
-    "inventario": 74
+    "inventario": 71
   },
   {
     "sku": "TR-6009",
@@ -11008,7 +11008,7 @@
     "piezas_caja": 100,
     "categoria": "Audífonos",
     "descuento": 0.0,
-    "inventario": 76
+    "inventario": 65
   },
   {
     "sku": "TR-6010",
@@ -11034,7 +11034,7 @@
     "piezas_caja": 100,
     "categoria": "Audífonos / Bluetooth",
     "descuento": 0.0,
-    "inventario": 6
+    "inventario": 0
   },
   {
     "sku": "TR-6018",
@@ -11099,7 +11099,7 @@
     "piezas_caja": 100,
     "categoria": "Audífonos",
     "descuento": 0.0,
-    "inventario": 158
+    "inventario": 157
   },
   {
     "sku": "TR-6063",
@@ -11242,7 +11242,7 @@
     "piezas_caja": 144,
     "categoria": "Salud y Belleza",
     "descuento": 0.0,
-    "inventario": 85
+    "inventario": 80
   },
   {
     "sku": "TXD-22",
@@ -11255,7 +11255,7 @@
     "piezas_caja": 144,
     "categoria": "Salud y Belleza",
     "descuento": 0.0,
-    "inventario": 111
+    "inventario": 110
   },
   {
     "sku": "TXD-27",
@@ -11281,7 +11281,7 @@
     "piezas_caja": 100,
     "categoria": "Cables",
     "descuento": 0.0,
-    "inventario": 690
+    "inventario": 686
   },
   {
     "sku": "TY-Q115",
@@ -11385,7 +11385,7 @@
     "piezas_caja": 60,
     "categoria": "Hogar / Cocina",
     "descuento": 0.0,
-    "inventario": 13
+    "inventario": 11
   },
   {
     "sku": "VASO-63",
@@ -11411,7 +11411,7 @@
     "piezas_caja": 24,
     "categoria": "Bocinas / 3x2\"",
     "descuento": 0.0,
-    "inventario": 946
+    "inventario": 944
   },
   {
     "sku": "VGA-007",
@@ -11476,7 +11476,7 @@
     "piezas_caja": 120,
     "categoria": "Iluminación",
     "descuento": 0.0,
-    "inventario": 1256
+    "inventario": 1249
   },
   {
     "sku": "VIL-0012",
@@ -11489,7 +11489,7 @@
     "piezas_caja": 120,
     "categoria": "Iluminación",
     "descuento": 0.0,
-    "inventario": 305
+    "inventario": 304
   },
   {
     "sku": "VIL-0013",
@@ -11502,7 +11502,7 @@
     "piezas_caja": 240,
     "categoria": "Iluminación",
     "descuento": 0.0,
-    "inventario": 435
+    "inventario": 434
   },
   {
     "sku": "VIL-0014",
@@ -11541,7 +11541,7 @@
     "piezas_caja": 100,
     "categoria": "Juguetes",
     "descuento": 0.0,
-    "inventario": 109
+    "inventario": 108
   },
   {
     "sku": "VPB-0017",
@@ -11554,7 +11554,7 @@
     "piezas_caja": 100,
     "categoria": "Power Banks",
     "descuento": 0.0,
-    "inventario": 1038
+    "inventario": 1032
   },
   {
     "sku": "VPN-0006",
@@ -11593,7 +11593,7 @@
     "piezas_caja": 200,
     "categoria": "Cables",
     "descuento": 0.0,
-    "inventario": 349
+    "inventario": 347
   },
   {
     "sku": "WG-132",
@@ -11645,7 +11645,7 @@
     "piezas_caja": 100,
     "categoria": "Bocinas",
     "descuento": 0.0,
-    "inventario": 22
+    "inventario": 21
   },
   {
     "sku": "WG-184",
@@ -11658,7 +11658,7 @@
     "piezas_caja": 100,
     "categoria": "Bocinas",
     "descuento": 0.0,
-    "inventario": 140
+    "inventario": 136
   },
   {
     "sku": "WG-185",
@@ -11723,7 +11723,7 @@
     "piezas_caja": 100,
     "categoria": "Juguetes",
     "descuento": 0.0,
-    "inventario": 10
+    "inventario": 8
   },
   {
     "sku": "WJ-1337",
@@ -11736,7 +11736,7 @@
     "piezas_caja": 12,
     "categoria": "Juguetes",
     "descuento": 0.0,
-    "inventario": 0
+    "inventario": 14
   },
   {
     "sku": "WJ-1347",
@@ -11749,7 +11749,7 @@
     "piezas_caja": 36,
     "categoria": "Juguetes",
     "descuento": 0.0,
-    "inventario": 11
+    "inventario": 13
   },
   {
     "sku": "WJ-1349",
@@ -11762,7 +11762,7 @@
     "piezas_caja": 36,
     "categoria": "Juguetes",
     "descuento": 0.0,
-    "inventario": 38
+    "inventario": 37
   },
   {
     "sku": "WJ-1352",
@@ -11814,7 +11814,7 @@
     "piezas_caja": 48,
     "categoria": "Juguetes",
     "descuento": 0.0,
-    "inventario": 44
+    "inventario": 42
   },
   {
     "sku": "WJ-1362",
@@ -11866,7 +11866,7 @@
     "piezas_caja": 48,
     "categoria": "Juguetes",
     "descuento": 0.0,
-    "inventario": 39
+    "inventario": 38
   },
   {
     "sku": "WJ-1366",
@@ -11879,7 +11879,7 @@
     "piezas_caja": 48,
     "categoria": "Juguetes",
     "descuento": 0.0,
-    "inventario": 29
+    "inventario": 28
   },
   {
     "sku": "WJ-1367",
@@ -11892,7 +11892,7 @@
     "piezas_caja": 48,
     "categoria": "Juguetes",
     "descuento": 0.0,
-    "inventario": 45
+    "inventario": 44
   },
   {
     "sku": "WKS-204",
@@ -11957,7 +11957,7 @@
     "piezas_caja": 100,
     "categoria": "Power Banks",
     "descuento": 0.0,
-    "inventario": 136
+    "inventario": 135
   },
   {
     "sku": "XCQ-3501",
@@ -11970,7 +11970,7 @@
     "piezas_caja": 80,
     "categoria": "Ventiladores",
     "descuento": 0.0,
-    "inventario": 12
+    "inventario": 10
   },
   {
     "sku": "XH-I8-1693",
@@ -11983,7 +11983,7 @@
     "piezas_caja": 500,
     "categoria": "Cables",
     "descuento": 0.0,
-    "inventario": 23
+    "inventario": 526
   },
   {
     "sku": "XM-113",
@@ -12009,7 +12009,7 @@
     "piezas_caja": 100,
     "categoria": "Bocinas",
     "descuento": 0.0,
-    "inventario": 28
+    "inventario": 23
   },
   {
     "sku": "XM-7130",
@@ -12022,7 +12022,7 @@
     "piezas_caja": 100,
     "categoria": "Bocinas",
     "descuento": 0.0,
-    "inventario": 75
+    "inventario": 73
   },
   {
     "sku": "XM-7189",
@@ -12061,7 +12061,7 @@
     "piezas_caja": 200,
     "categoria": "Transmisores",
     "descuento": 0.0,
-    "inventario": 0
+    "inventario": 5
   },
   {
     "sku": "XQ-213",
@@ -12126,7 +12126,7 @@
     "piezas_caja": 370,
     "categoria": "Temporada",
     "descuento": 0.0,
-    "inventario": 318
+    "inventario": 315
   },
   {
     "sku": "XQ-253",
@@ -12269,7 +12269,7 @@
     "piezas_caja": 100,
     "categoria": "Diademas",
     "descuento": 0.0,
-    "inventario": 486
+    "inventario": 484
   },
   {
     "sku": "XR-3218",
@@ -12334,7 +12334,7 @@
     "piezas_caja": 120,
     "categoria": "Renombre",
     "descuento": 0.0,
-    "inventario": 313
+    "inventario": 312
   },
   {
     "sku": "XZ-6111",
@@ -12347,7 +12347,7 @@
     "piezas_caja": 100,
     "categoria": "Soportes para Celular",
     "descuento": 0.0,
-    "inventario": 67
+    "inventario": 69
   },
   {
     "sku": "XZ-6115",
@@ -12399,7 +12399,7 @@
     "piezas_caja": 200,
     "categoria": "Soportes para Celular",
     "descuento": 0.0,
-    "inventario": 146
+    "inventario": 144
   },
   {
     "sku": "XZ-6217",
@@ -12412,7 +12412,7 @@
     "piezas_caja": 100,
     "categoria": "Soportes para Celular",
     "descuento": 0.0,
-    "inventario": 107
+    "inventario": 103
   },
   {
     "sku": "XZ-6218",
@@ -12516,7 +12516,7 @@
     "piezas_caja": 288,
     "categoria": "Juguetes",
     "descuento": 0.0,
-    "inventario": 585
+    "inventario": 599
   },
   {
     "sku": "YJ-2601",
@@ -12529,7 +12529,7 @@
     "piezas_caja": 100,
     "categoria": "Hogar",
     "descuento": 0.0,
-    "inventario": 29
+    "inventario": 58
   },
   {
     "sku": "YJ-2605",
@@ -12542,7 +12542,7 @@
     "piezas_caja": 50,
     "categoria": "Hogar",
     "descuento": 0.0,
-    "inventario": 17
+    "inventario": 14
   },
   {
     "sku": "YJ-2607",
@@ -12555,7 +12555,7 @@
     "piezas_caja": 80,
     "categoria": "Hogar",
     "descuento": 0.0,
-    "inventario": 31
+    "inventario": 26
   },
   {
     "sku": "YJ-2610",
@@ -12568,7 +12568,7 @@
     "piezas_caja": 50,
     "categoria": "Hogar",
     "descuento": 0.0,
-    "inventario": 81
+    "inventario": 78
   },
   {
     "sku": "YJ-2612",
@@ -12581,7 +12581,7 @@
     "piezas_caja": 300,
     "categoria": "Hogar",
     "descuento": 0.0,
-    "inventario": 88
+    "inventario": 86
   },
   {
     "sku": "YJ-817",
@@ -12594,20 +12594,20 @@
     "piezas_caja": 150,
     "categoria": "Hogar",
     "descuento": 0.0,
-    "inventario": 38
+    "inventario": 79
   },
   {
     "sku": "YS-252",
     "nombre": "Vaso Termo de 600ml con Bocina Bluetooth TWS de 5W",
     "imagen": "ys-252.jpg",
-    "precio_publico": 197.0,
+    "precio_publico": 216.0,
     "precio_mayoreo": 144.0,
     "precio_distribuidor": 128.0,
     "precio_caja": 120.0,
     "piezas_caja": 50,
     "categoria": "Hogar / Cocina",
     "descuento": 0.0,
-    "inventario": 53
+    "inventario": 51
   },
   {
     "sku": "YTY-303",
@@ -12659,7 +12659,7 @@
     "piezas_caja": 40,
     "categoria": "Entretenimiento",
     "descuento": 0.0,
-    "inventario": 307
+    "inventario": 306
   },
   {
     "sku": "YXJ-1507",
@@ -12678,14 +12678,14 @@
     "sku": "YXJ-1509",
     "nombre": "(YXJ-1509) Control PS4 Negro",
     "imagen": "yxj-1509.jpg",
-    "precio_publico": 235.0,
-    "precio_mayoreo": 188.0,
+    "precio_publico": 276.0,
+    "precio_mayoreo": 184.0,
     "precio_distribuidor": 166.0,
     "precio_caja": 156.0,
     "piezas_caja": 50,
     "categoria": "Entretenimiento",
     "descuento": 0.0,
-    "inventario": 13
+    "inventario": 63
   },
   {
     "sku": "YXJ-1510",
@@ -12737,7 +12737,7 @@
     "piezas_caja": 50,
     "categoria": "Smartwatch / Combo",
     "descuento": 0.0,
-    "inventario": 38
+    "inventario": 37
   },
   {
     "sku": "ZE-0811",
@@ -12750,7 +12750,7 @@
     "piezas_caja": 40,
     "categoria": "Hogar",
     "descuento": 0.0,
-    "inventario": 55
+    "inventario": 50
   },
   {
     "sku": "ZE-0813",
@@ -12776,7 +12776,7 @@
     "piezas_caja": 50,
     "categoria": "Salud y Belleza",
     "descuento": 0.0,
-    "inventario": 17
+    "inventario": 15
   },
   {
     "sku": "ZJD-906",
@@ -12789,7 +12789,7 @@
     "piezas_caja": 50,
     "categoria": "Salud y Belleza",
     "descuento": 0.0,
-    "inventario": 34
+    "inventario": 33
   },
   {
     "sku": "ZJD-908",
@@ -12828,7 +12828,7 @@
     "piezas_caja": 50,
     "categoria": "Salud y Belleza",
     "descuento": 0.0,
-    "inventario": 42
+    "inventario": 41
   },
   {
     "sku": "ZJD-911",
@@ -12854,7 +12854,7 @@
     "piezas_caja": 300,
     "categoria": "Salud y Belleza",
     "descuento": 0.0,
-    "inventario": 125
+    "inventario": 120
   },
   {
     "sku": "ZJT-8100",
@@ -12893,7 +12893,7 @@
     "piezas_caja": 500,
     "categoria": "Cargadores",
     "descuento": 0.0,
-    "inventario": 25
+    "inventario": 20
   },
   {
     "sku": "ZN-1609",
@@ -12971,7 +12971,7 @@
     "piezas_caja": 50,
     "categoria": "Renombre",
     "descuento": 0.0,
-    "inventario": 50
+    "inventario": 46
   },
   {
     "sku": "ZN-1643",
@@ -12984,7 +12984,7 @@
     "piezas_caja": 100,
     "categoria": "Renombre",
     "descuento": 0.0,
-    "inventario": 66
+    "inventario": 64
   },
   {
     "sku": "ZWJ-210",
