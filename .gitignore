@@ -2,3 +2,4 @@
 paypal-create-order.php
 paypal-capture-order.php
 crear-pedido.php
+.DS_Store
