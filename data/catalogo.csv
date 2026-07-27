@@ -1,7 +1,67 @@
 SKU,NOMBRE,@IMAGEN,Publico,Mayoreo,Distribuidor,Caja,PZAS,Categoría,Descuento,Inventario 
-SQY-MANTQ,(SQY-MANTQ) Squishy de Mantequilla con Olor (1 pieza),sqy-mantq.jpg,$80.00,$60.00,$55.00,$50.00,288,Juguetes,0%,1152
-RELOJ-DEP,(RELOJ-DEP) Reloj Colgante D-SPORT,reloj-dep.jpg,$120.00,$90.00,$85.00,$80.00,200,Todo,0%,200
-SQY-DUMP,(SQY-DUMP) Squishy Dumpling (1 pieza),sqy-dump.jpg,$60.00,$44.00,$40.00,$38.00,480,Juguetes,0%,2400
+SQY-MANTQ,Squishy de Mantequilla con Olor (1 pieza),sqy-mantq.jpg,$42.50,$42.50,$42.50,$42.50,288,Juguetes,0%,1152
+RELOJ-DEP,(RELOJ-DEP) Reloj Colgante D-SPORT,reloj-dep.jpg,$71.00,$71.00,$71.00,$71.00,200,Todo,0%,200
+SQY-DUMP,(SQY-DUMP) Squishy Dumpling (1 pieza),sqy-dump.jpg,$30.50,$30.50,$30.50,$30.50,480,Juguetes,0%,2400
+EARPODS E 3.5 MM,(EARPODS E 3.5 MM) Audifonos Tipo Earpods Jack 3.5mm ,earpods e 3.5 mm.jpg,$25.00,$21.00,$20.00,$19.00,500,Audífonos,0%,1400
+XQ-316,(XQ-316) Paquete de Mini Globos para Fiesta 100pz,xq-316.jpg,$7.00,$6.00,$5.00,$4.00,"1,200",Hogar,0%,1100
+TC-2009,(TC-2009) Cargador De Auto Con 2 Puertos Usb,tc-2009.jpg,$12.50,$9.00,$8.00,$7.50,"1,000",Cargadores,0%,900
+TC-1002,(TC-1002) Cargador Plug In Doble Entrada Usb,tc-1002.jpg,$9.00,$7.00,$6.00,$5.50,"1,000",Cargadores,0%,1000
+SQY-DONA,(SQY-DONA) 1 Pieza Squishy Dona,sqy-dona.jpg,$30.50,$30.50,$30.50,$30.50,576,Juguetes,0%,574
+CABLE 1M IP C A LIGHTNING,(CABLE 1M IP C A LIGHTNING) Cable USB-C a Lightning 1 Metro,cable 1m ip c a lightning.jpg,$15.00,$12.00,$11.00,$10.00,500,Cables,0%,1000
+CAB-018,(CAB-018) Cable USB a C ,cab-018.jpg,$11.00,$8.00,$7.00,$6.00,500,Cables,0%,414
+ACC-24110,(ACC-24110) Transmisor 3.5 para Auto ,acc-24110.jpg,$25.00,$18.00,$16.00,$15.00,500,Transmisores,0%,445
+ZJT-8102,(ZJT-8102) Multicontacto para Enchufes ,zjt-8102.jpg,$9.50,$7.00,$6.50,$6.00,500,Cargadores,0%,435
+ZY7209,(ZY7209) Bolsa Casual para Mujer con Correa Ajustable,zy7209.jpg,$56.00,$37.00,$33.00,$32.00,380,Salud y Belleza,0%,379
+SQY-SANDIA,(SQY-SANDIA) 1 Pieza Squishy Sandia,sqy-sandia.jpg,$31.50,$31.50,$31.50,$31.50,384,Juguetes,0%,324
+TT-3001,(TT-3001) Cubo De Carga USB Sencillo,tt-3001.jpg,$8.50,$6.50,$6.00,$5.50,"1,000",Cargadores,0%,251
+HJ-181,(HJ-181) Encendedor Eléctrico Recargable,hj-181.jpg,$64.00,$43.00,$38.00,$36.00,300,Hogar,0%,281
+SQY-QUESO,(SQY-QUESO) 1 Pieza Squishy Queso,sqy-queso.jpg,$42.50,$42.50,$42.50,$42.50,288,Juguetes,0%,267
+SQ-815,(SQ-815) Linterna Recargable Tipo Minero,sq-815.jpg,$36.00,$24.00,$22.00,$20.00,300,Iluminación,0%,302
+CAB259,(CAB259) Cable 3 En 1 C/V8/IP,cab259.jpg,$45.00,$32.00,$28.00,$26.50,300,Cables,0%,215
+PL-22,"(PL-22) Power Bank de 20,000 mAh con Linterna LED",pl-22.jpg,$90.00,$60.00,$53.00,$50.00,80,Power Banks,0%,196
+IDC-AAA,(IDC-AAA) Blíster de 4 Baterías AAA,idc-aaa.jpg,$10.00,$8.00,$7.00,$6.00,144,Hogar,0%,242
+A500,(A500) Barra de Sonido FM/Bluetooth ,a500.jpg,$160.00,$100.00,$90.00,$80.00,30,Bocinas,0%,2000
+GAR135A-800,(GAR135A-800) Paquete de 4 Pilas Alcalinas AAA,gar135a-800.jpg,$14.50,$10.00,$9.00,$8.00,200,Hogar,0%,172
+M10,(M10) Audifonos Bluetooth M10,m10.jpg,$76.00,$51.00,$45.00,$42.00,100,Audífonos,0%,195
+VGA-051,(VGA-051) Cubo de Carga de 12W Entrada Tipo C y USB,vga-051.jpg,$23.00,$19.00,$16.00,$15.00,100,Cargadores,0%,196
+XCQ-3501,(XCQ-3501) Mini Aspiradora,xcq-3501.jpg,$98.00,$65.00,$58.00,$55.00,100,Hogar,0%,201
+CAB-008P,"(CAB-008P) Cable 4 en 1 USB, Tipo C y Lightning 65W",cab-008p.jpg,$24.00,$16.00,$14.00,$13.50,200,Cables,0%,144
+PL-25,"(PL-25) Power Bank 20,000 mAh con Linterna LED ",pl-25.jpg,$90.00,$60.00,$53.00,$51.00,160,Power Banks,0%,147
+XM-7121,(XM-7121) Mini Bocina Diseño Hongo,xm-7121.jpg,$52.00,$40.00,$34.00,$32.00,200,Bocinas,0%,154
+DRB-0340,(DRB-0340) Lápiz para Telefono/Tableta,drb-0340.jpg,$65.00,$48.00,$42.00,$40.00,100,Hogar,0%,109
+BGD-1599,(BGD-1599) Tripié para Aro de Luz,bgd-1599.jpg,$75.00,$54.00,$48.00,$45.00,30,Iluminación,0%,114
+ST-W131,(ST-W131) Audífonos Bluetooth TWS con Cancelación de Ruido,st-w131.jpg,$86.00,$58.00,$51.00,$48.00,100,Audífonos,0%,100
+PL-20,"(PL-20) Power Bank 20,000 mAh con Linterna LED",pl-20.jpg,$90.00,$60.00,$53.00,$51.00,160,Power Banks,0%,93
+ST-W129,(ST-W129) Audífonos Inalámbricos TWS Pantalla LED,st-w129.jpg,$74.00,$50.00,$44.00,$42.00,100,Audífonos,0%,89
+WJ-1326,(WJ-1326) Cactus Bailarin,wj-1326.jpg,$70.00,$47.00,$42.00,$39.00,100,Juguetes,0%,89
+AZMQ059,(AZMQ059) Puntero Laser,azmq059.jpg,$76.00,$51.00,$45.00,$42.00,100,Iluminación,0%,88
+ST-W125,(ST-W125) Audífonos Bluetooth con Estuche de Carga,st-w125.jpg,$76.00,$50.00,$45.00,$42.00,100,Audífonos,0%,91
+SB-9250,(SB-9250) Mouse Para Pc,sb-9250.jpg,$50.00,$40.00,$35.00,$33.00,100,Cómputo,0%,97
+AZJ-80502,(AZJ-80502) Soporte con Diseño de Sombrilla para Motocicleta,azj-80502.jpg,$90.00,$68.00,$58.00,$55.00,100,Soportes para Celular,0%,90
+SOP-1060,(SOP-1060) Soporte con Brazo Extensible,sop-1060.jpg,$58.00,$39.00,$34.00,$32.00,100,Soportes para Celular,0%,96
+TB-6316,(TB-6316) Smartwatch T500,tb-6316.jpg,$82.00,$60.00,$53.00,$50.00,100,Smartwatch,0%,93
+TR-6018,(TR-6018) Audifonos Inalámbricos con Pantalla,tr-6018.jpg,$65.00,$48.00,$43.00,$40.00,100,Audífonos,0%,99
+CH-J2114,(CH-J2114) Bocina De Diseno,ch-j2114.jpg,$60.00,$48.00,$42.00,$40.00,100,Bocinas,0%,103
+EKQ-30901,(EKQ-30901) Mini Cámara Espía de Seguridad,ekq-30901.jpg,$90.00,$66.00,$58.00,$55.00,100,Seguridad,0%,107
+SJ-12230,(SJ-12230) Candado de Seguridad Antirrobos para Motocicleta,sj-12230.jpg,$44.00,$29.00,$26.00,$25.00,100,Ferretería,0%,72
+ST-W137,(ST-W137) Audífonos Inalámbricos TWS con Diseño de Esfera,st-w137.jpg,$90.00,$60.00,$53.00,$50.00,100,Audífonos,0%,60
+AH-806Q,(AH-806Q) Diadema Bluetooth Diseño MB,ah-806q.jpg,$170.00,$113.00,$100.00,$95.00,80,Diademas,0%,79
+YJ-2607,(YJ-2607) Paraguas de 10 huesos,yj-2607.jpg,$60.00,$40.00,$35.00,$34.00,100,Hogar,0%,72
+TK-2573,(TK-2573) Intercomunicador Bluetooth Para Casco ,tk-2573.jpg,$220.00,$147.00,$130.00,$122.00,100,Accesorios para Celular,0%,80
+"BATERIA MGSF 10,000 MAH","(BATERIA MGSF 10,000 MAH) Bateria Magsafe 10,000 mAh","bateria mgsf 10,000 mah.jpg",$190.00,$126.00,$112.00,$105.00,100,Power Banks,0%,90
+EM-123,(EM-123) Lampara Doble de Carga Solar ,em-123.jpg,$86.00,$57.00,$51.00,$48.00,80,Iluminación,0%,69
+DNSD-9302,(DNSD-9302) Teclado Plegable Bluetooth ,dnsd-9302.jpg,$250.00,$167.00,$148.00,$139.00,80,Cómputo,0%,73
+DZC-0133,(DZC-0133) Báscula Electrónica para Cocina con Pantalla ,dzc-0133.jpg,$65.00,$48.00,$42.00,$40.00,40,Hogar,0%,122
+ST-W132,(ST-W132) Audífonos Bluetooth TWS con Cancelación de Ruido,st-w132.jpg,$80.00,$53.00,$47.00,$45.00,100,Audífonos,0%,71
+TY-Q103,(TY-Q103) Balón de Futbol,ty-q103.jpg,$70.00,$47.00,$42.00,$39.00,100,Juguetes,0%,372
+EKQ-30403,(EKQ-30403) Camara Dual de Seguridad Wifi Socket,ekq-30403.jpg,$288.00,$255.00,$240.00,$392.00,50,Seguridad,0%,53
+WJF-0802,(WJF-0802) Dron Plegable con Cámara,wjf-0802.jpg,$279.00,$205.00,$180.00,$170.00,36,Juguetes,0%,49
+EM137,(EM137) Lámpara con Luz LED y Panel Solar,em137.jpg,$170.00,$114.00,$100.00,$95.00,69,Iluminación,0%,63
+GTS-1271,"Bocina De 3""",gts-1271.jpg,$63.00,$51.00,$45.00,$43.00,60,Bocinas,0%,64
+CFJ-113,(CFJ-113) Secadora de Cabello de 2000W,cfj-113.jpg,$210.00,$140.00,$124.00,$118.00,50,Salud y Belleza,0%,50
+FR-3702,(FR-3702) Airpods 2da Gen ,fr-3702.jpg,$120.00,$96.00,$92.00,$88.00,100,Audífonos,0%,49
+SD-598,(SD-598) Linterna Portátil LED 2 en 1,sd-598.jpg,$200.00,$133.00,$118.00,$111.00,50,Iluminación,0%,49
+EKQ-30103,(EKQ-30103) Camara Panorámica de Seguridad,ekq-30103.jpg,$310.00,$228.00,$201.00,$190.00,50,Seguridad,0%,50
 BATERIA MGSF 5000 mAh,(BATERIA MGSF 5000 mAh) Bateria magsafe 5000 mAh,bateria mgsf 5000 mah.jpg,$130.00,$87.00,$76.00,$72.00,100,Renombre / Combo Cargador,0%,185
 HDM-9403,(HDM-9403) Cable HDMI 5 Metros,hdm-9403.jpg,$45.00,$32.00,$29.00,$27.00,100,Cables / HDMI,0%,85
 GTS-2003,(GTS-2003) Bocina Bluetooth 3 Pulgadas con Luz LED,gts-2003.jpg,$78.00,$52.00,$45.00,$43.00,80,"Bocinas / 3""",0%,79
@@ -59,14 +119,12 @@ CARGADOR MGSF,(CARGADOR MGSF) Cargador Magsafe Tipo C,cargador mgsf.jpg,$54.00,$
 CFJ-109,(CFJ-109) Cepillo Secador 3 en 1 para Cabello,cfj-109.jpg,$190.00,$127.00,$112.00,$106.00,30,Novedades,0%,60
 CH-J2062,(CH-J2062) Bocina Bluetooth con Diseño de Automóvil con Función TWS,ch-j2062.jpg,$160.00,$107.00,$95.00,$89.00,60,Novedades,0%,25
 CH-K3032,(CH-K3032) Mini Bocina Karaoke Bluetooth + Micrófono Inalámbrico,ch-k3032.jpg,$98.00,$65.00,$58.00,$55.00,40,Novedades,0%,9
-COMBO 14 PM,(COMBO 14 PM) Combo Tipo IP 14 Promax 20W,combo 14 pm.jpg,$46.00,$35.00,$31.00,$26.00,300,Novedades,0%,50
 DNSD-9219,(DNSD-9219) Mouse Inalámbrico de 3200 DPI,dnsd-9219.jpg,$60.00,$40.00,$35.00,$33.00,200,Novedades,0%,152
 EKQ-80601,(EKQ-80601) Par de Radios Walkie Talkie 777S TAJA,ekq-80601.jpg,$441.00,$324.00,$286.00,$270.00,30,Novedades,0%,25
 FR-9513,(FR-9513) Audifonos Bluetooth + Funda y Llavero de futbol,fr-9513.jpg,$130.00,$96.00,$85.00,$80.00,100,Novedades,0%,46
 G106,(G106) Bocina Bluetooth con Función TWS,g106.jpg,$198.00,$132.00,$117.00,$110.00,45,Novedades,0%,44
 GJ-325,(GJ-325) Juego de Puntas Intercambiables para Desarmador,gj-325.jpg,$108.00,$72.00,$64.00,$60.00,60,Novedades,0%,45
 GJ-D303,(GJ-D303) Cutter Uso Rudo,gj-d303.jpg,$13.00,$9.00,$8.00,$7.00,400,Novedades,0%,223
-GTS-1345,"(GTS-1345) Bocina Bluetooth de 3"" con Luz LED",gts-1345.jpg,$54.00,$36.00,$32.00,$30.00,80,Novedades,0%,79
 HDM-9402,(HDM-9402) Cable HDMI a HDMI de 3 Metros,hdm-9402.jpg,$32.00,$22.00,$20.00,$19.00,150,Novedades,0%,102
 HVH-40401,(HVH-40401) Lampara Solar para Exteriores,hvh-40401.jpg,$49.00,$36.00,$32.00,$30.00,100,Novedades,0%,46
 HVH-54401,(HVH-54401) Lampara de Emergencia,hvh-54401.jpg,$90.00,$66.00,$58.00,$55.00,80,Novedades,0%,38
@@ -96,7 +154,6 @@ SOP-1069,(SOP-1069) Soporte Magnético para Celular,sop-1069.jpg,$42.00,$28.00,$
 SOP-1081,(SOP-1081) Soporte de Telefono para Retrovisor,sop-1081.jpg,$70.00,$47.00,$42.00,$39.00,100,Novedades,0%,81
 ST-B262,(ST-B262) Lentes Anti UV con Audifonos Integrados,st-b262.jpg,$124.00,$83.00,$73.00,$69.00,100,Novedades,0%,56
 T450,(T450) Audífonos Bluetooth de Diadema JBL,t450.jpg,$130.00,$87.00,$76.00,$72.00,100,Novedades,0%,10
-TB-6318,(TB-6318) Smartwatch T800 Ultra,tb-6318.jpg,$115.00,$85.00,$75.00,$70.00,100,Novedades,0%,34
 TIPO AIRPODS MAX,(TIPO AIRPODS MAX) Audifonos Bluetooth Tipo Airpods Max,tipo airpods max.jpg,$250.00,$200.00,$176.00,$167.00,60,Novedades,0%,35
 TO-1321,(TO-1321) Consola de Videojuegos M15,to-1321.jpg,$425.00,$312.00,$275.00,$260.00,40,Novedades,0%,58
 TR-6025,(TR-6025) Audífonos Bluetooth con Estuche de Carga,tr-6025.jpg,$65.00,$48.00,$42.00,$40.00,100,Novedades,0%,41
@@ -248,9 +305,7 @@ BTS-1822,Bocinas De Diseño,bts-1822.jpg,$192.00,$153.00,$135.00,$128.00,48,Boci
 BTS-1953,Bocinas De Diseño,bts-1953.jpg,$233.00,$187.00,$165.00,$156.00,30,Bocinas,0%,27
 BTS-2409,Bocina De Diseno,bts-2409.jpg,$280.00,$224.00,$198.00,$187.00,36,Bocinas,0%,11
 BWB-1715,(BWB-1715) Vaso 30 Oz,bwb-1715.jpg,$100.00,$67.00,$60.00,$56.00,50,Hogar / Cocina,0%,73
-BWB-1749,(BWB-1749) Termo 20 OZ,bwb-1749.jpg,$96.00,$64.00,$56.00,$53.00,50,Hogar / Cocina,0%,53
 BWB-1784,(BWB-1784) Vaso de 710ml,bwb-1784.jpg,$73.00,$59.00,$52.00,$49.00,48,Hogar / Cocina,0%,23
-BWB-1788,(BWB-1788) Vaso 30 Oz Tipo Yeti,bwb-1788.jpg,$156.00,$105.00,$92.00,$87.00,50,Hogar / Cocina / Vasos,0%,1
 BZ-2102,(BZ-2102) Termo 1.3 L,bz-2102.jpg,$127.00,$101.00,$89.00,$84.00,60,Hogar / Cocina,0%,42
 CAB005B,Cable Tipo V8 Blanco,cab005b.jpg,$8.00,$7.00,$6.50,$6.00,100,Cables,0%,45
 CAB005N,Cable Tipo V8 Negro,cab005n.jpg,$8.00,$7.00,$6.50,$6.00,100,Cables,0%,41
@@ -277,7 +332,6 @@ CAR-U221,Cargador USB 12w Max 2.4A,car-u221.jpg,$28.00,$23.00,$20.00,$19.00,200,
 CAR-U260,Cargador Alámbrico de 12W con Puerto USB,car-u260.jpg,$37.00,$27.00,$24.00,$23.00,200,Cargadores,0%,49
 CAR-U261,Cargador Alámbrico de 12W con Puerto USB,car-u261.jpg,$37.00,$27.00,$24.00,$23.00,200,Cargadores,0%,27
 CAR-U263,Cargador Alámbrico de 12W con Puerto USB,car-u263.jpg,$37.00,$27.00,$24.00,$23.00,200,Cargadores,0%,58
-CDQ-L72,(CDQ-L72) Cargador de Batería AA/AAA con 4 pilas AA 600mah,cdq-l72.jpg,$150.00,$100.00,$89.00,$85.00,60,Cargadores,0%,17
 CDQ-L73,Cargador de Baterías AA/AAA con 4 Pilas AAA de 350 mAh,cdq-l73.jpg,$150.00,$100.00,$89.00,$84.00,60,Hogar,0%,73
 CDQ-L76,"Cargador USB para Baterías tipo LI-ION de 2,000 MAH",cdq-l76.jpg,$40.00,$32.00,$28.00,$27.00,200,Cargadores,0%,87
 CDQ-L77,"Cargador USB para Batería LI-ION de 1,000 MAH",cdq-l77.jpg,$25.00,$20.00,$18.00,$17.00,200,Cargadores,0%,65
@@ -383,7 +437,6 @@ E27W45T33,(E27W45T33) Lámpara LED Plegable de 4 Aspas 45W,e27w45t33.jpg,$120.00
 EKQ-80602,Par de Radios Walkie Talkie,ekq-80602.jpg,$441.00,$324.00,$285.00,$270.00,30,Seguridad,0%,17
 EM136,Lampara,em136.jpg,$100.00,$67.00,$59.00,$56.00,120,Iluminación,0%,43
 EM138,(EM138) Lámpara Solar para Exterior de 100W,em138.jpg,$236.00,$158.00,$139.00,$133.00,30,Iluminación,0%,17
-EM139,(EM139) Lámpara Solar para Exterior de 100W,em139.jpg,$260.00,$184.00,$162.00,$155.00,28,Iluminación,0%,16
 EM152,(EM152) Lámpara Solar para Exterior de 60W,em152.jpg,$330.00,$220.00,$194.00,$185.00,30,Iluminación,0%,21
 EM21,(EM21) Lámpara LED de Emergencia Recargable USB o Panel Solar,em21.jpg,$85.00,$56.00,$50.00,$47.00,100,Iluminación,0%,81
 EM23,Lampara de Campamento,em23.jpg,$60.00,$40.00,$35.00,$33.00,120,Iluminación,0%,113
@@ -414,7 +467,6 @@ EXT15M03,(EXT15M03) Extensión Eléctrica de 15m,ext15m03.jpg,$98.00,$66.00,$58.
 EXT20M03,(EXT20M03) Extensión Eléctrica de 20m,ext20m03.jpg,$124.00,$83.00,$73.00,$70.00,10,Hogar,0%,61
 FA018,Dispensador De Agua Con Luz Led,fa018.jpg,$53.00,$42.00,$37.00,$35.00,64,Hogar / Cocina,0%,23
 FA028,(FA028) Dispensador de agua recargable,fa028.jpg,$56.00,$38.00,$33.00,$32.00,100,Hogar / Cocina,0%,82
-FH-255,(FH-255) Juego de Lonchera Térmica,fh-255.jpg,$240.00,$160.00,$142.00,$135.00,40,Hogar / Cocina,0%,14
 FK-903,Sellador y Cortador de Bolsas con Imán,fk-903.jpg,$39.00,$28.00,$25.00,$24.00,200,Hogar,0%,117
 FM-5118,"Bocina Bluetooth 2"" Mini 4",fm-5118.jpg,$135.00,$108.00,$95.00,$88.00,50,Renombre,0%,25
 FM-5120,Bocina Bluetooth Tipo JBL PRO5 ,fm-5120.jpg,$360.00,$288.00,$254.00,$240.00,50,Renombre,0%,13
@@ -468,7 +520,6 @@ GTS-2201,Bocina De Diseno,gts-2201.jpg,$92.00,$73.00,$65.00,$61.00,100,Bocinas,0
 GTS-2220,(GTS-2220) Espejo Rotable con Luz LED y Bocina Bluetooth,gts-2220.jpg,$230.00,$154.00,$136.00,$130.00,40,Bocinas,0%,18
 GTS-2307,"(GTS-2307) Bocina Bluetooth de 3"" con Luz LED",gts-2307.jpg,$68.00,$46.00,$40.00,$39.00,80,Bocinas,0%,19
 GTS-C927,(GTS-C927) Transmisor Bluetooth/FM para Automóvil,gts-c927.jpg,$44.00,$30.00,$26.00,$25.00,200,Transmisores,0%,190
-HDM-9401,Cable HDMI a HDMI de 1.5 Metros,hdm-9401.jpg,$19.00,$15.00,$13.50,$12.50,200,Cables,0%,33
 HDM-9404,Cable HDMI a HDMI de 10 Metros,hdm-9404.jpg,$82.00,$60.00,$53.00,$50.00,50,Cables,0%,43
 HDM-9405,Cable HDMI 15 Metros,hdm-9405.jpg,$98.00,$78.00,$69.00,$65.00,40,Cables,0%,28
 HDM-9406,Cable HDMI a HDMI de 20 Metros,hdm-9406.jpg,$163.00,$120.00,$106.00,$100.00,30,Cables,0%,11
@@ -480,7 +531,6 @@ HOG.78,Maquina De Sellado Al Vacio,hog.78.jpg,$190.00,$152.00,$134.00,$127.00,50
 HOG.953.P,Escobilla Desechable Para Baño,hog.953.p.jpg,$32.00,$25.00,$22.00,$21.00,100,Hogar,0%,74
 HS-USB-E327C-128G-U3,Memoria HIKSEMI USB 128gb E327C Dual Tipo A-C,hs-usb-e327c-128g-u3.jpg,$170.00,$150.00,$145.00,$140.00,100,Memorias / USB,0%,65
 HS-USB-E327C-256G-U3,Memoria HIKSEMI USB 256gb E327C Dual Tipo A-C,hs-usb-e327c-256g-u3.jpg,$345.00,$315.00,$310.00,$305.00,100,Memorias / USB,0%,80
-HS-USB-E327C-32G-U3,Memoria HIKSEMI USB 32gb E327C Dual Tipo A-C,hs-usb-e327c-32g-u3.jpg,$105.00,$85.00,$80.00,$75.00,100,Memorias / USB,0%,6
 HS-USB-E327C-64G-U3,Memoria HIKSEMI USB 64gb E327C Dual Tipo A-C,hs-usb-e327c-64g-u3.jpg,$115.00,$95.00,$90.00,$85.00,100,Memorias / USB,0%,29
 HS-USB-M200-128GB,Memoria HIKSEMI USB 128gb M200 Metalica,hs-usb-m200-128gb.jpg,$150.00,$135.00,$130.00,$124.00,100,Memorias / USB,0%,161
 HS-USB-M200-32GB,Memoria HIKSEMI USB 32gb M200 Metalica,hs-usb-m200-32gb.jpg,$105.00,$92.00,$87.00,$82.00,100,Memorias / USB,0%,142
@@ -519,7 +569,6 @@ JSQ-1810,Humidificador,jsq-1810.jpg,$73.00,$63.00,$58.00,$55.00,60,Hogar,0%,8
 JSQ-23,(JSQ-23) Humidificador Foco,jsq-23.jpg,$92.00,$73.00,$65.00,$61.00,34,Hogar,0%,30
 JSQC-003,(JSQC-003) Ejercitador de Mano Ajustable 5-60kg,jsqc-003.jpg,$64.00,$43.00,$38.00,$36.00,100,Salud y Belleza / Ejercicio,0%,26
 JSQC-005,(JSQC-005) Fortalecedor de Mano Portátil,jsqc-005.jpg,$20.00,$14.00,$12.00,$12.00,200,Salud y Belleza / Ejercicio,0%,81
-JXQ-1401,Extensión de 2 Metros Uso Rudo,jxq-1401.jpg,$27.00,$20.00,$17.00,$16.00,120,Hogar,0%,14
 K-628,(K-628) Afilador de Cuchillos para Cocina ,k-628.jpg,$30.00,$20.00,$18.00,$17.00,144,Hogar / Cocina,0%,74
 K-703,Juego De Cuchillos y Utensilios,k-703.jpg,$32.00,$21.00,$19.00,$18.00,100,Hogar / Cocina,0%,23
 K-733,Pon Cosas En El Estante,k-733.jpg,$142.00,$113.00,$100.00,$94.00,40,Salud y Belleza,0%,17
@@ -615,7 +664,6 @@ MR-865,(MR-865) Rodillo Facial de Hielo,mr-865.jpg,$38.00,$26.00,$23.00,$22.00,2
 MR-867,Pistola de Fascia,mr-867.jpg,$50.00,$33.00,$31.00,$29.00,200,Salud y Belleza,0%,177
 MR-870,Peine De Peluqueria,mr-870.jpg,$24.00,$16.00,$14.00,$13.00,200,Salud y Belleza,0%,32
 MR-885,Depilador Eléctrico 4 en 1 con Cabezales Intercambiables,mr-885.jpg,$175.00,$128.00,$113.00,$107.00,120,Salud y Belleza,0%,44
-MR-890,(MR-890) Microfono,mr-890.jpg,$150.00,$100.00,$89.00,$85.00,100,Accesorios para Celular,0%,6
 MR-892,(MR-892) Micrófonos Inalámbricos con Estuche de Carga,mr-892.jpg,$250.00,$167.00,$148.00,$141.00,100,Accesorios para Celular,0%,72
 MR-900,Cinturon Calido Del Palacio,mr-900.jpg,$92.00,$73.00,$65.00,$62.00,100,Salud y Belleza,0%,166
 MR-901,(MR-901) Masajeador Facial,mr-901.jpg,$110.00,$74.00,$65.00,$62.00,100,Salud y Belleza / Masajeadores,0%,7
@@ -733,7 +781,6 @@ TB-6803,Reloj Watch 8 Pro Max,tb-6803.jpg,$180.00,$144.00,$127.00,$120.00,100,Sm
 TC-1001,Plug In Para Auto 2 Usb,tc-1001.jpg,$8.00,$6.00,$5.50,$5.00,"1,000",Cargadores,0%,141
 TE-20,Audífonos Bluetooth ANC con Pantalla 2.8 Pulgadas,te-20.jpg,$420.00,$336.00,$296.00,$280.00,50,Renombre,0%,180
 TL1542N22B,Soporte para TV de 26 a 55 Pulgadas,tl1542n22b.jpg,$98.00,$65.00,$58.00,$55.00,20,Hogar,0%,50
-TL2663N18C,"(TL2663N18C) Soporte Fijo para Tv 26"" a 63""",tl2663n18c.jpg,$88.00,$58.00,$51.00,$49.00,20,Hogar / Soportes para TV,0%,6
 TLCD02-8P,Pizarron Magico De 8 Pulgadas Unicolor,tlcd02-8p.jpg,$23.00,$19.00,$16.00,$15.00,100,Juguetes,0%,366
 TO-1021,Consola Retro SUP ,to-1021.jpg,$150.00,$120.00,$110.00,$100.00,100,Entretenimiento,0%,147
 TO-2001,(TO-2001) Kit Carga Y Juega Compatible Con Xbox 360,to-2001.jpg,$90.00,$66.00,$59.00,$55.00,100,Entretenimiento,0%,42
