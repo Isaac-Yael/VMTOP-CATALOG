@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<title>Catálogo VMTOP (PDF)</title>
+<!--
+  Plantilla del catálogo impreso de VMTOP.
+  Lee productos.json y arma hojas A4 con 16 tarjetas (4x4), igual que el catálogo de InDesign.
+
+  Uso rápido: abrir https://vmtop.com.mx/catalogo-pdf.html en Chrome → Imprimir → Guardar como PDF
+  (Márgenes: Ninguno · Gráficos de fondo: activado). O usar scripts/generar_catalogo_pdf.py.
+
+  Parámetros opcionales en la URL:
+    ?fecha=17 DE SEPTIEMBRE   → sobrepone un banner con la fecha en la portada (solo si la imagen no la trae)
+    ?img=img_pdf/             → carpeta de imágenes (por defecto: img/)
+    ?portada=0                → sin portada
+    ?orden=sku                → ordenar alfabéticamente por clave (por defecto: orden de productos.json)
+-->
+<style>
+  @font-face { font-family: 'Poppins'; font-weight: 400; font-style: normal; src: url('pdf/fonts/poppins-400.woff2') format('woff2'); }
+  @font-face { font-family: 'Poppins'; font-weight: 500; font-style: normal; src: url('pdf/fonts/poppins-500.woff2') format('woff2'); }
+  @font-face { font-family: 'Poppins'; font-weight: 600; font-style: normal; src: url('pdf/fonts/poppins-600.woff2') format('woff2'); }
+  @font-face { font-family: 'Poppins'; font-weight: 700; font-style: normal; src: url('pdf/fonts/poppins-700.woff2') format('woff2'); }
+  @font-face { font-family: 'Poppins'; font-weight: 800; font-style: normal; src: url('pdf/fonts/poppins-800.woff2') format('woff2'); }
+  @font-face { font-family: 'Poppins'; font-weight: 900; font-style: normal; src: url('pdf/fonts/poppins-900.woff2') format('woff2'); }
+
+  @page { size: A4; margin: 0; }
+  :root {
+    --rojo: #ec2f3b;
+    --verde: #3dba4e;
+    --amarillo: #f7c824;
+    --azul: #3d63b9;
+    --tinta: #1c1c1c;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: #9aa0a6; }
+  body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--tinta);
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .page {
+    width: 595.28pt;
+    height: 841.89pt;
+    background: #fff;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    margin: 0 auto 12pt;
+    page-break-after: always;
+    break-after: page;
+  }
+  .page:last-child { page-break-after: auto; break-after: auto; }
+  @media print {
+    html, body { background: #fff; }
+    .page { margin: 0; }
+  }
+
+  /* ---------- Portada ---------- */
+  .cover img.bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  .cover .fecha {
+    position: absolute;
+    left: 291pt;
+    top: 189pt;
+    width: 356pt;
+    height: 60pt;
+    transform: translate(-50%, -50%) rotate(-3deg);
+    background: linear-gradient(180deg, #ffffff 0%, #f1f3f7 55%, #d5dae4 100%);
+    border-radius: 13pt;
+    box-shadow: 0 6pt 0 #1f4fc4, 0 8pt 6pt rgba(10, 30, 90, .45), inset 0 -2pt 0 #c4cad6;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .cover .fecha span {
+    display: inline-block;
+    font-weight: 900;
+    font-size: 40pt;
+    line-height: 1;
+    letter-spacing: -.3pt;
+    color: #0f2156;
+    white-space: nowrap;
+    padding-top: 3pt;
+  }
+
+  /* ---------- Rejilla de productos ---------- */
+  .grid {
+    position: absolute;
+    left: 35.6pt;
+    top: 34pt;
+    display: grid;
+    grid-template-columns: repeat(4, 110pt);
+    grid-auto-rows: 181pt;
+    column-gap: 28pt;
+    row-gap: 14pt;
+  }
+
+  /* ---------- Tarjeta ---------- */
+  .card {
+    position: relative;
+    width: 110pt;
+    height: 181pt;
+    background: #fff;
+    border-radius: 6pt;
+  }
+  /* Sombra como imagen única (Chrome convierte box-shadow en una imagen por tarjeta y el PDF pesa el doble) */
+  .card::before {
+    content: ''; position: absolute; left: -8pt; top: -8pt; width: 126pt; height: 197pt;
+    background: url('pdf/sombra.png') no-repeat 0 0 / 100% 100%;
+    z-index: -1;
+  }
+
+  .card .foto {
+    position: absolute;
+    left: 0; top: 0;
+    width: 110pt; height: 110pt;
+    border-radius: 6pt 6pt 0 0;
+    overflow: hidden;
+    border-bottom: .5pt solid #e6eef0;
+    display: flex; align-items: center; justify-content: center;
+    background: #fff;
+  }
+  .card .foto img { width: 100%; height: 100%; object-fit: contain; }
+  .card .foto.vacia { background: #f3f4f6; }
+  .card .foto.vacia span { font-size: 5pt; font-weight: 600; color: #9aa0a6; }
+
+  .card .sku {
+    position: absolute; left: 3pt; right: 3pt; top: 111.5pt;
+    text-align: center; font-weight: 800; font-size: 5pt; line-height: 6pt;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+  .card .cat {
+    position: absolute; left: 50%; top: 118.6pt; transform: translateX(-50%);
+    width: 54pt; height: 3.2pt; border-radius: 2pt;
+    background: var(--verde); color: #fff;
+    font-size: 2.1pt; font-weight: 600; line-height: 3.2pt;
+    text-align: center; white-space: nowrap; overflow: hidden;
+  }
+  .card .cat.larga { width: 80pt; }
+  .card .nombre {
+    position: absolute; left: 4pt; right: 4pt; top: 123.4pt; height: 12pt;
+    display: flex; align-items: flex-start; justify-content: center;
+    text-align: center; font-weight: 500; font-size: 5pt; line-height: 5.9pt;
+    overflow: hidden;
+  }
+  .card .fila {
+    position: absolute; left: 9.8pt; right: 8.2pt; height: 9pt;
+    display: flex; align-items: center; justify-content: space-between;
+    font-weight: 700; font-size: 7.2pt;
+  }
+  .card .fila .precio { font-size: 7.8pt; font-weight: 700; letter-spacing: -.05pt; }
+  .card .fila .linea {
+    position: absolute; left: 36pt; width: 13.7pt; height: .7pt; background: var(--rojo);
+  }
+  .card .fila .linea::after {
+    content: ''; position: absolute; right: -1.2pt; top: -1.1pt;
+    width: 2.9pt; height: 2.9pt; border-radius: 50%; background: var(--rojo);
+  }
+  .card .publico { top: 137.1pt; }
+  .card .mayoreo { top: 147.9pt; }
+  .card .tachado { position: relative; }
+  .card .tachado::after {
+    content: ''; position: absolute; left: -1pt; right: -1pt; top: 52%;
+    height: .75pt; background: var(--rojo); transform: rotate(-7deg);
+  }
+  .card .publico .precio.tachado::after { transform: rotate(-5deg); }
+
+  .card .distribuidor {
+    position: absolute; left: 4.9pt; right: 4.9pt; top: 160pt; height: 11.6pt;
+    border-radius: 6pt; background: var(--rojo); color: #fff;
+  }
+  .card .distribuidor .lbl {
+    position: absolute; left: 5.4pt; top: 0.2pt;
+    font-weight: 700; font-size: 6.75pt; line-height: 8.4pt;
+  }
+  .card .distribuidor .min {
+    position: absolute; left: 13pt; top: 7.7pt;
+    font-weight: 500; font-size: 2.5pt; line-height: 2.8pt; white-space: nowrap;
+  }
+  .card .distribuidor .linea {
+    position: absolute; left: 48.6pt; top: 5.1pt; width: 4.6pt; height: .7pt; background: #fff;
+  }
+  .card .distribuidor .linea::after {
+    content: ''; position: absolute; right: -1.6pt; top: -1.1pt;
+    width: 2.9pt; height: 2.9pt; border-radius: 50%; background: #fff;
+  }
+  .card .distribuidor .precio {
+    position: absolute; right: 5pt; top: 0.4pt;
+    font-weight: 700; font-size: 8.3pt; line-height: 10.6pt; letter-spacing: -.05pt;
+  }
+
+  .card .franja {
+    position: absolute; left: 0; right: 0; top: 174pt; height: 1.3pt;
+    background: linear-gradient(90deg,
+      var(--azul) 0 9%, var(--verde) 9% 39%, var(--amarillo) 39% 86%, var(--rojo) 86% 100%);
+  }
+  .card .pie {
+    position: absolute; left: 0; right: 0; top: 175.3pt; bottom: 0;
+    background: var(--azul); color: #fff; border-radius: 0 0 6pt 6pt;
+    font-weight: 600; font-size: 3.05pt; line-height: 5.6pt; text-align: center;
+  }
+</style>
+</head>
+<body>
+<div id="catalogo"></div>
+<script>
+(function () {
+  const qs = new URLSearchParams(location.search);
+  const IMG = qs.get('img') || 'img/';
+  const PORTADA = qs.get('portada') !== '0';
+  const MESES = ['ENERO','FEBRERO','MARZO','ABRIL','MAYO','JUNIO','JULIO','AGOSTO','SEPTIEMBRE','OCTUBRE','NOVIEMBRE','DICIEMBRE'];
+  const hoy = new Date();
+  const FECHA = (qs.get('fecha') || '').toUpperCase();
+  const POR_HOJA = 16;
+
+  const money = n => '$' + Number(n || 0).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+
+  function tarjeta(p) {
+    const cat = (p.categoria || '').trim();
+    const foto = p.imagen
+      ? `<img src="${IMG}${encodeURI(p.imagen)}" alt="" onerror="this.parentNode.classList.add('vacia');this.outerHTML='<span>Sin imagen</span>'">`
+      : '<span>Sin imagen</span>';
+    return `
+      <div class="card">
+        <div class="foto">${foto}</div>
+        <div class="sku">${esc(p.sku)}</div>
+        ${cat ? `<div class="cat${cat.length > 34 ? ' larga' : ''}">${esc(cat)}</div>` : ''}
+        <div class="nombre"><span>${esc(p.nombre)}</span></div>
+        <div class="fila publico"><span class="tachado">Público</span><i class="linea"></i><span class="precio tachado">${money(p.precio_publico)}</span></div>
+        <div class="fila mayoreo"><span>Mayoreo</span><i class="linea"></i><span class="precio">${money(p.precio_mayoreo)}</span></div>
+        <div class="distribuidor">
+          <span class="lbl">Distribuidor</span><span class="min">$5,999 de compra mínima</span>
+          <i class="linea"></i><span class="precio">${money(p.precio_distribuidor)}</span>
+        </div>
+        <div class="franja"></div>
+        <div class="pie">3% de descuento pagando en efectivo</div>
+      </div>`;
+  }
+
+  // Encoge el nombre si no cabe en 2 líneas
+  function ajustarNombres() {
+    document.querySelectorAll('.nombre').forEach(el => {
+      let size = 5, lh = 5.9;
+      while (el.scrollHeight > el.clientHeight + 0.5 && size > 3.6) {
+        size -= 0.2; lh = size * 1.12;
+        el.style.fontSize = size + 'pt'; el.style.lineHeight = lh + 'pt';
+      }
+    });
+  }
+
+  async function render() {
+    const res = await fetch('productos.json', { cache: 'no-store' });
+    const productos = (await res.json())
+      .filter(p => p && p.sku);
+    // Mismo orden que productos.json (igual que la página y el catálogo de InDesign).
+    // ?orden=sku → alfabético por clave.
+    if (qs.get('orden') === 'sku') productos.sort((a, b) => a.sku.toUpperCase().localeCompare(b.sku.toUpperCase(), 'es'));
+
+    const out = [];
+    if (PORTADA) {
+      out.push(`<section class="page cover"><img class="bg" src="pdf/portada.jpg" alt="">${FECHA ? `<div class="fecha"><span>${esc(FECHA)}</span></div>` : ''}</section>`);
+    }
+    for (let i = 0; i < productos.length; i += POR_HOJA) {
+      out.push(`<section class="page"><div class="grid">${productos.slice(i, i + POR_HOJA).map(tarjeta).join('')}</div></section>`);
+    }
+    document.getElementById('catalogo').innerHTML = out.join('');
+
+    if (document.fonts) await document.fonts.ready;
+    ajustarNombres();
+    const f = document.querySelector('.cover .fecha span');
+    if (f) { let z = 40; while (f.offsetWidth > 322 * 96 / 72 && z > 18) { z -= 0.5; f.style.fontSize = z + 'pt'; } }
+    await Promise.all([...document.images].map(img => img.complete ? null : new Promise(r => { img.onload = img.onerror = r; })));
+    document.body.dataset.listo = '1';
+    document.title = `Catálogo VMTOP — ${FECHA || `${hoy.getDate()} DE ${MESES[hoy.getMonth()]}`} (${productos.length} productos)`;
+  }
+  render().catch(err => {
+    document.body.innerHTML = `<p style="padding:40px;font:14px sans-serif;background:#fff">No se pudo cargar productos.json: ${esc(err.message)}<br>Abre esta página desde un servidor (vmtop.com.mx o python3 -m http.server), no con doble clic.</p>`;
+  });
+})();
+</script>
+</body>
+</html>
