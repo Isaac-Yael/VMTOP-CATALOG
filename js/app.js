@@ -811,7 +811,7 @@ function renderCart() {
 
   // Mostrar total en footer: suma de los productos agregados.
   // El envío ya no se desglosa aquí visualmente (sigue calculándose y
-  // cobrándose normal en el pago — ver calcShipping() en createWCOrder/PayPal).
+  // cobrándose normal en el pago — ver calcShipping() en buildOrderPayload/PayPal).
   let totalEl = CART_DOM.footer.querySelector('.cart-grand-total');
   if (!totalEl) {
     totalEl = document.createElement('div');
@@ -874,6 +874,12 @@ function sendWhatsApp() {
   // El carrito ya NO se vacía automáticamente al enviar el pedido por WhatsApp
   // (decisión de negocio: el cliente puede querer ver/repetir su pedido).
   window.open(url, '_blank');
+
+  // Registrar el pedido en la hoja de Google (no bloquea al cliente)
+  if (typeof ORDERS_API !== 'undefined' && ORDERS_API) {
+    ordersApi('whatsapp', { order: buildOrderPayload(getFormData()) }, { keepalive: true })
+      .catch(err => console.error('No se pudo registrar el pedido de WhatsApp:', err));
+  }
 }
 
 // Inicializar carrito con datos guardados
@@ -1036,10 +1042,10 @@ mobileMenuClose?.addEventListener('click', closeMobileMenu);
 mobileMenuBackdrop?.addEventListener('click', closeMobileMenu);
 
 /* ─── Checkout popup ─────────────────────────────────────────────── */
-const WC_PROXY     = 'https://vmtop.mx/crear-pedido.php';
-const PP_CREATE    = 'https://vmtop.mx/paypal-create-order.php';
-const PP_CAPTURE   = 'https://vmtop.mx/paypal-capture-order.php';
-const NOTIFY_PROXY = 'https://vmtop.mx/notificar-pedido.php'; // TEMPORAL: respaldo por correo mientras se arregla WC_PROXY
+/* URL de la implementación de Google Apps Script (termina en /exec).
+   Mientras esté vacía, el botón de pago en línea se oculta y solo
+   queda el pedido por WhatsApp. */
+const ORDERS_API   = '';
 /* ⚠️ Reemplaza con tu Client ID LIVE de PayPal (panel.paypal.com → Apps) */
 const PP_CLIENT_ID = 'BAAbBL15yk9Eur-y5AW9O48tpwryAGS6TvPahyOXo3L9t20IXyluYPHO5CWTSjPw70GL3LOQbQfAkJBO2U';
 
@@ -1117,97 +1123,38 @@ function getFormData() {
   };
 }
 
-/* ── Crear pedido en WooCommerce ─────────────────────────────────── */
-async function createWCOrder(status, captureId, formData) {
-  const { name, email, phone, address, city, zip } = formData;
-  const { priced, grandTotal } = calcCartPricing();
-  const tierName     = priced[0]?.tier === 'dist' ? 'Distribuidor' : 'Mayoreo';
-  const shippingCost = calcShipping(grandTotal);
-  const totalConEnvio = grandTotal + shippingCost;
-
-  const lineItems = priced.map(item => ({
-    name:     item.name || item.sku.toUpperCase(),
-    sku:      item.sku.toUpperCase(),
-    quantity: item.qty,
-    subtotal: (item.unitPrice * item.qty).toFixed(2),
-    total:    (item.unitPrice * item.qty).toFixed(2),
-    price:    item.unitPrice.toFixed(2),
-  }));
-
-  const shippingLines = shippingCost > 0 ? [{
-    method_title: 'Envío Estafeta',
-    method_id:    'flat_rate',
-    total:        shippingCost.toFixed(2),
-  }] : [];
-
-  const meta = [
-    { key: '_catalogo_vmtop',  value: 'true' },
-    { key: '_nivel_precio',    value: tierName },
-    { key: '_total_calculado', value: totalConEnvio.toFixed(2) },
-  ];
-  if (captureId) meta.push({ key: '_paypal_capture_id', value: captureId });
-
-  const nameParts = name.split(' ');
-  const billing = {
-    first_name: nameParts[0] || name,
-    last_name:  nameParts.slice(1).join(' ') || '',
-    email, phone,
-    address_1: address,
-    city, postcode: zip,
-    country: 'MX', state: '',
+/* ── Datos del pedido (para PayPal y la hoja de Google) ──────────── */
+function buildOrderPayload(formData) {
+  const { priced, grandTotal, distActive } = calcCartPricing();
+  const shipping = calcShipping(grandTotal);
+  return {
+    customer: formData,
+    items: priced.map(item => ({
+      sku:       String(item.sku).toUpperCase(),
+      name:      item.nombre || String(item.sku).toUpperCase(),
+      qty:       item.qty,
+      unitPrice: Number(item.unitPrice.toFixed(2)),
+      lineTotal: Number(item.lineTotal.toFixed(2)),
+      tier:      TIER_LABEL[item.tier] || item.tier,
+    })),
+    subtotal: Number(grandTotal.toFixed(2)),
+    shipping,
+    total:    Number((grandTotal + shipping).toFixed(2)),
+    tier:     distActive ? 'Distribuidor' : 'Mayoreo',
   };
-
-  const res = await fetch(WC_PROXY, {
-    method:  'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({
-      status,
-      customer_note: `Catálogo VMTOP | PayPal: ${captureId || '-'} | Precio: ${tierName} | Total: $${totalConEnvio.toFixed(2)}`,
-      billing,
-      shipping: { ...billing, email: undefined, phone: undefined },
-      line_items:     lineItems,
-      shipping_lines: shippingLines,
-      meta_data:      meta,
-    }),
-  });
-  if (!res.ok) {
-    const errBody = await res.text().catch(() => '');
-    throw new Error(`WC proxy respondió ${res.status}: ${errBody}`);
-  }
-  return res.json();
 }
 
-/* ── TEMPORAL: notificar pedido por correo (respaldo mientras WC_PROXY falla) ── */
-async function notifyOrderByEmail(captureId, formData) {
-  const { name, email, phone, address, city, zip } = formData;
-  const { priced, grandTotal } = calcCartPricing();
-  const shippingCost   = calcShipping(grandTotal);
-  const totalConEnvio  = grandTotal + shippingCost;
-  const nameParts      = name.split(' ');
-
-  const lineItems = priced.map(item => ({
-    name:     item.name || item.sku.toUpperCase(),
-    sku:      item.sku.toUpperCase(),
-    quantity: item.qty,
-    total:    (item.unitPrice * item.qty).toFixed(2),
-  }));
-
-  await fetch(NOTIFY_PROXY, {
+/* ── Llamada al script de Google ─────────────────────────────────────
+   Se envía como text/plain para evitar la verificación CORS previa,
+   que Google Apps Script no admite. */
+async function ordersApi(action, payload, opts = {}) {
+  const res = await fetch(ORDERS_API, {
     method:  'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({
-      captureId,
-      customer_note: `Total con envío: $${totalConEnvio.toFixed(2)}`,
-      billing: {
-        first_name: nameParts[0] || name,
-        last_name:  nameParts.slice(1).join(' ') || '',
-        email, phone,
-        address_1: address,
-        city, postcode: zip,
-      },
-      line_items: lineItems,
-    }),
+    headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+    body:    JSON.stringify({ action, ...payload }),
+    ...opts,
   });
+  return res.json();
 }
 
 /* ── Cargar SDK de PayPal dinámicamente ──────────────────────────── */
@@ -1236,56 +1183,33 @@ async function initPayPalButtons() {
       height: 48,
     },
 
-    /* 1. Crear orden en PayPal via PHP */
+    /* 1. Crear orden en PayPal (vía Google Apps Script) */
     createOrder: async () => {
-      const { grandTotal } = calcCartPricing();
-      const total = (grandTotal + calcShipping(grandTotal)).toFixed(2);
-      const res  = await fetch(PP_CREATE, {
-        method:  'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body:    JSON.stringify({ amount: total }),
-      });
-      const data = await res.json();
-      if (data.error) throw new Error(data.error);
+      const order = buildOrderPayload(getFormData());
+      const data  = await ordersApi('create', { amount: order.total.toFixed(2), order });
+      if (data.error || !data.id) throw new Error(data.error || 'Sin ID de orden');
       return data.id;
     },
 
-    /* 2. Capturar pago aprobado y crear pedido en WooCommerce */
+    /* 2. Capturar pago aprobado (el script guarda el pedido en la hoja y avisa por correo) */
     onApprove: async (data) => {
       let captureId = null;
+      let folio     = '';
       try {
-        // Paso 1: Capturar pago en PayPal
-        const capRes = await fetch(PP_CAPTURE, {
-          method:  'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body:    JSON.stringify({ orderID: data.orderID }),
+        const formData = getFormData();
+        const capData  = await ordersApi('capture', {
+          orderID: data.orderID,
+          order:   buildOrderPayload(formData),
         });
-        const capData = await capRes.json();
         if (!capData.success) throw new Error(JSON.stringify(capData));
         captureId = capData.captureId;
-
-        // Paso 2: Crear pedido en WooCommerce (no crítico para el usuario)
-        const formData = getFormData();
-
-        // TEMPORAL: notificar por correo (independiente de WooCommerce, mientras se resuelve WC_PROXY)
-        try {
-          await notifyOrderByEmail(captureId, formData);
-        } catch (mailErr) {
-          console.error('Email notification failed:', captureId, mailErr);
-        }
-
-        try {
-          await createWCOrder('processing', captureId, formData);
-        } catch (wcErr) {
-          // El pago ya fue procesado — solo registrar el error internamente
-          console.error('WC order creation failed (pago capturado OK):', captureId, wcErr);
-        }
+        folio     = capData.folio || '';
 
         // Paso 3: Confirmar éxito al usuario
         // El carrito ya NO se vacía automáticamente tras el pago (decisión de
         // negocio: el cliente puede querer ver/repetir su pedido).
         closeCheckoutPopup();
-        alert(`✅ ¡Pago recibido! Tu pedido ha sido confirmado.\nRecibirás un correo en ${formData.email}.\n\nID de confirmación: ${captureId}`);
+        alert(`✅ ¡Pago recibido! Tu pedido ha sido confirmado.\n\n${folio ? `Folio: ${folio}\n` : ''}ID de pago PayPal: ${captureId}\n\nTe contactaremos para coordinar la entrega.`);
 
       } catch (e) {
         console.error('PayPal onApprove error:', e);
@@ -1336,6 +1260,7 @@ async function proceedToPayPal() {
 }
 
 /* ── Event listeners ─────────────────────────────────────────────── */
+if (!ORDERS_API && CART_DOM.payOnline) CART_DOM.payOnline.style.display = 'none';
 $('btnPayOnline')?.addEventListener('click', () => {
   // Seguridad adicional: el botón ya está disabled en este caso (ver renderCart),
   // pero se valida de nuevo para evitar pagos en línea con precio Distribuidor/Caja.
