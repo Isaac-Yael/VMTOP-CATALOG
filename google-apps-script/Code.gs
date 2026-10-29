@@ -92,12 +92,37 @@ function capturePayPalOrder_(body) {
                   cap.purchase_units[0].payments && cap.purchase_units[0].payments.captures &&
                   cap.purchase_units[0].payments.captures[0];
 
+  const cached = CacheService.getScriptCache().get('order_' + orderID);
+  const order  = cached ? JSON.parse(cached) : sanitizeOrder_(body.order);
+
+  // Tarjeta rechazada antes de crear el cobro (PayPal responde 422)
+  if (cap.name === 'UNPROCESSABLE_ENTITY') {
+    const issue = (cap.details && cap.details[0] && cap.details[0].issue) || cap.name;
+    logAttempt_('RECHAZADO', order, orderID, '', 'PayPal: ' + issue);
+    return { error: 'Pago rechazado', declined: true, issue: issue };
+  }
+
   if (cap.status !== 'COMPLETED' || !capture) {
+    logAttempt_('ERROR', order, orderID, '', 'Estado de la orden: ' + (cap.status || cap.name || 'desconocido'));
     return { error: 'Pago no completado', status: cap.status || '', details: cap };
   }
 
-  const cached = CacheService.getScriptCache().get('order_' + orderID);
-  const order  = cached ? JSON.parse(cached) : sanitizeOrder_(body.order);
+  // La orden puede estar COMPLETED aunque el cobro con tarjeta se haya
+  // rechazado o quede en revisión: hay que revisar el estado del cobro.
+  const reason = (capture.status_details && capture.status_details.reason) || '';
+  if (capture.status === 'DECLINED' || capture.status === 'FAILED') {
+    logAttempt_('RECHAZADO', order, orderID, capture.id, 'Cobro ' + capture.status + (reason ? ' (' + reason + ')' : ''));
+    return { error: 'Pago rechazado', declined: true, issue: capture.status };
+  }
+  if (capture.status !== 'COMPLETED') {
+    // PENDING: PayPal lo está revisando. NO enviar mercancía hasta que se complete.
+    const folioP = logAttempt_('PENDIENTE PAYPAL', order, orderID, capture.id,
+      '⚠ NO ENVIAR hasta que PayPal marque el cobro como completado' + (reason ? ' (' + reason + ')' : ''));
+    try { notifyOwner_(folioP, 'PayPal – COBRO PENDIENTE (no enviar aún)', order, null, capture.id); }
+    catch (err) { console.error(err); }
+    return { success: false, pending: true, captureId: capture.id, folio: folioP };
+  }
+
   const paid   = Number(capture.amount && capture.amount.value) || 0;
 
   const notes = [];
@@ -127,6 +152,19 @@ function capturePayPalOrder_(body) {
   catch (err) { console.error('No se pudo enviar el correo', err); }
 
   return { success: true, captureId: capture.id, folio: folio };
+}
+
+/* Registra intentos no cobrados (rechazados / pendientes) sin cortar el flujo */
+function logAttempt_(estado, order, orderID, captureId, notas) {
+  try {
+    return saveOrder_({
+      origen: 'PayPal', estado: estado, order: order, paid: '',
+      orderID: orderID, captureId: captureId, notas: notas,
+    });
+  } catch (err) {
+    console.error('No se pudo registrar el intento', orderID, err);
+    return '';
+  }
 }
 
 /* ─── Pedido por WhatsApp (solo registro) ───────────────────────── */

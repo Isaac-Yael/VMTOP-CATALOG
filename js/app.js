@@ -1201,6 +1201,18 @@ async function initPayPalButtons() {
           orderID: data.orderID,
           order:   buildOrderPayload(formData),
         });
+        if (capData.declined) {
+          // El banco o PayPal rechazó la tarjeta: no hubo cargo
+          resetToFormStep();
+          alert('❌ Tu banco rechazó el pago. No se realizó ningún cargo.\n\nIntenta con otra tarjeta, paga con tu cuenta PayPal o envíanos tu pedido por WhatsApp.');
+          return;
+        }
+        if (capData.pending) {
+          // PayPal está revisando el cobro: aún no es un pago confirmado
+          closeCheckoutPopup();
+          alert(`⏳ Tu pago quedó en revisión por PayPal.\n\n${capData.folio ? `Folio: ${capData.folio}\n` : ''}Te avisaremos cuando se confirme. Si tienes dudas, escríbenos por WhatsApp.`);
+          return;
+        }
         if (!capData.success) throw new Error(JSON.stringify(capData));
         captureId = capData.captureId;
         folio     = capData.folio || '';
@@ -1219,7 +1231,7 @@ async function initPayPalButtons() {
           alert(`✅ ¡Pago procesado exitosamente!\nID de confirmación: ${captureId}\n\nGuarda este ID y envíanos mensaje por WhatsApp para confirmar tu entrega.`);
         } else {
           // El cobro NO se realizó
-          alert('No se pudo procesar el pago. No se realizó ningún cargo.\n\nPor favor intenta de nuevo o contáctanos por WhatsApp.');
+          alert('No se pudo completar el pago.\n\nSi ves un cargo en tu tarjeta, envíanos mensaje por WhatsApp para confirmarlo. Si no, intenta de nuevo o envíanos tu pedido por WhatsApp.');
         }
       }
     },
