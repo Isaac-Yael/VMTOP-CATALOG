@@ -1045,7 +1045,7 @@ mobileMenuBackdrop?.addEventListener('click', closeMobileMenu);
 /* URL de la implementación de Google Apps Script (termina en /exec).
    Mientras esté vacía, el botón de pago en línea se oculta y solo
    queda el pedido por WhatsApp. */
-const ORDERS_API   = '';
+const ORDERS_API   = 'https://script.google.com/macros/s/AKfycbxBTEoV0RR8f9KqcBzA7vdkIkFHJUu_SS8DvbaVv6ekHycifFCHL_IqR2e6vs2AXn0gXQ/exec';
 /* ⚠️ Reemplaza con tu Client ID LIVE de PayPal (panel.paypal.com → Apps) */
 const PP_CLIENT_ID = 'BAAbBL15yk9Eur-y5AW9O48tpwryAGS6TvPahyOXo3L9t20IXyluYPHO5CWTSjPw70GL3LOQbQfAkJBO2U';
 
