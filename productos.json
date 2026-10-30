@@ -7672,7 +7672,7 @@
   {
     "sku": "Cubo Sams 65w TC",
     "nombre": "(Cubo Sams 65w TC) Cubo Tipo Samsung 65W PD Tc",
-    "imagen": "cubo sams 65w tc.jpg",
+    "imagen": "cubo sams 65w tc.jpg",
     "precio_publico": 80.0,
     "precio_mayoreo": 53.0,
     "precio_distribuidor": 47.0,
@@ -9687,7 +9687,7 @@
   {
     "sku": "DES-PLA",
     "nombre": "Paquete de Platos Desechables",
-    "imagen": "des-pla.png",
+    "imagen": "des-pla-2.jpg",
     "precio_publico": 167.0,
     "precio_mayoreo": 133.0,
     "precio_distribuidor": 118.0,
@@ -11429,7 +11429,7 @@
   {
     "sku": "SAMSUNG COMBO 65W",
     "nombre": "(SAMSUNG COMBO 65W) SAMSUNG COMBO 65W",
-    "imagen": "samsung combo 65w.jpg",
+    "imagen": "samsung-combo-65w.jpg",
     "precio_publico": 90.0,
     "precio_mayoreo": 60.0,
     "precio_distribuidor": 54.0,
