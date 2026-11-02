@@ -332,7 +332,7 @@ body {
 .banner-track {
   position: relative;
   width: 100%;
-  aspect-ratio: 16 / 5;
+  aspect-ratio: 2576 / 677;
   overflow: hidden;
 }
 .banner-slide {
@@ -402,7 +402,7 @@ body {
 
 @media (max-width: 768px) {
   .banner-track {
-    aspect-ratio: 16 / 5;
+    aspect-ratio: 2576 / 677;
   }
   .banner-slide img {
     width: 100%;
