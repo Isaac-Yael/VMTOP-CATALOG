@@ -9,6 +9,7 @@
 /* ─── Configuración ─────────────────────────────────────────────── */
 const CONFIG = {
   dataUrl:       'productos.json',
+  stravenUrl:    'data/straven.json',   // Juguetes Straven (independiente del CSV)
   batchSize:     40,          // productos por lote (infinite scroll)
   debounceMs:    220,         // delay búsqueda
   imgPlaceholder:'📦',
@@ -101,7 +102,9 @@ async function loadData() {
     const res = await fetch(CONFIG.dataUrl);
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const data = await res.json();
-    STATE.all = Array.isArray(data) ? data : (data.productos ?? []);
+    const vmtop = Array.isArray(data) ? data : (data.productos ?? []);
+    const straven = await loadStraven();
+    STATE.all = [...straven, ...vmtop];
     init();
   } catch (e) {
     DOM.grid.innerHTML = `<p style="color:#f87171;padding:32px">
@@ -109,6 +112,64 @@ async function loadData() {
   } finally {
     setLoader(false);
   }
+}
+
+/* ─── Juguetes Straven (data/straven.json) ───────────────────────────
+   Productos de Straven, independientes del CSV de VMTOP.
+   Precio por pieza según el total de piezas Straven en el carrito:
+   público / 1 docena / 2 docenas / 3 docenas. Los paquetes tienen precio fijo
+   y no cuentan para la docena. No se combinan con precios de VMTOP. */
+let STRAVEN_INFO = { whatsapp: '55 3890 0271', descuentos: [] };
+
+async function loadStraven() {
+  try {
+    const res = await fetch(CONFIG.stravenUrl, { cache: 'no-cache' });
+    if (!res.ok) return [];
+    const d = await res.json();
+    STRAVEN_INFO = {
+      whatsapp:   d.whatsapp || STRAVEN_INFO.whatsapp,
+      descuentos: (d.descuentos_docena || []).slice().sort((a, b) => a.min_piezas - b.min_piezas),
+    };
+    const base = { tienda: 'straven', categoria: 'Juguetes', inventario: -1 };
+    const prods = (d.productos || []).map(x => ({ ...base, ...x,
+      nombre: `${x.marca} · ${x.nombre}` }));
+    const paqs = (d.paquetes || []).map(x => ({ ...base, ...x, paquete: true,
+      precio_publico: x.precio_paquete }));
+    return [...prods, ...paqs];
+  } catch (e) {
+    console.warn('No se pudieron cargar los juguetes Straven:', e);
+    return [];
+  }
+}
+
+const isStraven = (p) => p && p.tienda === 'straven';
+
+/* Nivel de docena según piezas Straven (sin paquetes) */
+function stravenTier(qty) {
+  let tier = null;
+  STRAVEN_INFO.descuentos.forEach((t, i) => { if (qty >= t.min_piezas) tier = i + 1; });
+  return tier; // null = público, 1/2/3 = docenas
+}
+function stravenUnitPrice(item, tier) {
+  if (item.paquete) return parsePrice(item.precio_paquete);
+  const k = { 1: 'precio_1_docena', 2: 'precio_2_docenas', 3: 'precio_3_docenas' }[tier];
+  return parsePrice((k && item[k]) || item.precio_publico);
+}
+
+function stravenPricesHtml(p, modal = false) {
+  const row = modal ? 'modal-price-row' : 'price-row';
+  const f = modal ? fmt : fmtShort;
+  if (p.paquete) {
+    return `
+        <div class="${row} str-pub"><span class="price-label">Paquete ${escHtml(String(p.piezas))} pzas</span><span class="price-value">${f(p.precio_paquete)}</span></div>
+        <div class="${row} str-doc"><span class="price-label">Precio por pieza</span><span class="price-value">${f(p.precio_pieza)}</span></div>`;
+  }
+  const lbl = (i, fb) => STRAVEN_INFO.descuentos[i] ? `${STRAVEN_INFO.descuentos[i].etiqueta} (-${STRAVEN_INFO.descuentos[i].porcentaje}%)` : fb;
+  return `
+        <div class="${row} str-pub"><span class="price-label">Público</span><span class="price-value">${f(p.precio_publico)}</span></div>
+        <div class="${row} str-doc"><span class="price-label">${lbl(0, '1 docena')}</span><span class="price-value">${f(p.precio_1_docena)}</span></div>
+        <div class="${row} str-doc"><span class="price-label">${lbl(1, '2 docenas')}</span><span class="price-value">${f(p.precio_2_docenas)}</span></div>
+        <div class="${row} str-doc"><span class="price-label">${lbl(2, '3 docenas')}</span><span class="price-value">${f(p.precio_3_docenas)}</span></div>`;
 }
 
 /* ─── Inicialización post-carga ──────────────────────────────────── */
@@ -227,7 +288,8 @@ function applyFilters() {
     const sku  = normalize(p.sku ?? p.SKU ?? '');
     const name = normalize(p.nombre ?? p.Nombre ?? p.NOMBRE ?? '');
     const pcat = p.categoria ?? p.Categoria ?? p.CATEGORIA ?? '';
-    const pcaja = parsePrice(getField(p, 'precio_caja', 'PrecioCaja', 'Precio Caja'));
+    const pcaja = isStraven(p) ? parsePrice(p.precio_pieza ?? p.precio_publico)
+                               : parsePrice(getField(p, 'precio_caja', 'PrecioCaja', 'Precio Caja'));
 
     const matchQ    = !q || sku.includes(q) || name.includes(q);
     const matchCat  = !cat || pcat === cat;
@@ -326,14 +388,16 @@ function createCard(p) {
   const inventario = parseInt(getField(p, 'inventario', 'Inventario', 'INVENTARIO') ?? -1);
   const sinStock  = inventario === 0;
 
+  const str = isStraven(p);
   const card = document.createElement('article');
-  card.className = 'product-card';
+  card.className = 'product-card' + (str ? ' product-card--straven' : '');
   card.setAttribute('role', 'listitem');
   card.setAttribute('tabindex', '0');
   card.setAttribute('aria-label', name);
 
   card.innerHTML = `
     ${desc ? `<span class="discount-badge">${escHtml(String(desc))}%</span>` : ''}
+    ${str ? `<span class="straven-badge">Straven</span>` : ''}
     <div class="card-img-wrap">
       <span class="img-placeholder">${CONFIG.imgPlaceholder}</span>
       ${img ? `<img class="card-img" data-src="img/${escHtml(img)}" alt="${escHtml(name)}" loading="lazy" />` : ''}
@@ -342,7 +406,7 @@ function createCard(p) {
       <span class="card-sku">${escHtml(sku)}${inventario >= 0 ? ` <span class="card-stock${sinStock ? ' card-stock--out' : ''}">— ${sinStock ? 'Sin stock' : `${inventario} disponibles`}</span>` : ''}</span>
       <span class="card-name">${escHtml(name)}</span>
       <span class="card-category">${escHtml(cat)}</span>
-      <div class="card-prices">
+      ${str ? `<div class="card-prices">${stravenPricesHtml(p)}</div>` : `<div class="card-prices">
         <div class="price-row public">
           <span class="price-label">Público</span>
           <span class="price-value">${fmtShort(pPub)}</span>
@@ -359,7 +423,7 @@ function createCard(p) {
           <span class="price-label">Caja${piezas ? ` (${escHtml(String(piezas))} pzas)` : ''}</span>
           <span class="price-value">${fmtShort(pCaja)}</span>
         </div>
-      </div>
+      </div>`}
     </div>`;
 
   // Lazy load imagen con IntersectionObserver
@@ -432,6 +496,8 @@ function showModal(p) {
   const piezas     = getField(p, 'piezas_caja', 'PiezasCaja', 'Piezas por Caja', 'piezas');
   const desc       = getField(p, 'descuento', 'Descuento');
   const inventario = parseInt(getField(p, 'inventario', 'Inventario', 'INVENTARIO') ?? -1);
+  const str = isStraven(p);
+  const strNote = str ? `<div class="straven-note">Producto de <strong>Straven</strong>. Precios de Straven: el descuento por docena se calcula con el total de juguetes Straven del carrito y no se combina con precios de VMTOP. 3% adicional pagando en efectivo. Dudas: WhatsApp Straven ${escHtml(STRAVEN_INFO.whatsapp)}.</div>` : '';
 
   DOM.modalContent.innerHTML = `
     <div class="modal-inner">
@@ -446,7 +512,7 @@ function showModal(p) {
         <div class="modal-name">${escHtml(name)}</div>
         <div class="modal-cat"><span class="card-category">${escHtml(cat)}</span></div>
         ${desc ? `<div><span class="discount-badge" style="position:static;display:inline-block">Descuento ${escHtml(String(desc))}%</span></div>` : ''}
-        <div class="modal-prices">
+        ${str ? `<div class="modal-prices">${stravenPricesHtml(p, true)}</div>${strNote}` : `<div class="modal-prices">
           <div class="modal-price-row public">
             <span class="price-label">Precio Público</span>
             <span class="price-value" style="color:var(--clr-text)">${fmt(pPub)}</span>
@@ -463,14 +529,14 @@ function showModal(p) {
             <span class="price-label">Caja${piezas ? ` (${escHtml(String(piezas))} pzas)` : ''}</span>
             <span class="price-value" style="color:#93c5fd">${fmt(pCaja)}</span>
           </div>
-        </div>
+        </div>`}
         <div class="modal-cart-actions">
           <div class="modal-qty-wrap">
             <button class="qty-popup-btn" id="modalQtyMinus">−</button>
             <input type="number" id="modalQtyInput" class="qty-popup-input" min="1" value="1" />
             <button class="qty-popup-btn" id="modalQtyPlus">+</button>
           </div>
-          ${piezas ? `<button class="btn-add-caja" id="modalBtnCaja">📦 Agregar caja completa (${escHtml(String(piezas))} pzas)</button>` : ''}
+          ${(piezas && !str) ? `<button class="btn-add-caja" id="modalBtnCaja">📦 Agregar caja completa (${escHtml(String(piezas))} pzas)</button>` : ''}
           <button class="btn-modal-add-cart" id="modalBtnAddCart">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="15" height="15">
               <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/>
@@ -503,7 +569,7 @@ function showModal(p) {
     if (isNaN(val) || val < 1)    { modalQtyInput.value = 1; return; }
     if (val > inventario) modalQtyInput.value = inventario;
   });
-  if (piezas) {
+  if (piezas && !str) {
     const cajaCap = inventario >= 0 ? Math.min(piezas, inventario) : piezas;
     $('modalBtnCaja').addEventListener('click', () => { modalQtyInput.value = cajaCap; });
   }
@@ -637,9 +703,11 @@ function saveCart() {
 const DIST_THRESHOLD = 5999;
 
 function calcCartPricing() {
-  const entries = Object.values(cart);
+  const all = Object.values(cart);
+  const entries  = all.filter(i => !isStraven(i));   // VMTOP
+  const strItems = all.filter(i => isStraven(i));    // Straven
 
-  // Total a precio mayoreo → determina si aplica distribuidor
+  // Total a precio mayoreo → determina si aplica distribuidor (solo VMTOP)
   const totalMayoreo = entries.reduce((sum, item) => {
     return sum + item.qty * parsePrice(item.precio_mayoreo);
   }, 0);
@@ -676,7 +744,22 @@ function calcCartPricing() {
     return { ...item, unitPrice, originalUnitPrice, descuento: desc, tier, lineTotal };
   });
 
-  return { priced, grandTotal, distActive, totalMayoreo };
+  // Straven: nivel de docena por total de piezas Straven (sin paquetes)
+  const stravenQty  = strItems.filter(i => !i.paquete).reduce((s, i) => s + i.qty, 0);
+  const stravenLvl  = stravenTier(stravenQty);
+  let stravenTotal  = 0;
+  const strPriced = strItems.map(item => {
+    const unitPrice = stravenUnitPrice(item, stravenLvl);
+    const lineTotal = Math.round(unitPrice * item.qty * 100) / 100;
+    stravenTotal += lineTotal;
+    const tier = item.paquete ? 'str_paq' : (stravenLvl ? `str_d${stravenLvl}` : 'str_pub');
+    return { ...item, unitPrice, originalUnitPrice: unitPrice, descuento: 0, tier, lineTotal };
+  });
+  const vmtopTotal = grandTotal;
+  grandTotal += stravenTotal;
+
+  return { priced: [...strPriced, ...priced], vmtopPriced: priced, strPriced, grandTotal, vmtopTotal,
+           stravenTotal, stravenQty, stravenLvl, distActive, totalMayoreo };
 }
 
 function addToCart(p) {
@@ -693,6 +776,12 @@ function addToCart(p) {
   if (cart[sku]) {
     const newQty = cart[sku].qty + 1;
     cart[sku].qty = (inventario >= 0) ? Math.min(newQty, inventario) : newQty;
+  } else if (isStraven(p)) {
+    cart[sku] = { sku, nombre: name, imagen: img, qty: 1, tienda: 'straven', inventario: -1,
+                  paquete: !!p.paquete, piezas: p.piezas || 0,
+                  precio_publico: p.precio_publico, precio_paquete: p.precio_paquete || 0,
+                  precio_1_docena: p.precio_1_docena || 0, precio_2_docenas: p.precio_2_docenas || 0,
+                  precio_3_docenas: p.precio_3_docenas || 0 };
   } else {
     cart[sku] = { sku, nombre: name, imagen: img, qty: 1,
                   precio_mayoreo: pMay, precio_distribuidor: pDist,
@@ -740,8 +829,11 @@ function updateCartCount() {
   if (!isEmpty) CART_DOM.count.textContent = formatCartBadge(grandTotal);
 }
 
-const TIER_LABEL = { mayoreo: 'Mayoreo', dist: 'Distribuidor', caja: 'Precio Caja' };
-const TIER_COLOR = { mayoreo: '#f59e0b', dist: '#22c55e', caja: '#93c5fd' };
+const TIER_LABEL = { mayoreo: 'Mayoreo', dist: 'Distribuidor', caja: 'Precio Caja',
+  str_pub: 'Straven Público', str_d1: 'Straven 1 docena', str_d2: 'Straven 2 docenas',
+  str_d3: 'Straven 3 docenas', str_paq: 'Straven Paquete' };
+const TIER_COLOR = { mayoreo: '#f59e0b', dist: '#22c55e', caja: '#93c5fd',
+  str_pub: '#c084fc', str_d1: '#c084fc', str_d2: '#c084fc', str_d3: '#c084fc', str_paq: '#c084fc' };
 
 function renderCart() {
   const entries = Object.values(cart);
@@ -756,24 +848,42 @@ function renderCart() {
     return;
   }
 
-  const { priced, grandTotal, distActive, totalMayoreo } = calcCartPricing();
+  const { priced, grandTotal, distActive, totalMayoreo, vmtopPriced, strPriced, stravenQty, stravenLvl } = calcCartPricing();
 
-  // Pago en línea solo permitido si TODO el carrito está a precio Mayoreo.
-  // Precio Distribuidor o Precio Caja requieren coordinación manual (WhatsApp).
-  const onlineBlocked = priced.some(item => item.tier === 'dist' || item.tier === 'caja');
+  // Pago en línea solo permitido si TODO el carrito está a precio Mayoreo de VMTOP.
+  // Precio Distribuidor, Precio Caja o juguetes Straven se coordinan por WhatsApp.
+  const hasStraven    = strPriced.length > 0;
+  const onlineBlocked = hasStraven || priced.some(item => item.tier === 'dist' || item.tier === 'caja');
   if (CART_DOM.payOnline) CART_DOM.payOnline.disabled = onlineBlocked;
-  if (CART_DOM.payNote)   CART_DOM.payNote.hidden = !onlineBlocked;
-
-  // Banner de nivel de precio activo
-  const remaining = DIST_THRESHOLD - totalMayoreo;
-  const banner = document.createElement('div');
-  banner.className = 'cart-tier-banner';
-  if (distActive) {
-    banner.innerHTML = `<span class="tier-badge tier-dist">✦ Precio Distribuidor activo</span>`;
-  } else {
-    banner.innerHTML = `<span class="tier-badge tier-mayoreo">Mayoreo · faltan ${fmtShort(remaining)} para Distribuidor</span>`;
+  if (CART_DOM.payNote) {
+    CART_DOM.payNote.hidden = !onlineBlocked;
+    CART_DOM.payNote.textContent = hasStraven
+      ? '⚠️ Tu pedido incluye juguetes Straven. Estos pedidos se coordinan por WhatsApp; el pago en línea solo está disponible para productos VMTOP a precio Mayoreo.'
+      : '⚠️ Tu pedido incluye precio Distribuidor o Precio Caja. Estos pedidos se coordinan por WhatsApp; el pago en línea solo está disponible para precio Mayoreo.';
   }
-  CART_DOM.items.appendChild(banner);
+
+  // Banner de nivel de precio activo (VMTOP)
+  if (vmtopPriced.length) {
+    const remaining = DIST_THRESHOLD - totalMayoreo;
+    const banner = document.createElement('div');
+    banner.className = 'cart-tier-banner';
+    if (distActive) {
+      banner.innerHTML = `<span class="tier-badge tier-dist">✦ Precio Distribuidor activo</span>`;
+    } else {
+      banner.innerHTML = `<span class="tier-badge tier-mayoreo">Mayoreo · faltan ${fmtShort(remaining)} para Distribuidor</span>`;
+    }
+    CART_DOM.items.appendChild(banner);
+  }
+
+  // Banner Straven (docenas)
+  if (hasStraven) {
+    const b = document.createElement('div');
+    b.className = 'cart-tier-banner';
+    const next = STRAVEN_INFO.descuentos.find(t => stravenQty < t.min_piezas);
+    const cur  = stravenLvl ? STRAVEN_INFO.descuentos[stravenLvl - 1] : null;
+    b.innerHTML = `<span class="tier-badge tier-straven">Juguetes Straven · ${stravenQty} pzas${cur ? ` · ✦ ${escHtml(cur.etiqueta)} (-${cur.porcentaje}%)` : ''}${next ? ` · faltan ${next.min_piezas - stravenQty} para -${next.porcentaje}%` : ''}</span>`;
+    CART_DOM.items.appendChild(b);
+  }
 
   const frag = document.createDocumentFragment();
   priced.forEach(item => {
@@ -790,7 +900,7 @@ function renderCart() {
           <span class="cart-tier-label" style="color:${TIER_COLOR[item.tier]}">${TIER_LABEL[item.tier]}</span>
           ${item.descuento > 0
             ? `<del class="cart-orig-price">${fmtShort(item.originalUnitPrice)}</del><span class="cart-disc-badge">-${item.descuento}%</span> `
-            : ''}${fmtShort(item.unitPrice)}/pza · <strong>${fmtShort(item.lineTotal)}</strong>
+            : ''}${fmtShort(item.unitPrice)}/${item.paquete ? 'paquete' : 'pza'} · <strong>${fmtShort(item.lineTotal)}</strong>
         </span>
       </div>
       <div class="cart-item-controls">
@@ -806,7 +916,7 @@ function renderCart() {
   CART_DOM.items.appendChild(frag);
 
   // Totales
-  const totalQty = entries.reduce((s, i) => s + i.qty, 0);
+  const totalQty = Object.values(cart).reduce((s, i) => s + i.qty, 0);
   CART_DOM.totalItems.textContent = `${totalQty} artículo${totalQty !== 1 ? 's' : ''}`;
 
   // Mostrar total en footer: suma de los productos agregados.
@@ -860,15 +970,16 @@ function sendWhatsApp() {
   }
   nameInput.classList.remove('error');
 
-  const { priced, grandTotal, distActive } = calcCartPricing();
+  const { grandTotal, distActive, vmtopPriced, strPriced, vmtopTotal, stravenTotal } = calcCartPricing();
   const tierName = distActive ? 'Distribuidor' : 'Mayoreo';
 
-  const lines = priced.map(i =>
-    `• ${i.sku} — ${i.nombre} x${i.qty} (${TIER_LABEL[i.tier]}: ${fmtShort(i.lineTotal)})`
-  ).join('\n');
+  const line = (i) => `• ${i.sku} — ${i.nombre} x${i.qty} (${TIER_LABEL[i.tier]}: ${fmtShort(i.lineTotal)})`;
+  const blocks = [];
+  if (vmtopPriced.length) blocks.push(`*VMTOP* (precio ${tierName}):\n${vmtopPriced.map(line).join('\n')}\nSubtotal VMTOP: ${fmtShort(vmtopTotal)}`);
+  if (strPriced.length)   blocks.push(`*Juguetes Straven* (precios Straven):\n${strPriced.map(line).join('\n')}\nSubtotal Straven: ${fmtShort(stravenTotal)}`);
 
   const contacto = [email && `Email: ${email}`, phone && `Tel: ${phone}`].filter(Boolean).join(' | ');
-  const msg = `¡Hola! Mi nombre es ${name}${contacto ? ` (${contacto})` : ''} y quiero realizar el siguiente pedido (precio ${tierName}):\n\n${lines}\n\nTotal: ${fmtShort(grandTotal)}\n\nQuedo en espera de confirmación. 😊`;
+  const msg = `¡Hola! Mi nombre es ${name}${contacto ? ` (${contacto})` : ''} y quiero realizar el siguiente pedido:\n\n${blocks.join('\n\n')}\n\nTotal: ${fmtShort(grandTotal)}\n\nQuedo en espera de confirmación. 😊`;
   const url = `https://api.whatsapp.com/send?phone=${WA_PEDIDOS}&text=${encodeURIComponent(msg)}`;
   closeCheckoutPopup();
   // El carrito ya NO se vacía automáticamente al enviar el pedido por WhatsApp
@@ -945,12 +1056,14 @@ function openQtyPopup(p) {
     <div class="qty-popup-info">
       <span class="qty-popup-sku">${escHtml(sku)}</span>
       <span class="qty-popup-name">${escHtml(name)}</span>
-      <span class="qty-popup-price">${fmtShort(pMay)} / pza</span>
+      <span class="qty-popup-price">${isStraven(p)
+        ? (p.paquete ? `${fmtShort(p.precio_paquete)} / paquete` : `${fmtShort(p.precio_publico)} / pza · descuento por docena`)
+        : `${fmtShort(pMay)} / pza`}</span>
       ${stockBadge}
     </div>`;
 
-  // Botón de caja — limitar al inventario disponible
-  if (piezas) {
+  // Botón de caja — limitar al inventario disponible (no aplica a Straven)
+  if (piezas && !isStraven(p)) {
     const cajaCap = inventario >= 0 ? Math.min(piezas, inventario) : piezas;
     QTY_DOM.addCaja.textContent = `📦 Agregar caja completa (${cajaCap} pzas)`;
     QTY_DOM.addCaja.hidden  = cajaCap === 0;
@@ -1277,7 +1390,7 @@ $('btnPayOnline')?.addEventListener('click', () => {
   // Seguridad adicional: el botón ya está disabled en este caso (ver renderCart),
   // pero se valida de nuevo para evitar pagos en línea con precio Distribuidor/Caja.
   const { priced } = calcCartPricing();
-  if (priced.some(item => item.tier === 'dist' || item.tier === 'caja')) return;
+  if (priced.some(item => item.tier === 'dist' || item.tier === 'caja' || isStraven(item))) return;
   openCheckoutPopup('online');
 });
 CART_DOM.whatsapp?.removeEventListener('click', sendWhatsApp);

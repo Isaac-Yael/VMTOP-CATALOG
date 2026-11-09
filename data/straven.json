@@ -1,0 +1,25 @@
+{
+  "_nota": "Juguetes de Straven. Este archivo NO se toca al actualizar el CSV de VMTOP. Precios por pieza; los de docena aplican por el total de piezas Straven en el carrito (paquetes no cuentan).",
+  "tienda": "Straven",
+  "whatsapp": "55 3890 0271",
+  "descuentos_docena": [
+    { "min_piezas": 12, "porcentaje": 5,  "etiqueta": "1 docena" },
+    { "min_piezas": 24, "porcentaje": 10, "etiqueta": "2 docenas" },
+    { "min_piezas": 36, "porcentaje": 15, "etiqueta": "3 docenas" }
+  ],
+  "productos": [
+    { "sku": "STR-FUNKO-POP",   "marca": "Funko Pop!",     "nombre": "Figura coleccionable, personajes surtidos", "imagen": "straven/funko-pop.jpg",               "precio_publico": 199.00, "precio_1_docena": 189.05, "precio_2_docenas": 179.10, "precio_3_docenas": 169.15 },
+    { "sku": "STR-FUNKO-JUMBO", "marca": "Funko Pop!",     "nombre": "Figura tamaño jumbo, personajes surtidos",  "imagen": "straven/funko-jumbo.jpg",             "precio_publico": 549.00, "precio_1_docena": 521.55, "precio_2_docenas": 494.10, "precio_3_docenas": 466.65 },
+    { "sku": "STR-GODZILLA-89", "marca": "Godzilla",       "nombre": "Figura Godzilla '89 Super Kaiju",           "imagen": "straven/godzilla-89.jpg",             "precio_publico": 399.00, "precio_1_docena": 379.05, "precio_2_docenas": 359.10, "precio_3_docenas": 339.15 },
+    { "sku": "STR-MICROMALLOWS","marca": "MicroMallows",   "nombre": "Calendario de vacaciones",                  "imagen": "straven/micromallows-calendario.jpg", "precio_publico": 499.00, "precio_1_docena": 474.05, "precio_2_docenas": 449.10, "precio_3_docenas": 424.15 },
+    { "sku": "STR-OG-MOCHILA",  "marca": "Our Generation", "nombre": "Mochila porta muñeca con alas",             "imagen": "straven/og-mochila.jpg",              "precio_publico": 369.00, "precio_1_docena": 350.55, "precio_2_docenas": 332.10, "precio_3_docenas": 313.65 },
+    { "sku": "STR-OG-POTRILLO", "marca": "Our Generation", "nombre": "Set de potrillo",                           "imagen": "straven/og-potrillo.jpg",             "precio_publico": 399.00, "precio_1_docena": 379.05, "precio_2_docenas": 359.10, "precio_3_docenas": 339.15 },
+    { "sku": "STR-OG-LIVING",   "marca": "Our Generation", "nombre": "Lovely Living Room Set",                    "imagen": "straven/og-living-room.jpg",          "precio_publico": 449.00, "precio_1_docena": 426.55, "precio_2_docenas": 404.10, "precio_3_docenas": 381.65 },
+    { "sku": "STR-OG-MUNECA",   "marca": "Our Generation", "nombre": "Muñeca 46 cm, varios modelos",              "imagen": "straven/og-muneca.jpg",               "precio_publico": 569.00, "precio_1_docena": 540.55, "precio_2_docenas": 512.10, "precio_3_docenas": 483.65 },
+    { "sku": "STR-OG-SUITE",    "marca": "Our Generation", "nombre": "Castillo Suite Retreat",                    "imagen": "straven/og-suite-retreat.jpg",        "precio_publico": 649.00, "precio_1_docena": 616.55, "precio_2_docenas": 584.10, "precio_3_docenas": 551.65 }
+  ],
+  "paquetes": [
+    { "sku": "STR-PAQ-24",  "marca": "Straven", "nombre": "Paquete Juguetes Surtidos Mixto · 24 piezas",  "imagen": "", "piezas": 24,  "precio_paquete": 8856.00,  "precio_pieza": 369.00 },
+    { "sku": "STR-PAQ-100", "marca": "Straven", "nombre": "Paquete Juguetes Surtidos Mixto · 100 piezas", "imagen": "", "piezas": 100, "precio_paquete": 34900.00, "precio_pieza": 349.00 }
+  ]
+}
