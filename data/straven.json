@@ -18,8 +18,12 @@
     { "sku": "STR-OG-MUNECA",   "marca": "Our Generation", "nombre": "Muñeca 46 cm, varios modelos",              "imagen": "straven/og-muneca.jpg",               "precio_publico": 569.00, "precio_1_docena": 540.55, "precio_2_docenas": 512.10, "precio_3_docenas": 483.65 },
     { "sku": "STR-OG-SUITE",    "marca": "Our Generation", "nombre": "Castillo Suite Retreat",                    "imagen": "straven/og-suite-retreat.jpg",        "precio_publico": 649.00, "precio_1_docena": 616.55, "precio_2_docenas": 584.10, "precio_3_docenas": 551.65 }
   ],
-  "paquetes": [
-    { "sku": "STR-PAQ-24",  "marca": "Straven", "nombre": "Paquete Juguetes Surtidos Mixto · 24 piezas",  "imagen": "", "piezas": 24,  "precio_paquete": 8856.00,  "precio_pieza": 369.00 },
-    { "sku": "STR-PAQ-100", "marca": "Straven", "nombre": "Paquete Juguetes Surtidos Mixto · 100 piezas", "imagen": "", "piezas": 100, "precio_paquete": 34900.00, "precio_pieza": 349.00 }
-  ]
+  "paquete_mixto": {
+    "sku": "STR-PAQ-MIXTO", "marca": "Straven", "nombre": "Paquete Juguetes Surtidos Mixto",
+    "imagen": "straven/paquete-mixto.jpg",
+    "opciones": [
+      { "piezas": 24,  "precio_paquete": 8856.00,  "precio_pieza": 369.00 },
+      { "piezas": 100, "precio_paquete": 34900.00, "precio_pieza": 349.00 }
+    ]
+  }
 }

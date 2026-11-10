@@ -22,6 +22,25 @@ const SHIPPING_THRESHOLD = 2499;
 const SHIPPING_COST      = 185;
 function calcShipping(total) { return total >= SHIPPING_THRESHOLD ? 0 : SHIPPING_COST; }
 
+/* ─── Buen Fin 2026 ──────────────────────────────────────────────────
+   Del 11 al 17 de noviembre (hora de CDMX): 7% de descuento en precio Mayoreo
+   de productos VMTOP. Se activa y desactiva solo por fecha.
+   Prueba: ?buenfin=1 lo fuerza encendido, ?buenfin=0 apagado. */
+const BUEN_FIN = {
+  inicio: Date.parse('2026-11-11T00:00:00-06:00'),
+  fin:    Date.parse('2026-11-18T00:00:00-06:00'),
+  pct:    7,
+};
+const BF_ACTIVE = (() => {
+  const f = new URLSearchParams(location.search).get('buenfin');
+  if (f === '1') return true;
+  if (f === '0') return false;
+  const now = Date.now();
+  return now >= BUEN_FIN.inicio && now < BUEN_FIN.fin;
+})();
+/* Precio mayoreo con descuento Buen Fin (igual que el catálogo PDF) */
+function bfPrice(n) { return Math.round(parsePrice(n) * (100 - BUEN_FIN.pct) + 1e-7) / 100; }
+
 /* ─── Estado global ──────────────────────────────────────────────── */
 const STATE = {
   all:            [],   // todos los productos originales
@@ -133,8 +152,9 @@ async function loadStraven() {
     const base = { tienda: 'straven', categoria: 'Juguetes', inventario: -1 };
     const prods = (d.productos || []).map(x => ({ ...base, ...x,
       nombre: `${x.marca} · ${x.nombre}` }));
-    const paqs = (d.paquetes || []).map(x => ({ ...base, ...x, paquete: true,
-      precio_publico: x.precio_paquete }));
+    const pm = d.paquete_mixto;
+    const paqs = (pm && pm.opciones && pm.opciones.length) ? [{ ...base, ...pm, paquete: true,
+      precio_publico: pm.opciones[0].precio_paquete, precio_pieza: pm.opciones[0].precio_pieza }] : [];
     return [...prods, ...paqs];
   } catch (e) {
     console.warn('No se pudieron cargar los juguetes Straven:', e);
@@ -143,6 +163,21 @@ async function loadStraven() {
 }
 
 const isStraven = (p) => p && p.tienda === 'straven';
+
+/* Paquete con opciones (24 / 100 pzas): cada opción entra al carrito como su propio renglón */
+function stravenVariant(p, idx) {
+  const o = p.opciones[idx];
+  return { ...p, opciones: undefined, sku: `${p.sku}-${o.piezas}`,
+           nombre: `${p.nombre} · ${o.piezas} piezas`, piezas: o.piezas,
+           precio_paquete: o.precio_paquete, precio_pieza: o.precio_pieza,
+           precio_publico: o.precio_paquete };
+}
+function stravenOptionsHtml(p, name) {
+  return `<div class="str-opciones" role="radiogroup" aria-label="Elige el paquete">${p.opciones.map((o, i) => `
+    <label class="str-opcion"><input type="radio" name="${name}" value="${i}" ${i === 0 ? 'checked' : ''} />
+      <span><strong>${escHtml(String(o.piezas))} piezas</strong> · ${fmtShort(o.precio_paquete)} <em>(${fmtShort(o.precio_pieza)} c/u)</em></span></label>`).join('')}
+  </div>`;
+}
 
 /* Nivel de docena según piezas Straven (sin paquetes) */
 function stravenTier(qty) {
@@ -159,6 +194,11 @@ function stravenUnitPrice(item, tier) {
 function stravenPricesHtml(p, modal = false) {
   const row = modal ? 'modal-price-row' : 'price-row';
   const f = modal ? fmt : fmtShort;
+  if (p.paquete && p.opciones) {
+    return p.opciones.map(o => `
+        <div class="${row} str-pub"><span class="price-label">Paquete ${escHtml(String(o.piezas))} pzas</span><span class="price-value">${f(o.precio_paquete)}</span></div>
+        <div class="${row} str-doc"><span class="price-label">${escHtml(String(o.piezas))} pzas · precio por pieza</span><span class="price-value">${f(o.precio_pieza)}</span></div>`).join('');
+  }
   if (p.paquete) {
     return `
         <div class="${row} str-pub"><span class="price-label">Paquete ${escHtml(String(p.piezas))} pzas</span><span class="price-value">${f(p.precio_paquete)}</span></div>
@@ -398,6 +438,7 @@ function createCard(p) {
   card.innerHTML = `
     ${desc ? `<span class="discount-badge">${escHtml(String(desc))}%</span>` : ''}
     ${str ? `<span class="straven-badge">Straven</span>` : ''}
+    ${(BF_ACTIVE && !str) ? `<span class="bf-badge">Buen Fin -${BUEN_FIN.pct}%</span>` : ''}
     <div class="card-img-wrap">
       <span class="img-placeholder">${CONFIG.imgPlaceholder}</span>
       ${img ? `<img class="card-img" data-src="img/${escHtml(img)}" alt="${escHtml(name)}" loading="lazy" />` : ''}
@@ -411,10 +452,13 @@ function createCard(p) {
           <span class="price-label">Público</span>
           <span class="price-value">${fmtShort(pPub)}</span>
         </div>
-        <div class="price-row mayoreo">
+        ${BF_ACTIVE ? `<div class="price-row mayoreo bf">
+          <span class="price-label">Mayoreo <span class="bf-chip">Buen Fin -${BUEN_FIN.pct}%</span></span>
+          <span class="price-value"><del class="bf-antes">${fmtShort(pMay)}</del> ${fmtShort(bfPrice(pMay))}</span>
+        </div>` : `<div class="price-row mayoreo">
           <span class="price-label">Mayoreo</span>
           <span class="price-value">${fmtShort(pMay)}</span>
-        </div>
+        </div>`}
         <div class="price-row dist">
           <span class="price-label">Distribuidor</span>
           <span class="price-value">${fmtShort(pDist)}</span>
@@ -517,10 +561,14 @@ function showModal(p) {
             <span class="price-label">Precio Público</span>
             <span class="price-value" style="color:var(--clr-text)">${fmt(pPub)}</span>
           </div>
-          <div class="modal-price-row mayoreo">
+          ${BF_ACTIVE ? `<div class="modal-price-row mayoreo bf">
+            <span class="price-label">Precio Mayoreo <span class="bf-chip">Buen Fin -${BUEN_FIN.pct}%</span></span>
+            <span class="price-value"><del class="bf-antes">${fmt(pMay)}</del> ${fmt(bfPrice(pMay))}</span>
+          </div>
+          <div class="bf-note">🔥 Buen Fin del 11 al 17 de noviembre: Mayoreo -${BUEN_FIN.pct}% + 3% adicional pagando en efectivo. Distribuidor: envío gratis + 5% pagando en efectivo.</div>` : `<div class="modal-price-row mayoreo">
             <span class="price-label">Precio Mayoreo</span>
             <span class="price-value" style="color:var(--clr-accent)">${fmt(pMay)}</span>
-          </div>
+          </div>`}
           <div class="modal-price-row dist">
             <span class="price-label">Precio Distribuidor</span>
             <span class="price-value" style="color:var(--clr-success)">${fmt(pDist)}</span>
@@ -531,6 +579,7 @@ function showModal(p) {
           </div>
         </div>`}
         <div class="modal-cart-actions">
+          ${(str && p.opciones) ? stravenOptionsHtml(p, 'modalPaqOpt') : ''}
           <div class="modal-qty-wrap">
             <button class="qty-popup-btn" id="modalQtyMinus">−</button>
             <input type="number" id="modalQtyInput" class="qty-popup-input" min="1" value="1" />
@@ -576,8 +625,13 @@ function showModal(p) {
   $('modalBtnAddCart').addEventListener('click', () => {
     let qty = Math.max(1, parseInt(modalQtyInput.value) || 1);
     if (inventario >= 0) qty = Math.min(qty, inventario);
-    addToCart(p);
-    const sku2 = getField(p, 'sku', 'SKU') ?? 'SIN-SKU';
+    let item = p;
+    if (str && p.opciones) {
+      const sel = DOM.modalContent.querySelector('input[name="modalPaqOpt"]:checked');
+      item = stravenVariant(p, sel ? +sel.value : 0);
+    }
+    addToCart(item);
+    const sku2 = getField(item, 'sku', 'SKU') ?? 'SIN-SKU';
     if (cart[sku2]) cart[sku2].qty = qty;
     saveCart(); renderCart(); updateCartCount();
     closeModal();
@@ -730,14 +784,18 @@ function calcCartPricing() {
     } else if (distActive && pDist) {
       unitPrice = pDist;
       tier = 'dist';
+    } else if (BF_ACTIVE) {
+      unitPrice = pMay;
+      tier = 'mayoreo_bf';
     } else {
       unitPrice = pMay;
       tier = 'mayoreo';
     }
 
-    const desc = parseFloat(item.descuento) || 0;
+    let desc = parseFloat(item.descuento) || 0;
     const originalUnitPrice = unitPrice;
-    if (desc > 0) unitPrice = Math.round(unitPrice * (1 - desc / 100) * 100) / 100;
+    if (tier === 'mayoreo_bf') { desc = BUEN_FIN.pct; unitPrice = bfPrice(pMay); }
+    else if (desc > 0) unitPrice = Math.round(unitPrice * (1 - desc / 100) * 100) / 100;
 
     const lineTotal = unitPrice * item.qty;
     grandTotal += lineTotal;
@@ -829,10 +887,10 @@ function updateCartCount() {
   if (!isEmpty) CART_DOM.count.textContent = formatCartBadge(grandTotal);
 }
 
-const TIER_LABEL = { mayoreo: 'Mayoreo', dist: 'Distribuidor', caja: 'Precio Caja',
+const TIER_LABEL = { mayoreo: 'Mayoreo', mayoreo_bf: 'Mayoreo Buen Fin', dist: 'Distribuidor', caja: 'Precio Caja',
   str_pub: 'Straven Público', str_d1: 'Straven 1 docena', str_d2: 'Straven 2 docenas',
   str_d3: 'Straven 3 docenas', str_paq: 'Straven Paquete' };
-const TIER_COLOR = { mayoreo: '#f59e0b', dist: '#22c55e', caja: '#93c5fd',
+const TIER_COLOR = { mayoreo: '#f59e0b', mayoreo_bf: '#ef4444', dist: '#22c55e', caja: '#93c5fd',
   str_pub: '#c084fc', str_d1: '#c084fc', str_d2: '#c084fc', str_d3: '#c084fc', str_paq: '#c084fc' };
 
 function renderCart() {
@@ -875,13 +933,23 @@ function renderCart() {
     CART_DOM.items.appendChild(banner);
   }
 
+  // Banner Buen Fin
+  if (BF_ACTIVE && vmtopPriced.length) {
+    const bfb = document.createElement('div');
+    bfb.className = 'cart-tier-banner';
+    bfb.innerHTML = distActive
+      ? `<span class="tier-badge tier-bf">🔥 Buen Fin · Distribuidor: envío gratis + 5% pagando en efectivo</span>`
+      : `<span class="tier-badge tier-bf">🔥 Buen Fin · Mayoreo -${BUEN_FIN.pct}% aplicado · +3% adicional pagando en efectivo</span>`;
+    CART_DOM.items.appendChild(bfb);
+  }
+
   // Banner Straven (docenas)
   if (hasStraven) {
     const b = document.createElement('div');
     b.className = 'cart-tier-banner';
     const next = STRAVEN_INFO.descuentos.find(t => stravenQty < t.min_piezas);
     const cur  = stravenLvl ? STRAVEN_INFO.descuentos[stravenLvl - 1] : null;
-    b.innerHTML = `<span class="tier-badge tier-straven">Juguetes Straven · ${stravenQty} pzas${cur ? ` · ✦ ${escHtml(cur.etiqueta)} (-${cur.porcentaje}%)` : ''}${next ? ` · faltan ${next.min_piezas - stravenQty} para -${next.porcentaje}%` : ''}</span>`;
+    b.innerHTML = stravenQty === 0 ? `<span class="tier-badge tier-straven">Juguetes Straven · paquetes surtidos</span>` : `<span class="tier-badge tier-straven">Juguetes Straven · ${stravenQty} pzas${cur ? ` · ✦ ${escHtml(cur.etiqueta)} (-${cur.porcentaje}%)` : ''}${next ? ` · faltan ${next.min_piezas - stravenQty} para -${next.porcentaje}%` : ''}</span>`;
     CART_DOM.items.appendChild(b);
   }
 
@@ -971,7 +1039,9 @@ function sendWhatsApp() {
   nameInput.classList.remove('error');
 
   const { grandTotal, distActive, vmtopPriced, strPriced, vmtopTotal, stravenTotal } = calcCartPricing();
-  const tierName = distActive ? 'Distribuidor' : 'Mayoreo';
+  const tierName = distActive
+    ? (BF_ACTIVE ? 'Distribuidor · Buen Fin: envío gratis + 5% en efectivo' : 'Distribuidor')
+    : (BF_ACTIVE ? `Mayoreo Buen Fin -${BUEN_FIN.pct}%` : 'Mayoreo');
 
   const line = (i) => `• ${i.sku} — ${i.nombre} x${i.qty} (${TIER_LABEL[i.tier]}: ${fmtShort(i.lineTotal)})`;
   const blocks = [];
@@ -1024,6 +1094,8 @@ function isMobile() { return window.innerWidth <= 768; }
 
 function openQtyPopup(p) {
   document.body.classList.add('qty-popup-open');
+  const baseP = p;
+  if (isStraven(p) && p.opciones) p = stravenVariant(p, 0);
   qtyPopupProduct = p;
   const sku        = getField(p, 'sku', 'SKU') ?? '';
   const name       = getField(p, 'nombre', 'Nombre', 'NOMBRE') ?? '';
@@ -1057,10 +1129,18 @@ function openQtyPopup(p) {
       <span class="qty-popup-sku">${escHtml(sku)}</span>
       <span class="qty-popup-name">${escHtml(name)}</span>
       <span class="qty-popup-price">${isStraven(p)
-        ? (p.paquete ? `${fmtShort(p.precio_paquete)} / paquete` : `${fmtShort(p.precio_publico)} / pza · descuento por docena`)
-        : `${fmtShort(pMay)} / pza`}</span>
+        ? (p.paquete ? (baseP.opciones ? 'Elige el paquete:' : `${fmtShort(p.precio_paquete)} / paquete`) : `${fmtShort(p.precio_publico)} / pza · descuento por docena`)
+        : (BF_ACTIVE ? `<del class="bf-antes">${fmtShort(pMay)}</del> ${fmtShort(bfPrice(pMay))} / pza · Buen Fin` : `${fmtShort(pMay)} / pza`)}</span>
       ${stockBadge}
-    </div>`;
+    </div>
+    ${(isStraven(baseP) && baseP.opciones) ? stravenOptionsHtml(baseP, 'qtyPaqOpt') : ''}`;
+  if (isStraven(baseP) && baseP.opciones) {
+    QTY_DOM.product.querySelectorAll('input[name="qtyPaqOpt"]').forEach(r =>
+      r.addEventListener('change', () => { qtyPopupProduct = stravenVariant(baseP, +r.value); }));
+    // el nombre mostrado es el del paquete, no el de la variante
+    const nm = QTY_DOM.product.querySelector('.qty-popup-name'); if (nm) nm.textContent = baseP.nombre;
+    const sk = QTY_DOM.product.querySelector('.qty-popup-sku');  if (sk) sk.textContent = baseP.sku;
+  }
 
   // Botón de caja — limitar al inventario disponible (no aplica a Straven)
   if (piezas && !isStraven(p)) {
