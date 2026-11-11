@@ -1774,10 +1774,36 @@ body {
 
 /* ─── Buen Fin 2026 ──────────────────────────────────────────── */
 .bf-badge {
-  position: absolute; top: 8px; left: 8px; z-index: 2;
-  background: #dc2626; color: #fde047;
-  font-size: 10px; font-weight: 800; letter-spacing: .04em; text-transform: uppercase;
-  border-radius: 99px; padding: 2px 8px;
+  position: absolute; top: 6px; left: 6px; z-index: 3;
+  display: flex; flex-direction: column; align-items: center; line-height: 1;
+  background: linear-gradient(160deg, #ef4444, #b91c1c); color: #fff;
+  border: 2px solid #fde047; border-radius: 10px; padding: 5px 8px 6px;
+  box-shadow: 0 4px 12px rgba(0,0,0,.35); transform: rotate(-4deg);
+  text-transform: uppercase; text-align: center;
+}
+.bf-badge small { font-size: 9px; font-weight: 800; letter-spacing: .06em; }
+.bf-badge small:last-child { font-size: 8px; font-weight: 700; color: #fde047; letter-spacing: .02em; }
+.bf-badge b { font-size: 22px; font-weight: 900; color: #fde047; margin: 1px 0; letter-spacing: -.02em; }
+.bf-strip {
+  margin: 12px 0 4px; border-radius: 14px; padding: 12px 16px;
+  background: linear-gradient(100deg, #b91c1c, #dc2626 45%, #16a34a);
+  color: #fff; display: flex; align-items: center; gap: 18px; flex-wrap: wrap;
+  box-shadow: 0 6px 18px rgba(0,0,0,.25);
+}
+.bf-strip-title { font-size: 20px; font-weight: 900; letter-spacing: .02em; }
+.bf-strip-title span { display: block; font-size: 12px; font-weight: 700; color: #fde047; letter-spacing: 0; }
+.bf-strip-items { display: flex; gap: 14px; flex-wrap: wrap; flex: 1; }
+.bf-strip-item { display: flex; align-items: center; gap: 8px; background: rgba(0,0,0,.18); border-radius: 10px; padding: 6px 12px; font-size: 13px; font-weight: 700; line-height: 1.25; }
+.bf-strip-item b { font-size: 26px; font-weight: 900; color: #fde047; }
+.bf-strip-item em { font-style: normal; font-weight: 500; font-size: 11.5px; opacity: .95; }
+@media (max-width: 600px) {
+  .bf-strip { padding: 10px 12px; gap: 8px; flex-direction: column; align-items: stretch; }
+  .bf-strip-title { text-align: center; }
+  .bf-strip-title span { display: inline; margin-left: 4px; }
+  .bf-strip-title { font-size: 17px; }
+  .bf-strip-item { font-size: 12px; flex: 1 1 100%; }
+  .bf-strip-item b { font-size: 22px; }
+  .bf-badge b { font-size: 18px; }
 }
 .price-row.mayoreo.bf, .modal-price-row.mayoreo.bf { background: rgba(239, 68, 68, .12); }
 .price-row.mayoreo.bf .price-value, .modal-price-row.mayoreo.bf .price-value { color: #f87171 !important; }

@@ -214,10 +214,26 @@ function stravenPricesHtml(p, modal = false) {
 
 /* ─── Inicialización post-carga ──────────────────────────────────── */
 function init() {
+  if (BF_ACTIVE) showBuenFinStrip();
   buildCategories();
   initPriceFilter();
   applyFilters();
   setupObserver();
+}
+
+/* Franja Buen Fin debajo de los banners */
+function showBuenFinStrip() {
+  const slider = document.getElementById('bannerSlider');
+  if (!slider || document.querySelector('.bf-strip')) return;
+  const d = document.createElement('div');
+  d.className = 'bf-strip';
+  d.innerHTML = `
+    <div class="bf-strip-title">🔥 BUEN FIN <span>del 11 al 17 de noviembre</span></div>
+    <div class="bf-strip-items">
+      <div class="bf-strip-item"><b>-${BUEN_FIN.pct}%</b><span>en precio Mayoreo<br><em>+3% adicional pagando en efectivo</em></span></div>
+      <div class="bf-strip-item"><b>🚚</b><span>Envío gratis en precio Distribuidor<br><em>+5% de descuento pagando en efectivo</em></span></div>
+    </div>`;
+  slider.insertAdjacentElement('afterend', d);
 }
 
 /* ─── Categorías ─────────────────────────────────────────────────── */
@@ -438,7 +454,7 @@ function createCard(p) {
   card.innerHTML = `
     ${desc ? `<span class="discount-badge">${escHtml(String(desc))}%</span>` : ''}
     ${str ? `<span class="straven-badge">Straven</span>` : ''}
-    ${(BF_ACTIVE && !str) ? `<span class="bf-badge">Buen Fin -${BUEN_FIN.pct}%</span>` : ''}
+    ${(BF_ACTIVE && !str) ? `<span class="bf-badge" aria-label="Buen Fin: ${BUEN_FIN.pct}% de descuento en precio mayoreo"><small>Buen Fin</small><b>-${BUEN_FIN.pct}%</b><small>en mayoreo</small></span>` : ''}
     <div class="card-img-wrap">
       <span class="img-placeholder">${CONFIG.imgPlaceholder}</span>
       ${img ? `<img class="card-img" data-src="img/${escHtml(img)}" alt="${escHtml(name)}" loading="lazy" />` : ''}
@@ -453,7 +469,7 @@ function createCard(p) {
           <span class="price-value">${fmtShort(pPub)}</span>
         </div>
         ${BF_ACTIVE ? `<div class="price-row mayoreo bf">
-          <span class="price-label">Mayoreo <span class="bf-chip">Buen Fin -${BUEN_FIN.pct}%</span></span>
+          <span class="price-label">Mayoreo</span>
           <span class="price-value"><del class="bf-antes">${fmtShort(pMay)}</del> ${fmtShort(bfPrice(pMay))}</span>
         </div>` : `<div class="price-row mayoreo">
           <span class="price-label">Mayoreo</span>
