@@ -258,12 +258,36 @@ function notifyOwner_(folio, titulo, o, paid, captureId) {
     'Total: $' + Number(o.total).toFixed(2) + ' MXN\n' +
     (paid !== null ? 'Cobrado en PayPal: $' + Number(paid).toFixed(2) + ' (captura ' + captureId + ')\n' : '') +
     '\nHoja: ' + SpreadsheetApp.getActiveSpreadsheet().getUrl();
+  let csv = null;
+  try { csv = odooCsv_(folio, o); } catch (err) { console.error('No se pudo armar el CSV de Odoo', err); }
   MailApp.sendEmail({
     to: to,
     subject: 'VMTOP ' + folio + ' – ' + titulo + ' – ' + c.name,
-    body: text,
+    body: text + (csv ? '\n\nAdjunto: ' + csv.getName() + ' para importar la cotización en Odoo ' +
+                        '(cliente "' + ODOO_CLIENTE + '", solo productos y cantidades).' : ''),
     replyTo: c.email || undefined,
+    attachments: csv ? [csv] : [],
   });
+}
+
+/* ─── CSV para importar la cotización en Odoo (adjunto del aviso) ──
+   Solo productos (SKU) y cantidades: sin precios ni datos del cliente.
+   El cliente siempre es "Ventas Tienda"; se cambia al editar en Odoo.
+   Los juguetes Straven (SKU que empieza con STR-) no se incluyen. */
+const ODOO_CLIENTE = 'Ventas Tienda';
+
+function odooCsv_(folio, o) {
+  const items = o.items.filter(function (i) {
+    return i.sku && i.qty > 0 && !/^STR-/i.test(i.sku);
+  });
+  if (!items.length) return null;
+  const q = function (v) { return '"' + String(v).replace(/"/g, '""') + '"'; };
+  const lines = ['partner_id,order_line/product_id,order_line/product_uom_qty'];
+  items.forEach(function (i, n) {
+    lines.push([n === 0 ? q(ODOO_CLIENTE) : '', q(i.sku), i.qty].join(','));
+  });
+  return Utilities.newBlob('\ufeff' + lines.join('\r\n') + '\r\n', 'text/csv',
+                           'Odoo-' + (folio || 'pedido') + '.csv');
 }
 
 function notifyFailure_(orderID, captureId, o, err) {
