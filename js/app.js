@@ -31,13 +31,7 @@ const BUEN_FIN = {
   fin:    Date.parse('2026-11-18T00:00:00-06:00'),
   pct:    7,
 };
-const BF_ACTIVE = (() => {
-  const f = new URLSearchParams(location.search).get('buenfin');
-  if (f === '1') return true;
-  if (f === '0') return false;
-  const now = Date.now();
-  return now >= BUEN_FIN.inicio && now < BUEN_FIN.fin;
-})();
+const BF_ACTIVE = false;   // Buen Fin 2026 terminó. Para reactivar una promo, ver git (commit "Buen Fin visual + PDF").
 /* Precio mayoreo con descuento Buen Fin (igual que el catálogo PDF) */
 function bfPrice(n) { return Math.round(parsePrice(n) * (100 - BUEN_FIN.pct) + 1e-7) / 100; }
 
