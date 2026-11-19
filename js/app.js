@@ -117,7 +117,12 @@ async function loadData() {
     const data = await res.json();
     const vmtop = Array.isArray(data) ? data : (data.productos ?? []);
     const straven = await loadStraven();
-    STATE.all = [...straven, ...vmtop];
+    // productos.json ya viene ordenado por categoría (Navidad primero).
+    // Los juguetes Straven van al inicio de la categoría Entretenimiento.
+    const iEnt = vmtop.findIndex(p => p.categoria === STRAVEN_CATEGORIA);
+    STATE.all = iEnt >= 0
+      ? [...vmtop.slice(0, iEnt), ...straven, ...vmtop.slice(iEnt)]
+      : [...vmtop, ...straven];
     init();
   } catch (e) {
     DOM.grid.innerHTML = `<p style="color:#f87171;padding:32px">
@@ -133,6 +138,7 @@ async function loadData() {
    público / 1 docena / 2 docenas / 3 docenas. Los paquetes tienen precio fijo
    y no cuentan para la docena. No se combinan con precios de VMTOP. */
 let STRAVEN_INFO = { whatsapp: '55 3890 0271', descuentos: [] };
+const STRAVEN_CATEGORIA = 'Entretenimiento';
 
 async function loadStraven() {
   try {
@@ -143,7 +149,7 @@ async function loadStraven() {
       whatsapp:   d.whatsapp || STRAVEN_INFO.whatsapp,
       descuentos: (d.descuentos_docena || []).slice().sort((a, b) => a.min_piezas - b.min_piezas),
     };
-    const base = { tienda: 'straven', categoria: 'Juguetes', inventario: -1 };
+    const base = { tienda: 'straven', categoria: STRAVEN_CATEGORIA, inventario: -1 };
     const prods = (d.productos || []).map(x => ({ ...base, ...x,
       nombre: `${x.marca} · ${x.nombre}` }));
     const pm = d.paquete_mixto;
@@ -232,13 +238,14 @@ function showBuenFinStrip() {
 
 /* ─── Categorías ─────────────────────────────────────────────────── */
 function buildCategories() {
-  const counts = {};
+  // Mismo orden en que vienen los productos (Navidad primero), no alfabético
+  const counts = new Map();
   STATE.all.forEach((p) => {
     const cat = p.categoria ?? p.Categoria ?? p.CATEGORIA ?? 'Sin categoría';
-    counts[cat] = (counts[cat] ?? 0) + 1;
+    counts.set(cat, (counts.get(cat) ?? 0) + 1);
   });
 
-  const sorted = Object.entries(counts).sort((a, b) => a[0].localeCompare(b[0]));
+  const sorted = [...counts.entries()];
   DOM.categoryList.innerHTML = sorted.map(([cat, n]) => `
     <li class="category-item" data-cat="${escHtml(cat)}" role="button" tabindex="0">
       <span>${escHtml(cat)}</span>

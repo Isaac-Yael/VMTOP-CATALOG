@@ -1,0 +1,13 @@
+# LOS MÁS VENDIDOS — aparecen primero en la página y en el catálogo PDF.
+# Una clave (SKU) por renglón, en el orden en que quieres que salgan.
+# Los renglones que empiezan con # se ignoran.
+M016
+P9
+GOM-DU
+GOM-MAN
+GOM-UVER
+GOM-UMOR
+DD2504
+YXJ-1522
+YXJ-1504
+A500

@@ -94,6 +94,22 @@
     row-gap: 14pt;
   }
 
+  /* ---------- Encabezado de categoría (arriba de cada hoja) ---------- */
+  .cat-head {
+    position: absolute; left: 35.6pt; right: 35.6pt; top: 7pt; height: 18pt;
+    display: flex; align-items: center; gap: 7pt;
+  }
+  .cat-head b {
+    background: var(--azul); color: #fff; font-weight: 800; font-size: 10pt; line-height: 1;
+    padding: 4pt 11pt 3pt; border-radius: 9pt; text-transform: uppercase; letter-spacing: .4pt;
+    white-space: nowrap;
+  }
+  .cat-head i {
+    flex: 1; height: 2pt; border-radius: 1pt;
+    background: linear-gradient(90deg, var(--azul) 0 9%, var(--verde) 9% 39%, var(--amarillo) 39% 86%, var(--rojo) 86% 100%);
+  }
+  .cat-head small { font-weight: 600; font-size: 6.5pt; color: #8a8f94; white-space: nowrap; }
+
   /* ---------- Tarjeta ---------- */
   .card {
     position: relative;
@@ -260,8 +276,29 @@
     if (PORTADA) {
       out.push(`<section class="page cover"><img class="bg" src="pdf/portada.jpg" alt="">${FECHA ? `<div class="fecha"><span>${esc(FECHA)}</span></div>` : ''}</section>`);
     }
-    for (let i = 0; i < productos.length; i += POR_HOJA) {
-      out.push(`<section class="page"><div class="grid">${productos.slice(i, i + POR_HOJA).map(tarjeta).join('')}</div></section>`);
+    // Agrupado por categoría en el orden de productos.json (Navidad primero).
+    // Cada categoría empieza en hoja nueva y lleva su encabezado.
+    // ?categorias=0 → sin agrupar (como antes).
+    if (qs.get('categorias') === '0') {
+      for (let i = 0; i < productos.length; i += POR_HOJA) {
+        out.push(`<section class="page"><div class="grid">${productos.slice(i, i + POR_HOJA).map(tarjeta).join('')}</div></section>`);
+      }
+    } else {
+      const grupos = [];
+      productos.forEach(p => {
+        const c = (p.categoria || 'Otros').trim();
+        if (!grupos.length || grupos[grupos.length - 1].cat !== c) grupos.push({ cat: c, items: [] });
+        grupos[grupos.length - 1].items.push(p);
+      });
+      const indice = [];
+      grupos.forEach(g => {
+        const hojas = Math.ceil(g.items.length / POR_HOJA);
+        indice.push({ cat: g.cat, hojas, productos: g.items.length });
+        for (let h = 0; h < hojas; h++) {
+          out.push(`<section class="page" data-cat="${esc(g.cat)}"><div class="cat-head"><b>${esc(g.cat)}</b><i></i>${hojas > 1 ? `<small>${h + 1}/${hojas}</small>` : ''}</div><div class="grid">${g.items.slice(h * POR_HOJA, (h + 1) * POR_HOJA).map(tarjeta).join('')}</div></section>`);
+        }
+      });
+      window.__indice = indice;
     }
     document.getElementById('catalogo').innerHTML = out.join('');
 
